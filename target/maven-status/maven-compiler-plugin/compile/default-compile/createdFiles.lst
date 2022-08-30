@@ -1,0 +1,6 @@
+Resources/ExtentReporterNG.class
+WebPageObjects/ExplorePage.class
+WebPageObjects/LoginPage.class
+Memberse/WebAppAutomation/WBase.class
+Resources/Listeners.class
+WebPageObjects/SignupPage.class
