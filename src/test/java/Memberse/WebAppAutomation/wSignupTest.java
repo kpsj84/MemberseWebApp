@@ -26,12 +26,11 @@ public class wSignupTest extends WBase {
 		sp.Password().sendKeys(password);
 		sp.confirmPassword().sendKeys(password);
 		sp.SignupButton().click();
-		
 		Thread.sleep(5000);
 		
-		String abc = driver.findElement(By.xpath("//p[text()='Your account has been successfully created.']")).getText(); 
-		System.out.println(abc);
-		Assert.assertEquals(abc, "Your account has been successfully created.");
+		String verifyText = driver.findElement(By.xpath("//p[text()='Your account has been successfully created.']")).getText(); 
+		System.out.println(verifyText);
+		Assert.assertEquals(verifyText, "Your account has been successfully created.");
 		System.out.println("Test Case Completed");
 	}
 	

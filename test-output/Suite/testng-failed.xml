@@ -6,15 +6,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wSignupTest">
+      <class name="Memberse.WebAppAutomation.wLogintTest">
         <methods>
-          <include name="wSignupTestCase"/>
           <include name="CloseBrowser"/>
+          <include name="wLogintTestCase"/>
           <include name="startDriver"/>
           <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wSignupTest -->
+      </class> <!-- Memberse.WebAppAutomation.wLogintTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
