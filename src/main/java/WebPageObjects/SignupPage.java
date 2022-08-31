@@ -36,7 +36,7 @@ WebDriver localDriver;
 		return confirmPassword;
 	}
 	
-	@FindBy(xpath=" ")
+	@FindBy(xpath="//span[text()='Sign up']")
 	private WebElement SignupButton;
 	
 	public WebElement SignupButton() {
