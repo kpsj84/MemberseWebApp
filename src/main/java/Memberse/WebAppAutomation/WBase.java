@@ -28,8 +28,8 @@ public class WBase {
 		String driverLocation = (System.getProperty("user.dir")+"/src/chromedriver/chromedriver");
 		System.setProperty("webdriver.chrome.driver", driverLocation);
 		
-		opt = new ChromeOptions();
-		opt.addArguments("--start-maximized");
+		//opt = new ChromeOptions();
+		//opt.addArguments("--start-maximized");
 		//opt.addArguments("disable-infobars");
 		//opt.addArguments("--disbale-notifications");
 		//opt.addArguments("--disable-extensions");
@@ -39,7 +39,7 @@ public class WBase {
 		if(environment == null)
 		{
 			environment = "INT";
-			System.out.println("Value Set for environment if initially it null --> " + environment);
+			System.out.println("Value Set for environment if not get from pom file --> " + environment);
 		}
 		fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/Memberse/WebAppAutomation/"+environment+".properties");
 		prop = new Properties();		 
@@ -62,7 +62,8 @@ public class WBase {
 	@BeforeClass
 	public void startDriver() throws InterruptedException, IOException {
 		//Start new driver & Window before to every Test Class
-		driver = new ChromeDriver(opt);
+		//driver = new ChromeDriver(opt);
+		driver = new ChromeDriver();
 		driver.get((String)prop.get("Url"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
