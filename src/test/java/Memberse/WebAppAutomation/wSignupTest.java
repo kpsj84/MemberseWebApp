@@ -1,6 +1,7 @@
 package Memberse.WebAppAutomation;
 
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -12,11 +13,10 @@ public class wSignupTest extends WBase {
 	
 	@Test
 	public void wSignupTestCase() throws InterruptedException {
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("//span[text()='Signup']")).click(); 
-		//ExplorePage ep = new ExplorePage(driver);
-		//ep.SignupButton();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
+		driver.findElement(By.xpath("//span[text()='Signup']")).click(); 
+	
 		String email = getSaltString();
 		System.out.println(email);
 		String password = "123456";
