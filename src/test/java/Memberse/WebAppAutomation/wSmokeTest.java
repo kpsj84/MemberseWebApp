@@ -49,6 +49,7 @@ public class wSmokeTest extends WBase{
 		String apps = driver.findElement(By.xpath("//p[text()='Download the Memberse app for an optimized experience']")).getText();
 		Assert.assertEquals(apps, "Download the Memberse app for an optimized experience");
 		System.out.println("Smoke Test Pass for Web App");
+		System.out.println("Web hook trigger one");
 	}
 
 }
