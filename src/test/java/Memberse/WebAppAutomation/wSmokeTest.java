@@ -19,7 +19,7 @@ public class wSmokeTest extends WBase{
 		WebElement searchField = driver.findElement(By.xpath("//*[@id='name']"));
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()", searchField);
-		String testText = "Hi I am Automation and doing Smoke Testing";
+		String testText = "Smoke Testing is in Progress";
 		searchField.sendKeys(testText);
 		
 		driver.findElement(By.xpath("//span[text()='Trending']")).click();
@@ -45,6 +45,7 @@ public class wSmokeTest extends WBase{
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//input[@name='email']")).sendKeys(testText);
 		driver.navigate().back();
+		Thread.sleep(3000);
 		
 		String apps = driver.findElement(By.xpath("//p[text()='Download the Memberse app for an optimized experience']")).getText();
 		Assert.assertEquals(apps, "Download the Memberse app for an optimized experience");

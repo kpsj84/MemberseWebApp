@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-09T17:05:06 IST" name="Default suite" finished-at="2022-09-09T17:08:05 IST" duration-ms="179005">
+  <suite started-at="2022-09-23T14:14:51 IST" name="Default suite" finished-at="2022-09-23T14:15:09 IST" duration-ms="18816">
     <groups>
     </groups>
-    <test started-at="2022-09-09T17:05:06 IST" name="Default test" finished-at="2022-09-09T17:08:05 IST" duration-ms="179005">
-      <class name="Memberse.WebAppAutomation.wLogoutTest">
-        <test-method is-config="true" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@7d9e8ef7]" started-at="2022-09-09T17:05:06 IST" name="InvokeCapabilities" finished-at="2022-09-09T17:05:06 IST" duration-ms="7" status="PASS">
+    <test started-at="2022-09-23T14:14:51 IST" name="Default test" finished-at="2022-09-23T14:15:09 IST" duration-ms="18816">
+      <class name="Memberse.WebAppAutomation.wRegisterFormValidationTest">
+        <test-method is-config="true" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wRegisterFormValidationTest@7d9e8ef7]" started-at="2022-09-23T14:14:51 IST" name="InvokeCapabilities" finished-at="2022-09-23T14:14:51 IST" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvokeCapabilities -->
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@7d9e8ef7]" started-at="2022-09-09T17:05:06 IST" name="startDriver" finished-at="2022-09-09T17:07:41 IST" duration-ms="154652" status="PASS">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wRegisterFormValidationTest@7d9e8ef7]" started-at="2022-09-23T14:14:51 IST" name="startDriver" finished-at="2022-09-23T14:14:55 IST" duration-ms="4154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="wLogoutTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@7d9e8ef7]" started-at="2022-09-09T17:07:41 IST" name="wLogoutTestCase" finished-at="2022-09-09T17:08:05 IST" duration-ms="23946" status="PASS">
+        <test-method signature="wRegisterFormValidationTestCase()[pri:0, instance:Memberse.WebAppAutomation.wRegisterFormValidationTest@7d9e8ef7]" started-at="2022-09-23T14:14:55 IST" name="wRegisterFormValidationTestCase" finished-at="2022-09-23T14:15:04 IST" duration-ms="8922" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wLogoutTestCase -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@7d9e8ef7]" started-at="2022-09-09T17:08:05 IST" name="CloseBrowser" finished-at="2022-09-09T17:08:05 IST" duration-ms="221" status="PASS">
+        </test-method> <!-- wRegisterFormValidationTestCase -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wRegisterFormValidationTest@7d9e8ef7]" started-at="2022-09-23T14:15:04 IST" name="CloseBrowser" finished-at="2022-09-23T14:15:09 IST" duration-ms="5633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="QuitBrowsers()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@7d9e8ef7]" started-at="2022-09-09T17:08:05 IST" name="QuitBrowsers" finished-at="2022-09-09T17:08:05 IST" duration-ms="147" status="PASS">
+        <test-method is-config="true" signature="QuitBrowsers()[pri:0, instance:Memberse.WebAppAutomation.wRegisterFormValidationTest@7d9e8ef7]" started-at="2022-09-23T14:15:09 IST" name="QuitBrowsers" finished-at="2022-09-23T14:15:09 IST" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QuitBrowsers -->
-      </class> <!-- Memberse.WebAppAutomation.wLogoutTest -->
+      </class> <!-- Memberse.WebAppAutomation.wRegisterFormValidationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

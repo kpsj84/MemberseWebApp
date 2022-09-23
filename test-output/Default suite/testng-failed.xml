@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wLogoutTest">
+      <class name="Memberse.WebAppAutomation.wRegisterFormValidationTest">
         <methods>
-          <include name="wLogoutTestCase"/>
           <include name="CloseBrowser"/>
+          <include name="wRegisterFormValidationTestCase"/>
           <include name="startDriver"/>
           <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wLogoutTest -->
+      </class> <!-- Memberse.WebAppAutomation.wRegisterFormValidationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
