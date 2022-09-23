@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import WebPageObjects.SignupPage;
+import WebPageObjects.WelcomePage;
 
 public class wSignupTest extends WBase {
 	
@@ -15,8 +16,9 @@ public class wSignupTest extends WBase {
 	public void wSignupTestCase() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		driver.findElement(By.xpath("//span[text()='Signup']")).click(); 
-	
+		WelcomePage wp = new WelcomePage(driver);
+		wp.SignupButtton().click();
+		
 		String email = getSaltString();
 		System.out.println(email);
 		String password = "123456";

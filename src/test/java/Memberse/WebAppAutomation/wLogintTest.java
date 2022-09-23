@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import WebPageObjects.LoginPage;
+import WebPageObjects.WelcomePage;
 
 public class wLogintTest extends WBase{
 	
@@ -14,13 +15,14 @@ public class wLogintTest extends WBase{
 	public void wLogintTestCase() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		driver.findElement(By.xpath("//span[text()='Login']")).click(); 
+		WelcomePage wp = new WelcomePage(driver);
+		wp.LoginButton().click();
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestc2@yopmail.com");
-		lp.Password().sendKeys("kqatestc2");
+		lp.Email().sendKeys("kqatestcreator@yopmail.com");
+		lp.Password().sendKeys("kqatestcreator");
 		lp.Login().click();
-		Thread.sleep(10000);
+		Thread.sleep(13000);
 		
 		driver.findElement(By.xpath("//a[text()='Account']")).click();
 		String verifyText = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[2]/div/div[3]/main/div/div[2]/div[1]/div/div/div/div[2]/div/div[1]/form/div[2]/div/label")).getText();
