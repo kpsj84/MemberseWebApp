@@ -11,6 +11,7 @@
   
     <classes>
       <class name="Memberse.WebAppAutomation.wSmokeTest"/>
+      <class name="Memberse.WebAppAutomation.wRegisterFormValidationTest"/>
       <class name="Memberse.WebAppAutomation.wSignupTest"/>
       <class name="Memberse.WebAppAutomation.wLogintTest"/>      
       <class name="Memberse.WebAppAutomation.wLogoutTest"/>
