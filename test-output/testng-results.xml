@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-23T14:14:51 IST" name="Default suite" finished-at="2022-09-23T14:15:09 IST" duration-ms="18816">
+  <suite started-at="2022-09-27T17:56:49 IST" name="Default suite" finished-at="2022-09-27T17:57:51 IST" duration-ms="61527">
     <groups>
     </groups>
-    <test started-at="2022-09-23T14:14:51 IST" name="Default test" finished-at="2022-09-23T14:15:09 IST" duration-ms="18816">
-      <class name="Memberse.WebAppAutomation.wRegisterFormValidationTest">
-        <test-method is-config="true" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wRegisterFormValidationTest@7d9e8ef7]" started-at="2022-09-23T14:14:51 IST" name="InvokeCapabilities" finished-at="2022-09-23T14:14:51 IST" duration-ms="27" status="PASS">
+    <test started-at="2022-09-27T17:56:49 IST" name="Default test" finished-at="2022-09-27T17:57:51 IST" duration-ms="61527">
+      <class name="Memberse.WebAppAutomation.wLoginWithFacebookTest">
+        <test-method is-config="true" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithFacebookTest@7d9e8ef7]" started-at="2022-09-27T17:56:49 IST" name="InvokeCapabilities" finished-at="2022-09-27T17:56:49 IST" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvokeCapabilities -->
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wRegisterFormValidationTest@7d9e8ef7]" started-at="2022-09-23T14:14:51 IST" name="startDriver" finished-at="2022-09-23T14:14:55 IST" duration-ms="4154" status="PASS">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithFacebookTest@7d9e8ef7]" started-at="2022-09-27T17:56:49 IST" name="startDriver" finished-at="2022-09-27T17:57:12 IST" duration-ms="22516" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="wRegisterFormValidationTestCase()[pri:0, instance:Memberse.WebAppAutomation.wRegisterFormValidationTest@7d9e8ef7]" started-at="2022-09-23T14:14:55 IST" name="wRegisterFormValidationTestCase" finished-at="2022-09-23T14:15:04 IST" duration-ms="8922" status="PASS">
+        <test-method signature="wLoginWithFacebookTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithFacebookTest@7d9e8ef7]" started-at="2022-09-27T17:57:12 IST" name="wLoginWithFacebookTestCase" finished-at="2022-09-27T17:57:50 IST" duration-ms="38712" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wRegisterFormValidationTestCase -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wRegisterFormValidationTest@7d9e8ef7]" started-at="2022-09-23T14:15:04 IST" name="CloseBrowser" finished-at="2022-09-23T14:15:09 IST" duration-ms="5633" status="PASS">
+        </test-method> <!-- wLoginWithFacebookTestCase -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithFacebookTest@7d9e8ef7]" started-at="2022-09-27T17:57:50 IST" name="CloseBrowser" finished-at="2022-09-27T17:57:51 IST" duration-ms="159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="QuitBrowsers()[pri:0, instance:Memberse.WebAppAutomation.wRegisterFormValidationTest@7d9e8ef7]" started-at="2022-09-23T14:15:09 IST" name="QuitBrowsers" finished-at="2022-09-23T14:15:09 IST" duration-ms="34" status="PASS">
+        <test-method is-config="true" signature="QuitBrowsers()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithFacebookTest@7d9e8ef7]" started-at="2022-09-27T17:57:51 IST" name="QuitBrowsers" finished-at="2022-09-27T17:57:51 IST" duration-ms="71" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QuitBrowsers -->
-      </class> <!-- Memberse.WebAppAutomation.wRegisterFormValidationTest -->
+      </class> <!-- Memberse.WebAppAutomation.wLoginWithFacebookTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

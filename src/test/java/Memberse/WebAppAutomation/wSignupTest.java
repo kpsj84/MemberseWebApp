@@ -17,6 +17,7 @@ public class wSignupTest extends WBase {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		WelcomePage wp = new WelcomePage(driver);
+		Thread.sleep(2000);
 		wp.SignupButtton().click();
 		
 		String email = getSaltString();
