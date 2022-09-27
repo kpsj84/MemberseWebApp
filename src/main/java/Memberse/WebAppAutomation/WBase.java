@@ -66,8 +66,8 @@ public class WBase {
 	public void startDriver() throws InterruptedException, IOException {
 		//Start new driver & Window before to every Test Class
 		driver = new ChromeDriver(options);
-		driver.get((String)prop.get("Url"));
 		driver.manage().window().maximize();
+		driver.get((String)prop.get("Url"));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
