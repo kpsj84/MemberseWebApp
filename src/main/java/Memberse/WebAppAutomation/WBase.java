@@ -30,7 +30,7 @@ public class WBase {
 		
 		options = new ChromeOptions();
 		options.addArguments("--incognito");
-		//options.addArguments("--headless");
+		options.addArguments("--headless");
 		//options.addArguments("--start-fullscreen");
 		//options.addArguments("start-maximized");
 		//options.addArguments("--disable-infobars");
