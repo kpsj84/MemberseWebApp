@@ -19,8 +19,8 @@ public class wLogintTest extends WBase{
 		wp.LoginButton().click();
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestcreator@yopmail.com");
-		lp.Password().sendKeys("kqatestcreator");
+		lp.Email().sendKeys("kqatestc3@yopmail.com");
+		lp.Password().sendKeys("kqatestc3");
 		lp.Login().click();
 		Thread.sleep(13000);
 		
