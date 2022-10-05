@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import WebPageObjects.LoginPage;
+import WebPageObjects.WelcomePage;
 
 public class wLogoutTest extends WBase {
 	
@@ -14,7 +15,9 @@ public class wLogoutTest extends WBase {
 	public void wLogoutTestCase() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		driver.findElement(By.xpath("//span[text()='Login']")).click(); 
+		WelcomePage wp = new WelcomePage(driver);
+		Thread.sleep(3000);
+		wp.LoginButton().click();
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys("kqatestc2@yopmail.com");
