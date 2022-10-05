@@ -13,7 +13,7 @@ public class wLoginWithGoogleTest extends WBase{
 	
 	@Test
 	public void wLoginWithGoogleTestCase() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(13, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();

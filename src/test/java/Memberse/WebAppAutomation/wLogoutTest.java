@@ -33,7 +33,7 @@ public class wLogoutTest extends WBase {
 		
 		String verifyUrl = driver.getCurrentUrl();
 		System.out.println(verifyUrl);
-		Assert.assertEquals(verifyUrl, "https://app-int.so.fa.dog/explore");
+		Assert.assertEquals(verifyUrl, "https://app-qa.so.fa.dog/explore");
 		System.out.println("Test Case Completed");
 	}
 

@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wLoginWithFacebookTest">
+      <class name="Memberse.WebAppAutomation.wLoginwithAppleTest">
         <methods>
-          <include name="wLoginWithFacebookTestCase"/>
+          <include name="wLoginWithAppleTestCase"/>
           <include name="CloseBrowser"/>
           <include name="startDriver"/>
           <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wLoginWithFacebookTest -->
+      </class> <!-- Memberse.WebAppAutomation.wLoginwithAppleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
