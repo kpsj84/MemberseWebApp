@@ -11,7 +11,7 @@ public class wRegisterFormValidationTest extends WBase {
 	
 	@Test
 	public void wRegisterFormValidationTestCase() throws InterruptedException {
-		Thread.sleep(20000);
+		Thread.sleep(15000);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.SignupButtton().click();
