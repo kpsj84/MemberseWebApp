@@ -38,16 +38,16 @@ public class wDeleteAccountTest extends WBase {
 		lp.Email().sendKeys(email);
 		lp.Password().sendKeys(password);
 		lp.Login().click();
-		Thread.sleep(10000);
+		Thread.sleep(15000);
 		
 		driver.findElement(By.xpath("//a[text()='Creator']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//a[text()='Account']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//p[text()='Delete Account']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[@id=\"__next\"]/div[2]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/div[2]/div/button/span")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//span[text()='Confirm']")).click();
 		Thread.sleep(6000);
 		

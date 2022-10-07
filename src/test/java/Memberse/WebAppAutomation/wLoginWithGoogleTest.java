@@ -1,7 +1,5 @@
 package Memberse.WebAppAutomation;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -13,7 +11,7 @@ public class wLoginWithGoogleTest extends WBase{
 	
 	@Test
 	public void wLoginWithGoogleTestCase() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Thread.sleep(20000);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
@@ -23,7 +21,7 @@ public class wLoginWithGoogleTest extends WBase{
 		//Store the ID of the original window
 		String originalWindow = driver.getWindowHandle();
 		lp.GoogleLogin().click();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		for(String windowHandle : driver.getWindowHandles()) 
 		{
 		    if(!originalWindow.contentEquals(windowHandle)) 
@@ -32,6 +30,7 @@ public class wLoginWithGoogleTest extends WBase{
 		        break;
 		    }
 		}
+		Thread.sleep(4000);
 		driver.findElement(By.xpath("//*[@id='identifierId']")).sendKeys("qatesting9999@gmail.com");   
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[text()='Next']")).click();

@@ -1,7 +1,5 @@
 package Memberse.WebAppAutomation;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -13,7 +11,7 @@ public class wLogintTest extends WBase{
 	
 	@Test
 	public void wLogintTestCase() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Thread.sleep(15000);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
@@ -22,7 +20,7 @@ public class wLogintTest extends WBase{
 		lp.Email().sendKeys("kqatestc3@yopmail.com");
 		lp.Password().sendKeys("kqatestc3");
 		lp.Login().click();
-		Thread.sleep(13000);
+		Thread.sleep(20000);
 		
 		driver.findElement(By.xpath("//a[text()='Account']")).click();
 		String verifyText = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[2]/div/div[3]/main/div/div[2]/div[1]/div/div/div/div[2]/div/div[1]/form/div[2]/div/label")).getText();

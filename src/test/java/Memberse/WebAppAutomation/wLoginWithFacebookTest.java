@@ -13,7 +13,7 @@ public class wLoginWithFacebookTest extends WBase {
 	
 	@Test
 	public void wLoginWithFacebookTestCase() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Thread.sleep(20000);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
