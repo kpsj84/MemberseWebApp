@@ -11,7 +11,7 @@ public class wLoginWithGoogleTest extends WBase{
 	
 	@Test
 	public void wLoginWithGoogleTestCase() throws InterruptedException {
-		Thread.sleep(20000);
+		Thread.sleep(15000);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();

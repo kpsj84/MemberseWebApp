@@ -1,7 +1,5 @@
 package Memberse.WebAppAutomation;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -13,7 +11,7 @@ public class wLogoutTest extends WBase {
 	
 	@Test
 	public void wLogoutTestCase() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Thread.sleep(15000);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		Thread.sleep(3000);

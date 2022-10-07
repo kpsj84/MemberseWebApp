@@ -1,7 +1,5 @@
 package Memberse.WebAppAutomation;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -14,7 +12,8 @@ public class wSmokeTest extends WBase{
 	
 	@Test
 	public void wSmokeTestCase() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Thread.sleep(15000);
 		
 		WebElement searchField = driver.findElement(By.xpath("//*[@id='name']"));
 		JavascriptExecutor js = (JavascriptExecutor)driver;

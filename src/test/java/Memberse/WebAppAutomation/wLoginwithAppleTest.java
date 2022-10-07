@@ -11,7 +11,7 @@ public class wLoginwithAppleTest extends WBase {
 	
 	@Test
 	public void wLoginWithAppleTestCase() throws InterruptedException {
-		Thread.sleep(20000);
+		Thread.sleep(15000);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
