@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wDeleteAccountTest">
+      <class name="Memberse.WebAppAutomation.wLaunchAppStoreTest">
         <methods>
           <include name="CloseBrowser"/>
-          <include name="wDeleteAccountTestCase"/>
+          <include name="wLaunchAppStoreTestCase"/>
           <include name="startDriver"/>
           <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wDeleteAccountTest -->
+      </class> <!-- Memberse.WebAppAutomation.wLaunchAppStoreTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
