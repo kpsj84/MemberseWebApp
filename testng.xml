@@ -20,6 +20,8 @@
       <class name="Memberse.WebAppAutomation.wLoginwithAppleTest"/>
       <class name="Memberse.WebAppAutomation.wLogoutTest"/>
       <class name="Memberse.WebAppAutomation.wDeleteAccountTest"/>
+      <class name="Memberse.WebAppAutomation.wLaunchAppStoreTest"/>
+      <class name="Memberse.WebAppAutomation.wLaunchGooglePlayTest"/>
     </classes>
     
   </test> <!-- Test -->

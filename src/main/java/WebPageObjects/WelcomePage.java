@@ -28,5 +28,19 @@ WebDriver localDriver;
 	public WebElement SignupButtton() {
 		return SignupButtton;
 	}
+	
+	@FindBy(xpath="//img[@src='/images/app-store-button.png']")
+	private WebElement AppStoreButtton;
+	
+	public WebElement AppStoreButtton() {
+		return AppStoreButtton;
+	}
+	
+	@FindBy(xpath="//img[@src='/images/google-play-button.png']")
+	private WebElement GooglePlayButton;
+	
+	public WebElement GooglePlayButton() {
+		return GooglePlayButton;
+	}
 
 }

@@ -6,6 +6,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="Memberse.WebAppAutomation.wLoginWithGoogleTest">
+        <methods>
+          <include name="wLoginWithGoogleTestCase"/>
+          <include name="CloseBrowser"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wLoginWithGoogleTest -->
       <class name="Memberse.WebAppAutomation.wLogintTest">
         <methods>
           <include name="CloseBrowser"/>
@@ -15,6 +24,24 @@
           <include name="InvokeCapabilities"/>
         </methods>
       </class> <!-- Memberse.WebAppAutomation.wLogintTest -->
+      <class name="Memberse.WebAppAutomation.wLoginwithAppleTest">
+        <methods>
+          <include name="wLoginWithAppleTestCase"/>
+          <include name="CloseBrowser"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wLoginwithAppleTest -->
+      <class name="Memberse.WebAppAutomation.wDeleteAccountTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="wDeleteAccountTestCase"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wDeleteAccountTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
