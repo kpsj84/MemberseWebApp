@@ -1,7 +1,5 @@
 package Memberse.WebAppAutomation;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -13,7 +11,7 @@ public class wRegisterFormValidationTest extends WBase {
 	
 	@Test
 	public void wRegisterFormValidationTestCase() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Thread.sleep(20000);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.SignupButtton().click();

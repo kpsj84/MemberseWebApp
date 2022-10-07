@@ -1,33 +1,388 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="22" total="34" passed="9" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-07T10:58:03 IST" name="Default suite" finished-at="2022-10-07T10:58:46 IST" duration-ms="42794">
+  <suite started-at="2022-10-07T12:54:37 IST" name="Suite" finished-at="2022-10-07T13:02:45 IST" duration-ms="488825">
     <groups>
     </groups>
-    <test started-at="2022-10-07T10:58:03 IST" name="Default test" finished-at="2022-10-07T10:58:46 IST" duration-ms="42794">
-      <class name="Memberse.WebAppAutomation.wLaunchGooglePlayTest">
-        <test-method is-config="true" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wLaunchGooglePlayTest@7d9e8ef7]" started-at="2022-10-07T10:58:03 IST" name="InvokeCapabilities" finished-at="2022-10-07T10:58:03 IST" duration-ms="32" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InvokeCapabilities -->
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLaunchGooglePlayTest@7d9e8ef7]" started-at="2022-10-07T10:58:03 IST" name="startDriver" finished-at="2022-10-07T10:58:24 IST" duration-ms="20848" status="PASS">
+    <test started-at="2022-10-07T12:54:37 IST" name="Test" finished-at="2022-10-07T13:02:45 IST" duration-ms="488825">
+      <class name="Memberse.WebAppAutomation.wDeleteAccountTest">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wDeleteAccountTest@378542de]" started-at="2022-10-07T13:00:55 IST" name="startDriver" finished-at="2022-10-07T13:00:59 IST" duration-ms="4524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="wLaunchGooglePlayTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLaunchGooglePlayTest@7d9e8ef7]" started-at="2022-10-07T10:58:24 IST" name="wLaunchGooglePlayTestCase" finished-at="2022-10-07T10:58:46 IST" duration-ms="21508" status="PASS">
+        <test-method signature="wDeleteAccountTestCase()[pri:0, instance:Memberse.WebAppAutomation.wDeleteAccountTest@378542de]" started-at="2022-10-07T13:00:59 IST" name="wDeleteAccountTestCase" finished-at="2022-10-07T13:01:41 IST" duration-ms="42148" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: headless chrome=106.0.5249.103)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:470f:cfe0:d9bd:1b4d:d53e:2cc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/4f/ggkjk46s0lj...}, goog:chromeOptions: {debuggerAddress: localhost:54856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c26c2eb79bfc5734c722c49a8c12b7b8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=106.0.5249.103)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:470f:cfe0:d9bd:1b4d:d53e:2cc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/4f/ggkjk46s0lj...}, goog:chromeOptions: {debuggerAddress: localhost:54856}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c26c2eb79bfc5734c722c49a8c12b7b8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at Memberse.WebAppAutomation.wDeleteAccountTest.wDeleteAccountTestCase(wDeleteAccountTest.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wLaunchGooglePlayTestCase -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLaunchGooglePlayTest@7d9e8ef7]" started-at="2022-10-07T10:58:46 IST" name="CloseBrowser" finished-at="2022-10-07T10:58:46 IST" duration-ms="163" status="PASS">
+        </test-method> <!-- wDeleteAccountTestCase -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wDeleteAccountTest@378542de]" started-at="2022-10-07T13:01:41 IST" name="CloseBrowser" finished-at="2022-10-07T13:01:41 IST" duration-ms="135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="QuitBrowsers()[pri:0, instance:Memberse.WebAppAutomation.wLaunchGooglePlayTest@7d9e8ef7]" started-at="2022-10-07T10:58:46 IST" name="QuitBrowsers" finished-at="2022-10-07T10:58:46 IST" duration-ms="208" status="PASS">
+      </class> <!-- Memberse.WebAppAutomation.wDeleteAccountTest -->
+      <class name="Memberse.WebAppAutomation.wRegisterFormValidationTest">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wRegisterFormValidationTest@55536d9e]" started-at="2022-10-07T12:55:05 IST" name="startDriver" finished-at="2022-10-07T12:55:10 IST" duration-ms="4742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="wRegisterFormValidationTestCase()[pri:0, instance:Memberse.WebAppAutomation.wRegisterFormValidationTest@55536d9e]" started-at="2022-10-07T12:55:10 IST" name="wRegisterFormValidationTestCase" finished-at="2022-10-07T12:55:54 IST" duration-ms="43430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wRegisterFormValidationTestCase -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wRegisterFormValidationTest@55536d9e]" started-at="2022-10-07T12:55:54 IST" name="CloseBrowser" finished-at="2022-10-07T12:55:54 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Memberse.WebAppAutomation.wRegisterFormValidationTest -->
+      <class name="Memberse.WebAppAutomation.wLoginWithFacebookTest">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithFacebookTest@2e55dd0c]" started-at="2022-10-07T12:58:10 IST" name="startDriver" finished-at="2022-10-07T12:58:26 IST" duration-ms="15473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="wLoginWithFacebookTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithFacebookTest@2e55dd0c]" started-at="2022-10-07T12:58:26 IST" name="wLoginWithFacebookTestCase" finished-at="2022-10-07T12:59:11 IST" duration-ms="45673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLoginWithFacebookTestCase -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithFacebookTest@2e55dd0c]" started-at="2022-10-07T12:59:11 IST" name="CloseBrowser" finished-at="2022-10-07T12:59:12 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Memberse.WebAppAutomation.wLoginWithFacebookTest -->
+      <class name="Memberse.WebAppAutomation.wLoginFormValidationTest">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@3d1cfad4]" started-at="2022-10-07T12:56:11 IST" name="startDriver" finished-at="2022-10-07T12:56:18 IST" duration-ms="6109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="wLoginFormValidationTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@3d1cfad4]" started-at="2022-10-07T12:56:18 IST" name="wLoginFormValidationTestCase" finished-at="2022-10-07T12:56:27 IST" duration-ms="9279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLoginFormValidationTestCase -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@3d1cfad4]" started-at="2022-10-07T12:56:27 IST" name="CloseBrowser" finished-at="2022-10-07T12:56:27 IST" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Memberse.WebAppAutomation.wLoginFormValidationTest -->
+      <class name="Memberse.WebAppAutomation.wLoginwithAppleTest">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginwithAppleTest@74455848]" started-at="2022-10-07T12:59:12 IST" name="startDriver" finished-at="2022-10-07T12:59:17 IST" duration-ms="5452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="wLoginWithAppleTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginwithAppleTest@74455848]" started-at="2022-10-07T12:59:17 IST" name="wLoginWithAppleTestCase" finished-at="2022-10-07T13:00:27 IST" duration-ms="70271" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="ac-localnav"]/div/div[2]/div[1]/span"}
+  (Session info: headless chrome=106.0.5249.103)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:470f:cfe0:d9bd:1b4d:d53e:2cc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/4f/ggkjk46s0lj...}, goog:chromeOptions: {debuggerAddress: localhost:54747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d5967f39f97cafc315f695ee296487f2
+*** Element info: {Using=xpath, value=//*[@id="ac-localnav"]/div/div[2]/div[1]/span}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="ac-localnav"]/div/div[2]/div[1]/span"}
+  (Session info: headless chrome=106.0.5249.103)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:470f:cfe0:d9bd:1b4d:d53e:2cc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/4f/ggkjk46s0lj...}, goog:chromeOptions: {debuggerAddress: localhost:54747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d5967f39f97cafc315f695ee296487f2
+*** Element info: {Using=xpath, value=//*[@id="ac-localnav"]/div/div[2]/div[1]/span}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at Memberse.WebAppAutomation.wLoginwithAppleTest.wLoginWithAppleTestCase(wLoginwithAppleTest.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLoginWithAppleTestCase -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLoginwithAppleTest@74455848]" started-at="2022-10-07T13:00:27 IST" name="CloseBrowser" finished-at="2022-10-07T13:00:27 IST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Memberse.WebAppAutomation.wLoginwithAppleTest -->
+      <class name="Memberse.WebAppAutomation.wLogoutTest">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@e7edb54]" started-at="2022-10-07T13:00:27 IST" name="startDriver" finished-at="2022-10-07T13:00:32 IST" duration-ms="4593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="wLogoutTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@e7edb54]" started-at="2022-10-07T13:00:32 IST" name="wLogoutTestCase" finished-at="2022-10-07T13:00:54 IST" duration-ms="22488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLogoutTestCase -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@e7edb54]" started-at="2022-10-07T13:00:54 IST" name="CloseBrowser" finished-at="2022-10-07T13:00:55 IST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Memberse.WebAppAutomation.wLogoutTest -->
+      <class name="Memberse.WebAppAutomation.wLaunchAppStoreTest">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLaunchAppStoreTest@3738449f]" started-at="2022-10-07T13:01:41 IST" name="startDriver" finished-at="2022-10-07T13:01:52 IST" duration-ms="10954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="wLaunchAppStoreTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLaunchAppStoreTest@3738449f]" started-at="2022-10-07T13:01:52 IST" name="wLaunchAppStoreTestCase" finished-at="2022-10-07T13:02:16 IST" duration-ms="24114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLaunchAppStoreTestCase -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLaunchAppStoreTest@3738449f]" started-at="2022-10-07T13:02:16 IST" name="CloseBrowser" finished-at="2022-10-07T13:02:16 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Memberse.WebAppAutomation.wLaunchAppStoreTest -->
+      <class name="Memberse.WebAppAutomation.wLogintTest">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@62230c58]" started-at="2022-10-07T12:56:27 IST" name="startDriver" finished-at="2022-10-07T12:56:31 IST" duration-ms="3818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="wLogintTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@62230c58]" started-at="2022-10-07T12:56:31 IST" name="wLogintTestCase" finished-at="2022-10-07T12:57:07 IST" duration-ms="36012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLogintTestCase -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@62230c58]" started-at="2022-10-07T12:57:07 IST" name="CloseBrowser" finished-at="2022-10-07T12:57:07 IST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Memberse.WebAppAutomation.wLogintTest -->
+      <class name="Memberse.WebAppAutomation.wSmokeTest">
+        <test-method is-config="true" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@346d61be]" started-at="2022-10-07T12:54:37 IST" name="InvokeCapabilities" finished-at="2022-10-07T12:54:37 IST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvokeCapabilities -->
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@346d61be]" started-at="2022-10-07T12:54:37 IST" name="startDriver" finished-at="2022-10-07T12:54:44 IST" duration-ms="7867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="wSmokeTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@346d61be]" started-at="2022-10-07T12:54:44 IST" name="wSmokeTestCase" finished-at="2022-10-07T12:55:05 IST" duration-ms="20865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wSmokeTestCase -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@346d61be]" started-at="2022-10-07T12:55:05 IST" name="CloseBrowser" finished-at="2022-10-07T12:55:05 IST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="QuitBrowsers()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@346d61be]" started-at="2022-10-07T13:02:45 IST" name="QuitBrowsers" finished-at="2022-10-07T13:02:45 IST" duration-ms="84" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QuitBrowsers -->
+      </class> <!-- Memberse.WebAppAutomation.wSmokeTest -->
+      <class name="Memberse.WebAppAutomation.wSignupTest">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@747edf66]" started-at="2022-10-07T12:55:54 IST" name="startDriver" finished-at="2022-10-07T12:55:59 IST" duration-ms="5526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="wSignupTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@747edf66]" started-at="2022-10-07T12:55:59 IST" name="wSignupTestCase" finished-at="2022-10-07T12:56:11 IST" duration-ms="12075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wSignupTestCase -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@747edf66]" started-at="2022-10-07T12:56:11 IST" name="CloseBrowser" finished-at="2022-10-07T12:56:11 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Memberse.WebAppAutomation.wSignupTest -->
+      <class name="Memberse.WebAppAutomation.wLaunchGooglePlayTest">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLaunchGooglePlayTest@69e1dd28]" started-at="2022-10-07T13:02:16 IST" name="startDriver" finished-at="2022-10-07T13:02:24 IST" duration-ms="7445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="wLaunchGooglePlayTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLaunchGooglePlayTest@69e1dd28]" started-at="2022-10-07T13:02:24 IST" name="wLaunchGooglePlayTestCase" finished-at="2022-10-07T13:02:45 IST" duration-ms="21226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLaunchGooglePlayTestCase -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLaunchGooglePlayTest@69e1dd28]" started-at="2022-10-07T13:02:45 IST" name="CloseBrowser" finished-at="2022-10-07T13:02:45 IST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
       </class> <!-- Memberse.WebAppAutomation.wLaunchGooglePlayTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="Memberse.WebAppAutomation.wLoginWithGoogleTest">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithGoogleTest@2cd2a21f]" started-at="2022-10-07T12:57:07 IST" name="startDriver" finished-at="2022-10-07T12:57:13 IST" duration-ms="6234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="wLoginWithGoogleTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithGoogleTest@2cd2a21f]" started-at="2022-10-07T12:57:13 IST" name="wLoginWithGoogleTestCase" finished-at="2022-10-07T12:58:10 IST" duration-ms="57144" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='identifierId']"}
+  (Session info: headless chrome=106.0.5249.103)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:470f:cfe0:d9bd:1b4d:d53e:2cc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/4f/ggkjk46s0lj...}, goog:chromeOptions: {debuggerAddress: localhost:54567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bb9f41c6d6ed8343f3b5829f63c0ae10
+*** Element info: {Using=xpath, value=//*[@id='identifierId']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='identifierId']"}
+  (Session info: headless chrome=106.0.5249.103)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:470f:cfe0:d9bd:1b4d:d53e:2cc%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/4f/ggkjk46s0lj...}, goog:chromeOptions: {debuggerAddress: localhost:54567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bb9f41c6d6ed8343f3b5829f63c0ae10
+*** Element info: {Using=xpath, value=//*[@id='identifierId']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at Memberse.WebAppAutomation.wLoginWithGoogleTest.wLoginWithGoogleTestCase(wLoginWithGoogleTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLoginWithGoogleTestCase -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithGoogleTest@2cd2a21f]" started-at="2022-10-07T12:58:10 IST" name="CloseBrowser" finished-at="2022-10-07T12:58:10 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Memberse.WebAppAutomation.wLoginWithGoogleTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
