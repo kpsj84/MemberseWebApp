@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wLoginWithGoogleTest">
+      <class name="Memberse.WebAppAutomation.wLaunchMemberseTikTokTest">
         <methods>
-          <include name="wLoginWithGoogleTestCase"/>
+          <include name="wLaunchMemberseTikTokTestCase"/>
           <include name="CloseBrowser"/>
           <include name="startDriver"/>
           <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wLoginWithGoogleTest -->
+      </class> <!-- Memberse.WebAppAutomation.wLaunchMemberseTikTokTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

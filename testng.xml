@@ -22,6 +22,10 @@
       <class name="Memberse.WebAppAutomation.wDeleteAccountTest"/>
       <class name="Memberse.WebAppAutomation.wLaunchAppStoreTest"/>
       <class name="Memberse.WebAppAutomation.wLaunchGooglePlayTest"/>
+      <class name="Memberse.WebAppAutomation.wLaunchMemberseFacebookTest"/>
+      <class name="Memberse.WebAppAutomation.wLaunchMemberseInstagramTest"/>
+      <class name="Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest"/>
+      <class name="Memberse.WebAppAutomation.wLaunchMemberseTikTokTest"/>
     </classes>
     
   </test> <!-- Test -->
