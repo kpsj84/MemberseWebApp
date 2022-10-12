@@ -57,8 +57,9 @@ public class WBase {
 	}
 	
 	@AfterTest
-	public void QuitBrowsers() {
+	public void QuitBrowsers() throws InterruptedException {
 		//Quit Driver when all Test Cases completed
+		Thread.sleep(2000);
 		driver.quit();
 	}
 	
@@ -72,8 +73,9 @@ public class WBase {
 	}
 	
 	@AfterClass
-	public void CloseBrowser() {
+	public void CloseBrowser() throws InterruptedException {
 		System.out.println("Test Case Code Executed");
+		Thread.sleep(2000);
 		driver.close();
 	}
 

@@ -34,6 +34,8 @@ public class wLaunchMemberseInstagramTest extends WBase {
 	 	 Assert.assertEquals(Text,"memberse.app");
 	                }
 	         }
+		 driver.close();
+		 driver.switchTo().window(mainWindowHandle);
 	}
 
 }

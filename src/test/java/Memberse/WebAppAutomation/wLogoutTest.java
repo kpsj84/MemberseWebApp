@@ -24,13 +24,13 @@ public class wLogoutTest extends WBase {
 		Thread.sleep(10000);
 		
 		driver.findElement(By.xpath("//a[text()='Creator']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//span[@class='shadow-thick cursor-pointer inline-flex items-center p-0.5 rounded-full text-sm bg-pink-2000 text-neutral-1000']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//p[text()='Log out']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//span[text()='Confirm']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		String verifyUrl = driver.getCurrentUrl();
 		System.out.println(verifyUrl);

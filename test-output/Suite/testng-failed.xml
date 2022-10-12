@@ -15,6 +15,24 @@
           <include name="InvokeCapabilities"/>
         </methods>
       </class> <!-- Memberse.WebAppAutomation.wLoginWithGoogleTest -->
+      <class name="Memberse.WebAppAutomation.wRegisterFormValidationTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="wRegisterFormValidationTestCase"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wRegisterFormValidationTest -->
+      <class name="Memberse.WebAppAutomation.wLogintTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="wLogintTestCase"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wLogintTest -->
       <class name="Memberse.WebAppAutomation.wLoginwithAppleTest">
         <methods>
           <include name="wLoginWithAppleTestCase"/>
@@ -33,6 +51,24 @@
           <include name="InvokeCapabilities"/>
         </methods>
       </class> <!-- Memberse.WebAppAutomation.wDeleteAccountTest -->
+      <class name="Memberse.WebAppAutomation.wLoginWithFacebookTest">
+        <methods>
+          <include name="wLoginWithFacebookTestCase"/>
+          <include name="CloseBrowser"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wLoginWithFacebookTest -->
+      <class name="Memberse.WebAppAutomation.wLoginFormValidationTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="wLoginFormValidationTestCase"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wLoginFormValidationTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

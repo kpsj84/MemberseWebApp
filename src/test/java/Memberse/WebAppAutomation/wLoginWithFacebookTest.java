@@ -19,7 +19,7 @@ public class wLoginWithFacebookTest extends WBase {
 		wp.LoginButton().click();
 		
 		LoginPage lp = new LoginPage(driver);
-		Thread.sleep(13000);
+		Thread.sleep(17000);
 		
 		lp.FacebookLogin().click();
 		Thread.sleep(3000);

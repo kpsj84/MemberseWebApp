@@ -37,7 +37,8 @@ public class wLaunchMemberseLinkedInTest extends WBase {
 	      	 	Assert.assertEquals(Text,"Memberse");		
 	                }
 	        }
+		  driver.close();
+		  driver.switchTo().window(mainWindowHandle);
 	}
 	
-
 }
