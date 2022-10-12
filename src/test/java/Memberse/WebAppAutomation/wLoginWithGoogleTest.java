@@ -17,7 +17,7 @@ public class wLoginWithGoogleTest extends WBase{
 		wp.LoginButton().click();
 		
 		LoginPage lp = new LoginPage(driver);
-		Thread.sleep(13000);
+		Thread.sleep(17000);
 		//Store the ID of the original window
 		String originalWindow = driver.getWindowHandle();
 		lp.GoogleLogin().click();
@@ -64,7 +64,10 @@ public class wLoginWithGoogleTest extends WBase{
 		finally
 		{
 			System.out.println("Google Login Test Case Completed");
+			driver.close();
 		}
+		
+		driver.switchTo().window(originalWindow);
 	}
 
 }

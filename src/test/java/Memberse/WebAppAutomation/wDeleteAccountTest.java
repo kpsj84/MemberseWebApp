@@ -45,7 +45,7 @@ public class wDeleteAccountTest extends WBase {
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//p[text()='Delete Account']")).click();
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[@id=\"__next\"]/div[2]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/div[2]/div/button/span")).click();
+		driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/div[2]/div/button/span")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//span[text()='Confirm']")).click();
 		Thread.sleep(6000);

@@ -34,6 +34,8 @@ public class wLaunchMemberseTikTokTest extends WBase {
 	 	 Assert.assertEquals(Text,"TikTok");
 	                }
 	         }
+	     driver.close();
+	     driver.switchTo().window(mainWindowHandle);
 	}
 
 }
