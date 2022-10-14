@@ -21,5 +21,19 @@ WebDriver localDriver;
 	public WebElement ProfilePic() {
 		return ProfilePic;
 	}
+	
+	@FindBy(xpath="//a[text()='Account']")
+	private WebElement AccountMenu;
+	
+	public WebElement AccountMenu() {
+		return AccountMenu;
+	}
+	
+	@FindBy(xpath="//a[text()='Explore']")
+	private WebElement ExploreMenu;
+	
+	public WebElement ExploreMenu() {
+		return ExploreMenu;
+	}
 
 }

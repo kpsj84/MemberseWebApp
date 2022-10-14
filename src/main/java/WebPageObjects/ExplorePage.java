@@ -77,5 +77,12 @@ public class ExplorePage {
 	    public WebElement PrivacyLink() {
 	        return PrivacyLink;
 	    }
+	    
+	    @FindBy(xpath="//input[@name='name']")
+	    private WebElement SearchField;
+
+	    public WebElement SearchField() {
+	        return SearchField;
+	    }
 
 }

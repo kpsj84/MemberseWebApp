@@ -26,6 +26,10 @@
       <class name="Memberse.WebAppAutomation.wLaunchMemberseInstagramTest"/>
       <class name="Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest"/>
       <class name="Memberse.WebAppAutomation.wLaunchMemberseTikTokTest"/>
+      <class name="Memberse.WebAppAutomation.wTermsAndConditionsTest"/>
+      <class name="Memberse.WebAppAutomation.wCommunityGuidelinesTest"/>
+      <class name="Memberse.WebAppAutomation.wPrivacyPolicyTest"/>
+      <class name="Memberse.WebAppAutomation.wSearchCreatorTest"/>
     </classes>
     
   </test> <!-- Test -->
