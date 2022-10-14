@@ -13,7 +13,7 @@ import WebPageObjects.ExplorePage;
 public class wCommunityGuidelinesTest extends WBase {
 	
 	@Test
-	public void wTermsAndConditionsTestCase()throws InterruptedException{
+	public void wCommunityGuidelinesTestCase()throws InterruptedException{
 		Thread.sleep(10000);
 
 		ExplorePage gl = new ExplorePage(driver);
