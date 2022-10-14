@@ -6,69 +6,24 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wLoginWithGoogleTest">
+      <class name="Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest">
         <methods>
-          <include name="wLoginWithGoogleTestCase"/>
+          <include name="CloseBrowser"/>
+          <include name="wLaunchMemberseLinkedInTestCase"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest -->
+      <class name="Memberse.WebAppAutomation.wLaunchMemberseTikTokTest">
+        <methods>
+          <include name="wLaunchMemberseTikTokTestCase"/>
           <include name="CloseBrowser"/>
           <include name="startDriver"/>
           <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wLoginWithGoogleTest -->
-      <class name="Memberse.WebAppAutomation.wRegisterFormValidationTest">
-        <methods>
-          <include name="CloseBrowser"/>
-          <include name="wRegisterFormValidationTestCase"/>
-          <include name="startDriver"/>
-          <include name="QuitBrowsers"/>
-          <include name="InvokeCapabilities"/>
-        </methods>
-      </class> <!-- Memberse.WebAppAutomation.wRegisterFormValidationTest -->
-      <class name="Memberse.WebAppAutomation.wLogintTest">
-        <methods>
-          <include name="CloseBrowser"/>
-          <include name="wLogintTestCase"/>
-          <include name="startDriver"/>
-          <include name="QuitBrowsers"/>
-          <include name="InvokeCapabilities"/>
-        </methods>
-      </class> <!-- Memberse.WebAppAutomation.wLogintTest -->
-      <class name="Memberse.WebAppAutomation.wLoginwithAppleTest">
-        <methods>
-          <include name="wLoginWithAppleTestCase"/>
-          <include name="CloseBrowser"/>
-          <include name="startDriver"/>
-          <include name="QuitBrowsers"/>
-          <include name="InvokeCapabilities"/>
-        </methods>
-      </class> <!-- Memberse.WebAppAutomation.wLoginwithAppleTest -->
-      <class name="Memberse.WebAppAutomation.wDeleteAccountTest">
-        <methods>
-          <include name="CloseBrowser"/>
-          <include name="wDeleteAccountTestCase"/>
-          <include name="startDriver"/>
-          <include name="QuitBrowsers"/>
-          <include name="InvokeCapabilities"/>
-        </methods>
-      </class> <!-- Memberse.WebAppAutomation.wDeleteAccountTest -->
-      <class name="Memberse.WebAppAutomation.wLoginWithFacebookTest">
-        <methods>
-          <include name="wLoginWithFacebookTestCase"/>
-          <include name="CloseBrowser"/>
-          <include name="startDriver"/>
-          <include name="QuitBrowsers"/>
-          <include name="InvokeCapabilities"/>
-        </methods>
-      </class> <!-- Memberse.WebAppAutomation.wLoginWithFacebookTest -->
-      <class name="Memberse.WebAppAutomation.wLoginFormValidationTest">
-        <methods>
-          <include name="CloseBrowser"/>
-          <include name="wLoginFormValidationTestCase"/>
-          <include name="startDriver"/>
-          <include name="QuitBrowsers"/>
-          <include name="InvokeCapabilities"/>
-        </methods>
-      </class> <!-- Memberse.WebAppAutomation.wLoginFormValidationTest -->
+      </class> <!-- Memberse.WebAppAutomation.wLaunchMemberseTikTokTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
