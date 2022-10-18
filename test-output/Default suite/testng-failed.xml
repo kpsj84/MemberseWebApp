@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest">
+      <class name="Memberse.WebAppAutomation.wUserInfoTest">
         <methods>
           <include name="CloseBrowser"/>
-          <include name="wLaunchMemberseLinkedInTestCase"/>
+          <include name="wUserInfoTestCase"/>
           <include name="startDriver"/>
           <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest -->
+      </class> <!-- Memberse.WebAppAutomation.wUserInfoTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
