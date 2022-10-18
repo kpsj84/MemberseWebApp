@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-14T17:00:18 IST" name="Default suite" finished-at="2022-10-14T17:01:38 IST" duration-ms="80214">
+  <suite started-at="2022-10-18T09:45:42 IST" name="Default suite" finished-at="2022-10-18T09:46:36 IST" duration-ms="54472">
     <groups>
     </groups>
-    <test started-at="2022-10-14T17:00:18 IST" name="Default test" finished-at="2022-10-14T17:01:38 IST" duration-ms="80214">
-      <class name="Memberse.WebAppAutomation.wLaunchMemberseInstagramTest">
-        <test-method is-config="true" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wLaunchMemberseInstagramTest@7d9e8ef7]" started-at="2022-10-14T17:00:18 IST" name="InvokeCapabilities" finished-at="2022-10-14T17:00:18 IST" duration-ms="26" status="PASS">
+    <test started-at="2022-10-18T09:45:42 IST" name="Default test" finished-at="2022-10-18T09:46:36 IST" duration-ms="54472">
+      <class name="Memberse.WebAppAutomation.wUserInfoTest">
+        <test-method is-config="true" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wUserInfoTest@f107c50]" started-at="2022-10-18T09:45:42 IST" name="InvokeCapabilities" finished-at="2022-10-18T09:45:42 IST" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvokeCapabilities -->
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLaunchMemberseInstagramTest@7d9e8ef7]" started-at="2022-10-14T17:00:18 IST" name="startDriver" finished-at="2022-10-14T17:00:34 IST" duration-ms="15741" status="PASS">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wUserInfoTest@f107c50]" started-at="2022-10-18T09:45:42 IST" name="startDriver" finished-at="2022-10-18T09:45:46 IST" duration-ms="3822" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="wLaunchMemberseInstagramTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLaunchMemberseInstagramTest@7d9e8ef7]" started-at="2022-10-14T17:00:34 IST" name="wLaunchMemberseInstagramTestCase" finished-at="2022-10-14T17:01:34 IST" duration-ms="60163" status="PASS">
+        <test-method signature="wUserInfoTestCase()[pri:0, instance:Memberse.WebAppAutomation.wUserInfoTest@f107c50]" started-at="2022-10-18T09:45:46 IST" name="wUserInfoTestCase" finished-at="2022-10-18T09:46:32 IST" duration-ms="46327" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wLaunchMemberseInstagramTestCase -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLaunchMemberseInstagramTest@7d9e8ef7]" started-at="2022-10-14T17:01:34 IST" name="CloseBrowser" finished-at="2022-10-14T17:01:36 IST" duration-ms="2209" status="PASS">
+        </test-method> <!-- wUserInfoTestCase -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wUserInfoTest@f107c50]" started-at="2022-10-18T09:46:32 IST" name="CloseBrowser" finished-at="2022-10-18T09:46:34 IST" duration-ms="2195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="QuitBrowsers()[pri:0, instance:Memberse.WebAppAutomation.wLaunchMemberseInstagramTest@7d9e8ef7]" started-at="2022-10-14T17:01:36 IST" name="QuitBrowsers" finished-at="2022-10-14T17:01:38 IST" duration-ms="2021" status="PASS">
+        <test-method is-config="true" signature="QuitBrowsers()[pri:0, instance:Memberse.WebAppAutomation.wUserInfoTest@f107c50]" started-at="2022-10-18T09:46:34 IST" name="QuitBrowsers" finished-at="2022-10-18T09:46:36 IST" duration-ms="2072" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QuitBrowsers -->
-      </class> <!-- Memberse.WebAppAutomation.wLaunchMemberseInstagramTest -->
+      </class> <!-- Memberse.WebAppAutomation.wUserInfoTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
