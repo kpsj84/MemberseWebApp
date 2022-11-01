@@ -37,9 +37,12 @@ public class wMembershipsTest extends WBase {
 		
 		try
 		{
-			String verifyText = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/div[2]/div/div/div/div/ul[1]/li/div")).getText();
-			System.out.println(verifyText);
-			Assert.assertEquals(verifyText, "No memberships were found.");
+			String verifyText1 = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/div[2]/div/div/div/div/ul[1]/li/div")).getText();
+			System.out.println(verifyText1);
+			if(verifyText1 == "No memberships were found.")
+			{
+				Assert.assertEquals(verifyText1, "No memberships were found.");	
+			}
 		}
 		catch(Exception e)
 		{
@@ -62,9 +65,12 @@ public class wMembershipsTest extends WBase {
 		try
 		{
 			Thread.sleep(2000);
-			String verifyText = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/div[2]/div/div/div/div/ul[2]/li/div")).getText();
-			System.out.println(verifyText);
-			Assert.assertEquals(verifyText, "No memberships were found.");
+			String verifyText2 = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/div[2]/div/div/div/div/ul[2]/li/div")).getText();
+			System.out.println(verifyText2);
+			if(verifyText2 == "No memberships were found.")
+			{
+				Assert.assertEquals(verifyText2, "No memberships were found.");	
+			}
 		}
 		catch(Exception e)
 		{

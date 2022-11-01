@@ -32,6 +32,9 @@
       <class name="Memberse.WebAppAutomation.wSearchCreatorTest"/>
       <class name="Memberse.WebAppAutomation.wUserInfoTest"/>
       <class name="Memberse.WebAppAutomation.wMembershipsTest"/>
+      <class name="Memberse.WebAppAutomation.wWatchedHistoryTest"/>
+      <class name="Memberse.WebAppAutomation.wChangePasswordTest"/>
+      <class name="Memberse.WebAppAutomation.wBecomeCreatorTest"/>
     </classes>
     
   </test> <!-- Test -->

@@ -27,6 +27,20 @@ public class AccountMenuPage {
 	public WebElement MembershipsSubMenu() {
 		return MembershipsSubMenu;
 	}
+	
+	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[1]/div/div[4]/div[2]/div/p[1]")
+    private WebElement ChangePasswordSubMenu;
+
+    public WebElement ChangePasswordSubMenu() {
+    	return ChangePasswordSubMenu;
+    }
+    
+    @FindBy(xpath="//*[text()='Watched history']")
+    private WebElement WatchedHistorySubMenu ;
+
+    public WebElement WatchedHistorySubMenu() {
+    	return WatchedHistorySubMenu;
+}
 			
 
 }
