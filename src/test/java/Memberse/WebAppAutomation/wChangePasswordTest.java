@@ -44,7 +44,7 @@ public class wChangePasswordTest extends WBase {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		String Text = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/div[6]/div/div/div/div[2]")).getText();
 	    System.out.println(Text);
-	    Assert.assertEquals(Text,"Operation succesfully completed.");
+	    Assert.assertEquals(Text,"Operation succesfully completed");
     }
 
 }
