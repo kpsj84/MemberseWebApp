@@ -18,11 +18,11 @@ public class wSmokeTest extends WBase{
 		WebElement searchField = driver.findElement(By.xpath("//*[@id='name']"));
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click()", searchField);
-		String testText = "Smoke Testing is in Progress";
+		String testText = "kqatest";
 		searchField.sendKeys(testText);
 		
-		driver.findElement(By.xpath("//span[text()='Trending']")).click();
-		Thread.sleep(7000);
+		//driver.findElement(By.xpath("//span[text()='Trending']")).click();
+		Thread.sleep(15000);
 		int Value = driver.findElements(By.className("space-y-2")).size();
 		if(Value == 0)
 		{

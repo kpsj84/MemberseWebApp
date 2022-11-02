@@ -19,6 +19,7 @@ public class wLogintTest extends WBase{
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys("kqatestc3@yopmail.com");
 		lp.Password().sendKeys("kqatestc3");
+		Thread.sleep(2000);
 		lp.Login().click();
 		Thread.sleep(20000);
 		

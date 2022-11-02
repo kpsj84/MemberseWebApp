@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wBecomeCreatorTest">
+      <class name="Memberse.WebAppAutomation.wSearchCreatorTest">
         <methods>
-          <include name="WBecomeCreatorTestCase"/>
+          <include name="wSearchCreatorTestCase"/>
           <include name="CloseBrowser"/>
           <include name="startDriver"/>
           <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wBecomeCreatorTest -->
+      </class> <!-- Memberse.WebAppAutomation.wSearchCreatorTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
