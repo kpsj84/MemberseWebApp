@@ -33,14 +33,14 @@ public class wSearchCreatorTest extends WBase {
 		
 		ExplorePage ep = new ExplorePage(driver);
 		ep.SearchField().sendKeys("kqatest");
-		Thread.sleep(10000);                      
+		Thread.sleep(15000);                      
 	    String Text= driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[3]/main/div/div/div[2]/div/div/div/div[3]/a/div/div[2]/div/div/p[1]")).getText();
 	    System.out.println(Text);
-	    Assert.assertEquals(Text,"kqatestcreator's Channel");    
+	    Assert.assertEquals(Text,"kqatestc2's Channel");    
 	   
 	    String Text1= driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div[2]/div/div/div/div[3]/a/div/div[2]/div/div/p[2]")).getText();
 	    System.out.println(Text1);
-	    Assert.assertEquals(Text1,"@kqatestcreator");
+	    Assert.assertEquals(Text1,"@kqatestc2");
 	     
 	    int verifyResult = driver.findElements(By.xpath("//*[@class='space-y-2']/div")).size();
         System.out.println(verifyResult);

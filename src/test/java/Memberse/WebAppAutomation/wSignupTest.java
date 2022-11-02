@@ -28,7 +28,7 @@ public class wSignupTest extends WBase {
 		sp.Password().sendKeys(password);
 		sp.confirmPassword().sendKeys(password);
 		sp.SignupButton().click();
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		
 		String verifyText = driver.findElement(By.xpath("//p[text()='Your account has been successfully created.']")).getText(); 
 		System.out.println(verifyText);
