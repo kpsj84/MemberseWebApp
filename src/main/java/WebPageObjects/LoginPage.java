@@ -29,6 +29,13 @@ public class LoginPage {
 		return Password;
 	}
 	
+	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div/div/div/form/div[2]/div[2]/button/span")
+	private WebElement ShowPassword;
+	
+	public WebElement ShowPassword() {
+		return ShowPassword;
+	}
+	
 	@FindBy(xpath="(//span[text()='Login'])[2]")
 	private WebElement Login;
 	
