@@ -35,6 +35,15 @@
       <class name="Memberse.WebAppAutomation.wWatchedHistoryTest"/>
       <class name="Memberse.WebAppAutomation.wChangePasswordTest"/>
       <class name="Memberse.WebAppAutomation.wBecomeCreatorTest"/>
+      <class name="Memberse.WebAppAutomation.wCreatorEditInfoTest"/>
+      <class name="Memberse.WebAppAutomation.wCommunityPriceTest"/>
+      <class name="Memberse.WebAppAutomation.wPostHistoryPlayTest"/>
+      <class name="Memberse.WebAppAutomation.wPostHistoryEditTest"/>
+      <class name="Memberse.WebAppAutomation.wPostHistoryDeleteTest"/>
+      <class name="Memberse.WebAppAutomation.wMyFansListTest"/>
+      <class name="Memberse.WebAppAutomation.wCreateAndDeletePlaylistTest"/>
+      <class name="Memberse.WebAppAutomation.wAddMediaAndPlayPlaylistTest"/>
+      <class name="Memberse.WebAppAutomation.wPlaylistEditTest"/>
     </classes>
     
   </test> <!-- Test -->
