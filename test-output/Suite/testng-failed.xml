@@ -6,24 +6,132 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest">
+      <class name="Memberse.WebAppAutomation.wPostHistoryEditTest">
         <methods>
           <include name="CloseBrowser"/>
-          <include name="wLaunchMemberseLinkedInTestCase"/>
+          <include name="wPostHistoryEditTestCase"/>
           <include name="startDriver"/>
           <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest -->
-      <class name="Memberse.WebAppAutomation.wLaunchMemberseTikTokTest">
+      </class> <!-- Memberse.WebAppAutomation.wPostHistoryEditTest -->
+      <class name="Memberse.WebAppAutomation.wCreatorEditInfoTest">
         <methods>
-          <include name="wLaunchMemberseTikTokTestCase"/>
+          <include name="CloseBrowser"/>
+          <include name="wCreatorEditInfoTestCase"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wCreatorEditInfoTest -->
+      <class name="Memberse.WebAppAutomation.wAddMediaAndPlayPlaylistTest">
+        <methods>
+          <include name="wAddMediaAndPlayPlaylistTestCase"/>
           <include name="CloseBrowser"/>
           <include name="startDriver"/>
           <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wLaunchMemberseTikTokTest -->
+      </class> <!-- Memberse.WebAppAutomation.wAddMediaAndPlayPlaylistTest -->
+      <class name="Memberse.WebAppAutomation.wLaunchMemberseInstagramTest">
+        <methods>
+          <include name="wLaunchMemberseInstagramTestCase"/>
+          <include name="CloseBrowser"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wLaunchMemberseInstagramTest -->
+      <class name="Memberse.WebAppAutomation.wSearchCreatorTest">
+        <methods>
+          <include name="wSearchCreatorTestCase"/>
+          <include name="CloseBrowser"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wSearchCreatorTest -->
+      <class name="Memberse.WebAppAutomation.wUserInfoTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="wUserInfoTestCase"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wUserInfoTest -->
+      <class name="Memberse.WebAppAutomation.wLogintTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="wLogintTestCase"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wLogintTest -->
+      <class name="Memberse.WebAppAutomation.wCreateAndDeletePlaylistTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="wCreateAndDeletePlaylistTestCase"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wCreateAndDeletePlaylistTest -->
+      <class name="Memberse.WebAppAutomation.wDeleteAccountTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="wDeleteAccountTestCase"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wDeleteAccountTest -->
+      <class name="Memberse.WebAppAutomation.wLogoutTest">
+        <methods>
+          <include name="wLogoutTestCase"/>
+          <include name="CloseBrowser"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wLogoutTest -->
+      <class name="Memberse.WebAppAutomation.wPostHistoryDeleteTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="startDriver"/>
+          <include name="wPostHistoryDeleteTestCase"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wPostHistoryDeleteTest -->
+      <class name="Memberse.WebAppAutomation.wPostHistoryPlayTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="wPostHistoryPlayTestCase"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wPostHistoryPlayTest -->
+      <class name="Memberse.WebAppAutomation.wBecomeCreatorTest">
+        <methods>
+          <include name="WBecomeCreatorTestCase"/>
+          <include name="CloseBrowser"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wBecomeCreatorTest -->
+      <class name="Memberse.WebAppAutomation.wChangePasswordTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="wChangePasswordTestCase"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wChangePasswordTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
