@@ -16,7 +16,7 @@ public class wSearchCreatorTest extends WBase {
 	
 	@Test
 	public void wSearchCreatorTestCase()throws InterruptedException{
-		Thread.sleep(15000);
+		Thread.sleep(7000);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
@@ -25,22 +25,22 @@ public class wSearchCreatorTest extends WBase {
 		lp.Email().sendKeys("kqatestc3@yopmail.com");
 		lp.Password().sendKeys("kqatestc3");
 		lp.Login().click();
-		Thread.sleep(20000);
+		Thread.sleep(10000);
 		 
 		HomePage hp = new HomePage(driver);
 		hp.ExploreMenu().click();
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		
 		ExplorePage ep = new ExplorePage(driver);
 		ep.SearchField().sendKeys("kqatest");
-		Thread.sleep(15000);                      
-	    String Text= driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[3]/main/div/div/div[2]/div/div/div/div[3]/a/div/div[2]/div/div/p[1]")).getText();
+		Thread.sleep(10000);                      
+	    String Text= driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div[2]/div/div/div/div[1]/a/div/div[2]/div/div/p[1]")).getText();
 	    System.out.println(Text);
-	    Assert.assertEquals(Text,"kqatestc2's Channel");    
+	    Assert.assertEquals(Text,"kqatestc4's Community");    
 	   
-	    String Text1= driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div[2]/div/div/div/div[3]/a/div/div[2]/div/div/p[2]")).getText();
+	    String Text1=driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div[2]/div/div/div/div[1]/a/div/div[2]/div/div/p[2]")).getText();
 	    System.out.println(Text1);
-	    Assert.assertEquals(Text1,"@kqatestc2");
+	    Assert.assertEquals(Text1,"@kqatestc4");
 	     
 	    int verifyResult = driver.findElements(By.xpath("//*[@class='space-y-2']/div")).size();
         System.out.println(verifyResult);

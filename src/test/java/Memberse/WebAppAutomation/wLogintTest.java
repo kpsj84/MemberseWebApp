@@ -1,6 +1,7 @@
 package Memberse.WebAppAutomation;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,7 +12,7 @@ public class wLogintTest extends WBase{
 	
 	@Test
 	public void wLogintTestCase() throws InterruptedException {
-		Thread.sleep(15000);
+		Thread.sleep(7000);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
@@ -19,15 +20,16 @@ public class wLogintTest extends WBase{
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys("kqatestc3@yopmail.com");
 		lp.Password().sendKeys("kqatestc3");
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		lp.Login().click();
-		Thread.sleep(20000);
+		Thread.sleep(5000);
 		
 		driver.findElement(By.xpath("//a[text()='Account']")).click();
-		Thread.sleep(3000);
-		String verifyText = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div/div[2]/div/div[1]/form/div[2]/div/label")).getText();
-		System.out.println(verifyText);
-		Assert.assertEquals(verifyText, "First name");
+		Thread.sleep(1000);
+		WebElement verifyText = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div.flex-grow > div > div:nth-child(3) > form > div:nth-child(1) > div > input"));
+		String chkText = verifyText.getAttribute("value");
+		System.out.println(chkText);
+		Assert.assertEquals(chkText, "kqatestc3@yopmail.com");
 		System.out.println("Test Case Completed");
 	}
 

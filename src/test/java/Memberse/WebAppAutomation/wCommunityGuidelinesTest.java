@@ -14,11 +14,11 @@ public class wCommunityGuidelinesTest extends WBase {
 	
 	@Test
 	public void wCommunityGuidelinesTestCase()throws InterruptedException{
-		Thread.sleep(10000);
+		Thread.sleep(7000);
 
 		ExplorePage gl = new ExplorePage(driver);
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		gl.GuidelinesLink().click();
+		Thread.sleep(3000);
 
 		String mainWindowHandle = driver.getWindowHandle();
 	    Set<String> allWindowHandles = driver.getWindowHandles();

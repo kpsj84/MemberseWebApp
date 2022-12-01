@@ -13,10 +13,9 @@ public class wSignupTest extends WBase {
 	
 	@Test
 	public void wSignupTestCase() throws InterruptedException {
-		Thread.sleep(15000);
+		Thread.sleep(7000);
 		
 		WelcomePage wp = new WelcomePage(driver);
-		Thread.sleep(2000);
 		wp.SignupButtton().click();
 		
 		String email = getSaltString();
@@ -28,7 +27,7 @@ public class wSignupTest extends WBase {
 		sp.Password().sendKeys(password);
 		sp.confirmPassword().sendKeys(password);
 		sp.SignupButton().click();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		
 		String verifyText = driver.findElement(By.xpath("//p[text()='Your account has been successfully created.']")).getText(); 
 		System.out.println(verifyText);

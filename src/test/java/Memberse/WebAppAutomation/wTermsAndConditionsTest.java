@@ -14,11 +14,11 @@ public class wTermsAndConditionsTest extends WBase{
 	
 	@Test
 	public void wTermsAndConditionsTestCase()throws InterruptedException{
-		Thread.sleep(10000);
+		Thread.sleep(7000);
 
 		ExplorePage tm = new ExplorePage(driver);
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		tm.TermLink().click();
+		Thread.sleep(3000);
 
 		 String mainWindowHandle = driver.getWindowHandle();
 	     Set<String> allWindowHandles = driver.getWindowHandles();

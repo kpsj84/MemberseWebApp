@@ -11,15 +11,15 @@ public class wLoginwithAppleTest extends WBase {
 	
 	@Test
 	public void wLoginWithAppleTestCase() throws InterruptedException {
-		Thread.sleep(15000);
+		Thread.sleep(7000);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
+		Thread.sleep(3000);
 		
 		LoginPage lp = new LoginPage(driver);
-		Thread.sleep(17000);
 		lp.AppleLogin().click();
-		Thread.sleep(25000);
+		Thread.sleep(2000);
 		
 		String Text1 = driver.findElement(By.xpath("//*[@id=\"ac-localnav\"]/div/div[2]/div[1]/span")).getText(); 
 		Assert.assertEquals(Text1, "Apple ID");

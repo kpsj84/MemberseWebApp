@@ -11,15 +11,15 @@ public class wLoginFormValidationTest extends WBase{
 	
 	@Test
 	public void wLoginFormValidationTestCase() throws InterruptedException {
-		Thread.sleep(15000);
+		Thread.sleep(7000);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.Login().click();
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 		
 		String msg1 = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div/div/div/div/div/ul/li[1]/span[2]")).getText();  
 		Assert.assertEquals(msg1, "Email is a required field.");
@@ -30,11 +30,11 @@ public class wLoginFormValidationTest extends WBase{
 		System.out.println(msg2);
 		
 		lp.Email().sendKeys("abc@abc");
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		System.out.println("After Email text box have value, Validation message goes off");
 		
 		lp.Password().sendKeys("123456");
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		System.out.println("After password field have value, Validation message goes off");
 		
 		System.out.println("Email form validations are working fine");
