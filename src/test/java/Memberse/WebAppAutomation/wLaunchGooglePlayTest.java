@@ -10,7 +10,7 @@ public class wLaunchGooglePlayTest extends WBase {
 	
 	@Test
 	public void wLaunchGooglePlayTestCase() throws InterruptedException {
-		Thread.sleep(15000);
+		Thread.sleep(7000);
 		
 		String originalWindow = driver.getWindowHandle();
 		

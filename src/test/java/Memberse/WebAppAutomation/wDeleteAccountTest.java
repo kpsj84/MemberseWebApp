@@ -14,10 +14,9 @@ public class wDeleteAccountTest extends WBase {
 	
 	@Test
 	public void wDeleteAccountTestCase() throws InterruptedException {
-		Thread.sleep(15000);
+		Thread.sleep(7000);
 		
 		WelcomePage wp = new WelcomePage(driver);
-		Thread.sleep(2000);
 		wp.SignupButtton().click();
 		
 		String email = getSaltString();
@@ -37,18 +36,20 @@ public class wDeleteAccountTest extends WBase {
 		lp.Email().sendKeys(email);
 		lp.Password().sendKeys(password);
 		lp.Login().click();
-		Thread.sleep(15000);
+		Thread.sleep(10000);
 		
+		driver.findElement(By.xpath("//*[text()='As a Creator']")).click();
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//a[text()='Creator']")).click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[text()='Account']")).click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//p[text()='Delete Account']")).click();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/div[2]/div/button/span")).click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[2]/div[2]/div/button")).click();
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//span[text()='Confirm']")).click();
-		Thread.sleep(6000);
+		Thread.sleep(5000);
 		
 		String verifyUrl = driver.getCurrentUrl();
 		System.out.println(verifyUrl);

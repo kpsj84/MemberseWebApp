@@ -10,7 +10,7 @@ public class wLaunchAppStoreTest extends WBase {
 	
 	@Test
 	public void wLaunchAppStoreTestCase() throws InterruptedException {
-		Thread.sleep(15000);
+		Thread.sleep(7000);
 		
 		String originalWindow = driver.getWindowHandle();
 		

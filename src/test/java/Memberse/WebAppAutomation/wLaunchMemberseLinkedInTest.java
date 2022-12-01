@@ -2,7 +2,6 @@ package Memberse.WebAppAutomation;
 
 import java.util.Iterator;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -14,11 +13,11 @@ public class wLaunchMemberseLinkedInTest extends WBase {
 	
 	@Test
 	public void wLaunchMemberseLinkedInTestCase()throws InterruptedException{
-		Thread.sleep(10000);
+		Thread.sleep(7000);
 
 		ExplorePage li = new ExplorePage(driver);
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		li.LinkedinIcon().click();
+		Thread.sleep(3000);
 		
 		 String mainWindowHandle = driver.getWindowHandle();
 	        Set<String> allWindowHandles = driver.getWindowHandles();

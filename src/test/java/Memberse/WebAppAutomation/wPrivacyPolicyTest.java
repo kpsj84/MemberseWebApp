@@ -14,11 +14,11 @@ public class wPrivacyPolicyTest extends WBase {
 	
 	@Test
 	public void wPrivacyPolicyTestCase()throws InterruptedException{
-		Thread.sleep(10000);
+		Thread.sleep(7000);
 
 		ExplorePage py = new ExplorePage(driver);
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		py.PrivacyLink().click();
+		Thread.sleep(3000);
 
 		 String mainWindowHandle = driver.getWindowHandle();
 	     Set<String> allWindowHandles = driver.getWindowHandles();
