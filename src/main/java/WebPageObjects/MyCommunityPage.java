@@ -21,7 +21,7 @@ public class MyCommunityPage {
 		return MyCommunitySubMenu;
 	}
 	
-	@FindBy(css="#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div.flex-grow > div > div:nth-child(1) > div > div.px-4.rounded-lg.text-sm.sm\\:text-base.font-medium.cursor-pointer.flex.items-center.justify-center.py-2.bg-neutral-3000.text-neutral-9000")
+	@FindBy(css="#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div.flex-grow > div > div.flex.justify-between > div > div > div.px-4.rounded-lg.text-sm.sm\\:text-base.font-medium.cursor-pointer.flex.items-center.justify-center.py-2.bg-neutral-3000.text-neutral-9000")
 	private WebElement EditInfoTab;
 	
 	public WebElement EditInfoTab(){

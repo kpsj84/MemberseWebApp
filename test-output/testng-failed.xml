@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wUserInfoTest">
+      <class name="Memberse.WebAppAutomation.wAddMediaAndPlayPlaylistTest">
         <methods>
+          <include name="wAddMediaAndPlayPlaylistTestCase"/>
           <include name="CloseBrowser"/>
-          <include name="wUserInfoTestCase"/>
           <include name="startDriver"/>
           <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wUserInfoTest -->
+      </class> <!-- Memberse.WebAppAutomation.wAddMediaAndPlayPlaylistTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

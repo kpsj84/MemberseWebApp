@@ -22,10 +22,10 @@ public class wCreateAndDeletePlaylistTest extends WBase {
 	
 	@Test
 	public void wCreateAndDeletePlaylistTestCase()throws InterruptedException, AWTException {
-		Thread.sleep(8000);
+		Thread.sleep(7000);
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys("kqatestc3@yopmail.com");
@@ -33,15 +33,15 @@ public class wCreateAndDeletePlaylistTest extends WBase {
 		Thread.sleep(1000);
 	    lp.ShowPassword().click();
 		lp.Login().click();
-	    Thread.sleep(15000);  
+	    Thread.sleep(10000);  
 	    
 	    HomePage hp = new HomePage(driver);
 	    hp.CreatorMenu().click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
     	
 		PlayListPage plp = new PlayListPage(driver);
         plp.PlayListSubMenu().click();
-        Thread.sleep(7000);
+        Thread.sleep(5000);
         
         plp.createPlayList().click();
         Thread.sleep(3000);
@@ -56,7 +56,7 @@ public class wCreateAndDeletePlaylistTest extends WBase {
         StringSelection str = new StringSelection(fl.getAbsolutePath());
         //StringSelection str = new StringSelection("C:\\Users\\QA\\Desktop\\MusicFile.jpg");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
-        Thread.sleep(1000);
+        Thread.sleep(5000);
         
         Robot rb = new Robot();
         //This required as in Automation, Focus loose from open file upload window
@@ -65,6 +65,7 @@ public class wCreateAndDeletePlaylistTest extends WBase {
         rb.keyRelease(KeyEvent.VK_META);
         rb.keyRelease(KeyEvent.VK_TAB);
         rb.delay(500);
+        
         rb.keyPress(KeyEvent.VK_META);
         rb.keyPress(KeyEvent.VK_TAB);
         rb.keyRelease(KeyEvent.VK_META);
@@ -105,7 +106,7 @@ public class wCreateAndDeletePlaylistTest extends WBase {
 		Thread.sleep(2000);
 		driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 		plp.playListDeleteButton().click();
-		Thread.sleep(8000);
+		Thread.sleep(5000);
 		plp.deleteConfirmButton().click();
 		Thread.sleep(5000);
 		System.out.println("PlayList with Name as :- " + "Autolist-" + autotext + "deleted too.");

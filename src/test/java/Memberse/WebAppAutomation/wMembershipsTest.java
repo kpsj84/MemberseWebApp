@@ -16,7 +16,7 @@ public class wMembershipsTest extends WBase {
 	
 	@Test
 	public void wMembershipsTestCase() throws InterruptedException {
-		Thread.sleep(15000);
+		Thread.sleep(7000);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
@@ -25,23 +25,25 @@ public class wMembershipsTest extends WBase {
 		lp.Email().sendKeys("kqatestc3@yopmail.com");
 		lp.Password().sendKeys("kqatestc3");
 		lp.Login().click();
-		Thread.sleep(17000);
+		Thread.sleep(7000);
 		
 		HomePage hp = new HomePage(driver);
 		hp.AccountMenu().click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 		AccountMenuPage amp = new AccountMenuPage(driver);
 		amp.MembershipsSubMenu().click();
 		Thread.sleep(5000);
 		
+		String verifyText1 = null;
 		try
 		{
-			String verifyText1 = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/div[2]/div/div/div/div/ul[1]/li/div")).getText();
+			verifyText1 = driver.findElement(By.xpath("//*[@class='py-4 space-y-4']/li")).getText();
 			System.out.println(verifyText1);
-			if(verifyText1 == "No memberships were found.")
+			if(verifyText1.equalsIgnoreCase("No memberships were found."))
 			{
 				Assert.assertEquals(verifyText1, "No memberships were found.");	
+				System.out.println("Active Memberships List is Empty");
 			}
 		}
 		catch(Exception e)
@@ -50,26 +52,36 @@ public class wMembershipsTest extends WBase {
 		}
 		finally
 		{
-			List<WebElement> verifyActive = driver.findElements(By.xpath("(//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/div[2]/div/div/div/div/ul[1]/li/div)/div"));
-			int msglog = verifyActive.size()/2;
-			if(msglog <1)
+			if(verifyText1.equalsIgnoreCase("No memberships were found."))
 			{
 				System.out.println("Active Memberships List is Empty");
 			}
 			else
 			{
+				List<WebElement> verifyActive = driver.findElements(By.xpath("//*[@class='py-4 space-y-4']/li"));
+				int msglog = verifyActive.size()-1;
+				System.out.println(msglog);
 				System.out.println("Active Memberships List Count is : " + msglog);
 			}
 		}
 		
+		String verifyText2 = null;
 		try
 		{
-			Thread.sleep(2000);
-			String verifyText2 = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/div[2]/div/div/div/div/ul[2]/li/div")).getText();
+			Thread.sleep(1000);
+			verifyText2 = driver.findElement(By.xpath("(//*[@class='py-4 space-y-4'])[2]/li")).getText();
 			System.out.println(verifyText2);
-			if(verifyText2 == "No memberships were found.")
+			if(verifyText2.equalsIgnoreCase("No memberships were found."))
 			{
-				Assert.assertEquals(verifyText2, "No memberships were found.");	
+				Assert.assertEquals(verifyText2, "No memberships were found.");
+				System.out.println("Cancelled Memberships List is Empty");
+			}
+			else
+			{
+				List<WebElement> verifyCancelled = driver.findElements(By.xpath("//*[@class='py-4 space-y-4'][2]/li"));
+				int msglog2 = verifyCancelled.size()-1;
+				System.out.println(msglog2);
+				System.out.println("Cancelled Memberships List Count is : " + msglog2);
 			}
 		}
 		catch(Exception e)
@@ -78,16 +90,7 @@ public class wMembershipsTest extends WBase {
 		}
 		finally
 		{
-			List<WebElement> verifyCancelled = driver.findElements(By.xpath("(//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/div[2]/div/div/div/div/ul[2]/li/div)/div"));
-			int msglog = verifyCancelled.size()/2;
-			if(msglog < 1)
-			{
-				System.out.println("Cancelled Memberships List is Empty");
-			}
-			else
-			{
-				System.out.println("Cancelled Memberships List Count is : " + msglog);
-			}
+				System.out.println("finally block executed, testing complete");
 		}
 	}
 

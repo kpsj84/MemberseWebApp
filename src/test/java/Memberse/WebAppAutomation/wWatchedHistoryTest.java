@@ -16,11 +16,11 @@ import WebPageObjects.WelcomePage;
 	
 	@Test
 	public void wWatchedHistoryTestCase()throws InterruptedException{
-    Thread.sleep(8000);
+    Thread.sleep(7000);
     
     WelcomePage wp = new WelcomePage(driver);
 	wp.LoginButton().click();
-	Thread.sleep(4000);
+	Thread.sleep(1000);
 	
 	LoginPage lp = new LoginPage(driver);
 	//lp.Email().sendKeys("autouser2@yopmail.com");
@@ -28,14 +28,14 @@ import WebPageObjects.WelcomePage;
 	lp.Email().sendKeys("kqatestc3@yopmail.com");
 	lp.Password().sendKeys("kqatestc3");
 	lp.Login().click();
-    Thread.sleep(15000);  
+    Thread.sleep(7000);  
     
     HomePage hp = new HomePage(driver);
 	hp.AccountMenu().click();
-	Thread.sleep(2000);
+	Thread.sleep(1000);
 	
 	AccountMenuPage amp = new AccountMenuPage(driver);             
-    Thread.sleep(8000);
+    Thread.sleep(1000);
     amp.WatchedHistorySubMenu().click();
     Thread.sleep(5000);
 	

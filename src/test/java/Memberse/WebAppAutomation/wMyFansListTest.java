@@ -16,10 +16,10 @@ public class wMyFansListTest extends WBase {
 	
 	@Test
 	public void wMyFansListTestCase()throws InterruptedException{
-		Thread.sleep(8000);
+		Thread.sleep(7000);
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys("kqatestc3@yopmail.com");
@@ -27,7 +27,7 @@ public class wMyFansListTest extends WBase {
 		Thread.sleep(1000);
 	    lp.ShowPassword().click();
 		lp.Login().click();
-	    Thread.sleep(15000);  
+	    Thread.sleep(10000);  
 	    
 	    HomePage hp = new HomePage(driver);
 	    hp.CreatorMenu().click();

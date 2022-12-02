@@ -38,17 +38,17 @@ public class wUserInfoTest extends WBase {
 		amp.UserInfoSubMenu().click();
 		Thread.sleep(1000);
 	
-		WebElement verifyName = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div > div.flex-grow > div > div:nth-child(1) > form > div:nth-child(2) > div > input"));
-		String chk1 = verifyName.getAttribute("value").toString();
+		WebElement verifyName = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div.flex-grow > div > div:nth-child(1) > form > div:nth-child(2) > div > input"));
+		String chk1 = verifyName.getAttribute("value");
 		System.out.println(chk1);
 		Assert.assertEquals(chk1, name);
 		
-		WebElement verifyUserName = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div > div.flex-grow > div > div:nth-child(2) > form > div:nth-child(1) > div > input"));
+		WebElement verifyUserName = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div.flex-grow > div > div:nth-child(2) > form > div:nth-child(1) > div > input"));
 		String chk2 = verifyUserName.getAttribute("value");
 		System.out.println(chk2);
 		Assert.assertEquals(chk2, name);
 		
-		WebElement verifyEmail = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div > div.flex-grow > div > div:nth-child(3) > form > div:nth-child(1) > div > input"));
+		WebElement verifyEmail = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div.flex-grow > div > div:nth-child(3) > form > div:nth-child(1) > div > input"));
 		String chk3 = verifyEmail.getAttribute("value");
 		System.out.println(chk3);
 		Assert.assertEquals(chk3, email);
@@ -56,12 +56,12 @@ public class wUserInfoTest extends WBase {
 		String randomNumber = getSaltString();
 		System.out.println(randomNumber);
 		
-		driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div > div.flex-grow > div > div:nth-child(1) > form > div:nth-child(4) > div > input")).clear();
+		driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div.flex-grow > div > div:nth-child(1) > form > div:nth-child(4) > div > input")).clear();
 		Thread.sleep(1000);
-		driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div > div.flex-grow > div > div:nth-child(1) > form > div:nth-child(4) > div > input")).sendKeys(randomNumber);
+		driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div.flex-grow > div > div:nth-child(1) > form > div:nth-child(4) > div > input")).sendKeys(randomNumber);
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div/div[2]/div/div[1]/form/div[5]/button/span")).click();
-		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/div/div[1]/form/div[5]/button")).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/div[6]/div/div/div/div[1]")).getText(), "Success!");
 		System.out.println("Edit functionality at User Info Page is working fine");
 	}
