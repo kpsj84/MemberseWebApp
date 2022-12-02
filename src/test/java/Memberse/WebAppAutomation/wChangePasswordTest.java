@@ -16,25 +16,25 @@ public class wChangePasswordTest extends WBase {
 	
 	@Test
 	public void wChangePasswordTestCase()throws InterruptedException{
-		Thread.sleep(10000);
+		Thread.sleep(7000);
 
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys("autouser1@yopmail.com");
 		lp.Password().sendKeys("autouser1");
 		lp.Login().click();
-		Thread.sleep(15000);
+		Thread.sleep(7000);
 		
 		HomePage hp = new HomePage(driver);
 		hp.AccountMenu().click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 		AccountMenuPage amp = new AccountMenuPage(driver);
 		amp.ChangePasswordSubMenu().click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		ChangePasswordPage cpp = new ChangePasswordPage(driver);
 		cpp.ChangePassword().sendKeys("autouser1");

@@ -22,7 +22,7 @@ public class CreatorMenuPage {
    	  return checkbox;
      }
 
-     @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/div[2]/form/button/span")
+     @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[2]/div[2]/form/button")
      private WebElement CheckboxSave;
      
      public WebElement CheckboxSave(){

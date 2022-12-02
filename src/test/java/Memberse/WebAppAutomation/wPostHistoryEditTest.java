@@ -16,10 +16,10 @@ public class wPostHistoryEditTest extends WBase {
 	
 	@Test
 	public void wPostHistoryEditTestCase()throws InterruptedException{
-		Thread.sleep(8000);
+		Thread.sleep(7000);
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys("kqatestc3@yopmail.com");
@@ -27,17 +27,17 @@ public class wPostHistoryEditTest extends WBase {
 		Thread.sleep(1000);
 	    lp.ShowPassword().click();
 		lp.Login().click();
-	    Thread.sleep(15000);  
+	    Thread.sleep(10000);  
 	    
 	    HomePage hp = new HomePage(driver);
 	    hp.CreatorMenu().click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
     	
 		PostHistoryPage php = new PostHistoryPage(driver);
         php.PostHistorySubMenu().click();
-    	Thread.sleep(10000);
+    	Thread.sleep(7000);
     	php.EditPost().click();
-        Thread.sleep(8000);
+        Thread.sleep(5000);
         
         String Text= driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[1]/h3")).getText();
 	    System.out.println(Text);

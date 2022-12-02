@@ -23,10 +23,10 @@ public class wAddMediaAndPlayPlaylistTest extends WBase {
 	
 	@Test
 	public void wAddMediaAndPlayPlaylistTestCase()throws InterruptedException, AWTException{
-		Thread.sleep(8000);
+		Thread.sleep(7000);
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys("kqatestc3@yopmail.com");
@@ -34,11 +34,11 @@ public class wAddMediaAndPlayPlaylistTest extends WBase {
 		Thread.sleep(1000);
 	    lp.ShowPassword().click();
 		lp.Login().click();
-	    Thread.sleep(15000);  
+	    Thread.sleep(10000);  
 	    
 	    HomePage hp = new HomePage(driver);
 	    hp.CreatorMenu().click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
     	
 		PlayListPage plp = new PlayListPage(driver);
         plp.PlayListSubMenu().click();
@@ -51,13 +51,13 @@ public class wAddMediaAndPlayPlaylistTest extends WBase {
         plp.PlayListTitleTextbox().sendKeys("Autolist-" + autotext);
         plp.DescriptionTextbox().sendKeys("This is an Automated QA Description");
         plp.UploadImageButton().click();
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         
         File fl = new File(System.getProperty("user.dir") + "/src/Pic22.jpg");
         StringSelection str = new StringSelection(fl.getAbsolutePath());
         //StringSelection str = new StringSelection("C:\\Users\\QA\\Desktop\\MusicFile.jpg");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         
         Robot rb = new Robot();
         //This required as in Automation, Focus loose from open file upload window
@@ -110,14 +110,14 @@ public class wAddMediaAndPlayPlaylistTest extends WBase {
         Thread.sleep(3000);
         
         php.PlaylistIcon().click();
-    	Thread.sleep(15000);
+    	Thread.sleep(5000);
     	php.SavetoPlaylistCheckbox().click();
-    	Thread.sleep(12000);
+    	Thread.sleep(10000);
     	php.MediaAddToPlaylistSaveButton().click();
         Thread.sleep(5000);
         
     	plp.PlayListSubMenu().click();
-    	Thread.sleep(15000);
+    	Thread.sleep(10000);
         plp.playListViewButton().click();
         Thread.sleep(10000);
         driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[2]/div[2]/div/div[2]/div[2]/div/div/div[2]/div[3]/div/div[1]/p")).click();
@@ -148,5 +148,4 @@ public class wAddMediaAndPlayPlaylistTest extends WBase {
 		    return saltStr;    
 	}
      
-
 }

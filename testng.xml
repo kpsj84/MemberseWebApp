@@ -29,7 +29,6 @@
       <class name="Memberse.WebAppAutomation.wTermsAndConditionsTest"/>
       <class name="Memberse.WebAppAutomation.wCommunityGuidelinesTest"/>
       <class name="Memberse.WebAppAutomation.wPrivacyPolicyTest"/>
-      
       <class name="Memberse.WebAppAutomation.wSearchCreatorTest"/>
       <class name="Memberse.WebAppAutomation.wUserInfoTest"/>
       <class name="Memberse.WebAppAutomation.wMembershipsTest"/>

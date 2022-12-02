@@ -17,7 +17,7 @@ public class wBecomeCreatorTest extends WBase {
 	
 	@Test
 	public void WBecomeCreatorTestCase()throws InterruptedException {
-		Thread.sleep(8000);
+		Thread.sleep(7000);
 		
 		String autoText=getSaltString();
 		System.out.println(autoText);
@@ -28,7 +28,7 @@ public class wBecomeCreatorTest extends WBase {
 
 		WelcomePage wp = new WelcomePage(driver);
 		wp.SignupButtton().click();
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 		
 		SignupPage sp = new SignupPage(driver);
 		sp.Email().sendKeys(email);
@@ -38,12 +38,12 @@ public class wBecomeCreatorTest extends WBase {
 		Thread.sleep(5000);
 		    
 		wp.LoginButton().click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys(email);
 		lp.Password().sendKeys(password);
 		lp.Login().click();
-		Thread.sleep(12000);
+		Thread.sleep(10000);
 		     
 		RoleSelectionPage rsp = new RoleSelectionPage(driver);
 	    rsp.AsaMember().click();
@@ -51,11 +51,11 @@ public class wBecomeCreatorTest extends WBase {
 		    
 		HomePage hp = new HomePage(driver);
 		hp.CreatorMenu().click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	    
 	    CreatorMenuPage cmp = new CreatorMenuPage(driver);
 		cmp.checkbox().click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		cmp.CheckboxSave().click();
 		Thread.sleep(7000);
 		
