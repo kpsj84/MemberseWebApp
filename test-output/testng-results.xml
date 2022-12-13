@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46422" started-at="2022-12-02T14:23:43 IST" finished-at="2022-12-02T14:24:30 IST">
+  <suite name="Default suite" duration-ms="112574" started-at="2022-12-13T15:00:11 IST" finished-at="2022-12-13T15:02:04 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46422" started-at="2022-12-02T14:23:43 IST" finished-at="2022-12-02T14:24:30 IST">
-      <class name="Memberse.WebAppAutomation.wMyFansListTest">
-        <test-method status="PASS" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wMyFansListTest@74650e52]" name="InvokeCapabilities" is-config="true" duration-ms="16" started-at="2022-12-02T14:23:43 IST" finished-at="2022-12-02T14:23:43 IST">
+    <test name="Default test" duration-ms="112574" started-at="2022-12-13T15:00:11 IST" finished-at="2022-12-13T15:02:04 IST">
+      <class name="Memberse.WebAppAutomation.wCreateAudioPostTest">
+        <test-method status="PASS" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wCreateAudioPostTest@74650e52]" name="InvokeCapabilities" is-config="true" duration-ms="19" started-at="2022-12-13T15:00:11 IST" finished-at="2022-12-13T15:00:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvokeCapabilities -->
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wMyFansListTest@74650e52]" name="startDriver" is-config="true" duration-ms="9459" started-at="2022-12-02T14:23:43 IST" finished-at="2022-12-02T14:23:53 IST">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreateAudioPostTest@74650e52]" name="startDriver" is-config="true" duration-ms="9027" started-at="2022-12-13T15:00:12 IST" finished-at="2022-12-13T15:00:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wMyFansListTestCase()[pri:0, instance:Memberse.WebAppAutomation.wMyFansListTest@74650e52]" name="wMyFansListTestCase" duration-ms="36755" started-at="2022-12-02T14:23:53 IST" finished-at="2022-12-02T14:24:30 IST">
+        <test-method status="PASS" signature="wCreatAudioPostTestFree()[pri:0, instance:Memberse.WebAppAutomation.wCreateAudioPostTest@74650e52]" name="wCreatAudioPostTestFree" duration-ms="61774" started-at="2022-12-13T15:00:21 IST" finished-at="2022-12-13T15:01:22 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wMyFansListTestCase -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wMyFansListTest@74650e52]" name="CloseBrowser" is-config="true" duration-ms="126" started-at="2022-12-02T14:24:30 IST" finished-at="2022-12-02T14:24:30 IST">
+        </test-method> <!-- wCreatAudioPostTestFree -->
+        <test-method status="PASS" signature="wCreateAudioPostTestPaid()[pri:0, instance:Memberse.WebAppAutomation.wCreateAudioPostTest@74650e52]" name="wCreateAudioPostTestPaid" duration-ms="41461" started-at="2022-12-13T15:01:22 IST" finished-at="2022-12-13T15:02:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wCreateAudioPostTestPaid -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wCreateAudioPostTest@74650e52]" name="CloseBrowser" is-config="true" duration-ms="154" started-at="2022-12-13T15:02:04 IST" finished-at="2022-12-13T15:02:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method status="PASS" signature="QuitBrowsers()[pri:0, instance:Memberse.WebAppAutomation.wMyFansListTest@74650e52]" name="QuitBrowsers" is-config="true" duration-ms="25" started-at="2022-12-02T14:24:30 IST" finished-at="2022-12-02T14:24:30 IST">
+        <test-method status="PASS" signature="QuitBrowsers()[pri:0, instance:Memberse.WebAppAutomation.wCreateAudioPostTest@74650e52]" name="QuitBrowsers" is-config="true" duration-ms="20" started-at="2022-12-13T15:02:04 IST" finished-at="2022-12-13T15:02:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QuitBrowsers -->
-      </class> <!-- Memberse.WebAppAutomation.wMyFansListTest -->
+      </class> <!-- Memberse.WebAppAutomation.wCreateAudioPostTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

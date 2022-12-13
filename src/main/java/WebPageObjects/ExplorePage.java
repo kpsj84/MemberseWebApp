@@ -29,7 +29,7 @@ public class ExplorePage {
 		return SignupButton;
 	}
 	
-	 @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[1]/div[2]/div/div/div[3]/div/a[1]")
+	    @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[1]/div[2]/div/div/div[3]/div/a[1]")
 	    private WebElement FacebookIcon;
 
 	    public WebElement FacebookIcon() {
@@ -83,6 +83,13 @@ public class ExplorePage {
 
 	    public WebElement SearchField() {
 	        return SearchField;
+	    }
+	    
+	    @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div[2]/div/div/div/div/a/div/div[2]/div/div/p[1]")
+	    private WebElement ClickCreator ;
+	    
+	    public WebElement ClickCreator() {
+	    	return ClickCreator;
 	    }
 
 }

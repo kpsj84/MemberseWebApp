@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Memberse.WebAppAutomation.wMyFansListTest" hash-for-method="wMyFansListTestCase">wMyFansListTestCase</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Memberse.WebAppAutomation.wCreateAudioPostTest" hash-for-method="wCreatAudioPostTestFree">wCreatAudioPostTestFree</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Memberse.WebAppAutomation.wCreateAudioPostTest" hash-for-method="wCreateAudioPostTestPaid">wCreateAudioPostTestPaid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,14 +127,21 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Memberse.WebAppAutomation.wMyFansListTest</span>
+              <span class="class-name">Memberse.WebAppAutomation.wCreateAudioPostTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="wMyFansListTestCase">
-                  </a> <!-- wMyFansListTestCase -->
-                  <span class="method-name">wMyFansListTestCase</span>
+                  <a name="wCreatAudioPostTestFree">
+                  </a> <!-- wCreatAudioPostTestFree -->
+                  <span class="method-name">wCreatAudioPostTestFree</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wCreateAudioPostTestPaid">
+                  </a> <!-- wCreateAudioPostTestPaid -->
+                  <span class="method-name">wCreateAudioPostTestPaid</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +149,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/5t/qx22w3p15y9dnrdvz52npt540000gn/T/testng-eclipse--2110295948/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/5t/qx22w3p15y9dnrdvz52npt540000gn/T/testng-eclipse--1473643949/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,7 +158,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Memberse.WebAppAutomation.wMyFansListTest&quot;/&gt;
+      &lt;class name=&quot;Memberse.WebAppAutomation.wCreateAudioPostTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -186,16 +198,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'wMyFansListTestCase')
-data.setCell(0, 2, 'Memberse.WebAppAutomation.wMyFansListTest')
-data.setCell(0, 3, 36755);
+data.setCell(0, 1, 'wCreatAudioPostTestFree')
+data.setCell(0, 2, 'Memberse.WebAppAutomation.wCreateAudioPostTest')
+data.setCell(0, 3, 61774);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'wCreateAudioPostTestPaid')
+data.setCell(1, 2, 'Memberse.WebAppAutomation.wCreateAudioPostTest')
+data.setCell(1, 3, 41461);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 36 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -221,26 +237,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wMyFansListTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Memberse.WebAppAutomation.wCreateAudioPostTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">InvokeCapabilities</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">startDriver</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-start">31 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">wMyFansListTestCase</span>
-                <span class="method-start">9498 ms</span>
+                <span class="method-name">wCreatAudioPostTestFree</span>
+                <span class="method-start">9069 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">wCreateAudioPostTestPaid</span>
+                <span class="method-start">70912 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">CloseBrowser</span>
-                <span class="method-start">46261 ms</span>
+                <span class="method-start">112391 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">QuitBrowsers</span>
-                <span class="method-start">46392 ms</span>
+                <span class="method-start">112550 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
