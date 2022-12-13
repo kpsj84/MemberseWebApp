@@ -44,6 +44,13 @@
       <class name="Memberse.WebAppAutomation.wCreateAndDeletePlaylistTest"/>
       <class name="Memberse.WebAppAutomation.wAddMediaAndPlayPlaylistTest"/>
       <class name="Memberse.WebAppAutomation.wPlaylistEditTest"/>
+      <class name="Memberse.WebAppAutomation.wFollowCreatorTest"/>
+      <class name="Memberse.WebAppAutomation.wShareCreatorTest"/>
+      <class name="Memberse.WebAppAutomation.wReportCommunityTest"/>
+      <class name="Memberse.WebAppAutomation.wCreateTextPostTest"/>
+      <class name="Memberse.WebAppAutomation.wCreatePhotoPostTest"/>
+      <class name="Memberse.WebAppAutomation.wCreateVideoPostTest"/>
+      <class name="Memberse.WebAppAutomation.wCreateAudioPostTest"/>
     </classes>
     
   </test> <!-- Test -->

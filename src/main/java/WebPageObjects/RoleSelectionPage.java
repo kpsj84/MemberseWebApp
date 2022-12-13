@@ -21,5 +21,12 @@ public class RoleSelectionPage {
       public WebElement AsaMember() {
     	  return  AsaMember ;
       }
+      
+      @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div/div/div[2]/div[1]/div[1]/h3")
+      private WebElement AsaCreator ;
+      
+      public WebElement AsaCreator() {
+    	  return  AsaCreator ;
+      }
 
 }
