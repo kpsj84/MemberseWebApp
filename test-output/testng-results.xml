@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="112574" started-at="2022-12-13T15:00:11 IST" finished-at="2022-12-13T15:02:04 IST">
+  <suite name="Default suite" duration-ms="78329" started-at="2022-12-16T16:23:08 IST" finished-at="2022-12-16T16:24:27 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="112574" started-at="2022-12-13T15:00:11 IST" finished-at="2022-12-13T15:02:04 IST">
-      <class name="Memberse.WebAppAutomation.wCreateAudioPostTest">
-        <test-method status="PASS" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wCreateAudioPostTest@74650e52]" name="InvokeCapabilities" is-config="true" duration-ms="19" started-at="2022-12-13T15:00:11 IST" finished-at="2022-12-13T15:00:11 IST">
+    <test name="Default test" duration-ms="78329" started-at="2022-12-16T16:23:08 IST" finished-at="2022-12-16T16:24:27 IST">
+      <class name="Memberse.WebAppAutomation.wCommunityTabsTest">
+        <test-method status="PASS" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wCommunityTabsTest@74650e52]" name="InvokeCapabilities" is-config="true" duration-ms="18" started-at="2022-12-16T16:23:08 IST" finished-at="2022-12-16T16:23:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvokeCapabilities -->
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreateAudioPostTest@74650e52]" name="startDriver" is-config="true" duration-ms="9027" started-at="2022-12-13T15:00:12 IST" finished-at="2022-12-13T15:00:21 IST">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCommunityTabsTest@74650e52]" name="startDriver" is-config="true" duration-ms="10074" started-at="2022-12-16T16:23:08 IST" finished-at="2022-12-16T16:23:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wCreatAudioPostTestFree()[pri:0, instance:Memberse.WebAppAutomation.wCreateAudioPostTest@74650e52]" name="wCreatAudioPostTestFree" duration-ms="61774" started-at="2022-12-13T15:00:21 IST" finished-at="2022-12-13T15:01:22 IST">
+        <test-method status="PASS" signature="wCommunityTabsTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCommunityTabsTest@74650e52]" name="wCommunityTabsTestCase" duration-ms="68017" started-at="2022-12-16T16:23:18 IST" finished-at="2022-12-16T16:24:26 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wCreatAudioPostTestFree -->
-        <test-method status="PASS" signature="wCreateAudioPostTestPaid()[pri:0, instance:Memberse.WebAppAutomation.wCreateAudioPostTest@74650e52]" name="wCreateAudioPostTestPaid" duration-ms="41461" started-at="2022-12-13T15:01:22 IST" finished-at="2022-12-13T15:02:04 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wCreateAudioPostTestPaid -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wCreateAudioPostTest@74650e52]" name="CloseBrowser" is-config="true" duration-ms="154" started-at="2022-12-13T15:02:04 IST" finished-at="2022-12-13T15:02:04 IST">
+        </test-method> <!-- wCommunityTabsTestCase -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wCommunityTabsTest@74650e52]" name="CloseBrowser" is-config="true" duration-ms="141" started-at="2022-12-16T16:24:26 IST" finished-at="2022-12-16T16:24:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method status="PASS" signature="QuitBrowsers()[pri:0, instance:Memberse.WebAppAutomation.wCreateAudioPostTest@74650e52]" name="QuitBrowsers" is-config="true" duration-ms="20" started-at="2022-12-13T15:02:04 IST" finished-at="2022-12-13T15:02:04 IST">
+        <test-method status="PASS" signature="QuitBrowsers()[pri:0, instance:Memberse.WebAppAutomation.wCommunityTabsTest@74650e52]" name="QuitBrowsers" is-config="true" duration-ms="22" started-at="2022-12-16T16:24:27 IST" finished-at="2022-12-16T16:24:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QuitBrowsers -->
-      </class> <!-- Memberse.WebAppAutomation.wCreateAudioPostTest -->
+      </class> <!-- Memberse.WebAppAutomation.wCommunityTabsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
