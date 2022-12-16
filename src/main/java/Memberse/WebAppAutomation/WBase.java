@@ -16,16 +16,27 @@ import org.testng.annotations.BeforeTest;
 
 public class WBase {
 	
+	public static boolean intelJenkinsServer = true;
+	
 	//Initiate Variables
 	public static ChromeOptions   options;
 	public static String 		  environment;
 	public static FileInputStream fis;
 	public static Properties 	  prop;
 	public static WebDriver 	  driver;
+	public static String 	  	  driverLocation;
 	
 	//Set Capabilities for the Browser & provide driver location
 	public void  Capabilities() throws IOException {
-		String driverLocation = (System.getProperty("user.dir")+"/src/chromedriver/chromedriver");
+		if(intelJenkinsServer = true)
+		{
+			driverLocation = (System.getProperty("user.dir")+"/src/intelChromeDriver/chromedriver");
+		}
+		else
+		{
+			driverLocation = (System.getProperty("user.dir")+"/src/chromedriver/chromedriver");
+		}
+		//String driverLocation = (System.getProperty("user.dir")+"/src/chromedriver/chromedriver");
 		System.setProperty("webdriver.chrome.driver", driverLocation);
 		
 		options = new ChromeOptions();
