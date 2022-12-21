@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SignupPage {
 	
-WebDriver localDriver;
+	WebDriver localDriver;
 	
 	public SignupPage(WebDriver driver)
 	{
@@ -42,7 +42,5 @@ WebDriver localDriver;
 	public WebElement SignupButton() {
 		return SignupButton;
 	}
-	
-	
 
 }

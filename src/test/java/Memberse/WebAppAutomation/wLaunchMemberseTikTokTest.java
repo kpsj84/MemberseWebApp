@@ -13,8 +13,9 @@ public class wLaunchMemberseTikTokTest extends WBase {
 	
 	@Test
 	public void wLaunchMemberseTikTokTestCase()throws InterruptedException{
-		Thread.sleep(7000);
-
+		WUtilities u = new  WUtilities();
+		u.timeDelayToLoadWebsite(driver);
+		
 		ExplorePage in = new ExplorePage(driver);
 		in.TikTokIcon().click();
 		Thread.sleep(3000);

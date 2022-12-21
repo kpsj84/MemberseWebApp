@@ -1,5 +1,7 @@
 package Memberse.WebAppAutomation;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -12,8 +14,8 @@ public class wSmokeTest extends WBase{
 	
 	@Test
 	public void wSmokeTestCase() throws InterruptedException {
-		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		Thread.sleep(7000);
+		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		String verifyExploreText = driver.findElement(By.xpath("//*[text()='Find your Content Creator']")).getText();
 		System.out.println(verifyExploreText);
@@ -24,7 +26,7 @@ public class wSmokeTest extends WBase{
 		js.executeScript("arguments[0].click()", searchField);
 		String testText = "kqatest";
 		searchField.sendKeys(testText);
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		
 		String noResult = null;
 		try

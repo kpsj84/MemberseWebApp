@@ -12,11 +12,13 @@ import WebPageObjects.LoginPage;
 import WebPageObjects.MyCommunityPage;
 import WebPageObjects.WelcomePage;
 
-public class wCreatorEditInfoTest extends WBase {
+public class wCommunityEditInfoTest extends WBase {
 	
 	@Test
 	public void wCreatorEditInfoTestCase() throws InterruptedException {
-		Thread.sleep(7000);
+		WUtilities u = new  WUtilities();
+		u.timeDelayToLoadWebsite(driver);
+		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
 		Thread.sleep(1000);

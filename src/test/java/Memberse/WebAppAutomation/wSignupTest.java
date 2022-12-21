@@ -13,7 +13,8 @@ public class wSignupTest extends WBase {
 	
 	@Test
 	public void wSignupTestCase() throws InterruptedException {
-		Thread.sleep(7000);
+		WUtilities u = new  WUtilities();
+		u.timeDelayToLoadWebsite(driver);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.SignupButtton().click();

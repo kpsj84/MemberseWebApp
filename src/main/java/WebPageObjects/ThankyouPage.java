@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ThankyouPage {
 	
-WebDriver localDriver;
+	WebDriver localDriver;
 	
 	public ThankyouPage(WebDriver driver)
 	{

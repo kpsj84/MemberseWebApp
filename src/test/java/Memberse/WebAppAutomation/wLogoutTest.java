@@ -11,7 +11,8 @@ public class wLogoutTest extends WBase {
 	
 	@Test
 	public void wLogoutTestCase() throws InterruptedException {
-		Thread.sleep(7000);
+		WUtilities u = new  WUtilities();
+		u.timeDelayToLoadWebsite(driver);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();

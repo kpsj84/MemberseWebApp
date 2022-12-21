@@ -29,19 +29,19 @@ public class ExplorePage {
 		return SignupButton;
 	}
 	
-	    @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[1]/div[2]/div/div/div[3]/div/a[1]")
-	    private WebElement FacebookIcon;
+	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[1]/div[2]/div/div/div[3]/div/a[1]")
+	private WebElement FacebookIcon;
 
-	    public WebElement FacebookIcon() {
-	    	return FacebookIcon;
-	    }
+	public WebElement FacebookIcon() {
+	    return FacebookIcon;
+	}
 
-	    @FindBy(xpath="/html/body/div[1]/div[3]/div/div[1]/div[2]/div/div/div[3]/div/a[2]")
-	    private WebElement InstagramIcon;
+	@FindBy(xpath="/html/body/div[1]/div[3]/div/div[1]/div[2]/div/div/div[3]/div/a[2]")
+	private WebElement InstagramIcon;
 
-	    public WebElement InstagramIcon() {
-	    	return InstagramIcon;
-	    }
+	public WebElement InstagramIcon() {
+	    return InstagramIcon;
+	}
 	    
 	    @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[1]/div[2]/div/div/div[3]/div/a[3]")
 	    private WebElement LinkedinIcon;

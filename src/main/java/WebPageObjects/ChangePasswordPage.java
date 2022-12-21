@@ -13,7 +13,6 @@ public class ChangePasswordPage {
     {
 		this.localdriver= driver;
 		PageFactory.initElements(driver, this);
-
     }
     
     @FindBy(xpath="//input[@name='password']")

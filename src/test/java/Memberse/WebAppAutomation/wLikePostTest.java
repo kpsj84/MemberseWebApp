@@ -12,7 +12,8 @@ public class wLikePostTest extends WBase {
 	
 	@Test
 	public void wLikePostTestCase()throws InterruptedException{
-		Thread.sleep(7000);
+		WUtilities u = new  WUtilities();
+		u.timeDelayToLoadWebsite(driver);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();

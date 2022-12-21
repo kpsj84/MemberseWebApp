@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class AccountMenuPage {
+	
 	WebDriver localDriver;
 			
 	public AccountMenuPage(WebDriver driver)
@@ -40,7 +41,6 @@ public class AccountMenuPage {
 
     public WebElement WatchedHistorySubMenu() {
     	return WatchedHistorySubMenu;
-}
-			
+    }		
 
 }

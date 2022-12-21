@@ -13,8 +13,9 @@ public class wLaunchMemberseInstagramTest extends WBase {
 	
 	@Test
 	public void wLaunchMemberseInstagramTestCase()throws InterruptedException{
-		Thread.sleep(7000);
-
+		WUtilities u = new  WUtilities();
+		u.timeDelayToLoadWebsite(driver);
+		
 		ExplorePage in = new ExplorePage(driver);
 		in.InstagramIcon().click();
 		Thread.sleep(3000);

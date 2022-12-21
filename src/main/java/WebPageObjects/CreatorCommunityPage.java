@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class CreatorCommunityPage {
 	
-WebDriver localDriver;
+	WebDriver localDriver;
 	
 	public CreatorCommunityPage(WebDriver driver)
 	{

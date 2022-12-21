@@ -14,7 +14,8 @@ public class wLaunchMemberseFacebookTest extends WBase {
 	
 	@Test
 	public void wLaunchMemberseFacebookTestCase()throws InterruptedException {
-		Thread.sleep(7000);
+		WUtilities u = new  WUtilities();
+		u.timeDelayToLoadWebsite(driver);
 		
 		ExplorePage fb = new ExplorePage(driver);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

@@ -23,8 +23,9 @@ public class wCreateAudioPostTest extends WBase{
 	
 	@Test
 	public void wCreatAudioPostTestFree()throws InterruptedException, AWTException{
-		Thread.sleep(7000);
-	    
+		WUtilities u = new  WUtilities();
+		u.timeDelayToLoadWebsite(driver);
+		
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();
 		Thread.sleep(1000);

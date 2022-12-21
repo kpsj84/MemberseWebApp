@@ -7,11 +7,12 @@ import org.testng.annotations.Test;
 import WebPageObjects.SignupPage;
 import WebPageObjects.WelcomePage;
 
-public class wRegisterFormValidationTest extends WBase {
+public class wSignupFormValidationTest extends WBase {
 	
 	@Test
 	public void wRegisterFormValidationTestCase() throws InterruptedException {
-		Thread.sleep(7000);
+		WUtilities u = new  WUtilities();
+		u.timeDelayToLoadWebsite(driver);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.SignupButtton().click();
