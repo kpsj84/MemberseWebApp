@@ -14,8 +14,9 @@ public class wCommunityGuidelinesTest extends WBase {
 	
 	@Test
 	public void wCommunityGuidelinesTestCase()throws InterruptedException{
-		Thread.sleep(7000);
-
+		WUtilities u = new  WUtilities();
+		u.timeDelayToLoadWebsite(driver);
+		
 		ExplorePage gl = new ExplorePage(driver);
 		gl.GuidelinesLink().click();
 		Thread.sleep(3000);

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class CreatePostPage {
 	
-WebDriver localDriver;
+	WebDriver localDriver;
 	
 	public CreatePostPage(WebDriver driver)
 	{

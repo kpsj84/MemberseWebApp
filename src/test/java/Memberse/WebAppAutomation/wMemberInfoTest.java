@@ -13,11 +13,12 @@ import WebPageObjects.HomePage;
 import WebPageObjects.LoginPage;
 import WebPageObjects.WelcomePage;
 
-public class wUserInfoTest extends WBase {
+public class wMemberInfoTest extends WBase {
 	
 	@Test
 	public void wUserInfoTestCase() throws InterruptedException {
-		Thread.sleep(7000);
+		WUtilities u = new  WUtilities();
+		u.timeDelayToLoadWebsite(driver);
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();

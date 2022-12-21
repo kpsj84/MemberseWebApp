@@ -3,7 +3,6 @@ package Memberse.WebAppAutomation;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,7 +15,7 @@ import org.testng.annotations.BeforeTest;
 
 public class WBase {
 	
-	public static boolean intelJenkinsServer = true;
+	public static boolean intelJenkinsServer = false;
 	
 	//Initiate Variables
 	public static ChromeOptions   options;
@@ -28,7 +27,7 @@ public class WBase {
 	
 	//Set Capabilities for the Browser & provide driver location
 	public void  Capabilities() throws IOException {
-		if(intelJenkinsServer = true)
+		if(intelJenkinsServer == true)
 		{
 			driverLocation = (System.getProperty("user.dir")+"/src/intelChromeDriver/chromedriver");
 		}
@@ -36,7 +35,6 @@ public class WBase {
 		{
 			driverLocation = (System.getProperty("user.dir")+"/src/chromedriver/chromedriver");
 		}
-		//String driverLocation = (System.getProperty("user.dir")+"/src/chromedriver/chromedriver");
 		System.setProperty("webdriver.chrome.driver", driverLocation);
 		
 		options = new ChromeOptions();
@@ -58,7 +56,7 @@ public class WBase {
 		fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/Memberse/WebAppAutomation/"+environment+".properties");
 		prop = new Properties();		 
 		prop.load(fis);
-		System.out.println("Complete value to get from properties file --> " + prop.toString());
+		System.out.println("Complete value taken from properties file --> " + prop.toString());
 	}
 	
 	@BeforeTest
@@ -79,7 +77,7 @@ public class WBase {
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get((String)prop.get("Url"));
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	@AfterClass

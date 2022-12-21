@@ -14,8 +14,9 @@ public class wPrivacyPolicyTest extends WBase {
 	
 	@Test
 	public void wPrivacyPolicyTestCase()throws InterruptedException{
-		Thread.sleep(7000);
-
+		WUtilities u = new  WUtilities();
+		u.timeDelayToLoadWebsite(driver);
+		
 		ExplorePage py = new ExplorePage(driver);
 		py.PrivacyLink().click();
 		Thread.sleep(3000);

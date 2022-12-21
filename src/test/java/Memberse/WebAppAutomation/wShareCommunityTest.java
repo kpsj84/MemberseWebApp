@@ -15,12 +15,13 @@ import WebPageObjects.LoginPage;
 import WebPageObjects.PostHistoryPage;
 import WebPageObjects.WelcomePage;
 
-public class wShareCreatorTest extends WBase{
+public class wShareCommunityTest extends WBase{
 	
 	@Test
 	public void ShareCreatorTestCase()throws InterruptedException{
-	    Thread.sleep(7000);
-	    
+		WUtilities u = new  WUtilities();
+		u.timeDelayToLoadWebsite(driver);
+		
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();
 		Thread.sleep(1000);

@@ -14,15 +14,16 @@ import WebPageObjects.RoleSelectionPage;
 import WebPageObjects.SignupPage;
 import WebPageObjects.WelcomePage;
 
-public class wFollowCreatorTest extends WBase {
+public class wFollowAndUnfollowCommunityTest extends WBase {
 	
 	public String email;
 	public String password;
 	
 	@Test(priority=1)
 	public void wFollowCreatorTestCase()throws InterruptedException{
-	    Thread.sleep(7000);
-	      
+		WUtilities u = new  WUtilities();
+		u.timeDelayToLoadWebsite(driver);
+		  
 	    WelcomePage wp = new WelcomePage(driver);
 		wp.SignupButtton().click();
 		Thread.sleep(1000);

@@ -12,8 +12,9 @@ public class wFeedsVerifyTest extends WBase {
 	
 	@Test
 	public void FeedsVerifyTestCase()throws InterruptedException{
-		Thread.sleep(7000);
-	    
+		WUtilities u = new  WUtilities();
+		u.timeDelayToLoadWebsite(driver);
+		
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();
 		Thread.sleep(1000);

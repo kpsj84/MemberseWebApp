@@ -22,7 +22,9 @@ public class wCreateAndDeletePlaylistTest extends WBase {
 	
 	@Test
 	public void wCreateAndDeletePlaylistTestCase()throws InterruptedException, AWTException {
-		Thread.sleep(7000);
+		WUtilities u = new  WUtilities();
+		u.timeDelayToLoadWebsite(driver);
+		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
 		Thread.sleep(1000);

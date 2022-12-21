@@ -21,8 +21,9 @@ public class wJoinCommunityTest extends WBase {
 	
 	@Test
 	public void wJoinCommunityTestCase()throws InterruptedException{
-	    Thread.sleep(7000);
-	    
+		WUtilities u = new  WUtilities();
+		u.timeDelayToLoadWebsite(driver);
+		
 	    String autoText=getSaltString();
 	    System.out.println(autoText);
 	    String emailDomain = "@yopmail.com";

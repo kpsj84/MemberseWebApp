@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="78329" started-at="2022-12-16T16:23:08 IST" finished-at="2022-12-16T16:24:27 IST">
+  <suite name="Default suite" duration-ms="23688" started-at="2022-12-20T16:21:29 IST" finished-at="2022-12-20T16:21:53 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="78329" started-at="2022-12-16T16:23:08 IST" finished-at="2022-12-16T16:24:27 IST">
-      <class name="Memberse.WebAppAutomation.wCommunityTabsTest">
-        <test-method status="PASS" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wCommunityTabsTest@74650e52]" name="InvokeCapabilities" is-config="true" duration-ms="18" started-at="2022-12-16T16:23:08 IST" finished-at="2022-12-16T16:23:08 IST">
+    <test name="Default test" duration-ms="23688" started-at="2022-12-20T16:21:29 IST" finished-at="2022-12-20T16:21:53 IST">
+      <class name="Memberse.WebAppAutomation.wRegisterFormValidationTest">
+        <test-method status="PASS" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wRegisterFormValidationTest@74650e52]" name="InvokeCapabilities" is-config="true" duration-ms="15" started-at="2022-12-20T16:21:29 IST" finished-at="2022-12-20T16:21:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvokeCapabilities -->
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCommunityTabsTest@74650e52]" name="startDriver" is-config="true" duration-ms="10074" started-at="2022-12-16T16:23:08 IST" finished-at="2022-12-16T16:23:18 IST">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wRegisterFormValidationTest@74650e52]" name="startDriver" is-config="true" duration-ms="11941" started-at="2022-12-20T16:21:29 IST" finished-at="2022-12-20T16:21:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wCommunityTabsTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCommunityTabsTest@74650e52]" name="wCommunityTabsTestCase" duration-ms="68017" started-at="2022-12-16T16:23:18 IST" finished-at="2022-12-16T16:24:26 IST">
+        <test-method status="PASS" signature="wRegisterFormValidationTestCase()[pri:0, instance:Memberse.WebAppAutomation.wRegisterFormValidationTest@74650e52]" name="wRegisterFormValidationTestCase" duration-ms="11546" started-at="2022-12-20T16:21:41 IST" finished-at="2022-12-20T16:21:53 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wCommunityTabsTestCase -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wCommunityTabsTest@74650e52]" name="CloseBrowser" is-config="true" duration-ms="141" started-at="2022-12-16T16:24:26 IST" finished-at="2022-12-16T16:24:27 IST">
+        </test-method> <!-- wRegisterFormValidationTestCase -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wRegisterFormValidationTest@74650e52]" name="CloseBrowser" is-config="true" duration-ms="128" started-at="2022-12-20T16:21:53 IST" finished-at="2022-12-20T16:21:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method status="PASS" signature="QuitBrowsers()[pri:0, instance:Memberse.WebAppAutomation.wCommunityTabsTest@74650e52]" name="QuitBrowsers" is-config="true" duration-ms="22" started-at="2022-12-16T16:24:27 IST" finished-at="2022-12-16T16:24:27 IST">
+        <test-method status="PASS" signature="QuitBrowsers()[pri:0, instance:Memberse.WebAppAutomation.wRegisterFormValidationTest@74650e52]" name="QuitBrowsers" is-config="true" duration-ms="19" started-at="2022-12-20T16:21:53 IST" finished-at="2022-12-20T16:21:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QuitBrowsers -->
-      </class> <!-- Memberse.WebAppAutomation.wCommunityTabsTest -->
+      </class> <!-- Memberse.WebAppAutomation.wRegisterFormValidationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

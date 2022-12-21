@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PostHistoryPage {
 	
-public WebDriver localdriver;
+	public WebDriver localdriver;
 	
 	public PostHistoryPage(WebDriver driver) {
 		this.localdriver= driver;
@@ -89,7 +89,6 @@ public WebDriver localdriver;
     
     public WebElement MediaAddToPlaylistSaveButton() {
     	return MediaAddToPlaylistSaveButton;
-    
     }
 
 }
