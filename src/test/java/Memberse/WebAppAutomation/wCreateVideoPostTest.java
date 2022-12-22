@@ -22,9 +22,9 @@ import WebPageObjects.WelcomePage;
 public class wCreateVideoPostTest extends WBase {
 	
 	@Test
-	public void wCreatVideoPostTestFree()throws InterruptedException, AWTException{
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+	public void wCreatVideoPostTestCase()throws InterruptedException, AWTException{
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();

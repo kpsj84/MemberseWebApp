@@ -10,6 +10,8 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -22,8 +24,8 @@ public class wPlaylistEditTest extends WBase {
 	
 	@Test
 	public void wPlaylistEditTestCase()throws InterruptedException, AWTException{
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
@@ -67,11 +69,6 @@ public class wPlaylistEditTest extends WBase {
         rb.keyRelease(KeyEvent.VK_META);
         rb.keyRelease(KeyEvent.VK_TAB);
         rb.delay(500);
-        rb.keyPress(KeyEvent.VK_META);
-        rb.keyPress(KeyEvent.VK_TAB);
-        rb.keyRelease(KeyEvent.VK_META);
-        rb.keyRelease(KeyEvent.VK_TAB);
-        rb.delay(500);
         
         //Open Goto window
         rb.keyPress(KeyEvent.VK_META);
@@ -87,6 +84,7 @@ public class wPlaylistEditTest extends WBase {
         rb.keyPress(KeyEvent.VK_V);
         rb.keyRelease(KeyEvent.VK_META);
         rb.keyRelease(KeyEvent.VK_V);
+        rb.delay(500);
         
         //Close both the Windows
         rb.keyPress(KeyEvent.VK_ENTER);
@@ -98,7 +96,8 @@ public class wPlaylistEditTest extends WBase {
         plp.PlayListSaveButton().click();
         Thread.sleep(10000);
         
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        WebDriverWait w = new WebDriverWait(driver,120);
+        w.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
         String text= driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
 		System.out.println(text);
 		Thread.sleep(2000);

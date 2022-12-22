@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wSmokeTest">
+      <class name="Memberse.WebAppAutomation.wPostHistoryPlayTest">
         <methods>
           <include name="CloseBrowser"/>
+          <include name="wPostHistoryPlayTestCase"/>
           <include name="startDriver"/>
-          <include name="wSmokeTestCase"/>
           <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wSmokeTest -->
+      </class> <!-- Memberse.WebAppAutomation.wPostHistoryPlayTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

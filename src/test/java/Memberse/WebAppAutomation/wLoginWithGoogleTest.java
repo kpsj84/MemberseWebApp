@@ -11,18 +11,19 @@ public class wLoginWithGoogleTest extends WBase{
 	
 	@Test
 	public void wLoginWithGoogleTestCase() throws InterruptedException {
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		
 		LoginPage lp = new LoginPage(driver);
 		//Store the ID of the original window
 		String originalWindow = driver.getWindowHandle();
+		Thread.sleep(3000);
 		lp.GoogleLogin().click();
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 		
 		for(String windowHandle : driver.getWindowHandles()) 
 		{
@@ -43,7 +44,7 @@ public class wLoginWithGoogleTest extends WBase{
 			driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Softqa@1313");
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//*[text()='Next']")).click();
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 			driver.switchTo().window(originalWindow);
 		}
 		catch(Exception e)
@@ -54,7 +55,7 @@ public class wLoginWithGoogleTest extends WBase{
 		try
 		{
 			driver.findElement(By.xpath("//a[text()='Account']")).click();
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			String msg1 = driver.findElement(By.xpath("//input[@name='email']")).getAttribute("value");
 			System.out.println(msg1);
 			Assert.assertEquals(msg1, "qatesting9999@gmail.com");

@@ -13,8 +13,8 @@ public class wViewTextPostTest extends WBase {
 	
 	@Test
 	public void wViewTextPostTestCase()throws InterruptedException {
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();

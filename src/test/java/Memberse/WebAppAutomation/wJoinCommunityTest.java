@@ -21,8 +21,8 @@ public class wJoinCommunityTest extends WBase {
 	
 	@Test
 	public void wJoinCommunityTestCase()throws InterruptedException{
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 	    String autoText=getSaltString();
 	    System.out.println(autoText);

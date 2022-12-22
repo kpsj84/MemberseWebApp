@@ -16,9 +16,9 @@ import WebPageObjects.WelcomePage;
 public class wMemberInfoTest extends WBase {
 	
 	@Test
-	public void wUserInfoTestCase() throws InterruptedException {
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+	public void wMemberInfoTestCase() throws InterruptedException {
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();

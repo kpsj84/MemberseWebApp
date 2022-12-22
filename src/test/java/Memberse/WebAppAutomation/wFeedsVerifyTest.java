@@ -11,9 +11,9 @@ import WebPageObjects.WelcomePage;
 public class wFeedsVerifyTest extends WBase {
 	
 	@Test
-	public void FeedsVerifyTestCase()throws InterruptedException{
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+	public void wFeedsVerifyTestCase()throws InterruptedException{
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();

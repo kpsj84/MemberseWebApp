@@ -14,8 +14,8 @@ public class wDeleteAccountTest extends WBase {
 	
 	@Test
 	public void wDeleteAccountTestCase() throws InterruptedException {
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.SignupButtton().click();
@@ -29,7 +29,7 @@ public class wDeleteAccountTest extends WBase {
 		sp.Password().sendKeys(password);
 		sp.confirmPassword().sendKeys(password);
 		sp.SignupButton().click();
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 		
 		wp.LoginButton().click();
 		
@@ -37,7 +37,7 @@ public class wDeleteAccountTest extends WBase {
 		lp.Email().sendKeys(email);
 		lp.Password().sendKeys(password);
 		lp.Login().click();
-		Thread.sleep(10000);
+		Thread.sleep(6000);
 		
 		driver.findElement(By.xpath("//*[text()='As a Creator']")).click();
 		Thread.sleep(3000);

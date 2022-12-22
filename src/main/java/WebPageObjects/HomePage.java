@@ -36,7 +36,7 @@ public class HomePage {
 		return filterButton;
 	}
 	
-	@FindBy(xpath="/html/body/div[2]/div[2]/div/div/div[2]/div/div/div/div[2]/div[1]/div[3]/button/span")
+	@FindBy(xpath="/html/body/div[2]/div[2]/div/div/div[2]/div/div/div/div[2]/div[2]/div[3]/button/span")
 	private WebElement filterToggle ;
 	
 	public WebElement filterToggle() {

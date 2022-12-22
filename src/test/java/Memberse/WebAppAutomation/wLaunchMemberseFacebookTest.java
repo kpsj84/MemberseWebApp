@@ -14,8 +14,8 @@ public class wLaunchMemberseFacebookTest extends WBase {
 	
 	@Test
 	public void wLaunchMemberseFacebookTestCase()throws InterruptedException {
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		ExplorePage fb = new ExplorePage(driver);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

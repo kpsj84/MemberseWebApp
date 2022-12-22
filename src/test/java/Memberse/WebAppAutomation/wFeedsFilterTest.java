@@ -12,8 +12,8 @@ public class wFeedsFilterTest extends WBase {
 	
 	@Test
 	public void wFeedsFilterTestCase()throws InterruptedException{
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();
@@ -35,9 +35,9 @@ public class wFeedsFilterTest extends WBase {
 	    hp.filterSave().click();
 	    Thread.sleep(8000);
 	    
-	    String Kqatestc5 = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div:nth-child(3) > div.space-y-2 > div > div > div:nth-child(3) > div > div:nth-child(1) > div > div.flex.flex-grow > div > div > p.text-sm.font-semibold.line-clamp-1 > a")).getText();
-		System.out.println(Kqatestc5);
-		Assert.assertEquals(Kqatestc5,"kqatestc5's Community");
+	    String Kqatestc3 = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div:nth-child(3) > div.space-y-2 > div > div > div:nth-child(3) > div > div:nth-child(1) > div > div.flex.flex-grow > div > div > p.text-sm.font-semibold.line-clamp-1 > a")).getText();
+		System.out.println(Kqatestc3);
+		Assert.assertEquals(Kqatestc3,"kqatestc3's Community");
     }
 
 }

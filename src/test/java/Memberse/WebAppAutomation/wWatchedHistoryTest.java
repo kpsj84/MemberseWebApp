@@ -16,9 +16,9 @@ import WebPageObjects.WelcomePage;
 	
 	@Test
 	public void wWatchedHistoryTestCase()throws InterruptedException{
-	WUtilities u = new  WUtilities();
-	u.timeDelayToLoadWebsite(driver);
-		
+	WUtilities u = new  WUtilities(driver);
+	u.timeDelayToLoadWebsite();
+			
     WelcomePage wp = new WelcomePage(driver);
 	wp.LoginButton().click();
 	Thread.sleep(1000);

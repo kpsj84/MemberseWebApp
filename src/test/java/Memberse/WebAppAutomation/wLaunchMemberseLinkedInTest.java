@@ -13,8 +13,8 @@ public class wLaunchMemberseLinkedInTest extends WBase {
 	
 	@Test
 	public void wLaunchMemberseLinkedInTestCase()throws InterruptedException{
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		ExplorePage li = new ExplorePage(driver);
 		li.LinkedinIcon().click();

@@ -1,5 +1,6 @@
 package Memberse.WebAppAutomation;
 
+import java.util.List;
 import java.util.Random;
 
 import org.openqa.selenium.By;
@@ -16,8 +17,8 @@ public class wPostHistoryEditTest extends WBase {
 	
 	@Test
 	public void wPostHistoryEditTestCase()throws InterruptedException{
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
@@ -37,8 +38,18 @@ public class wPostHistoryEditTest extends WBase {
     	
 		PostHistoryPage php = new PostHistoryPage(driver);
         php.PostHistorySubMenu().click();
-    	Thread.sleep(7000);
-    	php.EditPost().click();
+    	Thread.sleep(10000);
+    	
+    	List<WebElement> buttonPosition = driver.findElements(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[2]/div[2]/div/div[2]/div/div[1]/div[2]/div[3]/div/div/button"));
+    	int buttonNos = buttonPosition.size();
+    	if(buttonNos > 2)
+    	{
+    		php.EditPost().click();
+    	}
+    	else
+    	{
+    		driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[2]/div[2]/div/div[2]/div/div[1]/div[2]/div[3]/div/div/button[1]")).click();
+    	}
         Thread.sleep(5000);
         
         String Text= driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[1]/h3")).getText();

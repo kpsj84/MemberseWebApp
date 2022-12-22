@@ -18,9 +18,9 @@ import WebPageObjects.WelcomePage;
 public class wShareCommunityTest extends WBase{
 	
 	@Test
-	public void ShareCreatorTestCase()throws InterruptedException{
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+	public void wShareCommunityTestCase()throws InterruptedException{
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();

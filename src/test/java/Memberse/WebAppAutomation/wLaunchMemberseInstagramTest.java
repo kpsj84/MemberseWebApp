@@ -13,8 +13,8 @@ public class wLaunchMemberseInstagramTest extends WBase {
 	
 	@Test
 	public void wLaunchMemberseInstagramTestCase()throws InterruptedException{
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		ExplorePage in = new ExplorePage(driver);
 		in.InstagramIcon().click();
@@ -27,11 +27,11 @@ public class wLaunchMemberseInstagramTest extends WBase {
 	            String ChildWindow = iterator.next();
 	                if (!mainWindowHandle.equalsIgnoreCase(ChildWindow)) {
 	                driver.switchTo().window(ChildWindow);
-		
+	                
 		 Thread.sleep(10000);
-	 	 String Text= driver.findElement(By.xpath("//*[@text()='memberse.app']")).getText();
+	 	 String Text= driver.findElement(By.xpath("//*[text()='Memberse | Membership Platform']")).getText();
 	 	 System.out.println(Text);
-	 	 Assert.assertEquals(Text,"memberse.app");
+	 	 Assert.assertEquals(Text,"Memberse | Membership Platform");
 	                }
 	         }
 		 driver.close();

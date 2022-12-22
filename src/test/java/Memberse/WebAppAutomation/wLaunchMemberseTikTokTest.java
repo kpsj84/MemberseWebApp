@@ -13,8 +13,8 @@ public class wLaunchMemberseTikTokTest extends WBase {
 	
 	@Test
 	public void wLaunchMemberseTikTokTestCase()throws InterruptedException{
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		ExplorePage in = new ExplorePage(driver);
 		in.TikTokIcon().click();
