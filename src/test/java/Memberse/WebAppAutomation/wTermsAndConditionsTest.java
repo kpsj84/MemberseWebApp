@@ -14,8 +14,8 @@ public class wTermsAndConditionsTest extends WBase{
 	
 	@Test
 	public void wTermsAndConditionsTestCase()throws InterruptedException{
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		ExplorePage tm = new ExplorePage(driver);
 		tm.TermLink().click();

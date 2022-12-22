@@ -16,9 +16,9 @@ import WebPageObjects.WelcomePage;
 public class wBecomeCreatorTest extends WBase {
 	
 	@Test
-	public void WBecomeCreatorTestCase()throws InterruptedException {
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+	public void wBecomeCreatorTestCase()throws InterruptedException {
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		String autoText=getSaltString();
 		System.out.println(autoText);

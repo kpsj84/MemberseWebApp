@@ -7,10 +7,11 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -22,9 +23,9 @@ import WebPageObjects.WelcomePage;
 public class wCreatePhotoPostTest extends WBase {
 	
 	@Test
-	public void wCreatePhotoPostTestFree()throws InterruptedException, AWTException{
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+	public void wCreatePhotoPostTestCase()throws InterruptedException, AWTException{
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();
@@ -91,14 +92,14 @@ public class wCreatePhotoPostTest extends WBase {
         Thread.sleep(3000);
        
         cpp.submitButton().click();
-        Thread.sleep(15000); 
-        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);  
-	    String Text = driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
+        WebDriverWait w = new WebDriverWait(driver,120);
+        w.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
+        String Text = driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
 		System.out.println(Text);
 		Assert.assertEquals(Text,"Operation succesfully completed.");
 	    
-        Thread.sleep(5000);
-	    WebElement Text1 = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div.pb-10 > div.flex-grow > div > div:nth-child(2) > div > div:nth-child(1) > div.w-full.bg-neutral-1000.dark\\:bg-purple-8000.shadow-sm.p-4.flex.space-x-2.h-28 > div.flex.flex-grow > div > div.block.relative > p"));
+		Thread.sleep(6000);
+        WebElement Text1 = driver.findElement(By.xpath("//p[text()='Auto Generated Post - " +autotext+ "']"));
 		String text2 = Text1.getText();
 		System.out.println(text2);
 		Assert.assertEquals(text2,"Auto Generated Post - " + autotext);
@@ -168,14 +169,14 @@ public class wCreatePhotoPostTest extends WBase {
 	        Thread.sleep(3000);
 	       
 	        cpp.submitButton().click();
-	        Thread.sleep(15000); 
-	        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);  
-		    String Text = driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
+	        WebDriverWait w = new WebDriverWait(driver,120);
+	        w.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
+	        String Text = driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
 			System.out.println(Text);
 			Assert.assertEquals(Text,"Operation succesfully completed.");
 		    
-	        Thread.sleep(5000);
-		    WebElement Text1 = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div.pb-10 > div.flex-grow > div > div:nth-child(2) > div > div:nth-child(1) > div.w-full.bg-neutral-1000.dark\\:bg-purple-8000.shadow-sm.p-4.flex.space-x-2.h-28 > div.flex.flex-grow > div > div.block.relative > p"));
+	        Thread.sleep(6000);
+	        WebElement Text1 = driver.findElement(By.xpath("//p[text()='Auto Generated Paid Post - " +autotext+ "']"));
 			String text2 = Text1.getText();
 			System.out.println(text2);
 			Assert.assertEquals(text2,"Auto Generated Paid Post - " + autotext);

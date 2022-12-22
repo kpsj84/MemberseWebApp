@@ -10,8 +10,8 @@ public class wLaunchGooglePlayTest extends WBase {
 	
 	@Test
 	public void wLaunchGooglePlayTestCase() throws InterruptedException {
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		String originalWindow = driver.getWindowHandle();
 		

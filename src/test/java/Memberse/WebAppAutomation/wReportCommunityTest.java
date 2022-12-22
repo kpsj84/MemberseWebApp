@@ -14,8 +14,8 @@ public class wReportCommunityTest extends WBase {
 	
 	@Test
 	public void wReportCommunityTestCase()throws InterruptedException{
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();

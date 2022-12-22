@@ -10,8 +10,8 @@ public class wLaunchAppStoreTest extends WBase {
 	
 	@Test
 	public void wLaunchAppStoreTestCase() throws InterruptedException {
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		String originalWindow = driver.getWindowHandle();
 		

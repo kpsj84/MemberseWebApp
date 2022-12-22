@@ -10,6 +10,8 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -22,8 +24,8 @@ public class wCreateAndDeletePlaylistTest extends WBase {
 	
 	@Test
 	public void wCreateAndDeletePlaylistTestCase()throws InterruptedException, AWTException {
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
@@ -54,7 +56,7 @@ public class wCreateAndDeletePlaylistTest extends WBase {
         plp.UploadImageButton().click();
         Thread.sleep(5000);
         
-        File fl = new File(System.getProperty("user.dir") + "/src/Pic22.jpg");
+        File fl = new File(System.getProperty("user.dir") + "/src/samples/Pic1.jpg");
         StringSelection str = new StringSelection(fl.getAbsolutePath());
         //StringSelection str = new StringSelection("C:\\Users\\QA\\Desktop\\MusicFile.jpg");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
@@ -62,12 +64,6 @@ public class wCreateAndDeletePlaylistTest extends WBase {
         
         Robot rb = new Robot();
         //This required as in Automation, Focus loose from open file upload window
-        rb.keyPress(KeyEvent.VK_META);
-        rb.keyPress(KeyEvent.VK_TAB);
-        rb.keyRelease(KeyEvent.VK_META);
-        rb.keyRelease(KeyEvent.VK_TAB);
-        rb.delay(500);
-        
         rb.keyPress(KeyEvent.VK_META);
         rb.keyPress(KeyEvent.VK_TAB);
         rb.keyRelease(KeyEvent.VK_META);
@@ -99,7 +95,8 @@ public class wCreateAndDeletePlaylistTest extends WBase {
         plp.PlayListSaveButton().click();
         Thread.sleep(6000);
         
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        WebDriverWait w = new WebDriverWait(driver,60);
+        w.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
         String text= driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
 		System.out.println(text);
 		Assert.assertEquals(text,"Operation succesfully completed.");

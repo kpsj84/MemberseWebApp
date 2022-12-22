@@ -11,8 +11,8 @@ public class wLoginWithFacebookTest extends WBase {
 	
 	@Test
 	public void wLoginWithFacebookTestCase() throws InterruptedException {
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
@@ -23,7 +23,7 @@ public class wLoginWithFacebookTest extends WBase {
 		driver.findElement(By.id("email")).sendKeys("qatesting9999@gmail.com");
 		driver.findElement(By.id("pass")).sendKeys("Softqa1313");   
 		driver.findElement(By.id("loginbutton")).click();
-		Thread.sleep(20000);
+		Thread.sleep(16000);
 		
 		try
 		{

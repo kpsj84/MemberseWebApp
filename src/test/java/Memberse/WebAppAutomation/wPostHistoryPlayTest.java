@@ -16,8 +16,8 @@ public class wPostHistoryPlayTest extends WBase {
 	
 	@Test
 	public void wPostHistoryPlayTestCase() throws InterruptedException {
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
@@ -66,9 +66,9 @@ public class wPostHistoryPlayTest extends WBase {
              }
     	}	
         php.ClickOnContent().click();
-        Thread.sleep(5000);
+        Thread.sleep(8000);
         
-        String Text = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div/div/div[2]/div[1]/div[3]/div/div[2]/div/div/p[1]/a")).getText();
+        String Text = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/div/div/p[1]/a")).getText();
 	    System.out.println(Text);
 	    Assert.assertEquals(Text,"kqatestc3's Community");
 	}

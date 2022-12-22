@@ -15,9 +15,9 @@ import WebPageObjects.WelcomePage;
 public class wCommunityEditInfoTest extends WBase {
 	
 	@Test
-	public void wCreatorEditInfoTestCase() throws InterruptedException {
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+	public void wCommunityEditInfoTestCase() throws InterruptedException {
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();

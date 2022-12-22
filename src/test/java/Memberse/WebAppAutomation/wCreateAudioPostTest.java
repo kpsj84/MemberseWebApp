@@ -11,6 +11,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -22,9 +24,9 @@ import WebPageObjects.WelcomePage;
 public class wCreateAudioPostTest extends WBase{
 	
 	@Test
-	public void wCreatAudioPostTestFree()throws InterruptedException, AWTException{
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+	public void wCreatAudioPostTestCase()throws InterruptedException, AWTException{
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();
@@ -91,9 +93,9 @@ public class wCreateAudioPostTest extends WBase{
         Thread.sleep(3000);
        
         cpp.submitButton().click();
-        Thread.sleep(15000); 
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);  
-	    String Text = driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
+        WebDriverWait w = new WebDriverWait(driver,120);
+        w.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
+        String Text = driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
 		System.out.println(Text);
 		Assert.assertEquals(Text,"Operation succesfully completed.");
 	    

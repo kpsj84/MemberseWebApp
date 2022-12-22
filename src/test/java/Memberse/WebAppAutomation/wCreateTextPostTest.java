@@ -16,9 +16,9 @@ import WebPageObjects.WelcomePage;
 public class wCreateTextPostTest extends WBase {
 	
 	@Test
-	public void wCreateTextPostTestFree()throws InterruptedException{
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+	public void wCreateTextPostTestCase()throws InterruptedException{
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();
@@ -50,8 +50,10 @@ public class wCreateTextPostTest extends WBase {
 		System.out.println(Text);
 		Assert.assertEquals(Text,"Operation succesfully completed.");
 	    
-        Thread.sleep(2000);
-	    WebElement Text1 = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div.pb-10 > div.flex-grow > div > div:nth-child(2) > div > div:nth-child(1) > div.w-full.bg-neutral-1000.dark\\:bg-purple-8000.shadow-sm.p-4.flex.space-x-2.h-28 > div.flex.flex-grow > div > div.block.relative > p"));
+        Thread.sleep(3000);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        //Thread.sleep(999999999);
+	    WebElement Text1 = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[2]/div[2]/div/div[3]/div/div[1]/div[2]/div[2]/div/div[1]/p"));
 		String text2 = Text1.getText();
 		System.out.println(text2);
 		Assert.assertEquals(text2,"Auto Generated Post - " + autotext);
@@ -92,12 +94,12 @@ public class wCreateTextPostTest extends WBase {
 			System.out.println(Text);
 			Assert.assertEquals(Text,"Operation succesfully completed.");
 		    
-	        Thread.sleep(2000);
-		    WebElement Text1 = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div.pb-10 > div.flex-grow > div > div:nth-child(2) > div > div:nth-child(1) > div.w-full.bg-neutral-1000.dark\\:bg-purple-8000.shadow-sm.p-4.flex.space-x-2.h-28 > div.flex.flex-grow > div > div.block.relative > p"));
+	        Thread.sleep(3000);
+	        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    WebElement Text1 = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[2]/div[2]/div/div[3]/div/div[1]/div[2]/div[2]/div/div[1]/p"));
 			String text2 = Text1.getText();
 			System.out.println(text2);
 			Assert.assertEquals(text2,"Auto Generated Paid Post - " + autotext);
-			Thread.sleep(3000);
-	    }
+			}
 	    
 }

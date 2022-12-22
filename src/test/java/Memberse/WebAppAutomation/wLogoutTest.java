@@ -11,8 +11,8 @@ public class wLogoutTest extends WBase {
 	
 	@Test
 	public void wLogoutTestCase() throws InterruptedException {
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
@@ -21,7 +21,7 @@ public class wLogoutTest extends WBase {
 		lp.Email().sendKeys("kqatestc3@yopmail.com");
 		lp.Password().sendKeys("kqatestc3");
 		lp.Login().click();
-		Thread.sleep(6000);
+		Thread.sleep(5000);
 		
 		driver.findElement(By.xpath("//a[text()='Creator']")).click();
 		Thread.sleep(1000);

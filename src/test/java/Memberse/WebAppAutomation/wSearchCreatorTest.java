@@ -16,8 +16,8 @@ public class wSearchCreatorTest extends WBase {
 	
 	@Test
 	public void wSearchCreatorTestCase()throws InterruptedException{
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();

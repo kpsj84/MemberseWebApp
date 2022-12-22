@@ -16,8 +16,8 @@ public class wChangePasswordTest extends WBase {
 	
 	@Test
 	public void wChangePasswordTestCase()throws InterruptedException{
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();

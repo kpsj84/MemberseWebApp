@@ -20,9 +20,9 @@ public class wFollowAndUnfollowCommunityTest extends WBase {
 	public String password;
 	
 	@Test(priority=1)
-	public void wFollowCreatorTestCase()throws InterruptedException{
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+	public void wFollowAndUnfollowCommunityTestCase()throws InterruptedException{
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		  
 	    WelcomePage wp = new WelcomePage(driver);
 		wp.SignupButtton().click();
@@ -97,8 +97,8 @@ public class wFollowAndUnfollowCommunityTest extends WBase {
         
         
      //2nd Test case started from here
-        @Test(dependsOnMethods="wFollowCreatorTestCase")
-        public void UnFollowCreatorTestCase() throws InterruptedException { 
+        @Test(dependsOnMethods="wFollowAndUnfollowCommunityTestCase")
+        public void UnfollowCommunityTestCase() throws InterruptedException { 
         Thread.sleep(3000);
         
         WelcomePage wp = new WelcomePage(driver);	

@@ -10,9 +10,9 @@ import WebPageObjects.WelcomePage;
 public class wSignupFormValidationTest extends WBase {
 	
 	@Test
-	public void wRegisterFormValidationTestCase() throws InterruptedException {
-		WUtilities u = new  WUtilities();
-		u.timeDelayToLoadWebsite(driver);
+	public void wSignupFormValidationTestCase() throws InterruptedException {
+		WUtilities u = new  WUtilities(driver);
+		u.timeDelayToLoadWebsite();
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.SignupButtton().click();
