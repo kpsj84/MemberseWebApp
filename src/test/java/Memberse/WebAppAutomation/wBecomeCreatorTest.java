@@ -19,6 +19,10 @@ public class wBecomeCreatorTest extends WBase {
 	public void wBecomeCreatorTestCase()throws InterruptedException {
 		WUtilities u = new  WUtilities(driver);
 		u.timeDelayToLoadWebsite();
+
+		WelcomePage wp = new WelcomePage(driver);
+		wp.SignupButtton().click();
+		Thread.sleep(1000);
 		
 		String autoText=getSaltString();
 		System.out.println(autoText);
@@ -26,10 +30,6 @@ public class wBecomeCreatorTest extends WBase {
 		String email = autoText+emailDomain;
 		System.out.println(email);
 		String password="123456";
-
-		WelcomePage wp = new WelcomePage(driver);
-		wp.SignupButtton().click();
-		Thread.sleep(1000);
 		
 		SignupPage sp = new SignupPage(driver);
 		sp.Email().sendKeys(email);

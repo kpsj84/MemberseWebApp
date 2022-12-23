@@ -30,6 +30,7 @@ public class wCreatePhotoPostTest extends WBase {
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();
 		Thread.sleep(1000);
+		
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys("kqatestc5@yopmail.com");
 		lp.Password().sendKeys("kqatestc5");

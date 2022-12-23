@@ -18,6 +18,7 @@ public class wSignupTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.SignupButtton().click();
+		Thread.sleep(1000);
 		
 		String email = getSaltString();
 		System.out.println(email);

@@ -18,6 +18,7 @@ public class wFeedsFilterTest extends WBase {
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();
 		Thread.sleep(1000);
+		
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys("kqatestc4@yopmail.com");
 		lp.Password().sendKeys("kqatestc4");

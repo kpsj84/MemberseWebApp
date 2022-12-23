@@ -16,6 +16,7 @@ public class wSignupFormValidationTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.SignupButtton().click();
+		Thread.sleep(1000);
 		
 		SignupPage sp = new SignupPage(driver);
 		sp.SignupButton().click();
