@@ -51,7 +51,7 @@ public class wSmokeTest extends WBase{
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
-		Thread.sleep(1000);
+		Thread.sleep(2000); //earlier 1sec
 		driver.findElement(By.xpath("//input[@name='email']")).sendKeys(testText);
 		driver.navigate().back();
 		Thread.sleep(1000);
