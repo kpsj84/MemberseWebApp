@@ -33,13 +33,13 @@ public class wDeleteAccountTest extends WBase {
 		Thread.sleep(4000);
 		
 		wp.LoginButton().click();
-		Thread.sleep(1000);
+		Thread.sleep(2000); //earlier 1sec
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys(email);
 		lp.Password().sendKeys(password);
 		lp.Login().click();
-		Thread.sleep(7000);
+		Thread.sleep(10000); //earlier 7sec
 		
 		driver.findElement(By.xpath("//*[text()='As a Creator']")).click();
 		Thread.sleep(3000);
