@@ -12,7 +12,7 @@ public class WUtilities {
 	
 	public void timeDelayToLoadWebsite() throws InterruptedException {
 		System.out.println("From start delay method, Website loading...");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		System.out.println("Website loaded, Ready for Testing");
 	}
 

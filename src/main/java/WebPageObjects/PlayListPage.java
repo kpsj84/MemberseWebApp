@@ -56,7 +56,7 @@ public class PlayListPage {
     	return PlayListSaveButton;
     }
     
-    @FindBy(css="#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div.pb-10 > div.flex-grow > div.space-y-2 > div:nth-child(7) > div.flex.text-white > div > div > button:nth-child(1) > svg > path")
+    @FindBy(css="#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div.pb-10 > div.flex-grow > div.space-y-2 > div:nth-child(4) > div.flex.text-white > div > div > button:nth-child(1)")
     private WebElement playListViewButton ;
     
     public WebElement playListViewButton() {

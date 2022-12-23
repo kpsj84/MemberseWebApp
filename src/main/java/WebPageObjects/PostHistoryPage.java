@@ -77,7 +77,7 @@ public class PostHistoryPage {
     	return PlaylistIcon;
     }
     
-    @FindBy(xpath="/html/body/div[4]/div/div/div[2]/fieldset/div[1]/div/div[7]/div[1]/input")
+    @FindBy(xpath="/html/body/div[4]/div/div/div[2]/fieldset/div[1]/div/div[4]/div[1]/input") 
     private WebElement SavetoPlaylistCheckbox ;
     
     public WebElement SavetoPlaylistCheckbox() {

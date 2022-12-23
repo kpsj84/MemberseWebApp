@@ -19,6 +19,7 @@ public class wDeleteAccountTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.SignupButtton().click();
+		Thread.sleep(1000);
 		
 		String email = getSaltString();
 		System.out.println(email);
@@ -32,12 +33,13 @@ public class wDeleteAccountTest extends WBase {
 		Thread.sleep(4000);
 		
 		wp.LoginButton().click();
+		Thread.sleep(1000);
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys(email);
 		lp.Password().sendKeys(password);
 		lp.Login().click();
-		Thread.sleep(6000);
+		Thread.sleep(7000);
 		
 		driver.findElement(By.xpath("//*[text()='As a Creator']")).click();
 		Thread.sleep(3000);

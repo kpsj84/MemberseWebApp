@@ -10,6 +10,7 @@
   <test thread-count="5" name="Test">
   
     <classes>
+    <!-- 
       <class name="Memberse.WebAppAutomation.wSmokeTest"/>
       <class name="Memberse.WebAppAutomation.wSignupFormValidationTest"/>
       <class name="Memberse.WebAppAutomation.wSignupTest"/>
@@ -67,6 +68,21 @@
       <class name="Memberse.WebAppAutomation.wWatchedHistoryTest"/>
       <class name="Memberse.WebAppAutomation.wChangePasswordTest"/>
       <class name="Memberse.WebAppAutomation.wBecomeCreatorTest"/>
+      -->
+      
+      <class name="Memberse.WebAppAutomation.wSignupFormValidationTest"/>
+      <class name="Memberse.WebAppAutomation.wSignupTest"/>
+      <class name="Memberse.WebAppAutomation.wLoginFormValidationTest"/>
+      <class name="Memberse.WebAppAutomation.wLogintTest"/>      
+      <class name="Memberse.WebAppAutomation.wLogoutTest"/>
+      <class name="Memberse.WebAppAutomation.wDeleteAccountTest"/>
+      <class name="Memberse.WebAppAutomation.wCreatePhotoPostTest"/>
+      <class name="Memberse.WebAppAutomation.wCreateVideoPostTest"/>
+      <class name="Memberse.WebAppAutomation.wCreateAndDeletePlaylistTest"/>
+      <class name="Memberse.WebAppAutomation.wJoinCommunityTest"/> 
+      <class name="Memberse.WebAppAutomation.wBecomeCreatorTest"/>
+      <class name="Memberse.WebAppAutomation.wFeedsFilterTest"/>      
+      
     </classes>
     
   </test> <!-- Test -->

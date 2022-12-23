@@ -120,7 +120,7 @@ public class wAddMediaAndPlayPlaylistTest extends WBase {
     	plp.PlayListSubMenu().click();
     	Thread.sleep(10000);
         plp.playListViewButton().click();
-        Thread.sleep(10000);
+        Thread.sleep(10000);  
         driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[2]/div[2]/div/div[2]/div[2]/div/div/div[2]/div[3]/div/div[1]/p")).click();
         Thread.sleep(8000);
         //String Text= driver.findElement(By.xpath("//*[@id=\"headlessui-dialog-panel-29\"]/div[2]/div[1]/div[2]/div/div[2]/div/div/p[1]/a")).getText();
