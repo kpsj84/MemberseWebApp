@@ -1,7 +1,5 @@
 package Memberse.WebAppAutomation;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -14,8 +12,7 @@ public class wSmokeTest extends WBase{
 	
 	@Test
 	public void wSmokeTestCase() throws InterruptedException {
-		Thread.sleep(3000);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Thread.sleep(5000);
 		
 		String verifyExploreText = driver.findElement(By.xpath("//*[text()='Find your Content Creator']")).getText();
 		System.out.println(verifyExploreText);
@@ -57,6 +54,7 @@ public class wSmokeTest extends WBase{
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//input[@name='email']")).sendKeys(testText);
 		driver.navigate().back();
+		Thread.sleep(1000);
 		
 		wp.SignupButtton().click();
 		Thread.sleep(1000);

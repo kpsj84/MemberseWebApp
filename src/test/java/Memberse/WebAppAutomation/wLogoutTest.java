@@ -19,10 +19,10 @@ public class wLogoutTest extends WBase {
 		Thread.sleep(1000);
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestc3@yopmail.com");
-		lp.Password().sendKeys("kqatestc3");
+		lp.Email().sendKeys("kqatestc7@yopmail.com");
+		lp.Password().sendKeys("kqatestc7");
 		lp.Login().click();
-		Thread.sleep(5000);
+		Thread.sleep(7000);
 		
 		driver.findElement(By.xpath("//a[text()='Creator']")).click();
 		Thread.sleep(1000);
@@ -31,7 +31,7 @@ public class wLogoutTest extends WBase {
 		driver.findElement(By.xpath("//p[text()='Log out']")).click();
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//span[text()='Confirm']")).click();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		
 		String verifyUrl = driver.getCurrentUrl();
 		System.out.println(verifyUrl);

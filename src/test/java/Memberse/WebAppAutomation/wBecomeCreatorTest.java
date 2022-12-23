@@ -52,7 +52,7 @@ public class wBecomeCreatorTest extends WBase {
 		    
 		HomePage hp = new HomePage(driver);
 		hp.CreatorMenu().click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 	    
 	    CreatorMenuPage cmp = new CreatorMenuPage(driver);
 		cmp.checkbox().click();
