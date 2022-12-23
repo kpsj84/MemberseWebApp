@@ -39,7 +39,6 @@ public class wLoginFormValidationTest extends WBase{
 		System.out.println("After password field have value, Validation message goes off");
 		
 		System.out.println("Email form validations are working fine");
-
 	}
 
 }

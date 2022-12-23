@@ -29,7 +29,7 @@ public class wCreatePhotoPostTest extends WBase {
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys("kqatestc5@yopmail.com");
@@ -99,7 +99,7 @@ public class wCreatePhotoPostTest extends WBase {
 		System.out.println(Text);
 		Assert.assertEquals(Text,"Operation succesfully completed.");
 	    
-		Thread.sleep(6000);
+		Thread.sleep(10000);
         WebElement Text1 = driver.findElement(By.xpath("//p[text()='Auto Generated Post - " +autotext+ "']"));
 		String text2 = Text1.getText();
 		System.out.println(text2);
@@ -121,7 +121,7 @@ public class wCreatePhotoPostTest extends WBase {
 	    
 	    @Test
 		public void wCreatePhotoPostTestPaid()throws InterruptedException, AWTException{
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 		    
 			HomePage hp = new HomePage(driver);
 			hp.createPost().click();

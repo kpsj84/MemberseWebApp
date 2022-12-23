@@ -77,7 +77,6 @@ public class WBase {
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get((String)prop.get("Url"));
-		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	@AfterClass
