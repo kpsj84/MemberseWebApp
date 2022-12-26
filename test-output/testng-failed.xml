@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wDeleteAccountTest">
+      <class name="Memberse.WebAppAutomation.wLoginWithGoogleTest">
         <methods>
+          <include name="wLoginWithGoogleTestCase"/>
           <include name="CloseBrowser"/>
-          <include name="wDeleteAccountTestCase"/>
           <include name="startDriver"/>
           <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wDeleteAccountTest -->
+      </class> <!-- Memberse.WebAppAutomation.wLoginWithGoogleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

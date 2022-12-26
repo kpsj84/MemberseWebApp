@@ -16,7 +16,7 @@ public class wLoginwithAppleTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.AppleLogin().click();
