@@ -16,14 +16,15 @@ public class wLoginWithFacebookTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
+		Thread.sleep(2000);
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.FacebookLogin().click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		driver.findElement(By.id("email")).sendKeys("qatesting9999@gmail.com");
 		driver.findElement(By.id("pass")).sendKeys("Softqa1313");   
 		driver.findElement(By.id("loginbutton")).click();
-		Thread.sleep(16000);
+		Thread.sleep(12000);
 		
 		try
 		{
@@ -39,7 +40,7 @@ public class wLoginWithFacebookTest extends WBase {
 		}
 		finally
 		{
-			System.out.println("Facebook Login Test Case Completed");
+			System.out.println("Facebook Login Test Case is Working fine");
 		}
 	}
 

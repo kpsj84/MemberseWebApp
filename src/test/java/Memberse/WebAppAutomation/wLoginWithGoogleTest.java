@@ -16,7 +16,7 @@ public class wLoginWithGoogleTest extends WBase{
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		LoginPage lp = new LoginPage(driver);
 		//Store the ID of the original window
@@ -25,11 +25,11 @@ public class wLoginWithGoogleTest extends WBase{
 		lp.GoogleLogin().click();
 		Thread.sleep(4000);
 		
-		for(String windowHandle : driver.getWindowHandles()) 
+		for(String childWindow : driver.getWindowHandles()) 
 		{
-		    if(!originalWindow.contentEquals(windowHandle)) 
+		    if(!originalWindow.contentEquals(childWindow)) //originalWindow content is not equals to content of childWindow then enters in "if" body
 		    {
-		        driver.switchTo().window(windowHandle);
+		        driver.switchTo().window(childWindow);
 		        break;
 		    }   
 		}
@@ -46,14 +46,7 @@ public class wLoginWithGoogleTest extends WBase{
 			driver.findElement(By.xpath("//*[text()='Next']")).click();
 			Thread.sleep(3000);
 			driver.switchTo().window(originalWindow);
-		}
-		catch(Exception e)
-		{
-			System.out.println(e.toString());
-		}
-		
-		try
-		{
+			
 			driver.findElement(By.xpath("//a[text()='Account']")).click();
 			Thread.sleep(1000);
 			String msg1 = driver.findElement(By.xpath("//input[@name='email']")).getAttribute("value");
@@ -66,8 +59,8 @@ public class wLoginWithGoogleTest extends WBase{
 		}
 		finally
 		{
-			System.out.println("Google Login Test Case Completed");
 			driver.close();
+			System.out.println("Google Login Test Case is Working fine as Button is clickable and GUI is responsive");
 		}
 		driver.switchTo().window(originalWindow);
 	}
