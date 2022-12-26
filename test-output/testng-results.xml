@@ -1,155 +1,281 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="18" total="28" passed="10">
+<testng-results skipped="0" failed="0" ignored="36" total="55" passed="19">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="293119" started-at="2022-12-26T18:01:29 IST" finished-at="2022-12-26T18:06:22 IST">
+  <suite name="Suite" duration-ms="602251" started-at="2022-12-26T21:01:16 IST" finished-at="2022-12-26T21:11:18 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="293119" started-at="2022-12-26T18:01:29 IST" finished-at="2022-12-26T18:06:22 IST">
-      <class name="Memberse.WebAppAutomation.wDeleteAccountTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wDeleteAccountTest@2781e022]" name="startDriver" is-config="true" duration-ms="8352" started-at="2022-12-26T18:05:36 IST" finished-at="2022-12-26T18:05:44 IST">
+    <test name="Test" duration-ms="602251" started-at="2022-12-26T21:01:16 IST" finished-at="2022-12-26T21:11:18 IST">
+      <class name="Memberse.WebAppAutomation.wLogoutTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@7a1ebcd8]" name="startDriver" is-config="true" duration-ms="8554" started-at="2022-12-26T21:04:53 IST" finished-at="2022-12-26T21:05:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wDeleteAccountTestCase()[pri:0, instance:Memberse.WebAppAutomation.wDeleteAccountTest@2781e022]" name="wDeleteAccountTestCase" duration-ms="37626" started-at="2022-12-26T18:05:44 IST" finished-at="2022-12-26T18:06:22 IST">
+        <test-method status="PASS" signature="wLogoutTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@7a1ebcd8]" name="wLogoutTestCase" duration-ms="22667" started-at="2022-12-26T21:05:01 IST" finished-at="2022-12-26T21:05:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLogoutTestCase -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@7a1ebcd8]" name="CloseBrowser" is-config="true" duration-ms="120" started-at="2022-12-26T21:05:24 IST" finished-at="2022-12-26T21:05:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Memberse.WebAppAutomation.wLogoutTest -->
+      <class name="Memberse.WebAppAutomation.wPrivacyPolicyTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wPrivacyPolicyTest@7a765367]" name="startDriver" is-config="true" duration-ms="7851" started-at="2022-12-26T21:10:58 IST" finished-at="2022-12-26T21:11:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wPrivacyPolicyTestCase()[pri:0, instance:Memberse.WebAppAutomation.wPrivacyPolicyTest@7a765367]" name="wPrivacyPolicyTestCase" duration-ms="12176" started-at="2022-12-26T21:11:06 IST" finished-at="2022-12-26T21:11:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wPrivacyPolicyTestCase -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wPrivacyPolicyTest@7a765367]" name="CloseBrowser" is-config="true" duration-ms="122" started-at="2022-12-26T21:11:18 IST" finished-at="2022-12-26T21:11:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Memberse.WebAppAutomation.wPrivacyPolicyTest -->
+      <class name="Memberse.WebAppAutomation.wLaunchAppStoreTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLaunchAppStoreTest@528931cf]" name="startDriver" is-config="true" duration-ms="8555" started-at="2022-12-26T21:06:16 IST" finished-at="2022-12-26T21:06:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wLaunchAppStoreTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLaunchAppStoreTest@528931cf]" name="wLaunchAppStoreTestCase" duration-ms="18652" started-at="2022-12-26T21:06:24 IST" finished-at="2022-12-26T21:06:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLaunchAppStoreTestCase -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLaunchAppStoreTest@528931cf]" name="CloseBrowser" is-config="true" duration-ms="161" started-at="2022-12-26T21:06:43 IST" finished-at="2022-12-26T21:06:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Memberse.WebAppAutomation.wLaunchAppStoreTest -->
+      <class name="Memberse.WebAppAutomation.wTermsAndConditionsTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wTermsAndConditionsTest@34c4973]" name="startDriver" is-config="true" duration-ms="10581" started-at="2022-12-26T21:10:15 IST" finished-at="2022-12-26T21:10:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wTermsAndConditionsTestCase()[pri:0, instance:Memberse.WebAppAutomation.wTermsAndConditionsTest@34c4973]" name="wTermsAndConditionsTestCase" duration-ms="11148" started-at="2022-12-26T21:10:26 IST" finished-at="2022-12-26T21:10:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wTermsAndConditionsTestCase -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wTermsAndConditionsTest@34c4973]" name="CloseBrowser" is-config="true" duration-ms="109" started-at="2022-12-26T21:10:37 IST" finished-at="2022-12-26T21:10:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Memberse.WebAppAutomation.wTermsAndConditionsTest -->
+      <class name="Memberse.WebAppAutomation.wSignupTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@4232c52b]" name="startDriver" is-config="true" duration-ms="7785" started-at="2022-12-26T21:02:05 IST" finished-at="2022-12-26T21:02:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wSignupTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@4232c52b]" name="wSignupTestCase" duration-ms="15073" started-at="2022-12-26T21:02:13 IST" finished-at="2022-12-26T21:02:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wSignupTestCase -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@4232c52b]" name="CloseBrowser" is-config="true" duration-ms="148" started-at="2022-12-26T21:02:28 IST" finished-at="2022-12-26T21:02:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Memberse.WebAppAutomation.wSignupTest -->
+      <class name="Memberse.WebAppAutomation.wDeleteAccountTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wDeleteAccountTest@5faeada1]" name="startDriver" is-config="true" duration-ms="10089" started-at="2022-12-26T21:05:24 IST" finished-at="2022-12-26T21:05:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wDeleteAccountTestCase()[pri:0, instance:Memberse.WebAppAutomation.wDeleteAccountTest@5faeada1]" name="wDeleteAccountTestCase" duration-ms="41480" started-at="2022-12-26T21:05:34 IST" finished-at="2022-12-26T21:06:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wDeleteAccountTestCase -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wDeleteAccountTest@2781e022]" name="CloseBrowser" is-config="true" duration-ms="118" started-at="2022-12-26T18:06:22 IST" finished-at="2022-12-26T18:06:22 IST">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wDeleteAccountTest@5faeada1]" name="CloseBrowser" is-config="true" duration-ms="125" started-at="2022-12-26T21:06:16 IST" finished-at="2022-12-26T21:06:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- Memberse.WebAppAutomation.wDeleteAccountTest -->
       <class name="Memberse.WebAppAutomation.wSignupFormValidationTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@59e5ddf]" name="startDriver" is-config="true" duration-ms="8054" started-at="2022-12-26T18:01:59 IST" finished-at="2022-12-26T18:02:07 IST">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@57e1b0c]" name="startDriver" is-config="true" duration-ms="8444" started-at="2022-12-26T21:01:44 IST" finished-at="2022-12-26T21:01:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wSignupFormValidationTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@59e5ddf]" name="wSignupFormValidationTestCase" duration-ms="12729" started-at="2022-12-26T18:02:07 IST" finished-at="2022-12-26T18:02:20 IST">
+        <test-method status="PASS" signature="wSignupFormValidationTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@57e1b0c]" name="wSignupFormValidationTestCase" duration-ms="12838" started-at="2022-12-26T21:01:52 IST" finished-at="2022-12-26T21:02:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wSignupFormValidationTestCase -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@59e5ddf]" name="CloseBrowser" is-config="true" duration-ms="136" started-at="2022-12-26T18:02:20 IST" finished-at="2022-12-26T18:02:20 IST">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@57e1b0c]" name="CloseBrowser" is-config="true" duration-ms="152" started-at="2022-12-26T21:02:05 IST" finished-at="2022-12-26T21:02:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- Memberse.WebAppAutomation.wSignupFormValidationTest -->
       <class name="Memberse.WebAppAutomation.wLoginWithFacebookTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithFacebookTest@704a52ec]" name="startDriver" is-config="true" duration-ms="7782" started-at="2022-12-26T18:04:01 IST" finished-at="2022-12-26T18:04:09 IST">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithFacebookTest@11438d26]" name="startDriver" is-config="true" duration-ms="8488" started-at="2022-12-26T21:03:52 IST" finished-at="2022-12-26T21:04:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wLoginWithFacebookTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithFacebookTest@704a52ec]" name="wLoginWithFacebookTestCase" duration-ms="31859" started-at="2022-12-26T18:04:09 IST" finished-at="2022-12-26T18:04:40 IST">
+        <test-method status="PASS" signature="wLoginWithFacebookTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithFacebookTest@11438d26]" name="wLoginWithFacebookTestCase" duration-ms="30920" started-at="2022-12-26T21:04:01 IST" finished-at="2022-12-26T21:04:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wLoginWithFacebookTestCase -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithFacebookTest@704a52ec]" name="CloseBrowser" is-config="true" duration-ms="109" started-at="2022-12-26T18:04:40 IST" finished-at="2022-12-26T18:04:41 IST">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithFacebookTest@11438d26]" name="CloseBrowser" is-config="true" duration-ms="108" started-at="2022-12-26T21:04:32 IST" finished-at="2022-12-26T21:04:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- Memberse.WebAppAutomation.wLoginWithFacebookTest -->
       <class name="Memberse.WebAppAutomation.wLoginwithAppleTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginwithAppleTest@6ee52dcd]" name="startDriver" is-config="true" duration-ms="9470" started-at="2022-12-26T18:04:41 IST" finished-at="2022-12-26T18:04:50 IST">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginwithAppleTest@34cd072c]" name="startDriver" is-config="true" duration-ms="8376" started-at="2022-12-26T21:04:32 IST" finished-at="2022-12-26T21:04:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wLoginWithAppleTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginwithAppleTest@6ee52dcd]" name="wLoginWithAppleTestCase" duration-ms="12833" started-at="2022-12-26T18:04:50 IST" finished-at="2022-12-26T18:05:03 IST">
+        <test-method status="PASS" signature="wLoginWithAppleTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginwithAppleTest@34cd072c]" name="wLoginWithAppleTestCase" duration-ms="12499" started-at="2022-12-26T21:04:40 IST" finished-at="2022-12-26T21:04:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wLoginWithAppleTestCase -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLoginwithAppleTest@6ee52dcd]" name="CloseBrowser" is-config="true" duration-ms="114" started-at="2022-12-26T18:05:03 IST" finished-at="2022-12-26T18:05:03 IST">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLoginwithAppleTest@34cd072c]" name="CloseBrowser" is-config="true" duration-ms="119" started-at="2022-12-26T21:04:53 IST" finished-at="2022-12-26T21:04:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- Memberse.WebAppAutomation.wLoginwithAppleTest -->
-      <class name="Memberse.WebAppAutomation.wLoginFormValidationTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@e320068]" name="startDriver" is-config="true" duration-ms="8220" started-at="2022-12-26T18:02:43 IST" finished-at="2022-12-26T18:02:51 IST">
+      <class name="Memberse.WebAppAutomation.wLaunchMemberseInstagramTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLaunchMemberseInstagramTest@2bbf4b8b]" name="startDriver" is-config="true" duration-ms="8985" started-at="2022-12-26T21:07:36 IST" finished-at="2022-12-26T21:07:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wLoginFormValidationTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@e320068]" name="wLoginFormValidationTestCase" duration-ms="10809" started-at="2022-12-26T18:02:51 IST" finished-at="2022-12-26T18:03:02 IST">
+        <test-method status="PASS" signature="wLaunchMemberseInstagramTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLaunchMemberseInstagramTest@2bbf4b8b]" name="wLaunchMemberseInstagramTestCase" duration-ms="18313" started-at="2022-12-26T21:07:45 IST" finished-at="2022-12-26T21:08:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLaunchMemberseInstagramTestCase -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLaunchMemberseInstagramTest@2bbf4b8b]" name="CloseBrowser" is-config="true" duration-ms="133" started-at="2022-12-26T21:08:03 IST" finished-at="2022-12-26T21:08:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Memberse.WebAppAutomation.wLaunchMemberseInstagramTest -->
+      <class name="Memberse.WebAppAutomation.wLoginFormValidationTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@1877ab81]" name="startDriver" is-config="true" duration-ms="9739" started-at="2022-12-26T21:02:28 IST" finished-at="2022-12-26T21:02:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wLoginFormValidationTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@1877ab81]" name="wLoginFormValidationTestCase" duration-ms="10853" started-at="2022-12-26T21:02:38 IST" finished-at="2022-12-26T21:02:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wLoginFormValidationTestCase -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@e320068]" name="CloseBrowser" is-config="true" duration-ms="136" started-at="2022-12-26T18:03:02 IST" finished-at="2022-12-26T18:03:02 IST">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@1877ab81]" name="CloseBrowser" is-config="true" duration-ms="150" started-at="2022-12-26T21:02:49 IST" finished-at="2022-12-26T21:02:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- Memberse.WebAppAutomation.wLoginFormValidationTest -->
-      <class name="Memberse.WebAppAutomation.wLogoutTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@4493d195]" name="startDriver" is-config="true" duration-ms="9499" started-at="2022-12-26T18:05:03 IST" finished-at="2022-12-26T18:05:12 IST">
+      <class name="Memberse.WebAppAutomation.wLaunchMemberseTikTokTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLaunchMemberseTikTokTest@33c7e1bb]" name="startDriver" is-config="true" duration-ms="7762" started-at="2022-12-26T21:08:27 IST" finished-at="2022-12-26T21:08:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wLogoutTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@4493d195]" name="wLogoutTestCase" duration-ms="23218" started-at="2022-12-26T18:05:12 IST" finished-at="2022-12-26T18:05:36 IST">
+        <test-method status="PASS" signature="wLaunchMemberseTikTokTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLaunchMemberseTikTokTest@33c7e1bb]" name="wLaunchMemberseTikTokTestCase" duration-ms="100163" started-at="2022-12-26T21:08:35 IST" finished-at="2022-12-26T21:10:15 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wLogoutTestCase -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@4493d195]" name="CloseBrowser" is-config="true" duration-ms="136" started-at="2022-12-26T18:05:36 IST" finished-at="2022-12-26T18:05:36 IST">
+        </test-method> <!-- wLaunchMemberseTikTokTestCase -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLaunchMemberseTikTokTest@33c7e1bb]" name="CloseBrowser" is-config="true" duration-ms="116" started-at="2022-12-26T21:10:15 IST" finished-at="2022-12-26T21:10:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- Memberse.WebAppAutomation.wLogoutTest -->
-      <class name="Memberse.WebAppAutomation.wLogintTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@1f57539]" name="startDriver" is-config="true" duration-ms="8414" started-at="2022-12-26T18:03:02 IST" finished-at="2022-12-26T18:03:10 IST">
+      </class> <!-- Memberse.WebAppAutomation.wLaunchMemberseTikTokTest -->
+      <class name="Memberse.WebAppAutomation.wLaunchMemberseFacebookTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLaunchMemberseFacebookTest@1563da5]" name="startDriver" is-config="true" duration-ms="8130" started-at="2022-12-26T21:07:12 IST" finished-at="2022-12-26T21:07:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wLogintTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@1f57539]" name="wLogintTestCase" duration-ms="17777" started-at="2022-12-26T18:03:10 IST" finished-at="2022-12-26T18:03:28 IST">
+        <test-method status="PASS" signature="wLaunchMemberseFacebookTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLaunchMemberseFacebookTest@1563da5]" name="wLaunchMemberseFacebookTestCase" duration-ms="16046" started-at="2022-12-26T21:07:20 IST" finished-at="2022-12-26T21:07:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLaunchMemberseFacebookTestCase -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLaunchMemberseFacebookTest@1563da5]" name="CloseBrowser" is-config="true" duration-ms="131" started-at="2022-12-26T21:07:36 IST" finished-at="2022-12-26T21:07:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Memberse.WebAppAutomation.wLaunchMemberseFacebookTest -->
+      <class name="Memberse.WebAppAutomation.wCommunityGuidelinesTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCommunityGuidelinesTest@52feb982]" name="startDriver" is-config="true" duration-ms="8745" started-at="2022-12-26T21:10:37 IST" finished-at="2022-12-26T21:10:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wCommunityGuidelinesTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCommunityGuidelinesTest@52feb982]" name="wCommunityGuidelinesTestCase" duration-ms="12066" started-at="2022-12-26T21:10:46 IST" finished-at="2022-12-26T21:10:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wCommunityGuidelinesTestCase -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wCommunityGuidelinesTest@52feb982]" name="CloseBrowser" is-config="true" duration-ms="114" started-at="2022-12-26T21:10:58 IST" finished-at="2022-12-26T21:10:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Memberse.WebAppAutomation.wCommunityGuidelinesTest -->
+      <class name="Memberse.WebAppAutomation.wLogintTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@305fd85d]" name="startDriver" is-config="true" duration-ms="10718" started-at="2022-12-26T21:02:49 IST" finished-at="2022-12-26T21:02:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wLogintTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@305fd85d]" name="wLogintTestCase" duration-ms="18240" started-at="2022-12-26T21:02:59 IST" finished-at="2022-12-26T21:03:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wLogintTestCase -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@1f57539]" name="CloseBrowser" is-config="true" duration-ms="114" started-at="2022-12-26T18:03:28 IST" finished-at="2022-12-26T18:03:28 IST">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@305fd85d]" name="CloseBrowser" is-config="true" duration-ms="123" started-at="2022-12-26T21:03:18 IST" finished-at="2022-12-26T21:03:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- Memberse.WebAppAutomation.wLogintTest -->
       <class name="Memberse.WebAppAutomation.wSmokeTest">
-        <test-method status="PASS" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@646d64ab]" name="InvokeCapabilities" is-config="true" duration-ms="26" started-at="2022-12-26T18:01:29 IST" finished-at="2022-12-26T18:01:29 IST">
+        <test-method status="PASS" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@2781e022]" name="InvokeCapabilities" is-config="true" duration-ms="16" started-at="2022-12-26T21:01:16 IST" finished-at="2022-12-26T21:01:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvokeCapabilities -->
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@646d64ab]" name="startDriver" is-config="true" duration-ms="10947" started-at="2022-12-26T18:01:29 IST" finished-at="2022-12-26T18:01:40 IST">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@2781e022]" name="startDriver" is-config="true" duration-ms="9671" started-at="2022-12-26T21:01:16 IST" finished-at="2022-12-26T21:01:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wSmokeTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@646d64ab]" name="wSmokeTestCase" duration-ms="19267" started-at="2022-12-26T18:01:40 IST" finished-at="2022-12-26T18:01:59 IST">
+        <test-method status="PASS" signature="wSmokeTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@2781e022]" name="wSmokeTestCase" duration-ms="17806" started-at="2022-12-26T21:01:26 IST" finished-at="2022-12-26T21:01:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wSmokeTestCase -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@646d64ab]" name="CloseBrowser" is-config="true" duration-ms="165" started-at="2022-12-26T18:01:59 IST" finished-at="2022-12-26T18:01:59 IST">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@2781e022]" name="CloseBrowser" is-config="true" duration-ms="139" started-at="2022-12-26T21:01:43 IST" finished-at="2022-12-26T21:01:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method status="PASS" signature="QuitBrowsers()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@646d64ab]" name="QuitBrowsers" is-config="true" duration-ms="29" started-at="2022-12-26T18:06:22 IST" finished-at="2022-12-26T18:06:22 IST">
+        <test-method status="PASS" signature="QuitBrowsers()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@2781e022]" name="QuitBrowsers" is-config="true" duration-ms="28" started-at="2022-12-26T21:11:18 IST" finished-at="2022-12-26T21:11:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QuitBrowsers -->
       </class> <!-- Memberse.WebAppAutomation.wSmokeTest -->
-      <class name="Memberse.WebAppAutomation.wSignupTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@536aaa8d]" name="startDriver" is-config="true" duration-ms="7858" started-at="2022-12-26T18:02:20 IST" finished-at="2022-12-26T18:02:28 IST">
+      <class name="Memberse.WebAppAutomation.wLaunchGooglePlayTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLaunchGooglePlayTest@ea1a8d5]" name="startDriver" is-config="true" duration-ms="9497" started-at="2022-12-26T21:06:43 IST" finished-at="2022-12-26T21:06:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wSignupTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@536aaa8d]" name="wSignupTestCase" duration-ms="14497" started-at="2022-12-26T18:02:28 IST" finished-at="2022-12-26T18:02:43 IST">
+        <test-method status="PASS" signature="wLaunchGooglePlayTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLaunchGooglePlayTest@ea1a8d5]" name="wLaunchGooglePlayTestCase" duration-ms="18760" started-at="2022-12-26T21:06:53 IST" finished-at="2022-12-26T21:07:12 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wSignupTestCase -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@536aaa8d]" name="CloseBrowser" is-config="true" duration-ms="120" started-at="2022-12-26T18:02:43 IST" finished-at="2022-12-26T18:02:43 IST">
+        </test-method> <!-- wLaunchGooglePlayTestCase -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLaunchGooglePlayTest@ea1a8d5]" name="CloseBrowser" is-config="true" duration-ms="146" started-at="2022-12-26T21:07:12 IST" finished-at="2022-12-26T21:07:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- Memberse.WebAppAutomation.wSignupTest -->
-      <class name="Memberse.WebAppAutomation.wLoginWithGoogleTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithGoogleTest@76f2b07d]" name="startDriver" is-config="true" duration-ms="8300" started-at="2022-12-26T18:03:28 IST" finished-at="2022-12-26T18:03:36 IST">
+      </class> <!-- Memberse.WebAppAutomation.wLaunchGooglePlayTest -->
+      <class name="Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest@30a3107a]" name="startDriver" is-config="true" duration-ms="8236" started-at="2022-12-26T21:08:03 IST" finished-at="2022-12-26T21:08:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wLoginWithGoogleTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithGoogleTest@76f2b07d]" name="wLoginWithGoogleTestCase" duration-ms="24168" started-at="2022-12-26T18:03:36 IST" finished-at="2022-12-26T18:04:01 IST">
+        <test-method status="PASS" signature="wLaunchMemberseLinkedInTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest@30a3107a]" name="wLaunchMemberseLinkedInTestCase" duration-ms="15300" started-at="2022-12-26T21:08:12 IST" finished-at="2022-12-26T21:08:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLaunchMemberseLinkedInTestCase -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest@30a3107a]" name="CloseBrowser" is-config="true" duration-ms="135" started-at="2022-12-26T21:08:27 IST" finished-at="2022-12-26T21:08:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest -->
+      <class name="Memberse.WebAppAutomation.wLoginWithGoogleTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithGoogleTest@458c1321]" name="startDriver" is-config="true" duration-ms="8877" started-at="2022-12-26T21:03:18 IST" finished-at="2022-12-26T21:03:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wLoginWithGoogleTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithGoogleTest@458c1321]" name="wLoginWithGoogleTestCase" duration-ms="25455" started-at="2022-12-26T21:03:27 IST" finished-at="2022-12-26T21:03:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wLoginWithGoogleTestCase -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithGoogleTest@76f2b07d]" name="CloseBrowser" is-config="true" duration-ms="108" started-at="2022-12-26T18:04:01 IST" finished-at="2022-12-26T18:04:01 IST">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithGoogleTest@458c1321]" name="CloseBrowser" is-config="true" duration-ms="135" started-at="2022-12-26T21:03:52 IST" finished-at="2022-12-26T21:03:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->

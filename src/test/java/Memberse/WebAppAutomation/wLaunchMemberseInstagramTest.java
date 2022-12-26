@@ -2,6 +2,7 @@ package Memberse.WebAppAutomation;
 
 import java.util.Iterator;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -28,14 +29,14 @@ public class wLaunchMemberseInstagramTest extends WBase {
 	                if (!mainWindowHandle.equalsIgnoreCase(ChildWindow)) {
 	                driver.switchTo().window(ChildWindow);
 	                
-		 Thread.sleep(10000);
-	 	 String Text= driver.findElement(By.xpath("//*[text()='Memberse | Membership Platform']")).getText();
+	     driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	     String Text= driver.findElement(By.xpath("//*[text()='Memberse | Membership Platform']")).getText();
 	 	 System.out.println(Text);
 	 	 Assert.assertEquals(Text,"Memberse | Membership Platform");
 	                }
 	         }
-		 driver.close();
-		 driver.switchTo().window(mainWindowHandle);
+	        driver.close();
+		    driver.switchTo().window(mainWindowHandle);
 	}
 
 }

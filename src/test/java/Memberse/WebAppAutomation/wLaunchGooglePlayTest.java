@@ -13,11 +13,11 @@ public class wLaunchGooglePlayTest extends WBase {
 		WUtilities u = new  WUtilities(driver);
 		u.timeDelayToLoadWebsite();
 		
-		String originalWindow = driver.getWindowHandle();
-		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.GooglePlayButton().click();
 		Thread.sleep(3000);
+		
+		String originalWindow = driver.getWindowHandle();
 		
 		for(String windowHandle : driver.getWindowHandles())
 		{
@@ -30,6 +30,8 @@ public class wLaunchGooglePlayTest extends WBase {
 		String VerifyText1 = driver.findElement(By.xpath("//*[@id=\"kO001e\"]/header/nav/a/span")).getText();
 		System.out.println(VerifyText1);
 		Assert.assertEquals(VerifyText1, "google_logo Play");
+		driver.close();
+		driver.switchTo().window(originalWindow);
 	}
 
 }

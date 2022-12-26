@@ -18,7 +18,6 @@ public class wLaunchMemberseFacebookTest extends WBase {
 		u.timeDelayToLoadWebsite();
 		
 		ExplorePage fb = new ExplorePage(driver);
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		fb.FacebookIcon().click();
 		Thread.sleep(3000);
 		

@@ -54,13 +54,13 @@ public class wSmokeTest extends WBase{
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@name='email']")).sendKeys(testText);
 		driver.navigate().back();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		wp.SignupButtton().click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@name='email']")).sendKeys(testText);
 		driver.navigate().back();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		String apps = driver.findElement(By.xpath("//p[text()='Download the Memberse app for an optimized experience']")).getText();
 		Assert.assertEquals(apps, "Download the Memberse app for an optimized experience");
