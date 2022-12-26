@@ -19,7 +19,7 @@ public class wDeleteAccountTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.SignupButtton().click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		String email = getSaltString();
 		System.out.println(email);
@@ -33,18 +33,16 @@ public class wDeleteAccountTest extends WBase {
 		Thread.sleep(4000);
 		
 		wp.LoginButton().click();
-		Thread.sleep(2000); //earlier 1sec
+		Thread.sleep(2000);
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys(email);
 		lp.Password().sendKeys(password);
 		lp.Login().click();
-		Thread.sleep(10000); //earlier 7sec
+		Thread.sleep(7000); //earlier 7sec
 		
 		driver.findElement(By.xpath("//*[text()='As a Creator']")).click();
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//a[text()='Creator']")).click();
-		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[text()='Account']")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//p[text()='Delete Account']")).click();
@@ -52,7 +50,7 @@ public class wDeleteAccountTest extends WBase {
 		driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[2]/div[2]/div/button")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//span[text()='Confirm']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		String verifyUrl = driver.getCurrentUrl();
 		System.out.println(verifyUrl);

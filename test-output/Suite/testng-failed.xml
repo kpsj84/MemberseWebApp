@@ -6,42 +6,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wCreatePhotoPostTest">
+      <class name="Memberse.WebAppAutomation.wDeleteAccountTest">
         <methods>
           <include name="CloseBrowser"/>
-          <include name="wCreatePhotoPostTestCase"/>
+          <include name="wDeleteAccountTestCase"/>
           <include name="startDriver"/>
           <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wCreatePhotoPostTest -->
-      <class name="Memberse.WebAppAutomation.wBecomeCreatorTest">
-        <methods>
-          <include name="CloseBrowser"/>
-          <include name="wBecomeCreatorTestCase"/>
-          <include name="startDriver"/>
-          <include name="QuitBrowsers"/>
-          <include name="InvokeCapabilities"/>
-        </methods>
-      </class> <!-- Memberse.WebAppAutomation.wBecomeCreatorTest -->
-      <class name="Memberse.WebAppAutomation.wLogintTest">
-        <methods>
-          <include name="CloseBrowser"/>
-          <include name="wLogintTestCase"/>
-          <include name="startDriver"/>
-          <include name="QuitBrowsers"/>
-          <include name="InvokeCapabilities"/>
-        </methods>
-      </class> <!-- Memberse.WebAppAutomation.wLogintTest -->
-      <class name="Memberse.WebAppAutomation.wFeedsFilterTest">
-        <methods>
-          <include name="CloseBrowser"/>
-          <include name="wFeedsFilterTestCase"/>
-          <include name="startDriver"/>
-          <include name="QuitBrowsers"/>
-          <include name="InvokeCapabilities"/>
-        </methods>
-      </class> <!-- Memberse.WebAppAutomation.wFeedsFilterTest -->
+      </class> <!-- Memberse.WebAppAutomation.wDeleteAccountTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

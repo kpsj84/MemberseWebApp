@@ -12,7 +12,7 @@ public class wSmokeTest extends WBase{
 	
 	@Test
 	public void wSmokeTestCase() throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 		
 		String verifyExploreText = driver.findElement(By.xpath("//*[text()='Find your Content Creator']")).getText();
 		System.out.println(verifyExploreText);
@@ -51,13 +51,13 @@ public class wSmokeTest extends WBase{
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
-		Thread.sleep(2000); //earlier 1sec
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@name='email']")).sendKeys(testText);
 		driver.navigate().back();
 		Thread.sleep(1000);
 		
 		wp.SignupButtton().click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@name='email']")).sendKeys(testText);
 		driver.navigate().back();
 		Thread.sleep(1000);
