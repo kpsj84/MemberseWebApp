@@ -16,7 +16,7 @@ public class wLogoutTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys("kqatestc7@yopmail.com");
