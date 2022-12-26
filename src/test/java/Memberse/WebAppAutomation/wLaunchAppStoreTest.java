@@ -13,24 +13,33 @@ public class wLaunchAppStoreTest extends WBase {
 		WUtilities u = new  WUtilities(driver);
 		u.timeDelayToLoadWebsite();
 		
-		String originalWindow = driver.getWindowHandle();
-		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.AppStoreButtton().click();
 		Thread.sleep(3000);
 		
-		for(String windowHandle : driver.getWindowHandles())
+		try
 		{
-			if(!originalWindow.contentEquals(windowHandle))
+			driver.switchTo().alert().dismiss();
+		}
+		catch(Exception e)
+		{
+			
+		}
+		
+		String originalWindow = driver.getWindowHandle();
+		for(String childWindow : driver.getWindowHandles())
+		{
+			if(!originalWindow.contentEquals(childWindow))
 			{
-				driver.switchTo().window(windowHandle);
+				driver.switchTo().window(childWindow);
 				break;
 			}
 		}
-		
 		String VerifyText1 = driver.findElement(By.xpath("//*[@id=\"localnav\"]/div/div[2]/div[1]/a/span")).getText();
 		System.out.println(VerifyText1);
 		Assert.assertEquals(VerifyText1, "App Store");
+		driver.close();
+		driver.switchTo().window(originalWindow);
 	}
 
 }

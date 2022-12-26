@@ -39,7 +39,7 @@ public class wDeleteAccountTest extends WBase {
 		lp.Email().sendKeys(email);
 		lp.Password().sendKeys(password);
 		lp.Login().click();
-		Thread.sleep(7000); //earlier 7sec
+		Thread.sleep(10000);
 		
 		driver.findElement(By.xpath("//*[text()='As a Creator']")).click();
 		Thread.sleep(3000);
@@ -50,7 +50,7 @@ public class wDeleteAccountTest extends WBase {
 		driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[2]/div[2]/div/button")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//span[text()='Confirm']")).click();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		
 		String verifyUrl = driver.getCurrentUrl();
 		System.out.println(verifyUrl);

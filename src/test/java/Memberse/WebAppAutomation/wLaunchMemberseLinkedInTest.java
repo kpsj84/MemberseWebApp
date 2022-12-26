@@ -2,6 +2,7 @@ package Memberse.WebAppAutomation;
 
 import java.util.Iterator;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -27,8 +28,8 @@ public class wLaunchMemberseLinkedInTest extends WBase {
 	            String ChildWindow = iterator.next();
 	                if (!mainWindowHandle.equalsIgnoreCase(ChildWindow)) {
 	                driver.switchTo().window(ChildWindow);
-		        Thread.sleep(10000);
-		        
+	            
+	            driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		        try
 		        {
 	        	driver.findElement(By.xpath("/html/body/div[3]/div/div/section/button")).click();
@@ -51,8 +52,8 @@ public class wLaunchMemberseLinkedInTest extends WBase {
 		        System.out.println("Test Case Passed by reaching at this point");
 	        	    }
 	        }
-		  driver.close();
-		  driver.switchTo().window(mainWindowHandle);
+	        driver.close();
+		    driver.switchTo().window(mainWindowHandle);
 	}
 	
 }
