@@ -21,12 +21,13 @@ public class wSearchCreatorTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
+		Thread.sleep(2000);
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestc3@yopmail.com");
-		lp.Password().sendKeys("kqatestc3");
+		lp.Email().sendKeys("kqatestc7@yopmail.com");
+		lp.Password().sendKeys("kqatestc7");
 		lp.Login().click();
-		Thread.sleep(10000);
+		Thread.sleep(7000);
 		 
 		HomePage hp = new HomePage(driver);
 		hp.ExploreMenu().click();
