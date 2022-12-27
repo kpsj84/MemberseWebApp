@@ -22,7 +22,7 @@ import WebPageObjects.WelcomePage;
 
 public class wCreatePhotoPostTest extends WBase {
 	
-	@Test
+	@Test(priority = 1)
 	public void wCreatePhotoPostTestCase()throws InterruptedException, AWTException{
 		WUtilities u = new  WUtilities(driver);
 		u.timeDelayToLoadWebsite();
@@ -36,7 +36,7 @@ public class wCreatePhotoPostTest extends WBase {
 		lp.Password().sendKeys("kqatestc5");
 		lp.ShowPassword().click();
 		lp.Login().click();
-		Thread.sleep(10000);
+		Thread.sleep(7000);
     	
 		HomePage hp = new HomePage(driver);
 		hp.createPost().click();
@@ -46,8 +46,8 @@ public class wCreatePhotoPostTest extends WBase {
   		System.out.println(autotext);
   		
   		CreatePostPage cpp = new CreatePostPage(driver);
-  		cpp.titleBox().sendKeys("Auto Generated Post - " +autotext);
-        cpp.descriptionBox().sendKeys("This is an auto-QA Description");
+  		cpp.titleBox().sendKeys("Auto Generated Audio Post - " +autotext);
+        cpp.descriptionBox().sendKeys("This is an Auto-QA Description");
         Thread.sleep(1000);
         cpp.membersOnlyToggle().click();
         Thread.sleep(2000);
@@ -100,10 +100,10 @@ public class wCreatePhotoPostTest extends WBase {
 		Assert.assertEquals(Text,"Operation succesfully completed.");
 	    
 		Thread.sleep(10000);
-        WebElement Text1 = driver.findElement(By.xpath("//p[text()='Auto Generated Post - " +autotext+ "']"));
+        WebElement Text1 = driver.findElement(By.xpath("//p[text()='Auto Generated Audio Post - " +autotext+ "']"));
 		String text2 = Text1.getText();
 		System.out.println(text2);
-		Assert.assertEquals(text2,"Auto Generated Post - " + autotext);
+		Assert.assertEquals(text2,"Auto Generated Audio Post - " + autotext);
     }
 	
 	    public String getSaltString() {
@@ -119,9 +119,9 @@ public class wCreatePhotoPostTest extends WBase {
 	}	
 	    
 	    
-	    @Test
-		public void wCreatePhotoPostTestPaid()throws InterruptedException, AWTException{
-			Thread.sleep(5000);
+	    @Test(priority = 2)
+		public void wCreatePhotoPostMembersOnly()throws InterruptedException, AWTException{
+			Thread.sleep(3000);
 		    
 			HomePage hp = new HomePage(driver);
 			hp.createPost().click();
@@ -131,7 +131,7 @@ public class wCreatePhotoPostTest extends WBase {
 	  		System.out.println(autotext);
 	  		
 	  		CreatePostPage cpp = new CreatePostPage(driver);
-	  		cpp.titleBox().sendKeys("Auto Generated Paid Post - " +autotext);
+	  		cpp.titleBox().sendKeys("Auto Generated Audio Members Only Post - " +autotext);
 	        cpp.descriptionBox().sendKeys("This is an auto-QA Description");
 	        Thread.sleep(2000);
 	        cpp.photoButton().click();
@@ -176,11 +176,11 @@ public class wCreatePhotoPostTest extends WBase {
 			System.out.println(Text);
 			Assert.assertEquals(Text,"Operation succesfully completed.");
 		    
-	        Thread.sleep(6000);
-	        WebElement Text1 = driver.findElement(By.xpath("//p[text()='Auto Generated Paid Post - " +autotext+ "']"));
+	        Thread.sleep(10000);
+	        WebElement Text1 = driver.findElement(By.xpath("//p[text()='Auto Generated Audio Members Only Post - " +autotext+ "']"));
 			String text2 = Text1.getText();
 			System.out.println(text2);
-			Assert.assertEquals(text2,"Auto Generated Paid Post - " + autotext);
+			Assert.assertEquals(text2,"Auto Generated Audio Members Only Post - " + autotext);
 	    }	    
 
 }

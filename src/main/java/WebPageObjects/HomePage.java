@@ -15,7 +15,7 @@ public class HomePage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[2]/div/span[1]/button/span")
+	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[2]/div/span[1]/button/span")  
 	private WebElement createPost;
 	
 	public WebElement createPost() {
