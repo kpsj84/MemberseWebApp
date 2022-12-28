@@ -24,13 +24,13 @@ public class wShareCommunityTest extends WBase{
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys("kqatestc4@yopmail.com");
 		lp.Password().sendKeys("kqatestc4");
 		lp.ShowPassword().click();
 		lp.Login().click();
-		Thread.sleep(10000);
+		Thread.sleep(7000);
 		
 		HomePage hp = new HomePage(driver);
 		hp.ExploreMenu().click();
@@ -38,9 +38,9 @@ public class wShareCommunityTest extends WBase{
 		
 	    ExplorePage ep = new ExplorePage(driver);
         ep.SearchField().sendKeys("kqatestc3");
-        Thread.sleep(10000);
+        Thread.sleep(7000);
         ep.ClickCreator().click();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         
         CreatorCommunityPage cp = new CreatorCommunityPage(driver);
         cp.threeDotsMenu().click();
@@ -61,7 +61,7 @@ public class wShareCommunityTest extends WBase{
         php.createPost().click();
     	Thread.sleep(3000);
         driver.findElement(By.xpath("//*[@id=\"news-item-form\"]/div/div[2]/div[1]/div/textarea")).sendKeys(Keys.chord(Keys.CONTROL, "v"));
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 		WebElement verifysharelink = driver.findElement(By.cssSelector("#news-item-form > div > div.space-y-4 > div:nth-child(1) > div > textarea"));
 		String chk = verifysharelink.getAttribute("value");
 		System.out.println(chk);

@@ -18,13 +18,13 @@ public class wSharePostTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys("kqatestc5@yopmail.com");
 		lp.Password().sendKeys("kqatestc5");
 		lp.ShowPassword().click();
 		lp.Login().click();
-		Thread.sleep(10000);
+		Thread.sleep(7000);
 	    
 	    HomePage hp= new HomePage(driver);
         hp.ThreeDotIcon().click();

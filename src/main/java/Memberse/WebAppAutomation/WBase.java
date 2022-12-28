@@ -15,7 +15,7 @@ import org.testng.annotations.BeforeTest;
 
 public class WBase {
 	
-	public static boolean intelJenkinsServer = true;
+	public static boolean intelJenkinsServer = false;
 	
 	//Initiate Variables
 	public static ChromeOptions   options;

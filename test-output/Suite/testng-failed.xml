@@ -6,6 +6,44 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="Memberse.WebAppAutomation.wCreateAudioPostTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="wCreateAudioPostMembersOnly"/>
+          <include name="wCreatAudioPostTestCase"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wCreateAudioPostTest -->
+      <class name="Memberse.WebAppAutomation.wCreateVideoPostTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="wCreatVideoPostTestCase"/>
+          <include name="wCreateVideoPostMembersOnly"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wCreateVideoPostTest -->
+      <class name="Memberse.WebAppAutomation.wSignupTest">
+        <methods>
+          <include name="wSignupTestCase"/>
+          <include name="CloseBrowser"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wSignupTest -->
+      <class name="Memberse.WebAppAutomation.wFeedsFilterTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="wFeedsFilterTestCase"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wFeedsFilterTest -->
       <class name="Memberse.WebAppAutomation.wDeleteAccountTest">
         <methods>
           <include name="CloseBrowser"/>
@@ -15,6 +53,15 @@
           <include name="InvokeCapabilities"/>
         </methods>
       </class> <!-- Memberse.WebAppAutomation.wDeleteAccountTest -->
+      <class name="Memberse.WebAppAutomation.wSignupFormValidationTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="wSignupFormValidationTestCase"/>
+          <include name="startDriver"/>
+          <include name="QuitBrowsers"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wSignupFormValidationTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

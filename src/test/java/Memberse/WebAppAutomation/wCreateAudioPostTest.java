@@ -29,7 +29,7 @@ public class wCreateAudioPostTest extends WBase{
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys("kqatestc5@yopmail.com");
 		lp.Password().sendKeys("kqatestc5");
@@ -91,7 +91,7 @@ public class wCreateAudioPostTest extends WBase{
         rb.keyRelease(KeyEvent.VK_ENTER);
         Thread.sleep(3000);
        
-        cpp.submitButton().click();
+        cpp.submitButton().click(); //failed
         WebDriverWait w = new WebDriverWait(driver,120);
         w.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
         String Text = driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
@@ -125,7 +125,9 @@ public class wCreateAudioPostTest extends WBase{
 			Thread.sleep(5000);
 		    
 			HomePage hp = new HomePage(driver);
-			hp.createPost().click();
+			hp.HomeMenu().click();
+			Thread.sleep(2000);
+	    	hp.createPost().click();
 			Thread.sleep(2000);
 			
 	    	String autotext=getSaltString();

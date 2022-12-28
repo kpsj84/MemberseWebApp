@@ -124,6 +124,8 @@ public class wCreatePhotoPostTest extends WBase {
 			Thread.sleep(3000);
 		    
 			HomePage hp = new HomePage(driver);
+			hp.HomeMenu().click();
+			Thread.sleep(2000);
 			hp.createPost().click();
 			Thread.sleep(2000);
 			
