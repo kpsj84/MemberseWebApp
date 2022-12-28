@@ -31,11 +31,11 @@ public class wSearchCreatorTest extends WBase {
 		 
 		HomePage hp = new HomePage(driver);
 		hp.ExploreMenu().click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		
 		ExplorePage ep = new ExplorePage(driver);
 		ep.SearchField().sendKeys("kqatest");
-		Thread.sleep(10000);                      
+		Thread.sleep(13000); //earlier 10sec                     
 	    String Text= driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div[2]/div/div/div/div[1]/a/div/div[2]/div/div/p[1]")).getText();
 	    System.out.println(Text);
 	    Assert.assertEquals(Text,"kqatestc4's Community");    
