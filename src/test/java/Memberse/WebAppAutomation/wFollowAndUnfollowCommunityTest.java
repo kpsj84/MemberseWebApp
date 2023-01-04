@@ -66,7 +66,7 @@ public class wFollowAndUnfollowCommunityTest extends WBase {
         ep.SearchField().sendKeys("kqatestc3");
         Thread.sleep(10000);
         ep.ClickCreator().click();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         
         CreatorCommunityPage cp = new CreatorCommunityPage(driver);
         cp.followCreator().click(); 
@@ -122,7 +122,7 @@ public class wFollowAndUnfollowCommunityTest extends WBase {
         ep.SearchField().sendKeys("kqatestc3");
         Thread.sleep(10000);
         ep.ClickCreator().click();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         
         CreatorCommunityPage cp = new CreatorCommunityPage(driver);
         cp.threeDotsMenu().click();

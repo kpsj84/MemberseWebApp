@@ -9,70 +9,10 @@
 
   <test thread-count="5" name="Test">
   
-    <classes>
-      <!-- Major Functionality Test Cases-->
-      <class name="Memberse.WebAppAutomation.wSmokeTest"/>
-      <class name="Memberse.WebAppAutomation.wSignupFormValidationTest"/>
-      <class name="Memberse.WebAppAutomation.wSignupTest"/>
-      <class name="Memberse.WebAppAutomation.wLoginFormValidationTest"/>
-      <class name="Memberse.WebAppAutomation.wLogintTest"/>
-      <class name="Memberse.WebAppAutomation.wLoginWithGoogleTest"/>
-      <class name="Memberse.WebAppAutomation.wLoginWithFacebookTest"/>
-      <class name="Memberse.WebAppAutomation.wLoginwithAppleTest"/>      
-      <class name="Memberse.WebAppAutomation.wLogoutTest"/>
-      <class name="Memberse.WebAppAutomation.wDeleteAccountTest"/>
-      <!-- General Test Cases-->
-      <class name="Memberse.WebAppAutomation.wLaunchAppStoreTest"/>
-      <class name="Memberse.WebAppAutomation.wLaunchGooglePlayTest"/>
-      <class name="Memberse.WebAppAutomation.wLaunchMemberseFacebookTest"/>
-      <class name="Memberse.WebAppAutomation.wLaunchMemberseInstagramTest"/>
-      <class name="Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest"/>
-      <class name="Memberse.WebAppAutomation.wLaunchMemberseTikTokTest"/>
-      <class name="Memberse.WebAppAutomation.wTermsAndConditionsTest"/>
-      <class name="Memberse.WebAppAutomation.wCommunityGuidelinesTest"/>
-      <class name="Memberse.WebAppAutomation.wPrivacyPolicyTest"/>
-      <!-- Home Page Test Cases-->
-      <class name="Memberse.WebAppAutomation.wFeedsVerifyTest"/>
-      <class name="Memberse.WebAppAutomation.wFeedsFilterTest"/>      
-      <class name="Memberse.WebAppAutomation.wCreateTextPostTest"/>
-      <class name="Memberse.WebAppAutomation.wCreatePhotoPostTest"/>
-      <class name="Memberse.WebAppAutomation.wCreateVideoPostTest"/>
-      <class name="Memberse.WebAppAutomation.wCreateAudioPostTest"/>
-      <class name="Memberse.WebAppAutomation.wCreatorBothSideMenusTest"/>
-      <!-- Explore Page Test Cases-->
-      <class name="Memberse.WebAppAutomation.wSearchCreatorTest"/>
-      <!-- Community Page Test Cases-->
-      <class name="Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest"/>
-      <class name="Memberse.WebAppAutomation.wShareCommunityTest"/>
-      <class name="Memberse.WebAppAutomation.wReportCommunityTest"/>
+    <classes>     
+    
+   	 <class name="Memberse.WebAppAutomation.wSmokeTest"/>
       
-      <!-- 
-      <class name="Memberse.WebAppAutomation.wJoinCommunityTest"/> 
-      <class name="Memberse.WebAppAutomation.wViewTextPostTest"/>
-      <class name="Memberse.WebAppAutomation.wViewPhotoPostTest"/>
-      <class name="Memberse.WebAppAutomation.wPlayVideoPostTest"/>
-      <class name="Memberse.WebAppAutomation.wPlayAudioPostTest"/>
-      <class name="Memberse.WebAppAutomation.wReportPostTest"/> 
-      <class name="Memberse.WebAppAutomation.wSharePostTest"/> 
-      <class name="Memberse.WebAppAutomation.wLikePostTest"/>
-      <class name="Memberse.WebAppAutomation.wCommunityTabsTest"/>
-      
-      <class name="Memberse.WebAppAutomation.wCommunityEditInfoTest"/>
-      <class name="Memberse.WebAppAutomation.wCommunityPriceTest"/>
-      <class name="Memberse.WebAppAutomation.wPostHistoryPlayTest"/>
-      <class name="Memberse.WebAppAutomation.wPostHistoryEditTest"/>
-      <class name="Memberse.WebAppAutomation.wPostHistoryDeleteTest"/>
-      <class name="Memberse.WebAppAutomation.wCreateAndDeletePlaylistTest"/>
-      <class name="Memberse.WebAppAutomation.wAddMediaAndPlayPlaylistTest"/>
-      <class name="Memberse.WebAppAutomation.wPlaylistEditTest"/>
-      <class name="Memberse.WebAppAutomation.wMyFansListTest"/>
-      
-      <class name="Memberse.WebAppAutomation.wMemberInfoTest"/>
-      <class name="Memberse.WebAppAutomation.wMembershipsTest"/>
-      <class name="Memberse.WebAppAutomation.wWatchedHistoryTest"/>
-      <class name="Memberse.WebAppAutomation.wChangePasswordTest"/>
-      <class name="Memberse.WebAppAutomation.wBecomeCreatorTest"/>
-      -->
     </classes>
     
   </test> <!-- Test -->

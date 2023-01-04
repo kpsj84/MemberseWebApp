@@ -25,6 +25,7 @@ public class wSignupTest extends WBase {
 		String password = "123456";
 		
 		SignupPage sp = new SignupPage(driver);
+		Thread.sleep(2000);
 		sp.Email().sendKeys(email);
 		sp.Password().sendKeys(password);
 		sp.confirmPassword().sendKeys(password);

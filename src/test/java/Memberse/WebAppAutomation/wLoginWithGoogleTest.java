@@ -34,6 +34,7 @@ public class wLoginWithGoogleTest extends WBase{
 		    }   
 		}
 		driver.manage().window().maximize();
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id='identifierId']")).sendKeys("qatesting9999@gmail.com");   
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//*[text()='Next']")).click();

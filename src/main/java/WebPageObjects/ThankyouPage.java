@@ -21,5 +21,12 @@ public class ThankyouPage {
     public WebElement ManageMembershipButton() {
     	return ManageMembershipButton;
     }
+    
+    @FindBy(xpath="//*[text()='Back to the Community']")
+    private WebElement BacktoCoummunityButton;
+
+    public WebElement BacktoCoummunityButton() {
+    	return BacktoCoummunityButton;
+    }
 
 }

@@ -50,6 +50,7 @@ public class wCommunityEditInfoTest extends WBase {
 		System.out.println(autoText);
 		mcp.EditInfoDescription().sendKeys("This is my QA Test Channel :- " + autoText);
 		mcp.EditInfoTabSave().click();
+		Thread.sleep(4000);
 	    
 	    String Text1 = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/div[6]/div/div/div/div[2]")).getText();
 	    System.out.println(Text1);

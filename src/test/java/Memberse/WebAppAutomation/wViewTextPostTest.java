@@ -32,9 +32,9 @@ public class wViewTextPostTest extends WBase {
 		
 		PostHistoryPage php = new PostHistoryPage(driver);
         php.PostHistorySubMenu().click();
-    	Thread.sleep(5000);
+    	Thread.sleep(6000);
 		
-    	php.ClickOnContent().click();
+    	php.ClickOnContent().click(); //failure
         Thread.sleep(3000);
         
         String Text = driver.findElement(By.xpath("//p[text()='Auto Test View Text Post']")).getText();

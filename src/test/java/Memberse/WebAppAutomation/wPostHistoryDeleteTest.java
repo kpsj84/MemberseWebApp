@@ -34,7 +34,7 @@ public class wPostHistoryDeleteTest extends WBase {
     	
 		PostHistoryPage php = new PostHistoryPage(driver);
         php.PostHistorySubMenu().click();
-    	Thread.sleep(7000);
+    	Thread.sleep(10000);
     	php.DeletePost().click();
         Thread.sleep(7000);
     	  

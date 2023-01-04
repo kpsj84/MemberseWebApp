@@ -25,7 +25,9 @@ public class wReportPostTest extends WBase {
 		Thread.sleep(10000);
 	    
 	    HomePage hp= new HomePage(driver);
-        hp.ThreeDotIcon().click();
+	    hp.HomeMenu().click();
+	    Thread.sleep(6000);
+        hp.ThreeDotIcon().click(); //failure
 	    Thread.sleep(2000); 
         hp.ReportButton().click();
 	    Thread.sleep(3000); 
