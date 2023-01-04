@@ -21,6 +21,13 @@ public class CreatorCommunityPage {
     public WebElement  JoinButton () {
     	return  JoinButton;
     }
+    
+    @FindBy(xpath="//*[text()='Donate']")
+    private WebElement donateButton ;
+
+    public WebElement  donateButton() {
+    	return  donateButton;
+    }
 	
 	@FindBy(css="#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.relative > div.absolute.z-20.w-full.py-4 > div.flex.items-center.space-x-4.mt-2 > div > div:nth-child(2) > div > button > span")
 	private WebElement followCreator;

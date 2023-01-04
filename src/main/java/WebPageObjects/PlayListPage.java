@@ -56,7 +56,7 @@ public class PlayListPage {
     	return PlayListSaveButton;
     }
     
-    @FindBy(css="#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div.pb-10 > div.flex-grow > div.space-y-2 > div:nth-child(4) > div.flex.text-white > div > div > button:nth-child(1)")
+    @FindBy(css="#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div.pb-10 > div.flex-grow > div.space-y-2 > div:nth-child(1) > div.flex.text-white > div > div > button:nth-child(1) > svg")
     private WebElement playListViewButton ;
     
     public WebElement playListViewButton() {
@@ -96,6 +96,13 @@ public class PlayListPage {
 
     public WebElement EditSaveButton2() {
     	return EditSaveButton2;
+    }
+    
+    @FindBy(xpath="/html/body/div[2]/div[2]/div/div/div[2]/div/div/div[2]/div[2]/div/div/textarea")  
+    private WebElement PlaylistMediaComment ;
+    
+    public WebElement PlaylistMediaComment() {
+    return PlaylistMediaComment;
     }
 
 }

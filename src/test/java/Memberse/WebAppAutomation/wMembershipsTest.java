@@ -21,6 +21,7 @@ public class wMembershipsTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
+		Thread.sleep(3000);
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys("kqatestc3@yopmail.com");

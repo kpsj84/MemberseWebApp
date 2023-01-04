@@ -50,6 +50,20 @@ public class HomePage {
 		return filterSave;
 	}
 	
+	@FindBy(css="#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div:nth-child(3) > div.space-y-2 > div > div > div:nth-child(1) > div > div:nth-child(4) > div > div.flex.items-center.text-xs.space-x-4 > div:nth-child(2) > svg")
+	private WebElement commentOnPost;
+	
+	public WebElement commentOnPost() {
+		return commentOnPost;
+	}
+	
+	@FindBy(css="#headlessui-dialog-panel-18 > div.space-y-2.bg-neutral-2000 > div.space-y-2.bg-neutral-3000 > div > div > textarea")
+	private WebElement writeComment;
+	
+	public WebElement writeComment(){
+		return writeComment;
+	}
+	
 	@FindBy(xpath="//a[text()='Home']")
 	private WebElement HomeMenu;
 	
@@ -78,7 +92,7 @@ public class HomePage {
 		return CreatorMenu;
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[3]/div[2]/div/div/div[1]/div/div[1]/div/div[2]/div/div/p[1]/a")
+	@FindBy(xpath="/html/body/div[1]/div[3]/div/div[3]/main/div/div[3]/div[2]/div/div/div[1]/div/div[1]/div/div[2]/div/div/p[1]/a")
     private WebElement ClickOnCreator;
     
     public WebElement ClickOnCreator() {
@@ -106,7 +120,7 @@ public class HomePage {
     	return  CancelButton;
     }
     
-    @FindBy(css="#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div:nth-child(3) > div.space-y-2 > div > div > div:nth-child(1) > div > div:nth-child(3) > div > div.flex.items-center.text-xs.space-x-4 > div:nth-child(1) > svg")
+    @FindBy(xpath="//*[@class='svg-inline--fa fa-heart fa-w-16 fa-sm cursor-pointer']")
     private WebElement LikeButton ;
 
     public WebElement  LikeButton () {

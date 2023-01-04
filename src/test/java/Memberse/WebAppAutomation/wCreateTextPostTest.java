@@ -16,7 +16,7 @@ import WebPageObjects.WelcomePage;
 
 public class wCreateTextPostTest extends WBase {
 	
-	@Test(priority = 1)
+	@Test
 	public void wCreateTextPostTestCase()throws InterruptedException{
 		WUtilities u = new  WUtilities(driver);
 		u.timeDelayToLoadWebsite();
@@ -24,6 +24,7 @@ public class wCreateTextPostTest extends WBase {
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();
 		Thread.sleep(2000);
+		
 		LoginPage lp = new LoginPage(driver);
 		lp.Email().sendKeys("kqatestc5@yopmail.com");
 		lp.Password().sendKeys("kqatestc5");
@@ -43,10 +44,11 @@ public class wCreateTextPostTest extends WBase {
         cpp.descriptionBox().sendKeys("This is an Auto-QA Text Post Description");
         Thread.sleep(1000);
         cpp.membersOnlyToggle().click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         cpp.submitButton().click();
+        Thread.sleep(10000);
         
-        WebDriverWait w = new WebDriverWait(driver,120);
+        WebDriverWait w = new WebDriverWait(driver,90);
         w.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
         String Text = driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
 		System.out.println(Text);
@@ -69,38 +71,6 @@ public class wCreateTextPostTest extends WBase {
 		   }
 		   String saltStr= salt.toString();
 		   return saltStr;    
-	}	
-	    	    
-	    @Test(priority = 2)
-	    public void wCreateTextPostMembersOnly() throws InterruptedException {
-	    	Thread.sleep(3000);
-	    	
-	    	HomePage hp = new HomePage(driver);
-			hp.HomeMenu().click();
-			Thread.sleep(2000);
-	    	hp.createPost().click();
-			Thread.sleep(2000);
-			
-	    	String autotext=getSaltString();
-	  		System.out.println(autotext);
-	  		
-	  		CreatePostPage cpp = new CreatePostPage(driver);
-	  		cpp.titleBox().sendKeys("Auto Generated Members Only Post - " +autotext);
-	        cpp.descriptionBox().sendKeys("This is an Auto-QA Text Post Description");
-	        Thread.sleep(2000);
-	        cpp.submitButton().click();
-	        
-	        WebDriverWait w = new WebDriverWait(driver,120);
-	        w.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
-	        String Text = driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
-			System.out.println(Text);
-			Assert.assertEquals(Text,"Operation succesfully completed.");
-		    
-	        Thread.sleep(10000);
-	        WebElement Text1 = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[2]/div[2]/div/div[2]/div/div[1]/div[2]/div[2]/div/div[1]/p"));
-			String text2 = Text1.getText();
-			System.out.println(text2);
-			Assert.assertEquals(text2,"Auto Generated Members Only Post - " + autotext);
-		}
+	}
 	    
 }

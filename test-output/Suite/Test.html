@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>27/8/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>47/10/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Dec 27 21:33:01 IST 2022</td>
+<td>Started on:</td><td>Wed Jan 04 10:53:56 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>1425 seconds (1425611 ms)</td>
+<tr><td>Total time:</td><td>3004 seconds (3004760 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,36 +75,42 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Memberse.WebAppAutomation.wCreateAudioPostTest.wCreatAudioPostTestCase()'><b>wCreatAudioPostTestCase</b><br>Test class: Memberse.WebAppAutomation.wCreateAudioPostTest</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;group relative w-full flex items-center justify-center border rounded-lg focus:outline-none transition duration-150 ease-in-out whitespace-nowrap cursor-pointer text-neutral-1000 bg-other-3000 border-other-3000 py-2 px-2&quot; type=&quot;submit&quot;&gt;...&lt;/button&gt; is not clickable at point (1084, 463). Other element would receive the click: &lt;div class=&quot;absolute inset-0 bg-black opacity-70&quot;&gt;&lt;/div&gt;
+<td title='Memberse.WebAppAutomation.wCommunityTabsTest.wCommunityTabsTestCase()'><b>wCommunityTabsTestCase</b><br>Test class: Memberse.WebAppAutomation.wCommunityTabsTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;__next&quot;]/div[3]/div/div[3]/main/div/div[3]/div[2]/div/div/div[1]/div/div[1]/div/div[2]/div/div/p[1]/a&quot;}
   (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:5c7b:fcff:c824:59b2:e87d:e9c0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:597c:44d9:402e:f9e1:b127:601f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:54716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 39e46d5eef8459508b7b27b6f108a13e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:51798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 40f061ad731db0ebe955eaf1c45bd437
+*** Element info: {Using=xpath, value=//*[@id=&quot;__next&quot;]/div[3]/div/div[3]/main/div/div[3]/div[2]/div/div/div[1]/div/div[1]/div/div[2]/div/div/p[1]/a}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at Memberse.WebAppAutomation.wCreateAudioPostTest.wCreatAudioPostTestCase(wCreateAudioPostTest.java:94)
+	at Memberse.WebAppAutomation.wCommunityTabsTest.wCommunityTabsTestCase(wCommunityTabsTest.java:32)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1545308588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1545308588'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;group relative w-full flex items-center justify-center border rounded-lg focus:outline-none transition duration-150 ease-in-out whitespace-nowrap cursor-pointer text-neutral-1000 bg-other-3000 border-other-3000 py-2 px-2&quot; type=&quot;submit&quot;&gt;...&lt;/button&gt; is not clickable at point (1084, 463). Other element would receive the click: &lt;div class=&quot;absolute inset-0 bg-black opacity-70&quot;&gt;&lt;/div&gt;
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1678404939", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1678404939'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;__next&quot;]/div[3]/div/div[3]/main/div/div[3]/div[2]/div/div/div[1]/div/div[1]/div/div[2]/div/div/p[1]/a&quot;}
   (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:5c7b:fcff:c824:59b2:e87d:e9c0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:597c:44d9:402e:f9e1:b127:601f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:54716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 39e46d5eef8459508b7b27b6f108a13e
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:51798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 40f061ad731db0ebe955eaf1c45bd437
+*** Element info: {Using=xpath, value=//*[@id=&quot;__next&quot;]/div[3]/div/div[3]/main/div/div[3]/div[2]/div/div/div[1]/div/div[1]/div/div[2]/div/div/p[1]/a}
+	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -113,14 +119,14 @@ Session ID: 39e46d5eef8459508b7b27b6f108a13e
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at Memberse.WebAppAutomation.wCreateAudioPostTest.wCreatAudioPostTestCase(wCreateAudioPostTest.java:94)
+	at Memberse.WebAppAutomation.wCommunityTabsTest.wCommunityTabsTestCase(wCommunityTabsTest.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -150,17 +156,95 @@ Session ID: 39e46d5eef8459508b7b27b6f108a13e
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>36</td>
-<td>Memberse.WebAppAutomation.wCreateAudioPostTest@7e2d773b</td></tr>
+<td>21</td>
+<td>Memberse.WebAppAutomation.wCommunityTabsTest@42d8062c</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wCreateAudioPostTest.wCreatAudioPostTestCase()'><b>wCreatAudioPostTestCase</b><br>Test class: Memberse.WebAppAutomation.wCreateAudioPostTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;text-base font-medium leading-4&quot;&gt;...&lt;/span&gt; is not clickable at point (1084, 463). Other element would receive the click: &lt;div class=&quot;absolute inset-0 bg-black opacity-70&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=108.0.5359.124)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:597c:44d9:402e:f9e1:b127:601f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:50817}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 821f5b38d092da02f2dcd7928a070c77
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at Memberse.WebAppAutomation.wCreateAudioPostTest.wCreatAudioPostTestCase(wCreateAudioPostTest.java:96)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1753871727", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1753871727'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;text-base font-medium leading-4&quot;&gt;...&lt;/span&gt; is not clickable at point (1084, 463). Other element would receive the click: &lt;div class=&quot;absolute inset-0 bg-black opacity-70&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=108.0.5359.124)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:597c:44d9:402e:f9e1:b127:601f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:50817}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 821f5b38d092da02f2dcd7928a070c77
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at Memberse.WebAppAutomation.wCreateAudioPostTest.wCreatAudioPostTestCase(wCreateAudioPostTest.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>38</td>
+<td>Memberse.WebAppAutomation.wCreateAudioPostTest@6b57696f</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wCreateVideoPostTest.wCreatVideoPostTestCase()'><b>wCreatVideoPostTestCase</b><br>Test class: Memberse.WebAppAutomation.wCreateVideoPostTest</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;group relative w-full flex items-center justify-center border rounded-lg focus:outline-none transition duration-150 ease-in-out whitespace-nowrap cursor-pointer text-neutral-1000 bg-other-3000 border-other-3000 py-2 px-2&quot; type=&quot;submit&quot;&gt;...&lt;/button&gt; is not clickable at point (1084, 463). Other element would receive the click: &lt;div class=&quot;absolute inset-0 bg-black opacity-70&quot;&gt;&lt;/div&gt;
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;text-base font-medium leading-4&quot;&gt;...&lt;/span&gt; is not clickable at point (1084, 463). Other element would receive the click: &lt;div class=&quot;absolute inset-0 bg-black opacity-70&quot;&gt;&lt;/div&gt;
   (Session info: chrome=108.0.5359.124)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:5c7b:fcff:c824:59b2:e87d:e9c0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:597c:44d9:402e:f9e1:b127:601f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:54450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: defdec0b0b2bcfc927605d44e8a4216b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:50777}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cd82784bce59137917744b6ef0c2af5
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -171,16 +255,16 @@ Session ID: defdec0b0b2bcfc927605d44e8a4216b
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at Memberse.WebAppAutomation.wCreateVideoPostTest.wCreatVideoPostTestCase(wCreateVideoPostTest.java:95)
+	at Memberse.WebAppAutomation.wCreateVideoPostTest.wCreatVideoPostTestCase(wCreateVideoPostTest.java:96)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1429610243", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1429610243'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;group relative w-full flex items-center justify-center border rounded-lg focus:outline-none transition duration-150 ease-in-out whitespace-nowrap cursor-pointer text-neutral-1000 bg-other-3000 border-other-3000 py-2 px-2&quot; type=&quot;submit&quot;&gt;...&lt;/button&gt; is not clickable at point (1084, 463). Other element would receive the click: &lt;div class=&quot;absolute inset-0 bg-black opacity-70&quot;&gt;&lt;/div&gt;
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1663271865", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1663271865'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;text-base font-medium leading-4&quot;&gt;...&lt;/span&gt; is not clickable at point (1084, 463). Other element would receive the click: &lt;div class=&quot;absolute inset-0 bg-black opacity-70&quot;&gt;&lt;/div&gt;
   (Session info: chrome=108.0.5359.124)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:5c7b:fcff:c824:59b2:e87d:e9c0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:597c:44d9:402e:f9e1:b127:601f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:54450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: defdec0b0b2bcfc927605d44e8a4216b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:50777}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cd82784bce59137917744b6ef0c2af5
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -198,7 +282,7 @@ Session ID: defdec0b0b2bcfc927605d44e8a4216b
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at Memberse.WebAppAutomation.wCreateVideoPostTest.wCreatVideoPostTestCase(wCreateVideoPostTest.java:95)
+	at Memberse.WebAppAutomation.wCreateVideoPostTest.wCreatVideoPostTestCase(wCreateVideoPostTest.java:96)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -228,297 +312,22 @@ Session ID: defdec0b0b2bcfc927605d44e8a4216b
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>37</td>
-<td>Memberse.WebAppAutomation.wCreateVideoPostTest@4d50efb8</td></tr>
-<tr>
-<td title='Memberse.WebAppAutomation.wCreateAudioPostTest.wCreateAudioPostMembersOnly()'><b>wCreateAudioPostMembersOnly</b><br>Test class: Memberse.WebAppAutomation.wCreateAudioPostTest</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;px-3 text-neutral-1000 group flex items-center py-2 text-base font-medium hover:bg-neutral-8000&quot; href=&quot;/home&quot;&gt;...&lt;/a&gt; is not clickable at point (128, 100). Other element would receive the click: &lt;div class=&quot;absolute inset-0 bg-black opacity-70&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=108.0.5359.124)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:5c7b:fcff:c824:59b2:e87d:e9c0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:54716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 39e46d5eef8459508b7b27b6f108a13e
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at Memberse.WebAppAutomation.wCreateAudioPostTest.wCreateAudioPostMembersOnly(wCreateAudioPostTest.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22515625", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace22515625'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;px-3 text-neutral-1000 group flex items-center py-2 text-base font-medium hover:bg-neutral-8000&quot; href=&quot;/home&quot;&gt;...&lt;/a&gt; is not clickable at point (128, 100). Other element would receive the click: &lt;div class=&quot;absolute inset-0 bg-black opacity-70&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=108.0.5359.124)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:5c7b:fcff:c824:59b2:e87d:e9c0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:54716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 39e46d5eef8459508b7b27b6f108a13e
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at Memberse.WebAppAutomation.wCreateAudioPostTest.wCreateAudioPostMembersOnly(wCreateAudioPostTest.java:128)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>6</td>
-<td>Memberse.WebAppAutomation.wCreateAudioPostTest@7e2d773b</td></tr>
-<tr>
-<td title='Memberse.WebAppAutomation.wCreateVideoPostTest.wCreateVideoPostMembersOnly()'><b>wCreateVideoPostMembersOnly</b><br>Test class: Memberse.WebAppAutomation.wCreateVideoPostTest</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;px-3 text-neutral-1000 group flex items-center py-2 text-base font-medium hover:bg-neutral-8000&quot; href=&quot;/home&quot;&gt;...&lt;/a&gt; is not clickable at point (128, 100). Other element would receive the click: &lt;div class=&quot;absolute inset-0 bg-black opacity-70&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=108.0.5359.124)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:5c7b:fcff:c824:59b2:e87d:e9c0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:54450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: defdec0b0b2bcfc927605d44e8a4216b
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at Memberse.WebAppAutomation.wCreateVideoPostTest.wCreateVideoPostMembersOnly(wCreateVideoPostTest.java:129)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace282166934", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace282166934'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;px-3 text-neutral-1000 group flex items-center py-2 text-base font-medium hover:bg-neutral-8000&quot; href=&quot;/home&quot;&gt;...&lt;/a&gt; is not clickable at point (128, 100). Other element would receive the click: &lt;div class=&quot;absolute inset-0 bg-black opacity-70&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=108.0.5359.124)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:5c7b:fcff:c824:59b2:e87d:e9c0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:54450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: defdec0b0b2bcfc927605d44e8a4216b
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at Memberse.WebAppAutomation.wCreateVideoPostTest.wCreateVideoPostMembersOnly(wCreateVideoPostTest.java:129)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>6</td>
-<td>Memberse.WebAppAutomation.wCreateVideoPostTest@4d50efb8</td></tr>
-<tr>
-<td title='Memberse.WebAppAutomation.wDeleteAccountTest.wDeleteAccountTestCase()'><b>wDeleteAccountTestCase</b><br>Test class: Memberse.WebAppAutomation.wDeleteAccountTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;email&apos;]&quot;}
-  (Session info: chrome=108.0.5359.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:5c7b:fcff:c824:59b2:e87d:e9c0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:50796}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 90a85ba563d6df9eac4308b1a0e0829f
-*** Element info: {Using=name, value=email}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
-	at Memberse.WebAppAutomation.wDeleteAccountTest.wDeleteAccountTestCase(wDeleteAccountTest.java:29)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1899567935", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1899567935'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;email&apos;]&quot;}
-  (Session info: chrome=108.0.5359.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:5c7b:fcff:c824:59b2:e87d:e9c0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:50796}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 90a85ba563d6df9eac4308b1a0e0829f
-*** Element info: {Using=name, value=email}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
-	at Memberse.WebAppAutomation.wDeleteAccountTest.wDeleteAccountTestCase(wDeleteAccountTest.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:764)
-	at org.testng.TestRunner.run(TestRunner.java:585)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.runSuites(TestNG.java:1069)
-	at org.testng.TestNG.run(TestNG.java:1037)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>6</td>
-<td>Memberse.WebAppAutomation.wDeleteAccountTest@78e67e0a</td></tr>
+<td>38</td>
+<td>Memberse.WebAppAutomation.wCreateVideoPostTest@58c1670b</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wFeedsFilterTest.wFeedsFilterTestCase()'><b>wFeedsFilterTestCase</b><br>Test class: Memberse.WebAppAutomation.wFeedsFilterTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#__next &gt; div.h-full.text-neutral-9000.dark\:text-neutral-1000.custom-scroll &gt; div &gt; div.pl-64.flex.flex-col.flex-1 &gt; main &gt; div &gt; div:nth-child(3) &gt; div.space-y-2 &gt; div &gt; div &gt; div:nth-child(3) &gt; div &gt; div:nth-child(1) &gt; div &gt; div.flex.flex-grow &gt; div &gt; div &gt; p.text-sm.font-semibold.line-clamp-1 &gt; a&quot;}
-  (Session info: chrome=108.0.5359.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:5c7b:fcff:c824:59b2:e87d:e9c0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:53269}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d03d9c92733a6b7ffe04f083718bcea
-*** Element info: {Using=css selector, value=#__next &gt; div.h-full.text-neutral-9000.dark\:text-neutral-1000.custom-scroll &gt; div &gt; div.pl-64.flex.flex-col.flex-1 &gt; main &gt; div &gt; div:nth-child(3) &gt; div.space-y-2 &gt; div &gt; div &gt; div:nth-child(3) &gt; div &gt; div:nth-child(1) &gt; div &gt; div.flex.flex-grow &gt; div &gt; div &gt; p.text-sm.font-semibold.line-clamp-1 &gt; a}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at Memberse.WebAppAutomation.wFeedsFilterTest.wFeedsFilterTestCase(wFeedsFilterTest.java:39)
+<td><div><pre>java.lang.AssertionError: expected [kqatestc3&apos;s Community] but found [kqatestc5&apos;s Community]
+	at Memberse.WebAppAutomation.wFeedsFilterTest.wFeedsFilterTestCase(wFeedsFilterTest.java:41)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1346667529", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1346667529'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#__next &gt; div.h-full.text-neutral-9000.dark\:text-neutral-1000.custom-scroll &gt; div &gt; div.pl-64.flex.flex-col.flex-1 &gt; main &gt; div &gt; div:nth-child(3) &gt; div.space-y-2 &gt; div &gt; div &gt; div:nth-child(3) &gt; div &gt; div:nth-child(1) &gt; div &gt; div.flex.flex-grow &gt; div &gt; div &gt; p.text-sm.font-semibold.line-clamp-1 &gt; a&quot;}
-  (Session info: chrome=108.0.5359.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:5c7b:fcff:c824:59b2:e87d:e9c0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:53269}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d03d9c92733a6b7ffe04f083718bcea
-*** Element info: {Using=css selector, value=#__next &gt; div.h-full.text-neutral-9000.dark\:text-neutral-1000.custom-scroll &gt; div &gt; div.pl-64.flex.flex-col.flex-1 &gt; main &gt; div &gt; div:nth-child(3) &gt; div.space-y-2 &gt; div &gt; div &gt; div:nth-child(3) &gt; div &gt; div:nth-child(1) &gt; div &gt; div.flex.flex-grow &gt; div &gt; div &gt; p.text-sm.font-semibold.line-clamp-1 &gt; a}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at Memberse.WebAppAutomation.wFeedsFilterTest.wFeedsFilterTestCase(wFeedsFilterTest.java:39)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1555928242", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1555928242'><pre>java.lang.AssertionError: expected [kqatestc3&apos;s Community] but found [kqatestc5&apos;s Community]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at Memberse.WebAppAutomation.wFeedsFilterTest.wFeedsFilterTestCase(wFeedsFilterTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -548,62 +357,21 @@ Session ID: 7d03d9c92733a6b7ffe04f083718bcea
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>37</td>
-<td>Memberse.WebAppAutomation.wFeedsFilterTest@3cb1ffe6</td></tr>
+<td>39</td>
+<td>Memberse.WebAppAutomation.wFeedsFilterTest@9a7504c</td></tr>
 <tr>
-<td title='Memberse.WebAppAutomation.wSignupFormValidationTest.wSignupFormValidationTestCase()'><b>wSignupFormValidationTestCase</b><br>Test class: Memberse.WebAppAutomation.wSignupFormValidationTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Sign up&apos;]&quot;}
-  (Session info: chrome=108.0.5359.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:5c7b:fcff:c824:59b2:e87d:e9c0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:49580}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: aedcc5fc315386fc61f66a25faa09ece
-*** Element info: {Using=xpath, value=//span[text()=&apos;Sign up&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at Memberse.WebAppAutomation.wSignupFormValidationTest.wSignupFormValidationTestCase(wSignupFormValidationTest.java:22)
+<td title='Memberse.WebAppAutomation.wLikePostTest.wLikePostTestCase()'><b>wLikePostTestCase</b><br>Test class: Memberse.WebAppAutomation.wLikePostTest</td>
+<td><div><pre>java.lang.AssertionError: did not expect [1] but found [1]
+	at Memberse.WebAppAutomation.wLikePostTest.wLikePostTestCase(wLikePostTest.java:43)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1474957626", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1474957626'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Sign up&apos;]&quot;}
-  (Session info: chrome=108.0.5359.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:5c7b:fcff:c824:59b2:e87d:e9c0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:49580}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: aedcc5fc315386fc61f66a25faa09ece
-*** Element info: {Using=xpath, value=//span[text()=&apos;Sign up&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at Memberse.WebAppAutomation.wSignupFormValidationTest.wSignupFormValidationTestCase(wSignupFormValidationTest.java:22)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace649989411", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace649989411'><pre>java.lang.AssertionError: did not expect [1] but found [1]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failEquals(Assert.java:1041)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:147)
+	at org.testng.Assert.assertNotEquals(Assert.java:1531)
+	at org.testng.Assert.assertNotEquals(Assert.java:1535)
+	at Memberse.WebAppAutomation.wLikePostTest.wLikePostTestCase(wLikePostTest.java:43)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -633,18 +401,18 @@ Session ID: aedcc5fc315386fc61f66a25faa09ece
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>6</td>
-<td>Memberse.WebAppAutomation.wSignupFormValidationTest@30a3107a</td></tr>
+<td>38</td>
+<td>Memberse.WebAppAutomation.wLikePostTest@7113b13f</td></tr>
 <tr>
-<td title='Memberse.WebAppAutomation.wSignupTest.wSignupTestCase()'><b>wSignupTestCase</b><br>Test class: Memberse.WebAppAutomation.wSignupTest</td>
+<td title='Memberse.WebAppAutomation.wMembershipsTest.wMembershipsTestCase()'><b>wMembershipsTestCase</b><br>Test class: Memberse.WebAppAutomation.wMembershipsTest</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;email&apos;]&quot;}
   (Session info: chrome=108.0.5359.124)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:5c7b:fcff:c824:59b2:e87d:e9c0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:597c:44d9:402e:f9e1:b127:601f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:49672}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 44887d2f72f4003da47ceb50e852aaec
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:52559}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 33cf22aa1749fc7d9b5ee09d0ed92915
 *** Element info: {Using=name, value=email}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -659,20 +427,19 @@ Session ID: 44887d2f72f4003da47ceb50e852aaec
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
-	at Memberse.WebAppAutomation.wSignupTest.wSignupTestCase(wSignupTest.java:28)
+	at Memberse.WebAppAutomation.wMembershipsTest.wMembershipsTestCase(wMembershipsTest.java:26)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace354605216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace354605216'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;email&apos;]&quot;}
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1490885900", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1490885900'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;email&apos;]&quot;}
   (Session info: chrome=108.0.5359.124)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:5c7b:fcff:c824:59b2:e87d:e9c0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:597c:44d9:402e:f9e1:b127:601f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:49672}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 44887d2f72f4003da47ceb50e852aaec
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:52559}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 33cf22aa1749fc7d9b5ee09d0ed92915
 *** Element info: {Using=name, value=email}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -688,7 +455,7 @@ Session ID: 44887d2f72f4003da47ceb50e852aaec
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
-	at Memberse.WebAppAutomation.wSignupTest.wSignupTestCase(wSignupTest.java:28)
+	at Memberse.WebAppAutomation.wMembershipsTest.wMembershipsTestCase(wMembershipsTest.java:26)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -718,8 +485,344 @@ Session ID: 44887d2f72f4003da47ceb50e852aaec
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>6</td>
-<td>Memberse.WebAppAutomation.wSignupTest@33c7e1bb</td></tr>
+<td>7</td>
+<td>Memberse.WebAppAutomation.wMembershipsTest@44c8afef</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wPlayAudioPostTest.wPlayAudioPostTestCase()'><b>wPlayAudioPostTestCase</b><br>Test class: Memberse.WebAppAutomation.wPlayAudioPostTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#__next &gt; div.h-full.text-neutral-9000.dark\:text-neutral-1000.custom-scroll &gt; div &gt; div.pl-64.flex.flex-col.flex-1 &gt; main &gt; div &gt; div.space-y-6.h-full &gt; div.flex.w-full &gt; div &gt; div.pb-10 &gt; div.flex-grow &gt; div &gt; div:nth-child(2) &gt; div &gt; div:nth-child(1) &gt; div.w-full.bg-neutral-1000.dark\:bg-purple-8000.shadow-sm.p-4.flex.space-x-2.h-28 &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div&quot;}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:597c:44d9:402e:f9e1:b127:601f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:51559}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9043b82ec14a913b97965791dfbe67bd
+*** Element info: {Using=css selector, value=#__next &gt; div.h-full.text-neutral-9000.dark\:text-neutral-1000.custom-scroll &gt; div &gt; div.pl-64.flex.flex-col.flex-1 &gt; main &gt; div &gt; div.space-y-6.h-full &gt; div.flex.w-full &gt; div &gt; div.pb-10 &gt; div.flex-grow &gt; div &gt; div:nth-child(2) &gt; div &gt; div:nth-child(1) &gt; div.w-full.bg-neutral-1000.dark\:bg-purple-8000.shadow-sm.p-4.flex.space-x-2.h-28 &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at Memberse.WebAppAutomation.wPlayAudioPostTest.wPlayAudioPostTestCase(wPlayAudioPostTest.java:37)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1647028001", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1647028001'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#__next &gt; div.h-full.text-neutral-9000.dark\:text-neutral-1000.custom-scroll &gt; div &gt; div.pl-64.flex.flex-col.flex-1 &gt; main &gt; div &gt; div.space-y-6.h-full &gt; div.flex.w-full &gt; div &gt; div.pb-10 &gt; div.flex-grow &gt; div &gt; div:nth-child(2) &gt; div &gt; div:nth-child(1) &gt; div.w-full.bg-neutral-1000.dark\:bg-purple-8000.shadow-sm.p-4.flex.space-x-2.h-28 &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div&quot;}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:597c:44d9:402e:f9e1:b127:601f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:51559}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9043b82ec14a913b97965791dfbe67bd
+*** Element info: {Using=css selector, value=#__next &gt; div.h-full.text-neutral-9000.dark\:text-neutral-1000.custom-scroll &gt; div &gt; div.pl-64.flex.flex-col.flex-1 &gt; main &gt; div &gt; div.space-y-6.h-full &gt; div.flex.w-full &gt; div &gt; div.pb-10 &gt; div.flex-grow &gt; div &gt; div:nth-child(2) &gt; div &gt; div:nth-child(1) &gt; div.w-full.bg-neutral-1000.dark\:bg-purple-8000.shadow-sm.p-4.flex.space-x-2.h-28 &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div}
+	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at Memberse.WebAppAutomation.wPlayAudioPostTest.wPlayAudioPostTestCase(wPlayAudioPostTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>29</td>
+<td>Memberse.WebAppAutomation.wPlayAudioPostTest@e874448</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wReportPostTest.wReportPostTestCase()'><b>wReportPostTestCase</b><br>Test class: Memberse.WebAppAutomation.wReportPostTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;w-8 h-8 flex items-center justify-center&apos;]&quot;}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:597c:44d9:402e:f9e1:b127:601f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:51603}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cabb561f196b019fe9f5a9fb0a54b69
+*** Element info: {Using=xpath, value=//*[@class=&apos;w-8 h-8 flex items-center justify-center&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at Memberse.WebAppAutomation.wReportPostTest.wReportPostTestCase(wReportPostTest.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace647479638", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace647479638'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;w-8 h-8 flex items-center justify-center&apos;]&quot;}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:597c:44d9:402e:f9e1:b127:601f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:51603}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cabb561f196b019fe9f5a9fb0a54b69
+*** Element info: {Using=xpath, value=//*[@class=&apos;w-8 h-8 flex items-center justify-center&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at Memberse.WebAppAutomation.wReportPostTest.wReportPostTestCase(wReportPostTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>21</td>
+<td>Memberse.WebAppAutomation.wReportPostTest@29b5cd00</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wSharePostTest.wSharePostTestCase()'><b>wSharePostTestCase</b><br>Test class: Memberse.WebAppAutomation.wSharePostTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;Share&apos;]&quot;}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:597c:44d9:402e:f9e1:b127:601f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:51648}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: efa45d679f5b244b844c24ca5b8280c2
+*** Element info: {Using=xpath, value=//*[text()=&apos;Share&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at Memberse.WebAppAutomation.wSharePostTest.wSharePostTestCase(wSharePostTest.java:31)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1573507674", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1573507674'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;Share&apos;]&quot;}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:597c:44d9:402e:f9e1:b127:601f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:51648}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: efa45d679f5b244b844c24ca5b8280c2
+*** Element info: {Using=xpath, value=//*[text()=&apos;Share&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at Memberse.WebAppAutomation.wSharePostTest.wSharePostTestCase(wSharePostTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>21</td>
+<td>Memberse.WebAppAutomation.wSharePostTest@60285225</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wViewTextPostTest.wViewTextPostTestCase()'><b>wViewTextPostTestCase</b><br>Test class: Memberse.WebAppAutomation.wViewTextPostTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#__next &gt; div.h-full.text-neutral-9000.dark\:text-neutral-1000.custom-scroll &gt; div &gt; div.pl-64.flex.flex-col.flex-1 &gt; main &gt; div &gt; div.space-y-6.h-full &gt; div.flex.w-full &gt; div &gt; div.pb-10 &gt; div.flex-grow &gt; div &gt; div:nth-child(2) &gt; div &gt; div:nth-child(1) &gt; div.w-full.bg-neutral-1000.dark\:bg-purple-8000.shadow-sm.p-4.flex.space-x-2.h-28 &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div&quot;}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:597c:44d9:402e:f9e1:b127:601f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:51412}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b87cb4ed6b7b1044040fea30bb82b49
+*** Element info: {Using=css selector, value=#__next &gt; div.h-full.text-neutral-9000.dark\:text-neutral-1000.custom-scroll &gt; div &gt; div.pl-64.flex.flex-col.flex-1 &gt; main &gt; div &gt; div.space-y-6.h-full &gt; div.flex.w-full &gt; div &gt; div.pb-10 &gt; div.flex-grow &gt; div &gt; div:nth-child(2) &gt; div &gt; div:nth-child(1) &gt; div.w-full.bg-neutral-1000.dark\:bg-purple-8000.shadow-sm.p-4.flex.space-x-2.h-28 &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at Memberse.WebAppAutomation.wViewTextPostTest.wViewTextPostTestCase(wViewTextPostTest.java:37)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace820069375", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace820069375'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#__next &gt; div.h-full.text-neutral-9000.dark\:text-neutral-1000.custom-scroll &gt; div &gt; div.pl-64.flex.flex-col.flex-1 &gt; main &gt; div &gt; div.space-y-6.h-full &gt; div.flex.w-full &gt; div &gt; div.pb-10 &gt; div.flex-grow &gt; div &gt; div:nth-child(2) &gt; div &gt; div:nth-child(1) &gt; div.w-full.bg-neutral-1000.dark\:bg-purple-8000.shadow-sm.p-4.flex.space-x-2.h-28 &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div&quot;}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:597c:44d9:402e:f9e1:b127:601f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:51412}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b87cb4ed6b7b1044040fea30bb82b49
+*** Element info: {Using=css selector, value=#__next &gt; div.h-full.text-neutral-9000.dark\:text-neutral-1000.custom-scroll &gt; div &gt; div.pl-64.flex.flex-col.flex-1 &gt; main &gt; div &gt; div.space-y-6.h-full &gt; div.flex.w-full &gt; div &gt; div.pb-10 &gt; div.flex-grow &gt; div &gt; div:nth-child(2) &gt; div &gt; div:nth-child(1) &gt; div.w-full.bg-neutral-1000.dark\:bg-purple-8000.shadow-sm.p-4.flex.space-x-2.h-28 &gt; div:nth-child(1) &gt; div &gt; div &gt; div &gt; div}
+	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at Memberse.WebAppAutomation.wViewTextPostTest.wViewTextPostTestCase(wViewTextPostTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>29</td>
+<td>Memberse.WebAppAutomation.wViewTextPostTest@4abdb505</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -729,140 +832,240 @@ Session ID: 44887d2f72f4003da47ceb50e852aaec
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Memberse.WebAppAutomation.wCommunityGuidelinesTest.wCommunityGuidelinesTestCase()'><b>wCommunityGuidelinesTestCase</b><br>Test class: Memberse.WebAppAutomation.wCommunityGuidelinesTest</td>
+<td title='Memberse.WebAppAutomation.wAddMediaAndPlayPlaylistTest.wAddMediaAndPlayPlaylistTestCase()'><b>wAddMediaAndPlayPlaylistTestCase</b><br>Test class: Memberse.WebAppAutomation.wAddMediaAndPlayPlaylistTest</td>
 <td></td>
-<td>12</td>
-<td>Memberse.WebAppAutomation.wCommunityGuidelinesTest@2a556333</td></tr>
+<td>146</td>
+<td>Memberse.WebAppAutomation.wAddMediaAndPlayPlaylistTest@5bcea91b</td></tr>
 <tr>
-<td title='Memberse.WebAppAutomation.wCreatePhotoPostTest.wCreatePhotoPostMembersOnly()'><b>wCreatePhotoPostMembersOnly</b><br>Test class: Memberse.WebAppAutomation.wCreatePhotoPostTest</td>
+<td title='Memberse.WebAppAutomation.wBecomeCreatorTest.wBecomeCreatorTestCase()'><b>wBecomeCreatorTestCase</b><br>Test class: Memberse.WebAppAutomation.wBecomeCreatorTest</td>
+<td></td>
+<td>51</td>
+<td>Memberse.WebAppAutomation.wBecomeCreatorTest@12f41634</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wChangePasswordTest.wChangePasswordTestCase()'><b>wChangePasswordTestCase</b><br>Test class: Memberse.WebAppAutomation.wChangePasswordTest</td>
+<td></td>
+<td>25</td>
+<td>Memberse.WebAppAutomation.wChangePasswordTest@46daef40</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wCommentOnPostTest.wCommentOnPostTestCase()'><b>wCommentOnPostTestCase</b><br>Test class: Memberse.WebAppAutomation.wCommentOnPostTest</td>
 <td></td>
 <td>40</td>
-<td>Memberse.WebAppAutomation.wCreatePhotoPostTest@467aecef</td></tr>
+<td>Memberse.WebAppAutomation.wCommentOnPostTest@45820e51</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wCommentOnPlaylistMediaTest.wCommentonPlaylistMediaTestCase()'><b>wCommentonPlaylistMediaTestCase</b><br>Test class: Memberse.WebAppAutomation.wCommentOnPlaylistMediaTest</td>
+<td></td>
+<td>67</td>
+<td>Memberse.WebAppAutomation.wCommentOnPlaylistMediaTest@27f723</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wCommunityEditInfoTest.wCommunityEditInfoTestCase()'><b>wCommunityEditInfoTestCase</b><br>Test class: Memberse.WebAppAutomation.wCommunityEditInfoTest</td>
+<td></td>
+<td>33</td>
+<td>Memberse.WebAppAutomation.wCommunityEditInfoTest@6043cd28</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wCommunityGuidelinesTest.wCommunityGuidelinesTestCase()'><b>wCommunityGuidelinesTestCase</b><br>Test class: Memberse.WebAppAutomation.wCommunityGuidelinesTest</td>
+<td></td>
+<td>13</td>
+<td>Memberse.WebAppAutomation.wCommunityGuidelinesTest@32d2fa64</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wCommunityPriceTest.wCommunityPriceTestCase()'><b>wCommunityPriceTestCase</b><br>Test class: Memberse.WebAppAutomation.wCommunityPriceTest</td>
+<td></td>
+<td>38</td>
+<td>Memberse.WebAppAutomation.wCommunityPriceTest@cb51256</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wCreateAndDeletePlaylistTest.wCreateAndDeletePlaylistTestCase()'><b>wCreateAndDeletePlaylistTestCase</b><br>Test class: Memberse.WebAppAutomation.wCreateAndDeletePlaylistTest</td>
+<td></td>
+<td>70</td>
+<td>Memberse.WebAppAutomation.wCreateAndDeletePlaylistTest@12cdcf4</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wCreatePhotoPostTest.wCreatePhotoPostTestCase()'><b>wCreatePhotoPostTestCase</b><br>Test class: Memberse.WebAppAutomation.wCreatePhotoPostTest</td>
 <td></td>
-<td>72</td>
-<td>Memberse.WebAppAutomation.wCreatePhotoPostTest@467aecef</td></tr>
-<tr>
-<td title='Memberse.WebAppAutomation.wCreateTextPostTest.wCreateTextPostMembersOnly()'><b>wCreateTextPostMembersOnly</b><br>Test class: Memberse.WebAppAutomation.wCreateTextPostTest</td>
-<td></td>
-<td>23</td>
-<td>Memberse.WebAppAutomation.wCreateTextPostTest@3dfc5fb8</td></tr>
+<td>85</td>
+<td>Memberse.WebAppAutomation.wCreatePhotoPostTest@587d1d39</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wCreateTextPostTest.wCreateTextPostTestCase()'><b>wCreateTextPostTestCase</b><br>Test class: Memberse.WebAppAutomation.wCreateTextPostTest</td>
 <td></td>
-<td>37</td>
-<td>Memberse.WebAppAutomation.wCreateTextPostTest@3dfc5fb8</td></tr>
+<td>47</td>
+<td>Memberse.WebAppAutomation.wCreateTextPostTest@2c039ac6</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wCreatorBothSideMenusTest.wCreatorBothSideMenusTestCase()'><b>wCreatorBothSideMenusTestCase</b><br>Test class: Memberse.WebAppAutomation.wCreatorBothSideMenusTest</td>
 <td></td>
-<td>19</td>
-<td>Memberse.WebAppAutomation.wCreatorBothSideMenusTest@2173f6d9</td></tr>
+<td>21</td>
+<td>Memberse.WebAppAutomation.wCreatorBothSideMenusTest@5bb21b69</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wDeleteAccountTest.wDeleteAccountTestCase()'><b>wDeleteAccountTestCase</b><br>Test class: Memberse.WebAppAutomation.wDeleteAccountTest</td>
+<td></td>
+<td>47</td>
+<td>Memberse.WebAppAutomation.wDeleteAccountTest@3234e239</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wDonationTest.wDonationTestCase()'><b>wDonationTestCase</b><br>Test class: Memberse.WebAppAutomation.wDonationTest</td>
+<td></td>
+<td>85</td>
+<td>Memberse.WebAppAutomation.wDonationTest@26a7b76d</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wFeedsVerifyTest.wFeedsVerifyTestCase()'><b>wFeedsVerifyTestCase</b><br>Test class: Memberse.WebAppAutomation.wFeedsVerifyTest</td>
 <td></td>
-<td>22</td>
-<td>Memberse.WebAppAutomation.wFeedsVerifyTest@2a742aa2</td></tr>
+<td>23</td>
+<td>Memberse.WebAppAutomation.wFeedsVerifyTest@3e57cd70</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest.wFollowCommunityTestCase()'><b>wFollowCommunityTestCase</b><br>Test class: Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest</td>
 <td></td>
-<td>57</td>
-<td>Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest@7a187f14</td></tr>
+<td>61</td>
+<td>Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest@38bc8ab5</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wJoinCommunityTest.wJoinCommunityTestCase()'><b>wJoinCommunityTestCase</b><br>Test class: Memberse.WebAppAutomation.wJoinCommunityTest</td>
+<td></td>
+<td>123</td>
+<td>Memberse.WebAppAutomation.wJoinCommunityTest@7a9273a8</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wLaunchAppStoreTest.wLaunchAppStoreTestCase()'><b>wLaunchAppStoreTestCase</b><br>Test class: Memberse.WebAppAutomation.wLaunchAppStoreTest</td>
 <td></td>
-<td>25</td>
-<td>Memberse.WebAppAutomation.wLaunchAppStoreTest@bd8db5a</td></tr>
+<td>21</td>
+<td>Memberse.WebAppAutomation.wLaunchAppStoreTest@3d921e20</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wLaunchGooglePlayTest.wLaunchGooglePlayTestCase()'><b>wLaunchGooglePlayTestCase</b><br>Test class: Memberse.WebAppAutomation.wLaunchGooglePlayTest</td>
 <td></td>
-<td>30</td>
-<td>Memberse.WebAppAutomation.wLaunchGooglePlayTest@2f943d71</td></tr>
+<td>20</td>
+<td>Memberse.WebAppAutomation.wLaunchGooglePlayTest@36b4cef0</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wLaunchMemberseFacebookTest.wLaunchMemberseFacebookTestCase()'><b>wLaunchMemberseFacebookTestCase</b><br>Test class: Memberse.WebAppAutomation.wLaunchMemberseFacebookTest</td>
 <td></td>
-<td>18</td>
-<td>Memberse.WebAppAutomation.wLaunchMemberseFacebookTest@80503</td></tr>
+<td>20</td>
+<td>Memberse.WebAppAutomation.wLaunchMemberseFacebookTest@fad74ee</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wLaunchMemberseInstagramTest.wLaunchMemberseInstagramTestCase()'><b>wLaunchMemberseInstagramTestCase</b><br>Test class: Memberse.WebAppAutomation.wLaunchMemberseInstagramTest</td>
 <td></td>
-<td>39</td>
-<td>Memberse.WebAppAutomation.wLaunchMemberseInstagramTest@4b553d26</td></tr>
+<td>31</td>
+<td>Memberse.WebAppAutomation.wLaunchMemberseInstagramTest@1a1d6a08</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest.wLaunchMemberseLinkedInTestCase()'><b>wLaunchMemberseLinkedInTestCase</b><br>Test class: Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest</td>
 <td></td>
-<td>17</td>
-<td>Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest@69a3d1d</td></tr>
+<td>19</td>
+<td>Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest@37d31475</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wLaunchMemberseTikTokTest.wLaunchMemberseTikTokTestCase()'><b>wLaunchMemberseTikTokTestCase</b><br>Test class: Memberse.WebAppAutomation.wLaunchMemberseTikTokTest</td>
 <td></td>
-<td>100</td>
-<td>Memberse.WebAppAutomation.wLaunchMemberseTikTokTest@86be70a</td></tr>
+<td>103</td>
+<td>Memberse.WebAppAutomation.wLaunchMemberseTikTokTest@27808f31</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wLoginFormValidationTest.wLoginFormValidationTestCase()'><b>wLoginFormValidationTestCase</b><br>Test class: Memberse.WebAppAutomation.wLoginFormValidationTest</td>
 <td></td>
-<td>10</td>
-<td>Memberse.WebAppAutomation.wLoginFormValidationTest@34c4973</td></tr>
+<td>13</td>
+<td>Memberse.WebAppAutomation.wLoginFormValidationTest@51e2adc7</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wLoginwithAppleTest.wLoginWithAppleTestCase()'><b>wLoginWithAppleTestCase</b><br>Test class: Memberse.WebAppAutomation.wLoginwithAppleTest</td>
 <td></td>
-<td>13</td>
-<td>Memberse.WebAppAutomation.wLoginwithAppleTest@17d677df</td></tr>
+<td>20</td>
+<td>Memberse.WebAppAutomation.wLoginwithAppleTest@42f93a98</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wLoginWithFacebookTest.wLoginWithFacebookTestCase()'><b>wLoginWithFacebookTestCase</b><br>Test class: Memberse.WebAppAutomation.wLoginWithFacebookTest</td>
 <td></td>
-<td>30</td>
-<td>Memberse.WebAppAutomation.wLoginWithFacebookTest@76b0bfab</td></tr>
+<td>35</td>
+<td>Memberse.WebAppAutomation.wLoginWithFacebookTest@631330c</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wLoginWithGoogleTest.wLoginWithGoogleTestCase()'><b>wLoginWithGoogleTestCase</b><br>Test class: Memberse.WebAppAutomation.wLoginWithGoogleTest</td>
 <td></td>
-<td>24</td>
-<td>Memberse.WebAppAutomation.wLoginWithGoogleTest@7a765367</td></tr>
+<td>28</td>
+<td>Memberse.WebAppAutomation.wLoginWithGoogleTest@2353b3e6</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wLogintTest.wLogintTestCase()'><b>wLogintTestCase</b><br>Test class: Memberse.WebAppAutomation.wLogintTest</td>
 <td></td>
-<td>19</td>
-<td>Memberse.WebAppAutomation.wLogintTest@52feb982</td></tr>
+<td>21</td>
+<td>Memberse.WebAppAutomation.wLogintTest@1a8a8f7c</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wLogoutTest.wLogoutTestCase()'><b>wLogoutTestCase</b><br>Test class: Memberse.WebAppAutomation.wLogoutTest</td>
 <td></td>
-<td>22</td>
-<td>Memberse.WebAppAutomation.wLogoutTest@3043fe0e</td></tr>
+<td>25</td>
+<td>Memberse.WebAppAutomation.wLogoutTest@c46bcd4</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wMemberInfoTest.wMemberInfoTestCase()'><b>wMemberInfoTestCase</b><br>Test class: Memberse.WebAppAutomation.wMemberInfoTest</td>
+<td></td>
+<td>25</td>
+<td>Memberse.WebAppAutomation.wMemberInfoTest@4923ab24</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wMyFansListTest.wMyFansListTestCase()'><b>wMyFansListTestCase</b><br>Test class: Memberse.WebAppAutomation.wMyFansListTest</td>
+<td></td>
+<td>36</td>
+<td>Memberse.WebAppAutomation.wMyFansListTest@670b40af</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wPlayVideoPostTest.wPlayVideoPostTestCase()'><b>wPlayVideoPostTestCase</b><br>Test class: Memberse.WebAppAutomation.wPlayVideoPostTest</td>
+<td></td>
+<td>33</td>
+<td>Memberse.WebAppAutomation.wPlayVideoPostTest@1500955a</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wPlaylistEditTest.wPlaylistEditTestCase()'><b>wPlaylistEditTestCase</b><br>Test class: Memberse.WebAppAutomation.wPlaylistEditTest</td>
+<td></td>
+<td>130</td>
+<td>Memberse.WebAppAutomation.wPlaylistEditTest@5f3a4b84</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wPostHistoryDeleteTest.wPostHistoryDeleteTestCase()'><b>wPostHistoryDeleteTestCase</b><br>Test class: Memberse.WebAppAutomation.wPostHistoryDeleteTest</td>
+<td></td>
+<td>45</td>
+<td>Memberse.WebAppAutomation.wPostHistoryDeleteTest@25af5db5</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wPostHistoryEditTest.wPostHistoryEditTestCase()'><b>wPostHistoryEditTestCase</b><br>Test class: Memberse.WebAppAutomation.wPostHistoryEditTest</td>
+<td></td>
+<td>47</td>
+<td>Memberse.WebAppAutomation.wPostHistoryEditTest@5bfbf16f</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wPostHistoryPlayTest.wPostHistoryPlayTestCase()'><b>wPostHistoryPlayTestCase</b><br>Test class: Memberse.WebAppAutomation.wPostHistoryPlayTest</td>
+<td></td>
+<td>39</td>
+<td>Memberse.WebAppAutomation.wPostHistoryPlayTest@59906517</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wPrivacyPolicyTest.wPrivacyPolicyTestCase()'><b>wPrivacyPolicyTestCase</b><br>Test class: Memberse.WebAppAutomation.wPrivacyPolicyTest</td>
 <td></td>
-<td>13</td>
-<td>Memberse.WebAppAutomation.wPrivacyPolicyTest@7d70d1b1</td></tr>
+<td>16</td>
+<td>Memberse.WebAppAutomation.wPrivacyPolicyTest@1d8d30f7</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wReportCommunityTest.wReportCommunityTestCase()'><b>wReportCommunityTestCase</b><br>Test class: Memberse.WebAppAutomation.wReportCommunityTest</td>
 <td></td>
-<td>42</td>
-<td>Memberse.WebAppAutomation.wReportCommunityTest@51e2adc7</td></tr>
+<td>44</td>
+<td>Memberse.WebAppAutomation.wReportCommunityTest@23d2a7e8</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wSearchCreatorTest.wSearchCreatorTestCase()'><b>wSearchCreatorTestCase</b><br>Test class: Memberse.WebAppAutomation.wSearchCreatorTest</td>
 <td></td>
-<td>32</td>
-<td>Memberse.WebAppAutomation.wSearchCreatorTest@307f6b8c</td></tr>
+<td>33</td>
+<td>Memberse.WebAppAutomation.wSearchCreatorTest@6b9651f3</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wShareCommunityTest.wShareCommunityTestCase()'><b>wShareCommunityTestCase</b><br>Test class: Memberse.WebAppAutomation.wShareCommunityTest</td>
 <td></td>
-<td>45</td>
-<td>Memberse.WebAppAutomation.wShareCommunityTest@6f195bc3</td></tr>
+<td>48</td>
+<td>Memberse.WebAppAutomation.wShareCommunityTest@687080dc</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wSignupFormValidationTest.wSignupFormValidationTestCase()'><b>wSignupFormValidationTestCase</b><br>Test class: Memberse.WebAppAutomation.wSignupFormValidationTest</td>
+<td></td>
+<td>15</td>
+<td>Memberse.WebAppAutomation.wSignupFormValidationTest@7a187f14</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wSignupTest.wSignupTestCase()'><b>wSignupTestCase</b><br>Test class: Memberse.WebAppAutomation.wSignupTest</td>
+<td></td>
+<td>19</td>
+<td>Memberse.WebAppAutomation.wSignupTest@6f195bc3</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wSmokeTest.wSmokeTestCase()'><b>wSmokeTestCase</b><br>Test class: Memberse.WebAppAutomation.wSmokeTest</td>
 <td></td>
-<td>20</td>
-<td>Memberse.WebAppAutomation.wSmokeTest@2bbf4b8b</td></tr>
+<td>21</td>
+<td>Memberse.WebAppAutomation.wSmokeTest@307f6b8c</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wTermsAndConditionsTest.wTermsAndConditionsTestCase()'><b>wTermsAndConditionsTestCase</b><br>Test class: Memberse.WebAppAutomation.wTermsAndConditionsTest</td>
 <td></td>
-<td>13</td>
-<td>Memberse.WebAppAutomation.wTermsAndConditionsTest@480bdb19</td></tr>
+<td>77</td>
+<td>Memberse.WebAppAutomation.wTermsAndConditionsTest@436e852b</td></tr>
 <tr>
 <td title='Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest.wUnfollowCommunityTestCase()'><b>wUnfollowCommunityTestCase</b><br>Test class: Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest</td>
 <td></td>
-<td>36</td>
-<td>Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest@7a187f14</td></tr>
+<td>38</td>
+<td>Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest@38bc8ab5</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wViewPhotoPostTest.wViewPhotoPostTestCase()'><b>wViewPhotoPostTestCase</b><br>Test class: Memberse.WebAppAutomation.wViewPhotoPostTest</td>
+<td></td>
+<td>32</td>
+<td>Memberse.WebAppAutomation.wViewPhotoPostTest@7ce6a65d</td></tr>
+<tr>
+<td title='Memberse.WebAppAutomation.wWatchedHistoryTest.wWatchedHistoryTestCase()'><b>wWatchedHistoryTestCase</b><br>Test class: Memberse.WebAppAutomation.wWatchedHistoryTest</td>
+<td></td>
+<td>26</td>
+<td>Memberse.WebAppAutomation.wWatchedHistoryTest@7b69c6ba</td></tr>
 </table><p>
 </body>
 </html>

@@ -26,7 +26,7 @@ public class WBase {
 	public static String 	  	  driverLocation;
 	
 	//Set Capabilities for the Browser & provide driver location
-	public void  Capabilities() throws IOException {
+	public static void  Capabilities() throws IOException {
 		if(intelJenkinsServer == true)
 		{
 			driverLocation = (System.getProperty("user.dir")+"/src/intelChromeDriver/chromedriver");
@@ -39,12 +39,12 @@ public class WBase {
 		
 		options = new ChromeOptions();
 		options.addArguments("--incognito");
-		//options.addArguments("--headless");
-		//options.addArguments("--start-fullscreen");
-		//options.addArguments("start-maximized");
-		//options.addArguments("--disable-infobars");
-		//options.addArguments("--disbale-notifications");
-		//options.addArguments("--disable-extensions");
+		options.addArguments("--start-maximized");			//Its working, Browser window becomes to maximum size but not fullscreen
+		options.addArguments("--disable-notifications");  	//This is to stop appearing Push notifications messages on browser window, may it not work in Mac OS
+		//options.addArguments("--headless");			  	//Its working, for UI less testing
+		//options.addArguments("--start-fullscreen");		//Its for Fullscreen which is greater than Maximized mode and working
+		//options.addArguments("--disable-infobars");  	  	//This is to remove the line at top of browser window which inform that browser is controlled by automated software, may deprecated
+		//options.addArguments("--disable-extensions");	  	//This is to disable extensions installed to Chrome browser
 		
 		environment = System.getProperty("env");
 		System.out.println("Value for environment get via pom file --> " + environment);
@@ -66,23 +66,24 @@ public class WBase {
 	}
 	
 	@AfterTest
-	public void QuitBrowsers() throws InterruptedException {
-		//Quit Driver when all Test Cases completed
-		driver.quit();
+	public void endSuite() throws InterruptedException {
+		//Print Message
+		System.out.println("Test Suite Executed");
 	}
 	
 	@BeforeClass
 	public void startDriver() throws InterruptedException, IOException {
 		//Start new driver & Window before to every Test Class
 		driver = new ChromeDriver(options);
-		driver.manage().window().maximize();
+		Thread.sleep(2000);
 		driver.get((String)prop.get("Url"));
 	}
 	
 	@AfterClass
-	public void CloseBrowser() throws InterruptedException {
-		System.out.println("Test Case Code Executed");
-		driver.close();
+	public void quitDriver() throws InterruptedException {
+		//Quit Driver after each Test Case Executed
+		//driver.close();
+		driver.quit();
 	}
 
 }

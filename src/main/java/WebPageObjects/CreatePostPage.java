@@ -79,7 +79,7 @@ public class CreatePostPage {
 		return membersOnlyToggle;
 	}
 	
-	@FindBy(xpath="//*[@id=\"news-item-form\"]/div/div[4]/div/div[2]/button")   
+	@FindBy(css="#news-item-form > div > div:nth-child(4) > div > div.flex-shrink > button > span")   
 	private WebElement submitButton;
 	
 	public WebElement submitButton() {

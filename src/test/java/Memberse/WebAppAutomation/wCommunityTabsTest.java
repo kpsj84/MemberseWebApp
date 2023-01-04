@@ -26,7 +26,7 @@ public class wCommunityTabsTest extends WBase {
 		lp.Password().sendKeys("kqatestc5");
 		lp.ShowPassword().click();
 		lp.Login().click();
-		Thread.sleep(10000);
+		Thread.sleep(12000);
 		
 		HomePage hp= new HomePage(driver);
 	    hp.ClickOnCreator().click();

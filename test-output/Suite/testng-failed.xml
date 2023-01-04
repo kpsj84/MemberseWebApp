@@ -8,60 +8,94 @@
     <classes>
       <class name="Memberse.WebAppAutomation.wCreateAudioPostTest">
         <methods>
-          <include name="CloseBrowser"/>
-          <include name="wCreateAudioPostMembersOnly"/>
+          <include name="quitDriver"/>
+          <include name="endSuite"/>
           <include name="wCreatAudioPostTestCase"/>
           <include name="startDriver"/>
-          <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
       </class> <!-- Memberse.WebAppAutomation.wCreateAudioPostTest -->
+      <class name="Memberse.WebAppAutomation.wViewTextPostTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="endSuite"/>
+          <include name="wViewTextPostTestCase"/>
+          <include name="startDriver"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wViewTextPostTest -->
+      <class name="Memberse.WebAppAutomation.wCommunityTabsTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="endSuite"/>
+          <include name="startDriver"/>
+          <include name="wCommunityTabsTestCase"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wCommunityTabsTest -->
+      <class name="Memberse.WebAppAutomation.wSharePostTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="endSuite"/>
+          <include name="startDriver"/>
+          <include name="wSharePostTestCase"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wSharePostTest -->
       <class name="Memberse.WebAppAutomation.wCreateVideoPostTest">
         <methods>
-          <include name="CloseBrowser"/>
+          <include name="quitDriver"/>
+          <include name="endSuite"/>
           <include name="wCreatVideoPostTestCase"/>
-          <include name="wCreateVideoPostMembersOnly"/>
           <include name="startDriver"/>
-          <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
       </class> <!-- Memberse.WebAppAutomation.wCreateVideoPostTest -->
-      <class name="Memberse.WebAppAutomation.wSignupTest">
-        <methods>
-          <include name="wSignupTestCase"/>
-          <include name="CloseBrowser"/>
-          <include name="startDriver"/>
-          <include name="QuitBrowsers"/>
-          <include name="InvokeCapabilities"/>
-        </methods>
-      </class> <!-- Memberse.WebAppAutomation.wSignupTest -->
       <class name="Memberse.WebAppAutomation.wFeedsFilterTest">
         <methods>
-          <include name="CloseBrowser"/>
+          <include name="quitDriver"/>
+          <include name="endSuite"/>
           <include name="wFeedsFilterTestCase"/>
           <include name="startDriver"/>
-          <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
       </class> <!-- Memberse.WebAppAutomation.wFeedsFilterTest -->
-      <class name="Memberse.WebAppAutomation.wDeleteAccountTest">
+      <class name="Memberse.WebAppAutomation.wPlayAudioPostTest">
         <methods>
-          <include name="CloseBrowser"/>
-          <include name="wDeleteAccountTestCase"/>
+          <include name="quitDriver"/>
+          <include name="endSuite"/>
+          <include name="wPlayAudioPostTestCase"/>
           <include name="startDriver"/>
-          <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wDeleteAccountTest -->
-      <class name="Memberse.WebAppAutomation.wSignupFormValidationTest">
+      </class> <!-- Memberse.WebAppAutomation.wPlayAudioPostTest -->
+      <class name="Memberse.WebAppAutomation.wMembershipsTest">
         <methods>
-          <include name="CloseBrowser"/>
-          <include name="wSignupFormValidationTestCase"/>
+          <include name="quitDriver"/>
+          <include name="wMembershipsTestCase"/>
+          <include name="endSuite"/>
           <include name="startDriver"/>
-          <include name="QuitBrowsers"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wSignupFormValidationTest -->
+      </class> <!-- Memberse.WebAppAutomation.wMembershipsTest -->
+      <class name="Memberse.WebAppAutomation.wLikePostTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="wLikePostTestCase"/>
+          <include name="endSuite"/>
+          <include name="startDriver"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wLikePostTest -->
+      <class name="Memberse.WebAppAutomation.wReportPostTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="endSuite"/>
+          <include name="wReportPostTestCase"/>
+          <include name="startDriver"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wReportPostTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

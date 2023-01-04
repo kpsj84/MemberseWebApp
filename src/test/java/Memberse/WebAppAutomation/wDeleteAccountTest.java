@@ -26,6 +26,7 @@ public class wDeleteAccountTest extends WBase {
 		String password = "123456";
 		
 		SignupPage sp = new SignupPage(driver);
+		Thread.sleep(2000);
 		sp.Email().sendKeys(email);
 		sp.Password().sendKeys(password);
 		sp.confirmPassword().sendKeys(password);
@@ -44,10 +45,10 @@ public class wDeleteAccountTest extends WBase {
 		driver.findElement(By.xpath("//*[text()='As a Creator']")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//a[text()='Account']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//p[text()='Delete Account']")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[2]/div[2]/div/button")).click();
+		driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div.pb-10 > div.flex-grow > div > button > span")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//span[text()='Confirm']")).click();
 		Thread.sleep(4000);

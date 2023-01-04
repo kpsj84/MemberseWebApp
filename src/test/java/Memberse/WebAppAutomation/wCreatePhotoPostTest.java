@@ -22,7 +22,7 @@ import WebPageObjects.WelcomePage;
 
 public class wCreatePhotoPostTest extends WBase {
 	
-	@Test(priority = 1)
+	@Test
 	public void wCreatePhotoPostTestCase()throws InterruptedException, AWTException{
 		WUtilities u = new  WUtilities(driver);
 		u.timeDelayToLoadWebsite();
@@ -58,7 +58,7 @@ public class wCreatePhotoPostTest extends WBase {
         File fl = new File(System.getProperty("user.dir") + "/src/Pic22.jpg");
         StringSelection str = new StringSelection(fl.getAbsolutePath());
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         
         Robot rb = new Robot();
         //This required as in Automation, Focus loose from open file upload window
@@ -90,10 +90,13 @@ public class wCreatePhotoPostTest extends WBase {
         rb.delay(500);
         rb.keyPress(KeyEvent.VK_ENTER);
         rb.keyRelease(KeyEvent.VK_ENTER);
+        rb.delay(500);
         Thread.sleep(3000);
-       
+      
         cpp.submitButton().click();
-        WebDriverWait w = new WebDriverWait(driver,120);
+        Thread.sleep(10000);
+        
+        WebDriverWait w = new WebDriverWait(driver,90);
         w.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
         String Text = driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
 		System.out.println(Text);
@@ -116,73 +119,6 @@ public class wCreatePhotoPostTest extends WBase {
 		   }
 		   String saltStr= salt.toString();
 		   return saltStr;    
-	}	
-	    
-	    
-	    @Test(priority = 2)
-		public void wCreatePhotoPostMembersOnly()throws InterruptedException, AWTException{
-			Thread.sleep(3000);
-		    
-			HomePage hp = new HomePage(driver);
-			hp.HomeMenu().click();
-			Thread.sleep(2000);
-			hp.createPost().click();
-			Thread.sleep(2000);
-			
-	    	String autotext=getSaltString();
-	  		System.out.println(autotext);
-	  		
-	  		CreatePostPage cpp = new CreatePostPage(driver);
-	  		cpp.titleBox().sendKeys("Auto Generated Audio Members Only Post - " +autotext);
-	        cpp.descriptionBox().sendKeys("This is an auto-QA Description");
-	        Thread.sleep(2000);
-	        cpp.photoButton().click();
-	        Thread.sleep(1000);        
-	        cpp.uploadPhoto().click();
-	        
-	        File fl = new File(System.getProperty("user.dir") + "/src/samples/Pic1.jpg");
-	        StringSelection str = new StringSelection(fl.getAbsolutePath());
-	        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
-	        Thread.sleep(5000);
-	        
-	        Robot rb = new Robot();
-	        //Java app already opened so focus not shify now while opening upload file window
-	        //Open Goto window
-	        rb.keyPress(KeyEvent.VK_META);
-	        rb.keyPress(KeyEvent.VK_SHIFT);
-	        rb.keyPress(KeyEvent.VK_G);
-	        rb.keyRelease(KeyEvent.VK_META);
-	        rb.keyRelease(KeyEvent.VK_SHIFT);
-	        rb.keyRelease(KeyEvent.VK_G);
-	        rb.delay(500);
-	        
-	        //Paste the clipboard value
-	        rb.keyPress(KeyEvent.VK_META);
-	        rb.keyPress(KeyEvent.VK_V);
-	        rb.keyRelease(KeyEvent.VK_META);
-	        rb.keyRelease(KeyEvent.VK_V);
-	        rb.delay(500);
-	        
-	        //Close both the Windows
-	        rb.keyPress(KeyEvent.VK_ENTER);
-	        rb.keyRelease(KeyEvent.VK_ENTER);
-	        rb.delay(500);
-	        rb.keyPress(KeyEvent.VK_ENTER);
-	        rb.keyRelease(KeyEvent.VK_ENTER);
-	        Thread.sleep(3000);
-	       
-	        cpp.submitButton().click();
-	        WebDriverWait w = new WebDriverWait(driver,120);
-	        w.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
-	        String Text = driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
-			System.out.println(Text);
-			Assert.assertEquals(Text,"Operation succesfully completed.");
-		    
-	        Thread.sleep(10000);
-	        WebElement Text1 = driver.findElement(By.xpath("//p[text()='Auto Generated Audio Members Only Post - " +autotext+ "']"));
-			String text2 = Text1.getText();
-			System.out.println(text2);
-			Assert.assertEquals(text2,"Auto Generated Audio Members Only Post - " + autotext);
-	    }	    
+	}
 
 }

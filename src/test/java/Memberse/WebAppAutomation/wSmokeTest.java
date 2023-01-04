@@ -12,7 +12,7 @@ public class wSmokeTest extends WBase{
 	
 	@Test
 	public void wSmokeTestCase() throws InterruptedException {
-		Thread.sleep(4000);
+		Thread.sleep(5000);
 		
 		String verifyExploreText = driver.findElement(By.xpath("//*[text()='Find your Content Creator']")).getText();
 		System.out.println(verifyExploreText);
