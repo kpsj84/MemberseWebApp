@@ -78,5 +78,17 @@ public class wMemberInfoTest extends WBase {
         String saltStr = salt.toString();
         return saltStr;
     }
+	
+	public String getRandomString() {
+        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";   //Characters from string to build
+        StringBuilder builder = new StringBuilder();
+        Random rnd = new Random();
+        while (builder.length() < 10) { 							  //decide length of the random string.
+            int index = (int) (rnd.nextFloat() * characters.length());//nextFloat() returns random number from 0.0 to 1.0
+            builder.append(characters.charAt(index));				  //Add up characters into builder at that index
+        }
+        String autoString = builder.toString();						  //String Builder object value converts to String. 
+        return autoString;
+	}
 
 }
