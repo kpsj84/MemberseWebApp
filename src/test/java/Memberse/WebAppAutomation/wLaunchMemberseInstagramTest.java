@@ -5,6 +5,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -22,23 +23,23 @@ public class wLaunchMemberseInstagramTest extends WBase {
 		u.loadDelay();
 		
 		ExplorePage in = new ExplorePage(driver);
-		in.InstagramIcon().click();
-		Thread.sleep(3000);
+		ewait.until(ExpectedConditions.elementToBeClickable(in.InstagramIcon())).click();
 		
-		 String mainWindowHandle = driver.getWindowHandle();
-	        Set<String> allWindowHandles = driver.getWindowHandles();
-	        Iterator<String> iterator = allWindowHandles.iterator();
-	        while (iterator.hasNext()) {
-	            String ChildWindow = iterator.next();
-	                if (!mainWindowHandle.equalsIgnoreCase(ChildWindow)) {
-	                driver.switchTo().window(ChildWindow);
-	                
-	     driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	     String Text= driver.findElement(By.xpath("//*[text()='Memberse | Membership Platform']")).getText();
-	 	 System.out.println(Text);
-	 	 Assert.assertEquals(Text,"Memberse | Membership Platform");
-	                }
-	         }
+		String mainWindowHandle = driver.getWindowHandle();
+	     Set<String> allWindowHandles = driver.getWindowHandles();
+	     Iterator<String> iterator = allWindowHandles.iterator();
+	     while (iterator.hasNext()) 
+	     {
+	    	 String ChildWindow = iterator.next();
+	         	if (!mainWindowHandle.equalsIgnoreCase(ChildWindow)) 
+	         	{
+	            driver.switchTo().window(ChildWindow);
+	            
+	            String Text= driver.findElement(By.xpath("//*[text()='Memberse | Membership Platform']")).getText();
+	            System.out.println(Text);
+	            Assert.assertEquals(Text,"Memberse | Membership Platform");
+	            }
+	     }
 	        driver.close();
 		    driver.switchTo().window(mainWindowHandle);
 	}

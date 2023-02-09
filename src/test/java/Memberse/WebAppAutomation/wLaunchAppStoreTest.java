@@ -3,6 +3,7 @@ package Memberse.WebAppAutomation;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -20,19 +21,10 @@ public class wLaunchAppStoreTest extends WBase {
 		u.loadDelay();
 		
 		WelcomePage wp = new WelcomePage(driver);
-		wp.AppStoreButtton().click();
-		Thread.sleep(3000);
-		
-		try
-		{
-			driver.switchTo().alert().dismiss();
-		}
-		catch(Exception e)
-		{
-			
-		}
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.AppStoreButtton())).click();
 		
 		String originalWindow = driver.getWindowHandle();
+		System.out.println(originalWindow);
 		for(String childWindow : driver.getWindowHandles())
 		{
 			if(!originalWindow.contentEquals(childWindow))
@@ -41,7 +33,18 @@ public class wLaunchAppStoreTest extends WBase {
 				break;
 			}
 		}
-		String VerifyText1 = driver.findElement(By.xpath("//*[@id=\"localnav\"]/div/div[2]/div[1]/a/span")).getText();
+		System.out.println(driver.getWindowHandle());
+		
+		try
+		{
+			driver.switchTo().alert().dismiss();
+		}
+		catch(Exception e)
+		{
+			e.getMessage();
+		}
+		
+		String VerifyText1 = driver.findElement(By.xpath("//span[@class='we-localnav__title__product']")).getText();
 		System.out.println(VerifyText1);
 		Assert.assertEquals(VerifyText1, "App Store");
 		driver.close();
