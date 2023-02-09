@@ -1,9 +1,11 @@
 package Memberse.WebAppAutomation;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import WebPageObjects.CreatorCommunityPage;
@@ -15,8 +17,11 @@ public class wCommunityTabsTest extends WBase {
 	
 	@Test
 	public void wCommunityTabsTestCase()throws InterruptedException{
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		WebDriverWait ewait =  new WebDriverWait(driver, 60);
+		
 		WUtilities u = new  WUtilities(driver);
-		u.timeDelayToLoadWebsite();
+		u.loadDelay();
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();

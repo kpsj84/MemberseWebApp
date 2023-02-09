@@ -1,6 +1,7 @@
 package Memberse.WebAppAutomation;
 
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -23,8 +24,11 @@ public class wFollowAndUnfollowCommunityTest extends WBase {
 	
 	@Test(priority=1)
 	public void wFollowCommunityTestCase()throws InterruptedException{
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		WebDriverWait ewait =  new WebDriverWait(driver, 60);
+		
 		WUtilities u = new  WUtilities(driver);
-		u.timeDelayToLoadWebsite();
+		u.loadDelay();
 		  
 	    WelcomePage wp = new WelcomePage(driver);
 		wp.SignupButtton().click();
