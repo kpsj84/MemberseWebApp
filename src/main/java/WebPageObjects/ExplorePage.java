@@ -29,49 +29,49 @@ public class ExplorePage {
 		return SignupButton;
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[1]/div[2]/div/div/div[3]/div/a[1]")
+	@FindBy(xpath="//a[@href='https://www.facebook.com/memberseapp']")
 	private WebElement FacebookIcon;
 
 	public WebElement FacebookIcon() {
 	    return FacebookIcon;
 	}
 
-	@FindBy(xpath="/html/body/div[1]/div[3]/div/div[1]/div[2]/div/div/div[3]/div/a[2]")
+	@FindBy(xpath="//a[@href='https://www.instagram.com/memberse.app']")
 	private WebElement InstagramIcon;
 
 	public WebElement InstagramIcon() {
 	    return InstagramIcon;
 	}
 	    
-	    @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[1]/div[2]/div/div/div[3]/div/a[3]")
+	    @FindBy(xpath="//a[@href='https://www.linkedin.com/company/memberse']")
 	    private WebElement LinkedinIcon;
 
 	    public WebElement LinkedinIcon() {
 	    	return LinkedinIcon;
 	    }
 	    
-	    @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[1]/div[2]/div/div/div[3]/div/a[4]")
+	    @FindBy(xpath="//a[@href='https://www.tiktok.com/@memberse.app?lang=en']")
 	    private WebElement TikTokIcon;
 
 	    public WebElement TikTokIcon() {
 	    	return TikTokIcon;
 	    }
 	          
-	    @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[1]/div[2]/div/div/div[4]/div/a[1]")
+	    @FindBy(xpath="//a[@href='https://memberse.com/terms-and-conditions/']")
 	    private WebElement TermLink;
 
 	    public WebElement TermLink() {
 	    	return TermLink;   
 	    }     
 	        
-	    @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[1]/div[2]/div/div/div[4]/div/a[2]")
+	    @FindBy(xpath="//a[@href='https://memberse.com/community-guidelines/']")
 	    private WebElement GuidelinesLink;
 
 	    public WebElement GuidelinesLink() {
 	        return GuidelinesLink;
 	    }  
 	        
-	    @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[1]/div[2]/div/div/div[4]/div/a[3]")
+	    @FindBy(xpath="//a[@href='https://memberse.com/privacy-policy-2/']")
 	    private WebElement PrivacyLink;
 
 	    public WebElement PrivacyLink() {

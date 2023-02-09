@@ -5,6 +5,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -22,21 +23,21 @@ public class wLaunchMemberseFacebookTest extends WBase {
 		u.loadDelay();
 		
 		ExplorePage fb = new ExplorePage(driver);
-		fb.FacebookIcon().click();
-		Thread.sleep(3000);
+		ewait.until(ExpectedConditions.elementToBeClickable(fb.FacebookIcon())).click();
 		
 		 String mainWindowHandle = driver.getWindowHandle();
 	     Set<String> allWindowHandles = driver.getWindowHandles();
 	     Iterator<String> iterator = allWindowHandles.iterator();
-	     while (iterator.hasNext()) {
+	     while (iterator.hasNext()) 
+	     {
 	    	 String ChildWindow = iterator.next();
-	         	if (!mainWindowHandle.equalsIgnoreCase(ChildWindow)) {
+	         	if (!mainWindowHandle.equalsIgnoreCase(ChildWindow)) 
+	         	{
 	            driver.switchTo().window(ChildWindow);
-		
-	    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
- 	    String Text= driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div/div[3]/div/div/div/div[1]/div[1]/div[1]/div[2]/div/div/div/div[2]/div/div/div[1]/span/h1")).getText();
- 		System.out.println(Text);
- 		Assert.assertEquals(Text,"Memberse");
+	            
+	            String Text= driver.findElement(By.xpath("//h1[text()='Memberse']")).getText();
+	            System.out.println(Text);
+	            Assert.assertEquals(Text,"Memberse");
 	         	}
 	    }
 	     driver.close();

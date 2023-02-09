@@ -21,6 +21,15 @@
       <class name="Memberse.WebAppAutomation.wLoginwithAppleTest"/>      
       <class name="Memberse.WebAppAutomation.wLogoutTest"/>
       <class name="Memberse.WebAppAutomation.wDeleteAccountTest"/>
+<!-- General Test Cases-->
+      <class name="Memberse.WebAppAutomation.wLaunchAppStoreTest"/>
+      <class name="Memberse.WebAppAutomation.wLaunchGooglePlayTest"/>
+      <class name="Memberse.WebAppAutomation.wLaunchMemberseFacebookTest"/>
+      <class name="Memberse.WebAppAutomation.wLaunchMemberseInstagramTest"/>
+      <class name="Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest"/>
+      <class name="Memberse.WebAppAutomation.wTermsAndConditionsTest"/>
+      <class name="Memberse.WebAppAutomation.wCommunityGuidelinesTest"/>
+      <class name="Memberse.WebAppAutomation.wPrivacyPolicyTest"/>
     </classes>
     
   </test> <!-- Test -->

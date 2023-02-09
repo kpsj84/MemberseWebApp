@@ -41,7 +41,7 @@ public class wLoginWithGoogleTest extends WBase{
 		    }   
 		}
 		driver.manage().window().maximize();
-		driver.findElement(By.xpath("//*[@id='identifierId']")).sendKeys("qatesting9999@gmail.com");   
+		driver.findElement(By.xpath("//input[@type='email']")).sendKeys("qatesting9999@gmail.com");   
 		driver.findElement(By.xpath("//*[text()='Next']")).click();
 		util.shortDelay();
 		

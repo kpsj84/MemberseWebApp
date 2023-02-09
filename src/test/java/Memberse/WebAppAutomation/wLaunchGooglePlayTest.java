@@ -3,6 +3,7 @@ package Memberse.WebAppAutomation;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -20,11 +21,10 @@ public class wLaunchGooglePlayTest extends WBase {
 		u.loadDelay();
 		
 		WelcomePage wp = new WelcomePage(driver);
-		wp.GooglePlayButton().click();
-		Thread.sleep(3000);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.GooglePlayButton())).click();
 		
 		String originalWindow = driver.getWindowHandle();
-		
+		System.out.println(originalWindow);
 		for(String windowHandle : driver.getWindowHandles())
 		{
 			if(!originalWindow.contentEquals(windowHandle))
@@ -33,7 +33,9 @@ public class wLaunchGooglePlayTest extends WBase {
 				break;
 			}
 		}
-		String VerifyText1 = driver.findElement(By.xpath("//*[@id=\"kO001e\"]/header/nav/a/span")).getText();
+		System.out.println(driver.getWindowHandle());
+		
+		String VerifyText1 = driver.findElement(By.xpath("//span[@aria-hidden='true' and text()='google_logo Play']")).getText();
 		System.out.println(VerifyText1);
 		Assert.assertEquals(VerifyText1, "google_logo Play");
 		driver.close();
