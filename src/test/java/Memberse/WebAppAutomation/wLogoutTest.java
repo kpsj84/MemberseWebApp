@@ -3,6 +3,7 @@ package Memberse.WebAppAutomation;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -21,23 +22,18 @@ public class wLogoutTest extends WBase {
 		u.loadDelay();
 		
 		WelcomePage wp = new WelcomePage(driver);
-		wp.LoginButton().click();
-		Thread.sleep(2000);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestc7@yopmail.com");
-		lp.Password().sendKeys("kqatestc7");
-		lp.Login().click();
-		Thread.sleep(7000);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc7@yopmail.com");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("kqatestc7");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
 		
 		driver.findElement(By.xpath("//a[text()='Creator']")).click();
-		Thread.sleep(1000);
 		driver.findElement(By.xpath("//span[@class='shadow-thick cursor-pointer inline-flex items-center p-0.5 rounded-full text-sm bg-pink-2000 text-neutral-1000']")).click();
-		Thread.sleep(1000);
 		driver.findElement(By.xpath("//p[text()='Log out']")).click();
-		Thread.sleep(1000);
 		driver.findElement(By.xpath("//span[text()='Confirm']")).click();
-		Thread.sleep(2000);
 		
 		String verifyUrl = driver.getCurrentUrl();
 		System.out.println(verifyUrl);

@@ -16,6 +16,11 @@
       <class name="Memberse.WebAppAutomation.wSignupTest"/>
       <class name="Memberse.WebAppAutomation.wLoginFormValidationTest"/>
       <class name="Memberse.WebAppAutomation.wLogintTest"/>
+      <class name="Memberse.WebAppAutomation.wLoginWithGoogleTest"/>
+      <class name="Memberse.WebAppAutomation.wLoginWithFacebookTest"/>
+      <class name="Memberse.WebAppAutomation.wLoginwithAppleTest"/>      
+      <class name="Memberse.WebAppAutomation.wLogoutTest"/>
+      <class name="Memberse.WebAppAutomation.wDeleteAccountTest"/>
     </classes>
     
   </test> <!-- Test -->

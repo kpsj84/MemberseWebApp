@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -23,40 +24,34 @@ public class wDeleteAccountTest extends WBase {
 		u.loadDelay();
 		
 		WelcomePage wp = new WelcomePage(driver);
-		wp.SignupButtton().click();
-		Thread.sleep(2000);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.SignupButtton())).click();
 		
 		String email = getSaltString();
 		System.out.println(email);
 		String password = "123456";
 		
 		SignupPage sp = new SignupPage(driver);
-		Thread.sleep(2000);
-		sp.Email().sendKeys(email);
-		sp.Password().sendKeys(password);
-		sp.confirmPassword().sendKeys(password);
-		sp.SignupButton().click();
-		Thread.sleep(4000);
+		ewait.until(ExpectedConditions.elementToBeClickable(sp.Email())).sendKeys(email);
+		ewait.until(ExpectedConditions.elementToBeClickable(sp.Password())).sendKeys(password);
+		ewait.until(ExpectedConditions.elementToBeClickable(sp.confirmPassword())).sendKeys(password);
+		ewait.until(ExpectedConditions.elementToBeClickable(sp.SignupButton())).click();
+		u.shortDelay();
 		
-		wp.LoginButton().click();
-		Thread.sleep(2000);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys(email);
-		lp.Password().sendKeys(password);
-		lp.Login().click();
-		Thread.sleep(10000);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys(email);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys(password);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
 		
 		driver.findElement(By.xpath("//*[text()='As a Creator']")).click();
-		Thread.sleep(3000);
 		driver.findElement(By.xpath("//a[text()='Account']")).click();
-		Thread.sleep(3000);
 		driver.findElement(By.xpath("//p[text()='Delete Account']")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div.pb-10 > div.flex-grow > div > button > span")).click();
-		Thread.sleep(2000);
+		u.shortDelay();
+		driver.findElement(By.xpath("//*[@class='text-base font-medium leading-4']")).click();
 		driver.findElement(By.xpath("//span[text()='Confirm']")).click();
-		Thread.sleep(4000);
+		u.shortDelay();
 		
 		String verifyUrl = driver.getCurrentUrl();
 		System.out.println(verifyUrl);
