@@ -3,6 +3,7 @@ package Memberse.WebAppAutomation;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -21,14 +22,14 @@ public class wLoginwithAppleTest extends WBase {
 		u.loadDelay();
 		
 		WelcomePage wp = new WelcomePage(driver);
-		wp.LoginButton().click();
-		Thread.sleep(5000);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.loadDelay();
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.AppleLogin().click();
-		Thread.sleep(2000);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.AppleLogin())).click();
+		u.shortDelay();
 		
-		String Text1 = driver.findElement(By.xpath("//*[@id=\"ac-localnav\"]/div/div[2]/div[1]/span")).getText(); 
+		String Text1 = driver.findElement(By.xpath("//div[@class='ac-localnav-title']")).getText(); 
 		Assert.assertEquals(Text1, "Apple ID");
 		
 		System.out.println("Login with Apple is working fine as Button is clickable and GUI is responsive");

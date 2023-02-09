@@ -1,75 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="10" passed="4">
+<testng-results skipped="0" failed="0" ignored="16" total="25" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="90255" started-at="2023-02-09T13:55:38 IST" finished-at="2023-02-09T13:57:09 IST">
+  <suite name="Suite" duration-ms="361785" started-at="2023-02-09T16:12:30 IST" finished-at="2023-02-09T16:18:32 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="90255" started-at="2023-02-09T13:55:38 IST" finished-at="2023-02-09T13:57:09 IST">
-      <class name="Memberse.WebAppAutomation.wSignupFormValidationTest">
-        <test-method status="PASS" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@17579e0f]" name="InvokeCapabilities" is-config="true" duration-ms="28" started-at="2023-02-09T13:55:38 IST" finished-at="2023-02-09T13:55:38 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InvokeCapabilities -->
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@17579e0f]" name="startDriver" is-config="true" duration-ms="9367" started-at="2023-02-09T13:55:38 IST" finished-at="2023-02-09T13:55:48 IST">
+    <test name="Test" duration-ms="361785" started-at="2023-02-09T16:12:30 IST" finished-at="2023-02-09T16:18:32 IST">
+      <class name="Memberse.WebAppAutomation.wDeleteAccountTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wDeleteAccountTest@6ee52dcd]" name="startDriver" is-config="true" duration-ms="7861" started-at="2023-02-09T16:17:41 IST" finished-at="2023-02-09T16:17:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wSignupFormValidationTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@17579e0f]" name="wSignupFormValidationTestCase" duration-ms="10844" started-at="2023-02-09T13:55:48 IST" finished-at="2023-02-09T13:55:59 IST">
+        <test-method status="PASS" signature="wDeleteAccountTestCase()[pri:0, instance:Memberse.WebAppAutomation.wDeleteAccountTest@6ee52dcd]" name="wDeleteAccountTestCase" duration-ms="42184" started-at="2023-02-09T16:17:49 IST" finished-at="2023-02-09T16:18:31 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wSignupFormValidationTestCase -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@17579e0f]" name="quitDriver" is-config="true" duration-ms="76" started-at="2023-02-09T13:55:59 IST" finished-at="2023-02-09T13:55:59 IST">
+        </test-method> <!-- wDeleteAccountTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wDeleteAccountTest@6ee52dcd]" name="quitDriver" is-config="true" duration-ms="102" started-at="2023-02-09T16:18:31 IST" finished-at="2023-02-09T16:18:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method status="PASS" signature="endSuite()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@17579e0f]" name="endSuite" is-config="true" duration-ms="0" started-at="2023-02-09T13:57:09 IST" finished-at="2023-02-09T13:57:09 IST">
+      </class> <!-- Memberse.WebAppAutomation.wDeleteAccountTest -->
+      <class name="Memberse.WebAppAutomation.wSignupFormValidationTest">
+        <test-method status="PASS" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@1b68ddbd]" name="InvokeCapabilities" is-config="true" duration-ms="15" started-at="2023-02-09T16:12:30 IST" finished-at="2023-02-09T16:12:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvokeCapabilities -->
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@1b68ddbd]" name="startDriver" is-config="true" duration-ms="8797" started-at="2023-02-09T16:12:30 IST" finished-at="2023-02-09T16:12:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wSignupFormValidationTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@1b68ddbd]" name="wSignupFormValidationTestCase" duration-ms="12513" started-at="2023-02-09T16:12:39 IST" finished-at="2023-02-09T16:12:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wSignupFormValidationTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@1b68ddbd]" name="quitDriver" is-config="true" duration-ms="79" started-at="2023-02-09T16:12:51 IST" finished-at="2023-02-09T16:12:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="PASS" signature="endSuite()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@1b68ddbd]" name="endSuite" is-config="true" duration-ms="1" started-at="2023-02-09T16:18:32 IST" finished-at="2023-02-09T16:18:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSuite -->
       </class> <!-- Memberse.WebAppAutomation.wSignupFormValidationTest -->
-      <class name="Memberse.WebAppAutomation.wLoginFormValidationTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@3712b94]" name="startDriver" is-config="true" duration-ms="7666" started-at="2023-02-09T13:56:26 IST" finished-at="2023-02-09T13:56:33 IST">
+      <class name="Memberse.WebAppAutomation.wLoginWithFacebookTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithFacebookTest@1f57539]" name="startDriver" is-config="true" duration-ms="7823" started-at="2023-02-09T16:15:51 IST" finished-at="2023-02-09T16:15:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wLoginFormValidationTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@3712b94]" name="wLoginFormValidationTestCase" duration-ms="7793" started-at="2023-02-09T13:56:33 IST" finished-at="2023-02-09T13:56:41 IST">
+        <test-method status="PASS" signature="wLoginWithFacebookTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithFacebookTest@1f57539]" name="wLoginWithFacebookTestCase" duration-ms="34400" started-at="2023-02-09T16:15:59 IST" finished-at="2023-02-09T16:16:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLoginWithFacebookTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithFacebookTest@1f57539]" name="quitDriver" is-config="true" duration-ms="75" started-at="2023-02-09T16:16:33 IST" finished-at="2023-02-09T16:16:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wLoginWithFacebookTest -->
+      <class name="Memberse.WebAppAutomation.wLoginwithAppleTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginwithAppleTest@76f2b07d]" name="startDriver" is-config="true" duration-ms="9457" started-at="2023-02-09T16:16:33 IST" finished-at="2023-02-09T16:16:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wLoginWithAppleTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginwithAppleTest@76f2b07d]" name="wLoginWithAppleTestCase" duration-ms="23293" started-at="2023-02-09T16:16:43 IST" finished-at="2023-02-09T16:17:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLoginWithAppleTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginwithAppleTest@76f2b07d]" name="quitDriver" is-config="true" duration-ms="78" started-at="2023-02-09T16:17:06 IST" finished-at="2023-02-09T16:17:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wLoginwithAppleTest -->
+      <class name="Memberse.WebAppAutomation.wLoginFormValidationTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@59e5ddf]" name="startDriver" is-config="true" duration-ms="7906" started-at="2023-02-09T16:13:20 IST" finished-at="2023-02-09T16:13:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wLoginFormValidationTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@59e5ddf]" name="wLoginFormValidationTestCase" duration-ms="10811" started-at="2023-02-09T16:13:28 IST" finished-at="2023-02-09T16:13:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wLoginFormValidationTestCase -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@3712b94]" name="quitDriver" is-config="true" duration-ms="131" started-at="2023-02-09T13:56:41 IST" finished-at="2023-02-09T13:56:41 IST">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@59e5ddf]" name="quitDriver" is-config="true" duration-ms="133" started-at="2023-02-09T16:13:39 IST" finished-at="2023-02-09T16:13:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- Memberse.WebAppAutomation.wLoginFormValidationTest -->
-      <class name="Memberse.WebAppAutomation.wLogintTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@2833cc44]" name="startDriver" is-config="true" duration-ms="7827" started-at="2023-02-09T13:56:41 IST" finished-at="2023-02-09T13:56:49 IST">
+      <class name="Memberse.WebAppAutomation.wLogoutTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@704a52ec]" name="startDriver" is-config="true" duration-ms="7919" started-at="2023-02-09T16:17:06 IST" finished-at="2023-02-09T16:17:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wLogintTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@2833cc44]" name="wLogintTestCase" duration-ms="19567" started-at="2023-02-09T13:56:49 IST" finished-at="2023-02-09T13:57:09 IST">
+        <test-method status="PASS" signature="wLogoutTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@704a52ec]" name="wLogoutTestCase" duration-ms="27182" started-at="2023-02-09T16:17:14 IST" finished-at="2023-02-09T16:17:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLogoutTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@704a52ec]" name="quitDriver" is-config="true" duration-ms="81" started-at="2023-02-09T16:17:41 IST" finished-at="2023-02-09T16:17:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wLogoutTest -->
+      <class name="Memberse.WebAppAutomation.wLogintTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@536aaa8d]" name="startDriver" is-config="true" duration-ms="7814" started-at="2023-02-09T16:13:39 IST" finished-at="2023-02-09T16:13:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wLogintTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@536aaa8d]" name="wLogintTestCase" duration-ms="25578" started-at="2023-02-09T16:13:47 IST" finished-at="2023-02-09T16:14:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wLogintTestCase -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@2833cc44]" name="quitDriver" is-config="true" duration-ms="81" started-at="2023-02-09T13:57:09 IST" finished-at="2023-02-09T13:57:09 IST">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@536aaa8d]" name="quitDriver" is-config="true" duration-ms="86" started-at="2023-02-09T16:14:13 IST" finished-at="2023-02-09T16:14:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- Memberse.WebAppAutomation.wLogintTest -->
       <class name="Memberse.WebAppAutomation.wSignupTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@4d41cee]" name="startDriver" is-config="true" duration-ms="7808" started-at="2023-02-09T13:55:59 IST" finished-at="2023-02-09T13:56:07 IST">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@646d64ab]" name="startDriver" is-config="true" duration-ms="8217" started-at="2023-02-09T16:12:51 IST" finished-at="2023-02-09T16:12:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wSignupTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@4d41cee]" name="wSignupTestCase" duration-ms="18921" started-at="2023-02-09T13:56:07 IST" finished-at="2023-02-09T13:56:25 IST">
+        <test-method status="PASS" signature="wSignupTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@646d64ab]" name="wSignupTestCase" duration-ms="20986" started-at="2023-02-09T16:12:59 IST" finished-at="2023-02-09T16:13:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wSignupTestCase -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@4d41cee]" name="quitDriver" is-config="true" duration-ms="78" started-at="2023-02-09T13:56:25 IST" finished-at="2023-02-09T13:56:26 IST">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@646d64ab]" name="quitDriver" is-config="true" duration-ms="78" started-at="2023-02-09T16:13:20 IST" finished-at="2023-02-09T16:13:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- Memberse.WebAppAutomation.wSignupTest -->
+      <class name="Memberse.WebAppAutomation.wLoginWithGoogleTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithGoogleTest@e320068]" name="startDriver" is-config="true" duration-ms="7979" started-at="2023-02-09T16:14:13 IST" finished-at="2023-02-09T16:14:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wLoginWithGoogleTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithGoogleTest@e320068]" name="wLoginWithGoogleTestCase" duration-ms="90213" started-at="2023-02-09T16:14:21 IST" finished-at="2023-02-09T16:15:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLoginWithGoogleTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginWithGoogleTest@e320068]" name="quitDriver" is-config="true" duration-ms="3" started-at="2023-02-09T16:15:51 IST" finished-at="2023-02-09T16:15:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wLoginWithGoogleTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

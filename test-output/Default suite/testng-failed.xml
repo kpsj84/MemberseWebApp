@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wSignupTest">
+      <class name="Memberse.WebAppAutomation.wLoginwithAppleTest">
         <methods>
-          <include name="wSignupTestCase"/>
           <include name="quitDriver"/>
+          <include name="wLoginWithAppleTestCase"/>
           <include name="endSuite"/>
           <include name="startDriver"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wSignupTest -->
+      </class> <!-- Memberse.WebAppAutomation.wLoginwithAppleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

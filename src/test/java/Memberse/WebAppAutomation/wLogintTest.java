@@ -20,6 +20,9 @@ public class wLogintTest extends WBase{
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);
 		
+		WUtilities util = new  WUtilities(driver);
+		util.loadDelay();
+		
 		ewait.until(ExpectedConditions.titleIs("Memberse"));
 		
 		WelcomePage wp = new WelcomePage(driver);

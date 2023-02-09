@@ -14,11 +14,12 @@ import WebPageObjects.WelcomePage;
 public class wSignupFormValidationTest extends WBase {
 	
 	@Test
-	public void wSignupFormValidationTestCase() {
+	public void wSignupFormValidationTestCase() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS); //For findElement Method's
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);			 //For ExpectedCondtion Method's 
 		
 		WUtilities util = new  WUtilities(driver);
+		util.loadDelay();
 		
 		ewait.until(ExpectedConditions.titleIs("Memberse"));
 		
