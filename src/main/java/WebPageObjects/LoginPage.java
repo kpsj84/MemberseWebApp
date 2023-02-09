@@ -29,7 +29,7 @@ public class LoginPage {
 		return Password;
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div/div/div/form/div[2]/div[2]/button/span")
+	@FindBy(css="span[class='w-10 h-10 flex items-center justify-center']")
 	private WebElement ShowPassword;
 	
 	public WebElement ShowPassword() {
@@ -43,21 +43,21 @@ public class LoginPage {
 		return Login;
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div/div/div/form/div[5]/div/div/button[2]")
+	@FindBy(css="svg[data-icon='google']")
 	private WebElement GoogleLogin; 
 	
 	public WebElement GoogleLogin() {
 		return GoogleLogin;
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div/div/div/form/div[5]/div/div/button[3]")
+	@FindBy(css="svg[data-icon='facebook-f']")
 	private WebElement FacebookLogin; 
 	
 	public WebElement FacebookLogin() {
 		return FacebookLogin;
 	}
 				   
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div/div/div/form/div[5]/div/div/button[1]")
+	@FindBy(css="svg[data-icon='apple']")
 	private WebElement AppleLogin; 
 	
 	public WebElement AppleLogin() {

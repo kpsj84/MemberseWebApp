@@ -1,6 +1,10 @@
 package Memberse.WebAppAutomation;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -10,35 +14,35 @@ import WebPageObjects.WelcomePage;
 public class wLoginFormValidationTest extends WBase{
 	
 	@Test
-	public void wLoginFormValidationTestCase() throws InterruptedException {
-		WUtilities u = new  WUtilities(driver);
-		u.timeDelayToLoadWebsite();
+	public void wLoginFormValidationTestCase() {
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		WebDriverWait ewait =  new WebDriverWait(driver, 60);
+		
+		WUtilities util = new  WUtilities(driver);
+		
+		ewait.until(ExpectedConditions.titleIs("Memberse"));
 		
 		WelcomePage wp = new WelcomePage(driver);
-		wp.LoginButton().click();
-		Thread.sleep(2000);
+		util.elementToBeClickable(ewait, wp.LoginButton()).click();
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Login().click();
-		Thread.sleep(1000);
+		util.elementToBeClickable(ewait, lp.Login()).click();
 		
-		String msg1 = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div/div/div/div/div/ul/li[1]/span[2]")).getText();  
-		Assert.assertEquals(msg1, "Email is a required field.");
+		String msg1 = driver.findElement(By.xpath("//*[text()='Email is a required field']")).getText();  
 		System.out.println(msg1);
+		Assert.assertEquals(msg1, "Email is a required field.");
 		
-		String msg2 = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div/div/div/div/div/ul/li[2]/span[2]")).getText(); 
-		Assert.assertEquals(msg2, "Password is a required field.");
+		String msg2 = driver.findElement(By.xpath("//*[text()='Password is a required field']")).getText(); 
 		System.out.println(msg2);
+		Assert.assertEquals(msg2, "Password is a required field.");
 		
 		lp.Email().sendKeys("abc@abc");
-		Thread.sleep(1000);
 		System.out.println("After Email text box have value, Validation message goes off");
 		
 		lp.Password().sendKeys("123456");
-		Thread.sleep(1000);
 		System.out.println("After password field have value, Validation message goes off");
 		
-		System.out.println("Email form validations are working fine");
+		System.out.println("Web Login Form Validations Verification Done");
 	}
 
 }

@@ -1,8 +1,11 @@
 package Memberse.WebAppAutomation;
 
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,29 +16,31 @@ public class wSignupTest extends WBase {
 	
 	@Test
 	public void wSignupTestCase() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		WebDriverWait ewait =  new WebDriverWait(driver, 60);
+		
 		WUtilities u = new  WUtilities(driver);
-		u.timeDelayToLoadWebsite();
+		u.loadDelay();
 		
 		WelcomePage wp = new WelcomePage(driver);
-		wp.SignupButtton().click();
-		Thread.sleep(2000);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.SignupButtton())).click();
 		
 		String email = getSaltString();
 		System.out.println(email);
 		String password = "123456";
 		
 		SignupPage sp = new SignupPage(driver);
-		Thread.sleep(2000);
-		sp.Email().sendKeys(email);
-		sp.Password().sendKeys(password);
-		sp.confirmPassword().sendKeys(password);
-		sp.SignupButton().click();
-		Thread.sleep(4000);
+		u.elementToBeClickable(ewait, sp.Email()).sendKeys(email);
+		u.elementToBeClickable(ewait, sp.Password()).sendKeys(password);
+		u.elementToBeClickable(ewait, sp.confirmPassword()).sendKeys(password);
+		u.elementToBeClickable(ewait, sp.SignupButton()).click();
+		u.shortDelay();
 		
-		String verifyText = driver.findElement(By.xpath("//p[text()='Your account has been successfully created.']")).getText(); 
-		System.out.println(verifyText);
-		Assert.assertEquals(verifyText, "Your account has been successfully created.");
-		System.out.println("Test Case Completed");
+		String succesfullText = driver.findElement(By.xpath("//p[text()='Your account has been successfully created.']")).getText(); 
+		System.out.println(succesfullText);
+		Assert.assertEquals(succesfullText, "Your account has been successfully created.");
+		
+		System.out.println("Web Signup Functionality Verification Completed");
 	}
 	
 	public String getSaltString() {
