@@ -1,6 +1,7 @@
 package Memberse.WebAppAutomation;
 
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -18,8 +19,11 @@ public class wCreateTextPostTest extends WBase {
 	
 	@Test
 	public void wCreateTextPostTestCase()throws InterruptedException{
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		WebDriverWait ewait =  new WebDriverWait(driver, 60);
+		
 		WUtilities u = new  WUtilities(driver);
-		u.timeDelayToLoadWebsite();
+		u.loadDelay();
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    wp.LoginButton().click();

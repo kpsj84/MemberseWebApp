@@ -1,8 +1,10 @@
 package Memberse.WebAppAutomation;
 
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,8 +16,11 @@ public class wDeleteAccountTest extends WBase {
 	
 	@Test
 	public void wDeleteAccountTestCase() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		WebDriverWait ewait =  new WebDriverWait(driver, 60);
+		
 		WUtilities u = new  WUtilities(driver);
-		u.timeDelayToLoadWebsite();
+		u.loadDelay();
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.SignupButtton().click();

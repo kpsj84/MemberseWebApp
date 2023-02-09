@@ -24,8 +24,11 @@ public class wPlaylistEditTest extends WBase {
 	
 	@Test
 	public void wPlaylistEditTestCase()throws InterruptedException, AWTException{
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		WebDriverWait ewait =  new WebDriverWait(driver, 60);
+		
 		WUtilities u = new  WUtilities(driver);
-		u.timeDelayToLoadWebsite();
+		u.loadDelay();
 		
 		WelcomePage wp = new WelcomePage(driver);
 		wp.LoginButton().click();
