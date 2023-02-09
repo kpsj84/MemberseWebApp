@@ -15,7 +15,8 @@ import org.testng.annotations.BeforeTest;
 
 public class WBase {
 	
-	public static boolean intelJenkinsServer = true;
+	//For Jenkin Server
+	public static boolean intelJenkinsServer = false;
 	
 	//Initiate Variables
 	public static ChromeOptions   options;
@@ -25,7 +26,7 @@ public class WBase {
 	public static WebDriver 	  driver;
 	public static String 	  	  driverLocation;
 	
-	//Set Capabilities for the Browser & provide driver location
+	//Set Capabilities or Options for the Browser & provide driver location
 	public static void  Capabilities() throws IOException {
 		if(intelJenkinsServer == true)
 		{
@@ -59,6 +60,7 @@ public class WBase {
 		System.out.println("Complete value taken from properties file --> " + prop.toString());
 	}
 	
+	//Annotation's for xml file
 	@BeforeTest
 	public void InvokeCapabilities() throws IOException {
 		//Execute Capabilities
@@ -66,24 +68,25 @@ public class WBase {
 	}
 	
 	@AfterTest
-	public void endSuite() throws InterruptedException {
+	public void endSuite() {
 		//Print Message
 		System.out.println("Test Suite Executed");
+		driver.quit();
 	}
 	
 	@BeforeClass
-	public void startDriver() throws InterruptedException, IOException {
+	public void startDriver() throws IOException {
 		//Start new driver & Window before to every Test Class
 		driver = new ChromeDriver(options);
-		Thread.sleep(2000);
 		driver.get((String)prop.get("Url"));
 	}
 	
 	@AfterClass
-	public void quitDriver() throws InterruptedException {
+	public void quitDriver() {
 		//Quit Driver after each Test Case Executed
-		//driver.close();
+		//driver.close();		//This just close current active window
 		driver.quit();
+		System.out.println("Test case execution complete");
 	}
 
 }

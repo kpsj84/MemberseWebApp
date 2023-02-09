@@ -1,10 +1,15 @@
 package Memberse.WebAppAutomation;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import WebPageObjects.HomePage;
 import WebPageObjects.LoginPage;
 import WebPageObjects.WelcomePage;
 
@@ -12,27 +17,32 @@ public class wLogintTest extends WBase{
 	
 	@Test
 	public void wLogintTestCase() throws InterruptedException {
-		WUtilities u = new  WUtilities(driver);
-		u.timeDelayToLoadWebsite();
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		WebDriverWait ewait =  new WebDriverWait(driver, 60);
+		
+		ewait.until(ExpectedConditions.titleIs("Memberse"));
 		
 		WelcomePage wp = new WelcomePage(driver);
-		wp.LoginButton().click();
-		Thread.sleep(2000);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestc7@yopmail.com");
-		lp.Password().sendKeys("kqatestc7");
-		Thread.sleep(1000);
-		lp.Login().click();
-		Thread.sleep(7000);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc7@yopmail.com");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("kqatestc7");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		Thread.sleep(10000);
 		
-		driver.findElement(By.xpath("//a[text()='Account']")).click();
-		Thread.sleep(1000);
-		WebElement verifyText = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div.flex-grow > div > div:nth-child(3) > form > div:nth-child(1) > div > input"));
-		String chkText = verifyText.getAttribute("value");
+		HomePage hp = new HomePage(driver);
+		ewait.until(ExpectedConditions.elementToBeClickable(hp.AccountMenu())).click();
+		
+		//ewait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[text()='Account']")));
+		//driver.findElement(By.xpath("//a[text()='Account']")).click();
+		
+		WebElement userInfoEmail = driver.findElement(By.xpath("//input[@name='email']"));
+		String chkText = userInfoEmail.getAttribute("value");
 		System.out.println(chkText);
 		Assert.assertEquals(chkText, "kqatestc7@yopmail.com");
-		System.out.println("Test Case Completed");
+		
+		System.out.println("Web Login Functionality Verification Completed");
 	}
 
 }
