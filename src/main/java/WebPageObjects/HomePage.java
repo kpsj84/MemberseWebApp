@@ -1,5 +1,6 @@
 package WebPageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,7 +16,7 @@ public class HomePage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[2]/div/span[1]/button/span")  
+	@FindBy(xpath="//span[@class='w-10 h-10 flex items-center justify-center']")  
 	private WebElement createPost;
 	
 	public WebElement createPost() {
@@ -29,21 +30,21 @@ public class HomePage {
 		return ProfilePic;
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/button")
+	@FindBy(xpath="//span[contains(text(), 'Filter')]")
 	private WebElement filterButton;
 	
 	public WebElement filterButton(){
 		return filterButton;
 	}
 	
-	@FindBy(xpath="/html/body/div[2]/div[2]/div/div/div[2]/div/div/div/div[2]/div[2]/div[3]/button/span")
+	@FindBy(xpath="//button[@role='switch']")
 	private WebElement filterToggle ;
 	
 	public WebElement filterToggle() {
 		return filterToggle;
 	}
 	
-	@FindBy(xpath="/html/body/div[2]/div[2]/div/div/div[2]/div/div/div/div[1]/div[1]/button/span")
+	@FindBy(xpath="//span[contains(text(), 'Save')]")
 	private WebElement filterSave;
 	
 	public WebElement filterSave() {
@@ -85,7 +86,7 @@ public class HomePage {
 		return ExploreMenu;
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[1]/div[2]/div/div/div[1]/nav/div[4]/a")
+	@FindBy(xpath="//a[text()='Creator']")
 	private WebElement CreatorMenu;
 	
 	public WebElement CreatorMenu() {

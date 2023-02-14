@@ -29,7 +29,7 @@ public class LoginPage {
 		return Password;
 	}
 	
-	@FindBy(css="span[class='w-10 h-10 flex items-center justify-center']")
+	@FindBy(css="svg[data-icon='eye']")
 	private WebElement ShowPassword;
 	
 	public WebElement ShowPassword() {

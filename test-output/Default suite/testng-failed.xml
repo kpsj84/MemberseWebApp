@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wTermsAndConditionsTest">
+      <class name="Memberse.WebAppAutomation.wCreateVideoPostTest">
         <methods>
           <include name="quitDriver"/>
           <include name="endSuite"/>
-          <include name="wTermsAndConditionsTestCase"/>
+          <include name="wCreatVideoPostTestCase"/>
           <include name="startDriver"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wTermsAndConditionsTest -->
+      </class> <!-- Memberse.WebAppAutomation.wCreateVideoPostTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

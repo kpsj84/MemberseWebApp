@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
@@ -21,37 +22,36 @@ public class wFeedsVerifyTest extends WBase {
 		WUtilities u = new  WUtilities(driver);
 		u.loadDelay();
 		
-	    WelcomePage wp = new WelcomePage(driver);
-	    wp.LoginButton().click();
-		Thread.sleep(2000);
+		WelcomePage wp = new WelcomePage(driver);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestc7@yopmail.com");
-		lp.Password().sendKeys("kqatestc7");
-		lp.ShowPassword().click();
-		lp.Login().click();
-		Thread.sleep(7000);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc7@yopmail.com");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("kqatestc7");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.ShowPassword())).click();
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
 		
 		HomePage hp = new HomePage(driver);
 	    hp.HomeMenu().click();
-		Thread.sleep(5000);
+		u.shortDelay();
 		
 		String noFeeds = null;
 		try
 		{
-			noFeeds = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div/div/p[2]")).getText();
+			noFeeds = driver.findElement(By.xpath("//p[contains(text(), 'This Homepage could use some color')]")).getText();
 			System.out.println(noFeeds);
 		}
 		catch(Exception e)
 		{
-			
+			System.out.println(e.getMessage());
 		}
 		
 		int verifyResult = 0;
 		try
 		{
 			verifyResult = driver.findElements(By.xpath("//*[@class='space-y-2']/div")).size()-1;
-	        System.out.println(verifyResult);
+	        System.out.println("Total number of Feeds are :- " + verifyResult);
 		}
 		catch(Exception e)
 		{

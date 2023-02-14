@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>testng.xml</span>
+                    <span>testngDebug.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">17 methods,   17 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wCreateAudioPostTest" hash-for-method="wCreatAudioPostTestCase">wCreatAudioPostTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wCreatePhotoPostTest" hash-for-method="wCreatePhotoPostTestCase">wCreatePhotoPostTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,87 +123,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wCommunityGuidelinesTest" hash-for-method="wCommunityGuidelinesTestCase">wCommunityGuidelinesTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wDeleteAccountTest" hash-for-method="wDeleteAccountTestCase">wDeleteAccountTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wLaunchAppStoreTest" hash-for-method="wLaunchAppStoreTestCase">wLaunchAppStoreTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wLaunchGooglePlayTest" hash-for-method="wLaunchGooglePlayTestCase">wLaunchGooglePlayTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wLaunchMemberseFacebookTest" hash-for-method="wLaunchMemberseFacebookTestCase">wLaunchMemberseFacebookTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wLaunchMemberseInstagramTest" hash-for-method="wLaunchMemberseInstagramTestCase">wLaunchMemberseInstagramTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest" hash-for-method="wLaunchMemberseLinkedInTestCase">wLaunchMemberseLinkedInTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wLoginFormValidationTest" hash-for-method="wLoginFormValidationTestCase">wLoginFormValidationTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wLoginwithAppleTest" hash-for-method="wLoginWithAppleTestCase">wLoginWithAppleTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wLoginWithFacebookTest" hash-for-method="wLoginWithFacebookTestCase">wLoginWithFacebookTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wLoginWithGoogleTest" hash-for-method="wLoginWithGoogleTestCase">wLoginWithGoogleTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wLogintTest" hash-for-method="wLogintTestCase">wLogintTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wLogoutTest" hash-for-method="wLogoutTestCase">wLogoutTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wPrivacyPolicyTest" hash-for-method="wPrivacyPolicyTestCase">wPrivacyPolicyTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wSignupFormValidationTest" hash-for-method="wSignupFormValidationTestCase">wSignupFormValidationTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wSignupTest" hash-for-method="wSignupTestCase">wSignupTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wTermsAndConditionsTest" hash-for-method="wTermsAndConditionsTestCase">wTermsAndConditionsTestCase</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wCreateVideoPostTest" hash-for-method="wCreatVideoPostTestCase">wCreatVideoPostTestCase</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -199,257 +138,98 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Memberse.WebAppAutomation.wLoginWithFacebookTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">Memberse.WebAppAutomation.wCreateAudioPostTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="wLoginWithFacebookTestCase">
-                  </a> <!-- wLoginWithFacebookTestCase -->
-                  <span class="method-name">wLoginWithFacebookTestCase</span>
+                  <a name="wCreatAudioPostTestCase">
+                  </a> <!-- wCreatAudioPostTestCase -->
+                  <span class="method-name">wCreatAudioPostTestCase</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;text-base font-medium leading-4&quot;&gt;...&lt;/span&gt; is not clickable at point (1084, 463). Other element would receive the click: &lt;div class=&quot;absolute inset-0 bg-black opacity-70&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=110.0.5481.77)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:4702:ee00:45fd:bff9:b2a2:fa64%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:52767}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 392d142b31c3b049e11744f551559e64
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at Memberse.WebAppAutomation.wCreateAudioPostTest.wCreatAudioPostTestCase(wCreateAudioPostTest.java:95)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Memberse.WebAppAutomation.wDeleteAccountTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">Memberse.WebAppAutomation.wCreatePhotoPostTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="wDeleteAccountTestCase">
-                  </a> <!-- wDeleteAccountTestCase -->
-                  <span class="method-name">wDeleteAccountTestCase</span>
+                  <a name="wCreatePhotoPostTestCase">
+                  </a> <!-- wCreatePhotoPostTestCase -->
+                  <span class="method-name">wCreatePhotoPostTestCase</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: #__next &gt; div.rnc__base &gt; div.rnc__notification-container--bottom-right &gt; div &gt; div &gt; div &gt; div.rnc__notification-message (tried for 90 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Memberse.WebAppAutomation.wCreatePhotoPostTest.wCreatePhotoPostTestCase(wCreatePhotoPostTest.java:98)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#__next &gt; div.rnc__base &gt; div.rnc__notification-container--bottom-right &gt; div &gt; div &gt; div &gt; div.rnc__notification-message&quot;}
+  (Session info: chrome=110.0.5481.77)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:4702:ee00:45fd:bff9:b2a2:fa64%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:51597}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d3ad841dae450846824ee6ce4773e737
+*** Element info: {Using=css selector, value=#__next &gt; div.rnc__base &gt; div.rnc__notification-container--bottom-right &gt; div &gt; div &gt; div &gt; div.rnc__notification-message}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 29 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Memberse.WebAppAutomation.wLaunchGooglePlayTest</span>
+              <span class="class-name">Memberse.WebAppAutomation.wCreateVideoPostTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="wLaunchGooglePlayTestCase">
-                  </a> <!-- wLaunchGooglePlayTestCase -->
-                  <span class="method-name">wLaunchGooglePlayTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Memberse.WebAppAutomation.wLoginwithAppleTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="wLoginWithAppleTestCase">
-                  </a> <!-- wLoginWithAppleTestCase -->
-                  <span class="method-name">wLoginWithAppleTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Memberse.WebAppAutomation.wSignupFormValidationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="wSignupFormValidationTestCase">
-                  </a> <!-- wSignupFormValidationTestCase -->
-                  <span class="method-name">wSignupFormValidationTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Memberse.WebAppAutomation.wLaunchMemberseInstagramTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="wLaunchMemberseInstagramTestCase">
-                  </a> <!-- wLaunchMemberseInstagramTestCase -->
-                  <span class="method-name">wLaunchMemberseInstagramTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Memberse.WebAppAutomation.wSignupTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="wSignupTestCase">
-                  </a> <!-- wSignupTestCase -->
-                  <span class="method-name">wSignupTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="wLaunchMemberseLinkedInTestCase">
-                  </a> <!-- wLaunchMemberseLinkedInTestCase -->
-                  <span class="method-name">wLaunchMemberseLinkedInTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Memberse.WebAppAutomation.wLaunchMemberseFacebookTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="wLaunchMemberseFacebookTestCase">
-                  </a> <!-- wLaunchMemberseFacebookTestCase -->
-                  <span class="method-name">wLaunchMemberseFacebookTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Memberse.WebAppAutomation.wLoginFormValidationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="wLoginFormValidationTestCase">
-                  </a> <!-- wLoginFormValidationTestCase -->
-                  <span class="method-name">wLoginFormValidationTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Memberse.WebAppAutomation.wLogintTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="wLogintTestCase">
-                  </a> <!-- wLogintTestCase -->
-                  <span class="method-name">wLogintTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Memberse.WebAppAutomation.wTermsAndConditionsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="wTermsAndConditionsTestCase">
-                  </a> <!-- wTermsAndConditionsTestCase -->
-                  <span class="method-name">wTermsAndConditionsTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Memberse.WebAppAutomation.wLaunchAppStoreTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="wLaunchAppStoreTestCase">
-                  </a> <!-- wLaunchAppStoreTestCase -->
-                  <span class="method-name">wLaunchAppStoreTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Memberse.WebAppAutomation.wCommunityGuidelinesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="wCommunityGuidelinesTestCase">
-                  </a> <!-- wCommunityGuidelinesTestCase -->
-                  <span class="method-name">wCommunityGuidelinesTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Memberse.WebAppAutomation.wLoginWithGoogleTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="wLoginWithGoogleTestCase">
-                  </a> <!-- wLoginWithGoogleTestCase -->
-                  <span class="method-name">wLoginWithGoogleTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Memberse.WebAppAutomation.wLogoutTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="wLogoutTestCase">
-                  </a> <!-- wLogoutTestCase -->
-                  <span class="method-name">wLogoutTestCase</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Memberse.WebAppAutomation.wPrivacyPolicyTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="wPrivacyPolicyTestCase">
-                  </a> <!-- wPrivacyPolicyTestCase -->
-                  <span class="method-name">wPrivacyPolicyTestCase</span>
+                  <a name="wCreatVideoPostTestCase">
+                  </a> <!-- wCreatVideoPostTestCase -->
+                  <span class="method-name">wCreatVideoPostTestCase</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -457,7 +237,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/kamaljhinjer/Documents/eclipse-workspace/QAMemberseWebApp/testng.xml</span>
+            <span class="header-content">/Users/kamaljhinjer/Documents/eclipse-workspace/QAMemberseWebApp/testngDebug.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -469,23 +249,9 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Memberse.WebAppAutomation.wSignupFormValidationTest&quot;/&gt;
-      &lt;class name=&quot;Memberse.WebAppAutomation.wSignupTest&quot;/&gt;
-      &lt;class name=&quot;Memberse.WebAppAutomation.wLoginFormValidationTest&quot;/&gt;
-      &lt;class name=&quot;Memberse.WebAppAutomation.wLogintTest&quot;/&gt;
-      &lt;class name=&quot;Memberse.WebAppAutomation.wLoginWithGoogleTest&quot;/&gt;
-      &lt;class name=&quot;Memberse.WebAppAutomation.wLoginWithFacebookTest&quot;/&gt;
-      &lt;class name=&quot;Memberse.WebAppAutomation.wLoginwithAppleTest&quot;/&gt;
-      &lt;class name=&quot;Memberse.WebAppAutomation.wLogoutTest&quot;/&gt;
-      &lt;class name=&quot;Memberse.WebAppAutomation.wDeleteAccountTest&quot;/&gt;
-      &lt;class name=&quot;Memberse.WebAppAutomation.wLaunchAppStoreTest&quot;/&gt;
-      &lt;class name=&quot;Memberse.WebAppAutomation.wLaunchGooglePlayTest&quot;/&gt;
-      &lt;class name=&quot;Memberse.WebAppAutomation.wLaunchMemberseFacebookTest&quot;/&gt;
-      &lt;class name=&quot;Memberse.WebAppAutomation.wLaunchMemberseInstagramTest&quot;/&gt;
-      &lt;class name=&quot;Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest&quot;/&gt;
-      &lt;class name=&quot;Memberse.WebAppAutomation.wTermsAndConditionsTest&quot;/&gt;
-      &lt;class name=&quot;Memberse.WebAppAutomation.wCommunityGuidelinesTest&quot;/&gt;
-      &lt;class name=&quot;Memberse.WebAppAutomation.wPrivacyPolicyTest&quot;/&gt;
+      &lt;class name=&quot;Memberse.WebAppAutomation.wCreatePhotoPostTest&quot;/&gt;
+      &lt;class name=&quot;Memberse.WebAppAutomation.wCreateVideoPostTest&quot;/&gt;
+      &lt;class name=&quot;Memberse.WebAppAutomation.wCreateAudioPostTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -499,7 +265,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (17 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -525,80 +291,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(17);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'wLoginWithGoogleTestCase')
-data.setCell(0, 2, 'Memberse.WebAppAutomation.wLoginWithGoogleTest')
-data.setCell(0, 3, 89427);
+data.setCell(0, 1, 'wCreatePhotoPostTestCase')
+data.setCell(0, 2, 'Memberse.WebAppAutomation.wCreatePhotoPostTest')
+data.setCell(0, 3, 140451);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'wDeleteAccountTestCase')
-data.setCell(1, 2, 'Memberse.WebAppAutomation.wDeleteAccountTest')
-data.setCell(1, 3, 40141);
+data.setCell(1, 1, 'wCreatVideoPostTestCase')
+data.setCell(1, 2, 'Memberse.WebAppAutomation.wCreateVideoPostTest')
+data.setCell(1, 3, 96059);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'wLaunchAppStoreTestCase')
-data.setCell(2, 2, 'Memberse.WebAppAutomation.wLaunchAppStoreTest')
-data.setCell(2, 3, 38852);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'wLoginWithFacebookTestCase')
-data.setCell(3, 2, 'Memberse.WebAppAutomation.wLoginWithFacebookTest')
-data.setCell(3, 3, 30471);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'wLogintTestCase')
-data.setCell(4, 2, 'Memberse.WebAppAutomation.wLogintTest')
-data.setCell(4, 3, 26041);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'wLogoutTestCase')
-data.setCell(5, 2, 'Memberse.WebAppAutomation.wLogoutTest')
-data.setCell(5, 3, 24780);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'wLoginWithAppleTestCase')
-data.setCell(6, 2, 'Memberse.WebAppAutomation.wLoginwithAppleTest')
-data.setCell(6, 3, 23525);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'wLaunchGooglePlayTestCase')
-data.setCell(7, 2, 'Memberse.WebAppAutomation.wLaunchGooglePlayTest')
-data.setCell(7, 3, 23433);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'wLaunchMemberseFacebookTestCase')
-data.setCell(8, 2, 'Memberse.WebAppAutomation.wLaunchMemberseFacebookTest')
-data.setCell(8, 3, 22565);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'wLaunchMemberseLinkedInTestCase')
-data.setCell(9, 2, 'Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest')
-data.setCell(9, 3, 20883);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'wLaunchMemberseInstagramTestCase')
-data.setCell(10, 2, 'Memberse.WebAppAutomation.wLaunchMemberseInstagramTest')
-data.setCell(10, 3, 20539);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'wSignupTestCase')
-data.setCell(11, 2, 'Memberse.WebAppAutomation.wSignupTest')
-data.setCell(11, 3, 18864);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'wPrivacyPolicyTestCase')
-data.setCell(12, 2, 'Memberse.WebAppAutomation.wPrivacyPolicyTest')
-data.setCell(12, 3, 18436);
-data.setCell(13, 0, 13)
-data.setCell(13, 1, 'wCommunityGuidelinesTestCase')
-data.setCell(13, 2, 'Memberse.WebAppAutomation.wCommunityGuidelinesTest')
-data.setCell(13, 3, 16349);
-data.setCell(14, 0, 14)
-data.setCell(14, 1, 'wSignupFormValidationTestCase')
-data.setCell(14, 2, 'Memberse.WebAppAutomation.wSignupFormValidationTest')
-data.setCell(14, 3, 15223);
-data.setCell(15, 0, 15)
-data.setCell(15, 1, 'wTermsAndConditionsTestCase')
-data.setCell(15, 2, 'Memberse.WebAppAutomation.wTermsAndConditionsTest')
-data.setCell(15, 3, 14388);
-data.setCell(16, 0, 16)
-data.setCell(16, 1, 'wLoginFormValidationTestCase')
-data.setCell(16, 2, 'Memberse.WebAppAutomation.wLoginFormValidationTest')
-data.setCell(16, 3, 11712);
+data.setCell(2, 1, 'wCreatAudioPostTestCase')
+data.setCell(2, 2, 'Memberse.WebAppAutomation.wCreateAudioPostTest')
+data.setCell(2, 3, 44354);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -613,11 +323,11 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">32 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Memberse.WebAppAutomation.wLoginWithFacebookTest</span>
+              <span class="ignored-class-name">Memberse.WebAppAutomation.wCreateAudioPostTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">endSuite</span>
                 <br/>
@@ -626,133 +336,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Memberse.WebAppAutomation.wDeleteAccountTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">endSuite</span>
-                <br/>
-                <span class="ignored-method-name">InvokeCapabilities</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Memberse.WebAppAutomation.wLoginwithAppleTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">endSuite</span>
-                <br/>
-                <span class="ignored-method-name">InvokeCapabilities</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Memberse.WebAppAutomation.wLaunchGooglePlayTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">endSuite</span>
-                <br/>
-                <span class="ignored-method-name">InvokeCapabilities</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Memberse.WebAppAutomation.wLaunchMemberseInstagramTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">endSuite</span>
-                <br/>
-                <span class="ignored-method-name">InvokeCapabilities</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Memberse.WebAppAutomation.wSignupTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">endSuite</span>
-                <br/>
-                <span class="ignored-method-name">InvokeCapabilities</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">endSuite</span>
-                <br/>
-                <span class="ignored-method-name">InvokeCapabilities</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Memberse.WebAppAutomation.wLaunchMemberseFacebookTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">endSuite</span>
-                <br/>
-                <span class="ignored-method-name">InvokeCapabilities</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Memberse.WebAppAutomation.wLoginFormValidationTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">endSuite</span>
-                <br/>
-                <span class="ignored-method-name">InvokeCapabilities</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Memberse.WebAppAutomation.wLogintTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">endSuite</span>
-                <br/>
-                <span class="ignored-method-name">InvokeCapabilities</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Memberse.WebAppAutomation.wTermsAndConditionsTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">endSuite</span>
-                <br/>
-                <span class="ignored-method-name">InvokeCapabilities</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Memberse.WebAppAutomation.wLaunchAppStoreTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">endSuite</span>
-                <br/>
-                <span class="ignored-method-name">InvokeCapabilities</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Memberse.WebAppAutomation.wLoginWithGoogleTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">endSuite</span>
-                <br/>
-                <span class="ignored-method-name">InvokeCapabilities</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Memberse.WebAppAutomation.wCommunityGuidelinesTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">endSuite</span>
-                <br/>
-                <span class="ignored-method-name">InvokeCapabilities</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Memberse.WebAppAutomation.wLogoutTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">endSuite</span>
-                <br/>
-                <span class="ignored-method-name">InvokeCapabilities</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Memberse.WebAppAutomation.wPrivacyPolicyTest</span>
+              <span class="ignored-class-name">Memberse.WebAppAutomation.wCreateVideoPostTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">endSuite</span>
                 <br/>
@@ -768,269 +352,63 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wSignupFormValidationTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Memberse.WebAppAutomation.wCreatePhotoPostTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">InvokeCapabilities</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">startDriver</span>
-                <span class="method-start">36 ms</span>
+                <span class="method-start">37 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">wSignupFormValidationTestCase</span>
-                <span class="method-start">9014 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">wCreatePhotoPostTestCase</span>
+                <span class="method-start">9284 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">24256 ms</span>
+                <span class="method-start">149753 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wSignupTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Memberse.WebAppAutomation.wCreateVideoPostTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startDriver</span>
-                <span class="method-start">24336 ms</span>
+                <span class="method-start">149856 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">wSignupTestCase</span>
-                <span class="method-start">32435 ms</span>
+                <span class="method-name">wCreatVideoPostTestCase</span>
+                <span class="method-start">158142 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">51301 ms</span>
+                <span class="method-start">254208 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wLoginFormValidationTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Memberse.WebAppAutomation.wCreateAudioPostTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startDriver</span>
-                <span class="method-start">51375 ms</span>
+                <span class="method-start">254309 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">wLoginFormValidationTestCase</span>
-                <span class="method-start">59452 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">wCreatAudioPostTestCase</span>
+                <span class="method-start">262659 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">71172 ms</span>
+                <span class="method-start">307023 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wLogintTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">startDriver</span>
-                <span class="method-start">71306 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">wLogintTestCase</span>
-                <span class="method-start">79760 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">quitDriver</span>
-                <span class="method-start">105807 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wLoginWithGoogleTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">startDriver</span>
-                <span class="method-start">105884 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">wLoginWithGoogleTestCase</span>
-                <span class="method-start">114016 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">quitDriver</span>
-                <span class="method-start">203447 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wLoginWithFacebookTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">startDriver</span>
-                <span class="method-start">203450 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">wLoginWithFacebookTestCase</span>
-                <span class="method-start">211922 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">quitDriver</span>
-                <span class="method-start">242399 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wLoginwithAppleTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">startDriver</span>
-                <span class="method-start">242484 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">wLoginWithAppleTestCase</span>
-                <span class="method-start">251016 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">quitDriver</span>
-                <span class="method-start">274550 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wLogoutTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">startDriver</span>
-                <span class="method-start">274632 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">wLogoutTestCase</span>
-                <span class="method-start">282688 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">quitDriver</span>
-                <span class="method-start">307473 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wDeleteAccountTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">startDriver</span>
-                <span class="method-start">307554 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">wDeleteAccountTestCase</span>
-                <span class="method-start">315692 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">quitDriver</span>
-                <span class="method-start">355843 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wLaunchAppStoreTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">startDriver</span>
-                <span class="method-start">355929 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">wLaunchAppStoreTestCase</span>
-                <span class="method-start">364385 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">quitDriver</span>
-                <span class="method-start">403244 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wLaunchGooglePlayTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">startDriver</span>
-                <span class="method-start">403325 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">wLaunchGooglePlayTestCase</span>
-                <span class="method-start">411541 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">quitDriver</span>
-                <span class="method-start">434979 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wLaunchMemberseFacebookTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">startDriver</span>
-                <span class="method-start">435061 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">wLaunchMemberseFacebookTestCase</span>
-                <span class="method-start">443222 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">quitDriver</span>
-                <span class="method-start">465789 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wLaunchMemberseInstagramTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">startDriver</span>
-                <span class="method-start">465870 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">wLaunchMemberseInstagramTestCase</span>
-                <span class="method-start">476887 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">quitDriver</span>
-                <span class="method-start">497434 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wLaunchMemberseLinkedInTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">startDriver</span>
-                <span class="method-start">497577 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">wLaunchMemberseLinkedInTestCase</span>
-                <span class="method-start">508047 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">quitDriver</span>
-                <span class="method-start">528940 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wTermsAndConditionsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">startDriver</span>
-                <span class="method-start">529020 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">wTermsAndConditionsTestCase</span>
-                <span class="method-start">537349 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">quitDriver</span>
-                <span class="method-start">551745 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wCommunityGuidelinesTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">startDriver</span>
-                <span class="method-start">551824 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">wCommunityGuidelinesTestCase</span>
-                <span class="method-start">559505 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">quitDriver</span>
-                <span class="method-start">575859 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wPrivacyPolicyTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">startDriver</span>
-                <span class="method-start">575946 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">wPrivacyPolicyTestCase</span>
-                <span class="method-start">586204 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">quitDriver</span>
-                <span class="method-start">604641 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Memberse.WebAppAutomation.wSignupFormValidationTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Memberse.WebAppAutomation.wCreatePhotoPostTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endSuite</span>
-                <span class="method-start">604755 ms</span>
+                <span class="method-start">307102 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

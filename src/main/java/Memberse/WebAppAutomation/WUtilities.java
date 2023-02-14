@@ -19,16 +19,19 @@ public class WUtilities {
 	public void loadDelay() throws InterruptedException {
 		System.out.println("From load delay method, loading in progress...");
 		Thread.sleep(7000);
+		System.out.println("load delay over");
 	}
 	
 	public void apiDelay() throws InterruptedException {
 		System.out.println("From api call delay method, please wait...");
 		Thread.sleep(10000);
+		System.out.println("api delay over");
 	}
 	
 	public void shortDelay() throws InterruptedException {
 		System.out.println("From short delay method, response awaiting...");
 		Thread.sleep(4000);
+		System.out.println("short delay over");
 	}
 
 	public WebDriverWait callExplicitWait() {

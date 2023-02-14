@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -25,27 +26,27 @@ public class wSearchCreatorTest extends WBase {
 		u.loadDelay();
 		
 		WelcomePage wp = new WelcomePage(driver);
-		wp.LoginButton().click();
-		Thread.sleep(2000);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestc7@yopmail.com");
-		lp.Password().sendKeys("kqatestc7");
-		lp.Login().click();
-		Thread.sleep(7000);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc7@yopmail.com");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("kqatestc7");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.ShowPassword())).click();
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
 		 
 		HomePage hp = new HomePage(driver);
-		hp.ExploreMenu().click();
-		Thread.sleep(2000);
+		ewait.until(ExpectedConditions.elementToBeClickable(hp.ExploreMenu())).click();
 		
 		ExplorePage ep = new ExplorePage(driver);
-		ep.SearchField().sendKeys("kqatest");
-		Thread.sleep(13000); //earlier 10sec                     
-	    String Text= driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div[2]/div/div/div/div[1]/a/div/div[2]/div/div/p[1]")).getText();
+		ewait.until(ExpectedConditions.elementToBeClickable(ep.SearchField())).sendKeys("kqatestc4");
+		u.apiDelay();      
+		
+	    String Text= driver.findElement(By.xpath("//p[@class=' text-sm font-semibold line-clamp-1']")).getText();
 	    System.out.println(Text);
 	    Assert.assertEquals(Text,"kqatestc4's Community");    
 	   
-	    String Text1=driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div[2]/div/div/div/div[1]/a/div/div[2]/div/div/p[2]")).getText();
+	    String Text1=driver.findElement(By.xpath("//p[@class=' text-xs font-medium text-gray-5000']")).getText();
 	    System.out.println(Text1);
 	    Assert.assertEquals(Text1,"@kqatestc4");
 	     
@@ -58,7 +59,7 @@ public class wSearchCreatorTest extends WBase {
      
         if(testresult2 == 0)
         {
-        	String noResult = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div[2]/div/div[2]/p")).getText();
+        	String noResult = driver.findElement(By.xpath("//*[contains(text(),'No results available.')]")).getText();
         	System.out.println(noResult);
         	Assert.assertEquals(noResult, "No results available.");
         }
