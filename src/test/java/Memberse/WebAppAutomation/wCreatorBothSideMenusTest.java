@@ -1,8 +1,11 @@
 package Memberse.WebAppAutomation;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -22,14 +25,14 @@ public class wCreatorBothSideMenusTest extends WBase {
 		u.loadDelay();
 		
 		WelcomePage wp = new WelcomePage(driver);
-		wp.LoginButton().click();
-		Thread.sleep(2000);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestc7@yopmail.com");
-		lp.Password().sendKeys("kqatestc7");
-		lp.Login().click();
-		Thread.sleep(7000);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc7@yopmail.com");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("kqatestc7");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.ShowPassword())).click();
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
 		
 		HomePage hp = new HomePage(driver);
 		String home = hp.HomeMenu().getText();
@@ -48,17 +51,19 @@ public class wCreatorBothSideMenusTest extends WBase {
 		System.out.println(creator);
 		Assert.assertEquals(creator, "Creator");
 		
-		driver.findElement(By.xpath("//span[@class='shadow-thick cursor-pointer inline-flex items-center p-0.5 rounded-full text-sm bg-pink-2000 text-neutral-1000']")).click();
-		Thread.sleep(2000);
-		String editProfile = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div/a/span")).getText(); //Edit profile
+		List<WebElement> ele = driver.findElements(By.cssSelector("div[class='opacity-100 duration-1000 transition h-9 w-9 rounded-full bg-cover bg-center']"));
+		ele.get(0).click();
+		u.shortDelay();
+		
+		String editProfile = ewait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(),'Edit profile')]"))).getText(); //Edit profile
 		System.out.println(editProfile);
 		Assert.assertEquals(editProfile, "Edit profile");
 		
-		String creator2 = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div/div[2]/div[2]/div/p[1]")).getText(); //Creator
+		String creator2 = ewait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//p[contains(text(),'Creator')]"))).getText(); //Creator
 		System.out.println(creator2);
 		Assert.assertEquals(creator2, "Creator");
 		
-		String logout = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div/div[3]/div[2]/div/p[1]")).getText(); //Log out
+		String logout = ewait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//p[contains(text(),'Log out')]"))).getText(); //Log out
 		System.out.println(logout);
 		Assert.assertEquals(logout, "Log out");
 	}

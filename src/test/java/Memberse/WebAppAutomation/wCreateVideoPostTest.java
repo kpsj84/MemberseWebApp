@@ -25,52 +25,49 @@ public class wCreateVideoPostTest extends WBase {
 	
 	@Test
 	public void wCreatVideoPostTestCase()throws InterruptedException, AWTException{
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		WebDriverWait ewait =  new WebDriverWait(driver, 60);
+		driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
+		WebDriverWait ewait =  new WebDriverWait(driver, 90);
 		
 		WUtilities u = new  WUtilities(driver);
 		u.loadDelay();
 		
 	    WelcomePage wp = new WelcomePage(driver);
-	    wp.LoginButton().click();
-		Thread.sleep(2000);
+	    ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestc5@yopmail.com");
-		lp.Password().sendKeys("kqatestc5");
-		lp.ShowPassword().click();
-		lp.Login().click();
-		Thread.sleep(7000);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc5@yopmail.com");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("kqatestc5");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.ShowPassword())).click();
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
     	
 		HomePage hp = new HomePage(driver);
-		hp.createPost().click();
-		Thread.sleep(2000);
+		ewait.until(ExpectedConditions.elementToBeClickable(hp.createPost())).click();
 		
     	String autotext=getSaltString();
   		System.out.println(autotext);
   		
   		CreatePostPage cpp = new CreatePostPage(driver);
-  		cpp.titleBox().sendKeys("Auto Generated Video Post - " +autotext);
-        cpp.descriptionBox().sendKeys("This is an Auto-QA Description");
-        Thread.sleep(1000);
-        cpp.membersOnlyToggle().click();
-        Thread.sleep(2000);
-        cpp.videoButton().click();
-        Thread.sleep(1000);        
-        cpp.uploadVideo().click();
+  		ewait.until(ExpectedConditions.elementToBeClickable(cpp.titleBox())).sendKeys("Auto Generated Video Post - " +autotext);
+  		ewait.until(ExpectedConditions.elementToBeClickable(cpp.descriptionBox())).sendKeys("This is an Auto-QA Description");
+  		ewait.until(ExpectedConditions.elementToBeClickable(cpp.membersOnlyToggle())).click();
+  		ewait.until(ExpectedConditions.elementToBeClickable(cpp.videoButton())).click();
+  		ewait.until(ExpectedConditions.elementToBeClickable(cpp.uploadVideo())).click();
         
         File fl = new File(System.getProperty("user.dir") + "/src/samples/SampleVideo_2MB.mp4");
         StringSelection str = new StringSelection(fl.getAbsolutePath());
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
-        Thread.sleep(3000);
+        u.shortDelay();
         
         Robot rb = new Robot();
-        //This required as in Automation, Focus loose from open file upload window
+        //This required as in Automation, Focus loose from open file upload window, this code not required if Java app already opened in Background by previous test
+        /*
         rb.keyPress(KeyEvent.VK_META);
         rb.keyPress(KeyEvent.VK_TAB);
         rb.keyRelease(KeyEvent.VK_META);
         rb.keyRelease(KeyEvent.VK_TAB);
         rb.delay(500);
+        */
         
         //Open Goto window
         rb.keyPress(KeyEvent.VK_META);
@@ -95,21 +92,20 @@ public class wCreateVideoPostTest extends WBase {
         rb.keyPress(KeyEvent.VK_ENTER);
         rb.keyRelease(KeyEvent.VK_ENTER);
         rb.delay(500);
-        Thread.sleep(3000);
+        u.loadDelay();
        
-        cpp.submitButton().click();
-        Thread.sleep(10000);
+        ewait.until(ExpectedConditions.elementToBeClickable(cpp.submitButton())).click();
+        u.apiDelay();
         
-        WebDriverWait w = new WebDriverWait(driver,90);
-        w.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
+        ewait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
         String Text = driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
 		System.out.println(Text);
 		Assert.assertEquals(Text,"Operation succesfully completed.");
 	    
-		Thread.sleep(10000);
+		u.loadDelay();
         driver.findElement(By.xpath("//a[@href='/content-creator/posts/unpublished']")).click();
-        Thread.sleep(5000);
-	    WebElement Text1 = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div.pb-10 > div.flex-grow > div > div:nth-child(2) > div > div:nth-child(1) > div.w-full.bg-neutral-1000.dark\\:bg-purple-8000.shadow-sm.p-4.flex.space-x-2.h-28 > div.flex.flex-grow > div > div.block.relative > p"));
+        u.shortDelay();
+	    WebElement Text1 = driver.findElement(By.xpath("//p[contains(text(), 'Auto Generated Video Post - " +autotext+ "')]"));
 		String text2 = Text1.getText();
 		System.out.println(text2);
 		Assert.assertEquals(text2,"Auto Generated Video Post - " + autotext);

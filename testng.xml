@@ -21,7 +21,7 @@
       <class name="Memberse.WebAppAutomation.wLoginwithAppleTest"/>      
       <class name="Memberse.WebAppAutomation.wLogoutTest"/>
       <class name="Memberse.WebAppAutomation.wDeleteAccountTest"/>
-<!-- General Test Cases-->
+	  <!-- General Test Cases-->
       <class name="Memberse.WebAppAutomation.wLaunchAppStoreTest"/>
       <class name="Memberse.WebAppAutomation.wLaunchGooglePlayTest"/>
       <class name="Memberse.WebAppAutomation.wLaunchMemberseFacebookTest"/>
@@ -30,6 +30,16 @@
       <class name="Memberse.WebAppAutomation.wTermsAndConditionsTest"/>
       <class name="Memberse.WebAppAutomation.wCommunityGuidelinesTest"/>
       <class name="Memberse.WebAppAutomation.wPrivacyPolicyTest"/>
+      <!-- Home Page Test Cases-->
+      <class name="Memberse.WebAppAutomation.wFeedsVerifyTest"/>
+      <class name="Memberse.WebAppAutomation.wFeedsFilterTest"/> 
+      <class name="Memberse.WebAppAutomation.wCreateTextPostTest"/>
+      <class name="Memberse.WebAppAutomation.wCreatePhotoPostTest"/>
+      <class name="Memberse.WebAppAutomation.wCreateVideoPostTest"/>
+      <class name="Memberse.WebAppAutomation.wCreateAudioPostTest"/>
+      <class name="Memberse.WebAppAutomation.wCreatorBothSideMenusTest"/>
+      <!-- Explore Page Test Cases-->
+      <class name="Memberse.WebAppAutomation.wSearchCreatorTest"/>
     </classes>
     
   </test> <!-- Test -->

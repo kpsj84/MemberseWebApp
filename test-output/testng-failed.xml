@@ -6,15 +6,24 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wLoginWithGoogleTest">
+      <class name="Memberse.WebAppAutomation.wCreateAudioPostTest">
         <methods>
-          <include name="wLoginWithGoogleTestCase"/>
           <include name="quitDriver"/>
           <include name="endSuite"/>
+          <include name="wCreatAudioPostTestCase"/>
           <include name="startDriver"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wLoginWithGoogleTest -->
+      </class> <!-- Memberse.WebAppAutomation.wCreateAudioPostTest -->
+      <class name="Memberse.WebAppAutomation.wCreatePhotoPostTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="endSuite"/>
+          <include name="wCreatePhotoPostTestCase"/>
+          <include name="startDriver"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wCreatePhotoPostTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

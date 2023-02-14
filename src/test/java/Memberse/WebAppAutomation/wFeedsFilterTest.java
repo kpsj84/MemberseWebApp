@@ -1,8 +1,11 @@
 package Memberse.WebAppAutomation;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -21,29 +24,29 @@ public class wFeedsFilterTest extends WBase {
 		WUtilities u = new  WUtilities(driver);
 		u.loadDelay();
 		
-	    WelcomePage wp = new WelcomePage(driver);
-	    wp.LoginButton().click();
-		Thread.sleep(2000);
+		WelcomePage wp = new WelcomePage(driver);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestc4@yopmail.com");
-		lp.Password().sendKeys("kqatestc4");
-		lp.ShowPassword().click();
-		lp.Login().click();
-		Thread.sleep(7000);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc4@yopmail.com");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("kqatestc4");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.ShowPassword())).click();
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
 		
 		HomePage hp = new HomePage(driver);
-	    hp.HomeMenu().click();
-		Thread.sleep(4000);
-		hp.filterButton().click();
-	    Thread.sleep(2000);
-	    hp.filterToggle().click();
-	    Thread.sleep(2000);
-	    hp.filterSave().click();
-	    Thread.sleep(8000);
+		ewait.until(ExpectedConditions.elementToBeClickable(hp.HomeMenu())).click();
+		
+		ewait.until(ExpectedConditions.elementToBeClickable(hp.filterButton())).click();
+	    u.shortDelay();
+		List<WebElement> ele = driver.findElements(By.xpath("//button[@role='switch']"));
+		ele.get(1).click();
+	    ewait.until(ExpectedConditions.elementToBeClickable(hp.filterSave())).click();
+	    u.apiDelay();
 	    
-	    String Kqatestc3 = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div:nth-child(3) > div.space-y-2 > div > div > div:nth-child(3) > div > div:nth-child(1) > div > div.flex.flex-grow > div > div > p.text-sm.font-semibold.line-clamp-1 > a")).getText();
-		System.out.println(Kqatestc3);
+	    List<WebElement> ele3 = driver.findElements(By.cssSelector("p[class=' text-sm font-semibold line-clamp-1']"));
+	    String Kqatestc3 = ele3.get(0).getText();
+	    System.out.println(Kqatestc3);
 		Assert.assertEquals(Kqatestc3,"kqatestc3's Community");
     }
 
