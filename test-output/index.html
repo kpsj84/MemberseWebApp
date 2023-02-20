@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -105,11 +105,6 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wCreateAudioPostTest" hash-for-method="wCreatAudioPostTestCase">wCreatAudioPostTestCase</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wCreatePhotoPostTest" hash-for-method="wCreatePhotoPostTestCase">wCreatePhotoPostTestCase</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -124,6 +119,36 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wCreateVideoPostTest" hash-for-method="wCreatVideoPostTestCase">wCreatVideoPostTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wCreatePhotoPostTest" hash-for-method="wCreatePhotoPostTestCase">wCreatePhotoPostTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest" hash-for-method="wFollowCommunityTestCase">wFollowCommunityTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wJoinCommunityTest" hash-for-method="wJoinCommunityTestCase">wJoinCommunityTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wReportCommunityTest" hash-for-method="wReportCommunityTestCase">wReportCommunityTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wShareCommunityTest" hash-for-method="wShareCommunityTestCase">wShareCommunityTestCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest" hash-for-method="wUnfollowCommunityTestCase">wUnfollowCommunityTestCase</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -149,34 +174,85 @@
                   <a name="wCreatAudioPostTestCase">
                   </a> <!-- wCreatAudioPostTestCase -->
                   <span class="method-name">wCreatAudioPostTestCase</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;text-base font-medium leading-4&quot;&gt;...&lt;/span&gt; is not clickable at point (1084, 463). Other element would receive the click: &lt;div class=&quot;absolute inset-0 bg-black opacity-70&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=110.0.5481.77)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:4702:ee00:45fd:bff9:b2a2:fa64%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:52767}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 392d142b31c3b049e11744f551559e64
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at Memberse.WebAppAutomation.wCreateAudioPostTest.wCreatAudioPostTestCase(wCreateAudioPostTest.java:95)
+                  <div class="stack-trace">java.lang.AssertionError: expected [Operation succesfully completed.] but found []
+	at Memberse.WebAppAutomation.wCreateAudioPostTest.wCreatAudioPostTestCase(wCreateAudioPostTest.java:103)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 34 stack frames
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
+              <span class="class-name">Memberse.WebAppAutomation.wReportCommunityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="wReportCommunityTestCase">
+                  </a> <!-- wReportCommunityTestCase -->
+                  <span class="method-name">wReportCommunityTestCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="wFollowCommunityTestCase">
+                  </a> <!-- wFollowCommunityTestCase -->
+                  <span class="method-name">wFollowCommunityTestCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wUnfollowCommunityTestCase">
+                  </a> <!-- wUnfollowCommunityTestCase -->
+                  <span class="method-name">wUnfollowCommunityTestCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Memberse.WebAppAutomation.wJoinCommunityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="wJoinCommunityTestCase">
+                  </a> <!-- wJoinCommunityTestCase -->
+                  <span class="method-name">wJoinCommunityTestCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Memberse.WebAppAutomation.wShareCommunityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="wShareCommunityTestCase">
+                  </a> <!-- wShareCommunityTestCase -->
+                  <span class="method-name">wShareCommunityTestCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">Memberse.WebAppAutomation.wCreatePhotoPostTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -185,40 +261,10 @@ Session ID: 392d142b31c3b049e11744f551559e64
                   <a name="wCreatePhotoPostTestCase">
                   </a> <!-- wCreatePhotoPostTestCase -->
                   <span class="method-name">wCreatePhotoPostTestCase</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: #__next &gt; div.rnc__base &gt; div.rnc__notification-container--bottom-right &gt; div &gt; div &gt; div &gt; div.rnc__notification-message (tried for 90 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at Memberse.WebAppAutomation.wCreatePhotoPostTest.wCreatePhotoPostTestCase(wCreatePhotoPostTest.java:98)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#__next &gt; div.rnc__base &gt; div.rnc__notification-container--bottom-right &gt; div &gt; div &gt; div &gt; div.rnc__notification-message&quot;}
-  (Session info: chrome=110.0.5481.77)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Kamals-MacBook-Pro.local&apos;, ip: &apos;2401:4900:4702:ee00:45fd:bff9:b2a2:fa64%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.1&apos;, java.version: &apos;1.8.0_351&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:51597}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d3ad841dae450846824ee6ce4773e737
-*** Element info: {Using=css selector, value=#__next &gt; div.rnc__base &gt; div.rnc__notification-container--bottom-right &gt; div &gt; div &gt; div &gt; div.rnc__notification-message}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 29 more
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -252,6 +298,10 @@ Session ID: d3ad841dae450846824ee6ce4773e737
       &lt;class name=&quot;Memberse.WebAppAutomation.wCreatePhotoPostTest&quot;/&gt;
       &lt;class name=&quot;Memberse.WebAppAutomation.wCreateVideoPostTest&quot;/&gt;
       &lt;class name=&quot;Memberse.WebAppAutomation.wCreateAudioPostTest&quot;/&gt;
+      &lt;class name=&quot;Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest&quot;/&gt;
+      &lt;class name=&quot;Memberse.WebAppAutomation.wShareCommunityTest&quot;/&gt;
+      &lt;class name=&quot;Memberse.WebAppAutomation.wReportCommunityTest&quot;/&gt;
+      &lt;class name=&quot;Memberse.WebAppAutomation.wJoinCommunityTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -265,7 +315,7 @@ Session ID: d3ad841dae450846824ee6ce4773e737
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -291,24 +341,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'wCreatePhotoPostTestCase')
-data.setCell(0, 2, 'Memberse.WebAppAutomation.wCreatePhotoPostTest')
-data.setCell(0, 3, 140451);
+data.setCell(0, 1, 'wJoinCommunityTestCase')
+data.setCell(0, 2, 'Memberse.WebAppAutomation.wJoinCommunityTest')
+data.setCell(0, 3, 101418);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'wCreatVideoPostTestCase')
 data.setCell(1, 2, 'Memberse.WebAppAutomation.wCreateVideoPostTest')
-data.setCell(1, 3, 96059);
+data.setCell(1, 3, 68852);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'wCreatAudioPostTestCase')
-data.setCell(2, 2, 'Memberse.WebAppAutomation.wCreateAudioPostTest')
-data.setCell(2, 3, 44354);
+data.setCell(2, 1, 'wCreatePhotoPostTestCase')
+data.setCell(2, 2, 'Memberse.WebAppAutomation.wCreatePhotoPostTest')
+data.setCell(2, 3, 67765);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'wFollowCommunityTestCase')
+data.setCell(3, 2, 'Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest')
+data.setCell(3, 3, 65831);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'wCreatAudioPostTestCase')
+data.setCell(4, 2, 'Memberse.WebAppAutomation.wCreateAudioPostTest')
+data.setCell(4, 3, 60719);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'wShareCommunityTestCase')
+data.setCell(5, 2, 'Memberse.WebAppAutomation.wShareCommunityTest')
+data.setCell(5, 3, 58316);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'wReportCommunityTestCase')
+data.setCell(6, 2, 'Memberse.WebAppAutomation.wReportCommunityTest')
+data.setCell(6, 3, 49193);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'wUnfollowCommunityTestCase')
+data.setCell(7, 2, 'Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest')
+data.setCell(7, 3, 40840);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -323,11 +393,47 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">12 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
+              <span class="ignored-class-name">Memberse.WebAppAutomation.wReportCommunityTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endSuite</span>
+                <br/>
+                <span class="ignored-method-name">InvokeCapabilities</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">Memberse.WebAppAutomation.wCreateAudioPostTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endSuite</span>
+                <br/>
+                <span class="ignored-method-name">InvokeCapabilities</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endSuite</span>
+                <br/>
+                <span class="ignored-method-name">InvokeCapabilities</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Memberse.WebAppAutomation.wJoinCommunityTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endSuite</span>
+                <br/>
+                <span class="ignored-method-name">InvokeCapabilities</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Memberse.WebAppAutomation.wShareCommunityTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">endSuite</span>
                 <br/>
@@ -359,56 +465,118 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">startDriver</span>
-                <span class="method-start">37 ms</span>
+                <span class="method-start">34 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">wCreatePhotoPostTestCase</span>
-                <span class="method-start">9284 ms</span>
+                <span class="method-start">12586 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">149753 ms</span>
+                <span class="method-start">80371 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Memberse.WebAppAutomation.wCreateVideoPostTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startDriver</span>
-                <span class="method-start">149856 ms</span>
+                <span class="method-start">80483 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">wCreatVideoPostTestCase</span>
-                <span class="method-start">158142 ms</span>
+                <span class="method-start">88346 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">254208 ms</span>
+                <span class="method-start">157206 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Memberse.WebAppAutomation.wCreateAudioPostTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startDriver</span>
-                <span class="method-start">254309 ms</span>
+                <span class="method-start">157299 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">wCreatAudioPostTestCase</span>
-                <span class="method-start">262659 ms</span>
+                <span class="method-start">167318 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">307023 ms</span>
+                <span class="method-start">228049 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startDriver</span>
+                <span class="method-start">228140 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">wFollowCommunityTestCase</span>
+                <span class="method-start">235769 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">wUnfollowCommunityTestCase</span>
+                <span class="method-start">301612 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">342456 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Memberse.WebAppAutomation.wShareCommunityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startDriver</span>
+                <span class="method-start">342563 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">wShareCommunityTestCase</span>
+                <span class="method-start">350316 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">408637 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Memberse.WebAppAutomation.wReportCommunityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startDriver</span>
+                <span class="method-start">408719 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">wReportCommunityTestCase</span>
+                <span class="method-start">417081 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">466278 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Memberse.WebAppAutomation.wJoinCommunityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startDriver</span>
+                <span class="method-start">466359 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">wJoinCommunityTestCase</span>
+                <span class="method-start">474169 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">575597 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Memberse.WebAppAutomation.wCreatePhotoPostTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">endSuite</span>
-                <span class="method-start">307102 ms</span>
+                <span class="method-start">575703 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -15,15 +15,6 @@
           <include name="InvokeCapabilities"/>
         </methods>
       </class> <!-- Memberse.WebAppAutomation.wCreateAudioPostTest -->
-      <class name="Memberse.WebAppAutomation.wCreatePhotoPostTest">
-        <methods>
-          <include name="quitDriver"/>
-          <include name="endSuite"/>
-          <include name="wCreatePhotoPostTestCase"/>
-          <include name="startDriver"/>
-          <include name="InvokeCapabilities"/>
-        </methods>
-      </class> <!-- Memberse.WebAppAutomation.wCreatePhotoPostTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

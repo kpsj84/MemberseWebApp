@@ -3,6 +3,7 @@ package Memberse.WebAppAutomation;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -24,36 +25,32 @@ public class wReportCommunityTest extends WBase {
 		u.loadDelay();
 		
 	    WelcomePage wp = new WelcomePage(driver);
-	    wp.LoginButton().click();
-		Thread.sleep(2000);
-		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestc4@yopmail.com");
-		lp.Password().sendKeys("kqatestc4");
-		lp.ShowPassword().click();
-		lp.Login().click();
-		Thread.sleep(7000);
-    	
+	    ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+        
+        LoginPage lp = new LoginPage(driver);
+        ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc4@yopmail.com");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("kqatestc4");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
+		
 		HomePage hp = new HomePage(driver);
-		hp.ExploreMenu().click();
-		Thread.sleep(1000);
+		ewait.until(ExpectedConditions.elementToBeClickable(hp.ExploreMenu())).click();
 		
 	    ExplorePage ep = new ExplorePage(driver);
-        ep.SearchField().sendKeys("kqatestc3");
-        Thread.sleep(7000);
-        ep.ClickCreator().click();
-        Thread.sleep(3000);
+	    ewait.until(ExpectedConditions.elementToBeClickable(ep.SearchField())).sendKeys("kqatestc3");
+        u.apiDelay();
+        ewait.until(ExpectedConditions.elementToBeClickable(ep.ClickCreator())).click();
+        u.loadDelay();
         
         CreatorCommunityPage cp = new CreatorCommunityPage(driver);
-        cp.threeDotsMenu().click();
-        Thread.sleep(3000);
-        cp.reportCommunity().click();
-        Thread.sleep(3000);
+        ewait.until(ExpectedConditions.elementToBeClickable(cp.threeDotsMenu())).click();
+        ewait.until(ExpectedConditions.elementToBeClickable(cp.reportCommunity())).click();
+        u.shortDelay();
         String Text = driver.findElement(By.xpath("//*[text()='Confirm']")).getText();
 		System.out.println(Text);
 		Assert.assertEquals(Text,"Confirm");
-		Thread.sleep(4000);
+		u.shortDelay();
  		driver.findElement(By.xpath("//*[text()='Cancel']")).click();
-		Thread.sleep(3000);
    }
 
 }

@@ -31,8 +31,7 @@ public class wFollowAndUnfollowCommunityTest extends WBase {
 		u.loadDelay();
 		  
 	    WelcomePage wp = new WelcomePage(driver);
-		wp.SignupButtton().click();
-		Thread.sleep(2000);
+	    ewait.until(ExpectedConditions.elementToBeClickable(wp.SignupButtton())).click();
 		
 	    String autoText=getSaltString();
 	    System.out.println(autoText);
@@ -43,52 +42,47 @@ public class wFollowAndUnfollowCommunityTest extends WBase {
 	    System.out.println(password);
 	     
 	    SignupPage sp = new SignupPage(driver);
-		sp.Email().sendKeys(email);
-		sp.Password().sendKeys(password);
-		sp.confirmPassword().sendKeys(password);
-		sp.SignupButton().click();
-		Thread.sleep(4000);
+	    u.elementToBeClickable(ewait, sp.Email()).sendKeys(email);
+		u.elementToBeClickable(ewait, sp.Password()).sendKeys(password);
+		u.elementToBeClickable(ewait, sp.confirmPassword()).sendKeys(password);
+		u.elementToBeClickable(ewait, sp.SignupButton()).click();
+		u.shortDelay();
 		
-		wp.LoginButton().click();
-		Thread.sleep(2000);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys(email);
-		lp.Password().sendKeys(password);
-		lp.ShowPassword().click();
-		lp.Login().click();
-		Thread.sleep(7000);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys(email);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys(password);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
 		
 		RoleSelectionPage rsp = new RoleSelectionPage(driver);
-	    rsp.AsaCreator().click();
-	    Thread.sleep(3000);
+		ewait.until(ExpectedConditions.elementToBeClickable(rsp.AsaCreator())).click();
+	    u.shortDelay();
 		
 	    HomePage hp = new HomePage(driver);
-		hp.ExploreMenu().click();
-		Thread.sleep(2000);
+	    ewait.until(ExpectedConditions.elementToBeClickable(hp.ExploreMenu())).click();
 		
 	    ExplorePage ep = new ExplorePage(driver);
-        ep.SearchField().sendKeys("kqatestc3");
-        Thread.sleep(10000);
-        ep.ClickCreator().click();
-        Thread.sleep(5000);
+	    ewait.until(ExpectedConditions.elementToBeClickable(ep.SearchField())).sendKeys("kqatestc3");
+        u.apiDelay();
+        ewait.until(ExpectedConditions.elementToBeClickable(ep.ClickCreator())).click();
+        u.loadDelay();
         
         CreatorCommunityPage cp = new CreatorCommunityPage(driver);
-        cp.followCreator().click(); 
+        ewait.until(ExpectedConditions.elementToBeClickable(cp.followCreator())).click(); 
+        u.shortDelay();
         
-        WebDriverWait w = new WebDriverWait(driver,120);
-        w.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
+        ewait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
         String text= driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
  		System.out.println(text);
  		Assert.assertEquals(text,"Operation succesfully completed.");
- 		Thread.sleep(3000);
+ 		u.shortDelay();
  		
- 		hp.ProfilePic().click();
- 		Thread.sleep(1000);
- 		driver.findElement(By.xpath("//p[text()='Log out']")).click();
-		Thread.sleep(1000);
+ 		ewait.until(ExpectedConditions.elementToBeClickable(hp.ProfilePic())).click();
+ 		ewait.until(ExpectedConditions.elementToBeClickable(hp.rightSideLogout())).click();
 		driver.findElement(By.xpath("//span[text()='Confirm']")).click();
-		Thread.sleep(4000);
-	 }
+		u.shortDelay();
+	}
 	
         public String getSaltString() {
         	String SALTCHARS="Abcdefhijklmn0987654";
@@ -103,42 +97,44 @@ public class wFollowAndUnfollowCommunityTest extends WBase {
         }  
         
         
-     //2nd Test case started from here
+    //2nd Test case started from here
         @Test(dependsOnMethods="wFollowCommunityTestCase")
         public void wUnfollowCommunityTestCase() throws InterruptedException { 
-        Thread.sleep(3000);
+        	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+    		WebDriverWait ewait =  new WebDriverWait(driver, 60);
+    		
+    		WUtilities u = new  WUtilities(driver);
+    		u.shortDelay();
         
-        WelcomePage wp = new WelcomePage(driver);	
-        wp.LoginButton().click();
-		Thread.sleep(2000);
-		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys(email);
-		lp.Password().sendKeys(password);
-		lp.ShowPassword().click();
-		lp.Login().click();
-		Thread.sleep(7000);
-		
-		HomePage hp = new HomePage(driver);
-		hp.ExploreMenu().click();
-		Thread.sleep(2000);
-		
-        ExplorePage ep = new ExplorePage(driver);
-        ep.SearchField().sendKeys("kqatestc3");
-        Thread.sleep(10000);
-        ep.ClickCreator().click();
-        Thread.sleep(5000);
-        
-        CreatorCommunityPage cp = new CreatorCommunityPage(driver);
-        cp.threeDotsMenu().click();
-        Thread.sleep(3000);
-        cp.Unfollowlink().click();
-        Thread.sleep(3000);
-        cp.ConfirmUnfollow().click();
-        WebDriverWait w = new WebDriverWait(driver,120);
-        w.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
-        String text= driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
- 		System.out.println(text);
- 		Assert.assertEquals(text,"Operation succesfully completed.");
-        }
+	        WelcomePage wp = new WelcomePage(driver);	
+	        ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+	        
+	        LoginPage lp = new LoginPage(driver);
+	        ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys(email);
+			ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys(password);
+			ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+			u.apiDelay();
+			
+			HomePage hp = new HomePage(driver);
+			ewait.until(ExpectedConditions.elementToBeClickable(hp.ExploreMenu())).click();
+			
+	        ExplorePage ep = new ExplorePage(driver);
+	        ewait.until(ExpectedConditions.elementToBeClickable(ep.SearchField())).sendKeys("kqatestc3");
+	        u.apiDelay();
+	        ewait.until(ExpectedConditions.elementToBeClickable(ep.ClickCreator())).click();
+	        u.loadDelay();
+	        
+	        CreatorCommunityPage cp = new CreatorCommunityPage(driver);
+	        ewait.until(ExpectedConditions.elementToBeClickable(cp.threeDotsMenu())).click();
+	        ewait.until(ExpectedConditions.elementToBeClickable(cp.Unfollowlink())).click();
+	        u.shortDelay();
+	        ewait.until(ExpectedConditions.elementToBeClickable(cp.ConfirmUnfollow())).click();
+	        u.shortDelay();
+	        
+	        ewait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
+	        String text= driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
+	 		System.out.println(text);
+	 		Assert.assertEquals(text,"Operation succesfully completed.");
+	    }
 
 }
