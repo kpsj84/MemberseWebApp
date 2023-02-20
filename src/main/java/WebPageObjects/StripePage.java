@@ -57,7 +57,7 @@ public class StripePage {
 	    	return ZipCode;
 	    }
 	    
-	    @FindBy(xpath="//*[@id=\"root\"]/div/div[2]/div[2]/div/div[2]/form/div[2]/div/div[2]/button/div[3]")
+	    @FindBy(xpath="//button[@class='SubmitButton SubmitButton--complete' and //span[contains(text(),'Subscribe')]]")
 	    private WebElement SubscribeButton;
 
 	    public WebElement SubscribeButton() {

@@ -14,14 +14,14 @@ public class PostHistoryPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="/html/body/div[1]/div[3]/div/div[3]/main/div/div[1]/div/div[2]/div[2]/div/p[1]")
+	@FindBy(xpath="//div[@class='flex items-center flex-grow pl-0.5 text-base text-other-3000']")
 	private WebElement PostHistorySubMenu;
 	
 	public WebElement PostHistorySubMenu(){
 		return PostHistorySubMenu;
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[1]/div/a/span")
+	@FindBy(xpath="//span[contains(text(),'Create')]")
     private WebElement createPost;
 
     public WebElement createPost() {

@@ -15,14 +15,14 @@ public class RoleSelectionPage {
     	 PageFactory.initElements(driver, this);
      }
      
-      @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div/div/div[1]/div[1]/div[1]/h3")
+      @FindBy(xpath="//h3[contains(text(),'As a Member')]")
       private WebElement AsaMember ;
       
       public WebElement AsaMember() {
     	  return  AsaMember ;
       }
       
-      @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div/div/div[2]/div[1]/div[1]/h3")
+      @FindBy(xpath="//h3[contains(text(),'As a Creator')]")
       private WebElement AsaCreator ;
       
       public WebElement AsaCreator() {

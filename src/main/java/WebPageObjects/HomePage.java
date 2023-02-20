@@ -1,6 +1,5 @@
 package WebPageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,11 +22,32 @@ public class HomePage {
 		return createPost;
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[2]/div/span[2]/div/div/div")   
+	@FindBy(css="div[class='opacity-100 duration-1000 transition h-9 w-9 rounded-full bg-cover bg-center']")   
 	private WebElement ProfilePic;
 	
 	public WebElement ProfilePic() {
 		return ProfilePic;
+	}
+	
+	@FindBy(xpath="//span[contains(text(),'Edit profile')]")   
+	private WebElement rightSideEditProfile;
+	
+	public WebElement rightSideEditProfile() {
+		return rightSideEditProfile;
+	}
+	
+	@FindBy(xpath="//p[contains(text(),'Creator')]")   
+	private WebElement rightSideCreator;
+	
+	public WebElement rightSideCreator() {
+		return rightSideCreator;
+	}
+	
+	@FindBy(xpath="//p[contains(text(),'Log out')]")   
+	private WebElement rightSideLogout;
+	
+	public WebElement rightSideLogout() {
+		return rightSideLogout;
 	}
 	
 	@FindBy(xpath="//span[contains(text(), 'Filter')]")

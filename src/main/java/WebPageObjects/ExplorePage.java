@@ -85,7 +85,7 @@ public class ExplorePage {
 	        return SearchField;
 	    }
 	    
-	    @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div/div[2]/div/div/div/div/a/div/div[2]/div/div/p[1]")
+	    @FindBy(css="div[class='space-y-2'] >div")
 	    private WebElement ClickCreator ;
 	    
 	    public WebElement ClickCreator() {
