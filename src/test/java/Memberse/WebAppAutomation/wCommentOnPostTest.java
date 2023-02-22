@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -25,31 +26,30 @@ public class wCommentOnPostTest extends WBase {
 		u.loadDelay();
 		
 	    WelcomePage wp = new WelcomePage(driver);
-	    wp.LoginButton().click();
-		Thread.sleep(2000);
+	    ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestc7@yopmail.com");
-		lp.Password().sendKeys("kqatestc7");
-		lp.ShowPassword().click();
-		lp.Login().click();
-		Thread.sleep(7000);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc7@yopmail.com");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("kqatestc7");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.ShowPassword())).click();
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
 		
-		HomePage hp = new HomePage(driver);
-	    hp.HomeMenu().click();
-		Thread.sleep(8000);
+		HomePage hp= new HomePage(driver);
+		ewait.until(ExpectedConditions.elementToBeClickable(hp.HomeMenu())).click();
+	    u.loadDelay();
 		
-	    hp.commentOnPost().click();
-	    Thread.sleep(2000);
+	    ewait.until(ExpectedConditions.elementToBeClickable(hp.commentOnPost())).click();
 	    String autoText=getSaltString();
 	    System.out.println(autoText);
 	    
-	    hp.writeComment().sendKeys("Auto generated-" + autoText);
-	    Thread.sleep(2000);
+	    ewait.until(ExpectedConditions.elementToBeClickable(hp.writeComment())).sendKeys("Auto generated-" + autoText);
+	    u.shortDelay();
 	    hp.writeComment().sendKeys(Keys.ENTER);
-        Thread.sleep(7000);
+        u.apiDelay();
+	    u.loadDelay();
         
-        String text = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/div[2]/div/div/div[2]/div[2]/ul/li[1]/div/div[2]/div")).getText();
+        String text = driver.findElement(By.xpath("//p[@class='text-base font-normal leading-5']")).getText();
         System.out.println(text);
         Assert.assertEquals(text, "Auto generated-" + autoText);
 	}

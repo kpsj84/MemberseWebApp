@@ -3,6 +3,7 @@ package Memberse.WebAppAutomation;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -23,25 +24,24 @@ public class wViewTextPostTest extends WBase {
 		u.loadDelay();
 		
 	    WelcomePage wp = new WelcomePage(driver);
-	    wp.LoginButton().click();
-		Thread.sleep(1000);
-		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestctp@yopmail.com");
-		lp.Password().sendKeys("kqatestctp");
-		lp.ShowPassword().click();
-		lp.Login().click();
-		Thread.sleep(10000);
+	    ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+        
+        LoginPage lp = new LoginPage(driver);
+        ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestctp@yopmail.com");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("kqatestctp");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
 			    
 		HomePage hp = new HomePage(driver);
-	    hp.CreatorMenu().click();
-		Thread.sleep(2000);
+		ewait.until(ExpectedConditions.elementToBeClickable(hp.CreatorMenu())).click();
+		u.shortDelay();
 		
 		PostHistoryPage php = new PostHistoryPage(driver);
-        php.PostHistorySubMenu().click();
-    	Thread.sleep(6000);
+		ewait.until(ExpectedConditions.elementToBeClickable(php.PostHistorySubMenu())).click();
+    	u.loadDelay();
 		
-    	php.ClickOnContent().click(); //failure
-        Thread.sleep(3000);
+    	ewait.until(ExpectedConditions.elementToBeClickable(php.ClickOnContent())).click();
+        u.shortDelay();
         
         String Text = driver.findElement(By.xpath("//p[text()='Auto Test View Text Post']")).getText();
 	    System.out.println(Text);

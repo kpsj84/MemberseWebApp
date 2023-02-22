@@ -64,7 +64,7 @@ public class StripePage {
 	    	return SubscribeButton;
 	    }
 	    
-	    @FindBy(css="#root > div > div.App.App--keyboardInteractionMode.App--singleItem > div.App-Payment > div > div.PaymentFormFixedHeightContainer.flex-container.direction-column > form > div.PaymentForm-confirmPaymentContainer.mt4.flex-item.width-grow > div > div:nth-child(2) > button > div.SubmitButton-IconContainer")
+	    @FindBy(xpath="//div[@class='SubmitButton-IconContainer' and //span[contains(text(),'Pay')]]")
 	    private WebElement PayDonationButton;
 
 	    public WebElement PayDonationButton() {

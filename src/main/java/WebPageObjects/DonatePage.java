@@ -15,7 +15,7 @@ WebDriver localDriver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[4]/div/div/div[1]/div[4]")
+	@FindBy(xpath="//div[@class='bg-neutral-2000 text-neutral-9000  text-base font-medium cursor-pointer flex justify-center rounded-lg py-2 px-5 flex-grow'][4]")
     private WebElement SelectDonateAmount ;
 
     public WebElement  SelectDonateAmount() {
