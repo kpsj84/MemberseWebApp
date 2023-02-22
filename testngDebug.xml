@@ -11,13 +11,14 @@
   
     <classes>   
       <!-- Community Page Test Cases-->
-      <class name="Memberse.WebAppAutomation.wCreatePhotoPostTest"/>
-      <class name="Memberse.WebAppAutomation.wCreateVideoPostTest"/>
-      <class name="Memberse.WebAppAutomation.wCreateAudioPostTest"/>
-      <class name="Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest"/>
-      <class name="Memberse.WebAppAutomation.wShareCommunityTest"/>
-      <class name="Memberse.WebAppAutomation.wReportCommunityTest"/>
-      <class name="Memberse.WebAppAutomation.wJoinCommunityTest"/>
+      <class name="Memberse.WebAppAutomation.wDonationTest"/>
+      <class name="Memberse.WebAppAutomation.wViewTextPostTest"/>
+      <class name="Memberse.WebAppAutomation.wViewPhotoPostTest"/>
+      <class name="Memberse.WebAppAutomation.wPlayVideoPostTest"/>
+      <class name="Memberse.WebAppAutomation.wPlayAudioPostTest"/>
+      <class name="Memberse.WebAppAutomation.wReportPostTest"/>
+      <class name="Memberse.WebAppAutomation.wSharePostTest"/>
+      <class name="Memberse.WebAppAutomation.wLikePostTest"/>
     </classes>
     
   </test> <!-- Test -->

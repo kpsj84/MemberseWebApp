@@ -14,7 +14,7 @@ public class PostHistoryPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//div[@class='flex items-center flex-grow pl-0.5 text-base text-other-3000']")
+	@FindBy(xpath="//p[contains(text(),'Post History')]")
 	private WebElement PostHistorySubMenu;
 	
 	public WebElement PostHistorySubMenu(){
@@ -28,7 +28,7 @@ public class PostHistoryPage {
     	return createPost;
     }
 	
-	@FindBy(className="text-base font-medium line-clamp-1 leading-4 cursor-pointer")
+	@FindBy(xpath="//p[@class='text-base font-medium line-clamp-1 leading-4 cursor-pointer']") 
     private WebElement ClickOnContent;
 
     public WebElement ClickOnContent() {

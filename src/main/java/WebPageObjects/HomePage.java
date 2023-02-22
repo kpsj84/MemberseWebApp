@@ -1,5 +1,7 @@
 package WebPageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -71,14 +73,14 @@ public class HomePage {
 		return filterSave;
 	}
 	
-	@FindBy(css="#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div:nth-child(3) > div.space-y-2 > div > div > div:nth-child(1) > div > div:nth-child(4) > div > div.flex.items-center.text-xs.space-x-4 > div:nth-child(2) > svg")
+	@FindBy(xpath="//*[@data-icon='comment']")
 	private WebElement commentOnPost;
 	
 	public WebElement commentOnPost() {
 		return commentOnPost;
 	}
 	
-	@FindBy(css="#headlessui-dialog-panel-18 > div.space-y-2.bg-neutral-2000 > div.space-y-2.bg-neutral-3000 > div > div > textarea")
+	@FindBy(name="comment")
 	private WebElement writeComment;
 	
 	public WebElement writeComment(){
@@ -120,10 +122,10 @@ public class HomePage {
     	return ClickOnCreator;
     }
 	
-	@FindBy(xpath="//*[@class='w-8 h-8 flex items-center justify-center']")
-    private WebElement ThreeDotIcon ;
+	@FindBy(xpath="//span[@class='w-8 h-8 flex items-center justify-center']")
+    private List<WebElement> ThreeDotIcon ;
 
-    public WebElement  ThreeDotIcon () {
+    public List<WebElement>  ThreeDotIcon () {
     	return  ThreeDotIcon;
     }
     
@@ -141,7 +143,7 @@ public class HomePage {
     	return  CancelButton;
     }
     
-    @FindBy(xpath="//*[@class='svg-inline--fa fa-heart fa-w-16 fa-sm cursor-pointer']")
+    @FindBy(xpath="//*[@data-icon='heart']")
     private WebElement LikeButton ;
 
     public WebElement  LikeButton () {
@@ -149,9 +151,9 @@ public class HomePage {
     }
     
     @FindBy(xpath="//*[text()='Share']")
-    private WebElement ShareButton ;
+    private List<WebElement> ShareButton ;
 
-    public WebElement  ShareButton () {
+    public List<WebElement>  ShareButton () {
     	return  ShareButton;
     }
 

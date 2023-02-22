@@ -1,11 +1,12 @@
 package Memberse.WebAppAutomation;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
@@ -24,33 +25,26 @@ public class wSharePostTest extends WBase {
 		u.loadDelay();
 		
 		WelcomePage wp = new WelcomePage(driver);
-		wp.LoginButton().click();
-		Thread.sleep(2000);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestc5@yopmail.com");
-		lp.Password().sendKeys("kqatestc5");
-		lp.ShowPassword().click();
-		lp.Login().click();
-		Thread.sleep(10000);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc5@yopmail.com");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("kqatestc5");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.ShowPassword())).click();
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
 	    
 	    HomePage hp= new HomePage(driver);
-	    hp.HomeMenu().click();
-	    Thread.sleep(6000);
-        hp.ShareButton().click(); //failure
-	    Thread.sleep(2000);
+	    ewait.until(ExpectedConditions.elementToBeClickable(hp.HomeMenu())).click();
+	    u.loadDelay();
+	    
+	    List<WebElement> shareButtons = ewait.until(ExpectedConditions.visibilityOfAllElements(hp.ShareButton()));
+	    System.out.println(shareButtons.size());
+	    shareButtons.get(1).click();
 	    String Text = driver.findElement(By.xpath("//*[text()='Link copied to clipboard.']")).getText();
 		System.out.println(Text);
 	    Thread.sleep(1000);
 	    Assert.assertEquals(Text, "Link copied to clipboard.");
-	    Thread.sleep(2000);
-	    
-	    hp.createPost().click();
-	    Thread.sleep(2000);
-	    driver.findElement(By.xpath("//*[@id=\"news-item-form\"]/div/div[2]/div[1]/div/textarea")).sendKeys(Keys.chord(Keys.META, "v"));
-        Thread.sleep(2000);
-		WebElement verifysharelink = driver.findElement(By.cssSelector("#news-item-form > div > div.space-y-4 > div:nth-child(1) > div > textarea"));
-		String chk = verifysharelink.getAttribute("value");
-		System.out.println(chk);
 		Thread.sleep(1000); 
 	}
 

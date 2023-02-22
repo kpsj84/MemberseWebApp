@@ -1,62 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="12" total="20" passed="7">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="575711" started-at="2023-02-20T15:27:41 IST" finished-at="2023-02-20T15:37:16 IST">
+  <suite name="Default suite" duration-ms="61893" started-at="2023-02-21T17:23:47 IST" finished-at="2023-02-21T17:24:49 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="575711" started-at="2023-02-20T15:27:41 IST" finished-at="2023-02-20T15:37:16 IST">
-      <class name="Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest@536aaa8d]" name="startDriver" is-config="true" duration-ms="7629" started-at="2023-02-20T15:31:29 IST" finished-at="2023-02-20T15:31:36 IST">
+    <test name="Default test" duration-ms="61893" started-at="2023-02-21T17:23:47 IST" finished-at="2023-02-21T17:24:49 IST">
+      <class name="Memberse.WebAppAutomation.wCommentOnPostTest">
+        <test-method status="PASS" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wCommentOnPostTest@74650e52]" name="InvokeCapabilities" is-config="true" duration-ms="18" started-at="2023-02-21T17:23:47 IST" finished-at="2023-02-21T17:23:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvokeCapabilities -->
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCommentOnPostTest@74650e52]" name="startDriver" is-config="true" duration-ms="16517" started-at="2023-02-21T17:23:48 IST" finished-at="2023-02-21T17:24:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wFollowCommunityTestCase()[pri:1, instance:Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest@536aaa8d]" name="wFollowCommunityTestCase" duration-ms="65831" started-at="2023-02-20T15:31:36 IST" finished-at="2023-02-20T15:32:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wFollowCommunityTestCase -->
-        <test-method status="PASS" signature="wUnfollowCommunityTestCase()[pri:0, instance:Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest@536aaa8d]" name="wUnfollowCommunityTestCase" duration-ms="40840" started-at="2023-02-20T15:32:42 IST" depends-on-methods="Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest.wFollowCommunityTestCase" finished-at="2023-02-20T15:33:23 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wUnfollowCommunityTestCase -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest@536aaa8d]" name="quitDriver" is-config="true" duration-ms="106" started-at="2023-02-20T15:33:23 IST" finished-at="2023-02-20T15:33:23 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest -->
-      <class name="Memberse.WebAppAutomation.wReportCommunityTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wReportCommunityTest@1f57539]" name="startDriver" is-config="true" duration-ms="8360" started-at="2023-02-20T15:34:29 IST" finished-at="2023-02-20T15:34:38 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wReportCommunityTestCase()[pri:0, instance:Memberse.WebAppAutomation.wReportCommunityTest@1f57539]" name="wReportCommunityTestCase" duration-ms="49193" started-at="2023-02-20T15:34:38 IST" finished-at="2023-02-20T15:35:27 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wReportCommunityTestCase -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wReportCommunityTest@1f57539]" name="quitDriver" is-config="true" duration-ms="79" started-at="2023-02-20T15:35:27 IST" finished-at="2023-02-20T15:35:27 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- Memberse.WebAppAutomation.wReportCommunityTest -->
-      <class name="Memberse.WebAppAutomation.wCreateAudioPostTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreateAudioPostTest@59e5ddf]" name="startDriver" is-config="true" duration-ms="10018" started-at="2023-02-20T15:30:18 IST" finished-at="2023-02-20T15:30:28 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startDriver -->
-        <test-method status="FAIL" signature="wCreatAudioPostTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCreateAudioPostTest@59e5ddf]" name="wCreatAudioPostTestCase" duration-ms="60719" started-at="2023-02-20T15:30:28 IST" finished-at="2023-02-20T15:31:29 IST">
+        <test-method status="FAIL" signature="wCommentOnPostTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCommentOnPostTest@74650e52]" name="wCommentOnPostTestCase" duration-ms="45248" started-at="2023-02-21T17:24:04 IST" finished-at="2023-02-21T17:24:49 IST">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Operation succesfully completed.] but found []]]>
+              <![CDATA[expected [Auto generated-2895] but found [Auto generated-7224]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Operation succesfully completed.] but found []
+              <![CDATA[java.lang.AssertionError: expected [Auto generated-2895] but found [Auto generated-7224]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at Memberse.WebAppAutomation.wCreateAudioPostTest.wCreatAudioPostTestCase(wCreateAudioPostTest.java:103)
+at Memberse.WebAppAutomation.wCommentOnPostTest.wCommentOnPostTestCase(wCommentOnPostTest.java:53)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -90,76 +62,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wCreatAudioPostTestCase -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreateAudioPostTest@59e5ddf]" name="quitDriver" is-config="true" duration-ms="89" started-at="2023-02-20T15:31:29 IST" finished-at="2023-02-20T15:31:29 IST">
+        </test-method> <!-- wCommentOnPostTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wCommentOnPostTest@74650e52]" name="quitDriver" is-config="true" duration-ms="78" started-at="2023-02-21T17:24:49 IST" finished-at="2023-02-21T17:24:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-      </class> <!-- Memberse.WebAppAutomation.wCreateAudioPostTest -->
-      <class name="Memberse.WebAppAutomation.wCreatePhotoPostTest">
-        <test-method status="PASS" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wCreatePhotoPostTest@1b68ddbd]" name="InvokeCapabilities" is-config="true" duration-ms="18" started-at="2023-02-20T15:27:41 IST" finished-at="2023-02-20T15:27:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InvokeCapabilities -->
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreatePhotoPostTest@1b68ddbd]" name="startDriver" is-config="true" duration-ms="12541" started-at="2023-02-20T15:27:41 IST" finished-at="2023-02-20T15:27:53 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wCreatePhotoPostTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCreatePhotoPostTest@1b68ddbd]" name="wCreatePhotoPostTestCase" duration-ms="67765" started-at="2023-02-20T15:27:53 IST" finished-at="2023-02-20T15:29:01 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wCreatePhotoPostTestCase -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreatePhotoPostTest@1b68ddbd]" name="quitDriver" is-config="true" duration-ms="95" started-at="2023-02-20T15:29:01 IST" finished-at="2023-02-20T15:29:01 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-        <test-method status="PASS" signature="endSuite()[pri:0, instance:Memberse.WebAppAutomation.wCreatePhotoPostTest@1b68ddbd]" name="endSuite" is-config="true" duration-ms="1" started-at="2023-02-20T15:37:16 IST" finished-at="2023-02-20T15:37:16 IST">
+        <test-method status="PASS" signature="endSuite()[pri:0, instance:Memberse.WebAppAutomation.wCommentOnPostTest@74650e52]" name="endSuite" is-config="true" duration-ms="0" started-at="2023-02-21T17:24:49 IST" finished-at="2023-02-21T17:24:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSuite -->
-      </class> <!-- Memberse.WebAppAutomation.wCreatePhotoPostTest -->
-      <class name="Memberse.WebAppAutomation.wCreateVideoPostTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreateVideoPostTest@646d64ab]" name="startDriver" is-config="true" duration-ms="7863" started-at="2023-02-20T15:29:01 IST" finished-at="2023-02-20T15:29:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wCreatVideoPostTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCreateVideoPostTest@646d64ab]" name="wCreatVideoPostTestCase" duration-ms="68852" started-at="2023-02-20T15:29:09 IST" finished-at="2023-02-20T15:30:18 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wCreatVideoPostTestCase -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreateVideoPostTest@646d64ab]" name="quitDriver" is-config="true" duration-ms="91" started-at="2023-02-20T15:30:18 IST" finished-at="2023-02-20T15:30:18 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- Memberse.WebAppAutomation.wCreateVideoPostTest -->
-      <class name="Memberse.WebAppAutomation.wJoinCommunityTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wJoinCommunityTest@76f2b07d]" name="startDriver" is-config="true" duration-ms="7809" started-at="2023-02-20T15:35:27 IST" finished-at="2023-02-20T15:35:35 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wJoinCommunityTestCase()[pri:0, instance:Memberse.WebAppAutomation.wJoinCommunityTest@76f2b07d]" name="wJoinCommunityTestCase" duration-ms="101418" started-at="2023-02-20T15:35:35 IST" finished-at="2023-02-20T15:37:16 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wJoinCommunityTestCase -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wJoinCommunityTest@76f2b07d]" name="quitDriver" is-config="true" duration-ms="106" started-at="2023-02-20T15:37:16 IST" finished-at="2023-02-20T15:37:16 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- Memberse.WebAppAutomation.wJoinCommunityTest -->
-      <class name="Memberse.WebAppAutomation.wShareCommunityTest">
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wShareCommunityTest@e320068]" name="startDriver" is-config="true" duration-ms="7751" started-at="2023-02-20T15:33:23 IST" finished-at="2023-02-20T15:33:31 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wShareCommunityTestCase()[pri:0, instance:Memberse.WebAppAutomation.wShareCommunityTest@e320068]" name="wShareCommunityTestCase" duration-ms="58316" started-at="2023-02-20T15:33:31 IST" finished-at="2023-02-20T15:34:29 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wShareCommunityTestCase -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wShareCommunityTest@e320068]" name="quitDriver" is-config="true" duration-ms="80" started-at="2023-02-20T15:34:29 IST" finished-at="2023-02-20T15:34:29 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- Memberse.WebAppAutomation.wShareCommunityTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- Memberse.WebAppAutomation.wCommentOnPostTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
