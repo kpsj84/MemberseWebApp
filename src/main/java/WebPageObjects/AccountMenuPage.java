@@ -15,28 +15,28 @@ public class AccountMenuPage {
 			PageFactory.initElements(driver, this);
 		}
 		
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[1]/div/div[1]/div[2]/div/p[1]")
+	@FindBy(xpath="//p[text()='User Info']")
 	private WebElement UserInfoSubMenu;
 	
 	public WebElement UserInfoSubMenu() {
 		return UserInfoSubMenu;
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[1]/div/div[2]/div[2]/div/p[1]")
+	@FindBy(xpath="//p[text()='Memberships']")
 	private WebElement MembershipsSubMenu;
 	
 	public WebElement MembershipsSubMenu() {
 		return MembershipsSubMenu;
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[1]/div/div[4]/div[2]/div/p[1]")
+	@FindBy(xpath="//p[text()='Change Password']")
     private WebElement ChangePasswordSubMenu;
 
     public WebElement ChangePasswordSubMenu() {
     	return ChangePasswordSubMenu;
     }
     
-    @FindBy(xpath="//*[text()='Watched history']")
+    @FindBy(xpath="//*[text()='Watched History']")
     private WebElement WatchedHistorySubMenu ;
 
     public WebElement WatchedHistorySubMenu() {

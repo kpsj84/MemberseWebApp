@@ -5,7 +5,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import WebPageObjects.CreatorCommunityPage;
@@ -24,37 +26,67 @@ public class wCommunityTabsTest extends WBase {
 		u.loadDelay();
 		
 	    WelcomePage wp = new WelcomePage(driver);
-	    wp.LoginButton().click();
-		Thread.sleep(1000);
+ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestc5@yopmail.com");
-		lp.Password().sendKeys("kqatestc5");
-		lp.ShowPassword().click();
-		lp.Login().click();
-		Thread.sleep(12000);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc5@yopmail.com");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("kqatestc5");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.ShowPassword())).click();
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
 		
 		HomePage hp= new HomePage(driver);
-	    hp.ClickOnCreator().click();
-	    Thread.sleep(5000); 
+		ewait.until(ExpectedConditions.elementToBeClickable(hp.ClickOnCreator())).click();
+	    u.shortDelay();
 	    
 	    CreatorCommunityPage cp = new CreatorCommunityPage(driver);
-	    cp.PlaylistTab().click();
-	    Thread.sleep(5000);        
+	    ewait.until(ExpectedConditions.elementToBeClickable(cp.PlaylistTab())).click();
+	    u.shortDelay();
+	    
+	    try
+	    {
+	    	List<WebElement> verifyResult2 = driver.findElements(By.xpath("//*[@class='space-y-2']/div"));
+	    	System.out.println(verifyResult2.size());
+	    	int ele1 = verifyResult2.size();
+	    	if(ele1>=1) 
+	    	{
+	    		Assert.assertEquals(ele1>=1, ele1, "Assertion failed");
+	    	}
+	    }
+	    catch(Exception e)
+	    {
+	    	e.getMessage();
+	    }
+	    
+	    try
+	    {
+	    	String noResult = driver.findElement(By.xpath("//p[contains(text(),'No results available.')]")).getText();
+	    	System.out.println(noResult);
+	    	if(noResult.equals("No results available."))
+	    	{
+	    		Assert.assertEquals("No results available.", noResult);
+	    	}
+	    }
+	    catch(Exception e)
+	    {
+	    	e.getMessage();
+	    }
+	    
+        ewait.until(ExpectedConditions.elementToBeClickable(cp.AboutTab())).click();
+        u.shortDelay();
+        String Text = driver.findElement(By.xpath("//a[contains(text(),'Manage memberships >')]")).getText();
+		System.out.println(Text);
+		Assert.assertEquals("Manage memberships >", Text);
+       
+		ewait.until(ExpectedConditions.elementToBeClickable(cp.FansTab())).click();
+        u.shortDelay();
         List<WebElement> verifyResult2 = driver.findElements(By.xpath("//*[@class='space-y-2']/div"));
         System.out.println(verifyResult2.size());
-        Thread.sleep(10000);
-        
-        cp.AboutTab().click();
-        Thread.sleep(8000);
-        String Text = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[4]/div/div[3]/div/a")).getText();
-		System.out.println(Text);
-		Thread.sleep(4000);
-       
-		cp.FansTab().click();
-        Thread.sleep(8000);
-        List<WebElement> verifyResult1 = driver.findElements(By.xpath("//*[@class='space-y-2']/div"));
-        System.out.println(verifyResult1.size());
-        Thread.sleep(4000);
+        int ele2 = verifyResult2.size();
+        if(!(ele2>=1))
+        {
+        	Assert.fail();
+        }
   }
 	
 }

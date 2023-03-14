@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -25,41 +26,38 @@ public class wCommunityEditInfoTest extends WBase {
 		u.loadDelay();
 		
 		WelcomePage wp = new WelcomePage(driver);
-		wp.LoginButton().click();
-		Thread.sleep(1000);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestc3@yopmail.com");
-		lp.Password().sendKeys("kqatestc3");
-		Thread.sleep(1000);
-	    lp.ShowPassword().click();
-		lp.Login().click();
-	    Thread.sleep(10000);  
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc3@yopmail.com");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("kqatestc3");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.ShowPassword())).click();
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
 		
 	    HomePage hp = new HomePage(driver);
-	    hp.CreatorMenu().click();
-		Thread.sleep(2000);
+	    ewait.until(ExpectedConditions.elementToBeClickable(hp.CreatorMenu())).click();
+	    u.shortDelay();
 		
 		MyCommunityPage mcp = new MyCommunityPage(driver);
-		mcp.MyCommunitySubMenu().click();
-		mcp.EditInfoTab().click();
-		Thread.sleep(2000);
+		ewait.until(ExpectedConditions.elementToBeClickable(mcp.MyCommunitySubMenu())).click();
+		u.shortDelay();
 		
-        WebElement CommunityName = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div.flex-grow > div > div.py-5 > div > form > div.space-y-6 > div:nth-child(2) > div > input"));
+        WebElement CommunityName = driver.findElement(By.name("name"));
 	    String chkName = CommunityName.getAttribute("value");
 	    System.out.println(chkName);
 		Assert.assertEquals(chkName,"kqatestc3's Community");
 		
-		mcp.EditInfoDescription().clear();		
+		ewait.until(ExpectedConditions.elementToBeClickable(mcp.EditInfoDescription())).clear();		
 	    String autoText=getSaltString();
 		System.out.println(autoText);
-		mcp.EditInfoDescription().sendKeys("This is my QA Test Channel :- " + autoText);
-		mcp.EditInfoTabSave().click();
-		Thread.sleep(4000);
+		ewait.until(ExpectedConditions.elementToBeClickable(mcp.EditInfoDescription())).sendKeys("This is my QA Test Channel :- " + autoText);
+		ewait.until(ExpectedConditions.elementToBeClickable(mcp.EditInfoTabSave())).click();
+		u.shortDelay();
 	    
-	    String Text1 = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/div[6]/div/div/div/div[2]")).getText();
+	    String Text1 = ewait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='rnc__notification-content']")))).getText();
 	    System.out.println(Text1);
-        Assert.assertEquals(Text1,"Operation succesfully completed.");
+        Assert.assertEquals(Text1,"Success!\n" + "Operation succesfully completed.");
 	 }
 	
 	 public String getSaltString() {

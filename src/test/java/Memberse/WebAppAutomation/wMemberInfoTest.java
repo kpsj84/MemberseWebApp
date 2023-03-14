@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -25,49 +26,48 @@ public class wMemberInfoTest extends WBase {
 		u.loadDelay();
 		
 		WelcomePage wp = new WelcomePage(driver);
-		wp.LoginButton().click();
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
 		
-		String name = "kqatestc3";
-		String email = name + "@yopmail.com";
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys(email);
-		lp.Password().sendKeys(name);
-		lp.Login().click();
-		Thread.sleep(7000);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc3@yopmail.com");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("kqatestc3");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.ShowPassword())).click();
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
 		
 		HomePage hp = new HomePage(driver);
-		hp.AccountMenu().click();
-		Thread.sleep(1000);
+		ewait.until(ExpectedConditions.elementToBeClickable(hp.AccountMenu())).click();
+		u.shortDelay();
 		
 		AccountMenuPage amp = new AccountMenuPage(driver);
-		amp.UserInfoSubMenu().click();
-		Thread.sleep(1000);
+		ewait.until(ExpectedConditions.elementToBeClickable(amp.UserInfoSubMenu())).click();
+		u.shortDelay();
 	
-		WebElement verifyName = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div.flex-grow > div > div:nth-child(1) > form > div:nth-child(2) > div > input"));
+		WebElement verifyName = driver.findElement(By.xpath("//input[@name='first_name']"));
 		String chk1 = verifyName.getAttribute("value");
 		System.out.println(chk1);
-		Assert.assertEquals(chk1, name);
+		Assert.assertEquals(chk1, "kqatestc3");
 		
-		WebElement verifyUserName = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div.flex-grow > div > div:nth-child(2) > form > div:nth-child(1) > div > input"));
+		WebElement verifyUserName = driver.findElement(By.xpath("//input[@name='username']"));
 		String chk2 = verifyUserName.getAttribute("value");
 		System.out.println(chk2);
-		Assert.assertEquals(chk2, name);
+		Assert.assertEquals(chk2, "kqatestc3");
 		
-		WebElement verifyEmail = driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div.flex-grow > div > div:nth-child(3) > form > div:nth-child(1) > div > input"));
+		WebElement verifyEmail = driver.findElement(By.xpath("//input[@name='email']"));
 		String chk3 = verifyEmail.getAttribute("value");
 		System.out.println(chk3);
-		Assert.assertEquals(chk3, email);
+		Assert.assertEquals(chk3, "kqatestc3@yopmail.com");
 		
 		String randomNumber = getSaltString();
 		System.out.println(randomNumber);
 		
-		driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div.flex-grow > div > div:nth-child(1) > form > div:nth-child(4) > div > input")).clear();
+		driver.findElement(By.xpath("//input[@name='phone']")).clear();
 		Thread.sleep(1000);
-		driver.findElement(By.cssSelector("#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div.flex-grow > div > div:nth-child(1) > form > div:nth-child(4) > div > input")).sendKeys(randomNumber);
+		driver.findElement(By.xpath("//input[@name='phone']")).sendKeys(randomNumber);
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/div/div[1]/form/div[5]/button")).click();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/div[6]/div/div/div/div[1]")).getText(), "Success!");
+		driver.findElement(By.xpath("//span[text()='Save']")).click();
+		u.shortDelay();
+		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='rnc__notification-content']")).getText(), "Success!\n" + "Operation succesfully completed.");
 		System.out.println("Edit functionality at User Info Page is working fine");
 	}
 	

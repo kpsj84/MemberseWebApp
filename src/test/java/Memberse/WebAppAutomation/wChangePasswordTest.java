@@ -3,6 +3,7 @@ package Memberse.WebAppAutomation;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -24,32 +25,28 @@ public class wChangePasswordTest extends WBase {
 		u.loadDelay();
 		
 		WelcomePage wp = new WelcomePage(driver);
-		wp.LoginButton().click();
-		Thread.sleep(1000);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("autouser1@yopmail.com");
-		lp.Password().sendKeys("autouser1");
-		lp.Login().click();
-		Thread.sleep(7000);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("autouser1@yopmail.com");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("autouser1");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
 		
 		HomePage hp = new HomePage(driver);
-		hp.AccountMenu().click();
-		Thread.sleep(1000);
+		ewait.until(ExpectedConditions.elementToBeClickable(hp.AccountMenu())).click();
+		u.shortDelay();
 		
 		AccountMenuPage amp = new AccountMenuPage(driver);
-		amp.ChangePasswordSubMenu().click();
-		Thread.sleep(1000);
+		ewait.until(ExpectedConditions.elementToBeClickable(amp.ChangePasswordSubMenu())).click();
 
 		ChangePasswordPage cpp = new ChangePasswordPage(driver);
-		cpp.ChangePassword().sendKeys("autouser1");
-		cpp.ConfirmPassword().sendKeys("autouser1");
-		cpp.SaveButton().click();
-		Thread.sleep(3000);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		String Text = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[1]/div[6]/div/div/div/div[2]")).getText();
-	    System.out.println(Text);
-	    Assert.assertEquals(Text,"Operation succesfully completed.");
+		ewait.until(ExpectedConditions.elementToBeClickable(cpp.ChangePassword())).sendKeys("autouser1");
+		ewait.until(ExpectedConditions.elementToBeClickable(cpp.ConfirmPassword())).sendKeys("autouser1");
+		ewait.until(ExpectedConditions.elementToBeClickable(cpp.SaveButton())).click();
+		u.shortDelay();
+		
+		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='rnc__notification-content']")).getText(), "Success!\n" + "Operation succesfully completed.");
     }
 
 }

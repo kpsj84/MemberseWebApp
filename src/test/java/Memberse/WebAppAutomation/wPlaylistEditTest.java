@@ -31,39 +31,38 @@ public class wPlaylistEditTest extends WBase {
 		u.loadDelay();
 		
 		WelcomePage wp = new WelcomePage(driver);
-		wp.LoginButton().click();
-		Thread.sleep(1000);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestc3@yopmail.com");
-		lp.Password().sendKeys("kqatestc3");
-		Thread.sleep(1000);
-	    lp.ShowPassword().click();
-		lp.Login().click();
-	    Thread.sleep(10000);  
-	    
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc3@yopmail.com");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("kqatestc3");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.ShowPassword())).click();
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
+		
 	    HomePage hp = new HomePage(driver);
-	    hp.CreatorMenu().click();
-		Thread.sleep(2000);
+	    ewait.until(ExpectedConditions.elementToBeClickable(hp.CreatorMenu())).click();
+	    u.shortDelay();
     	
 		PlayListPage plp = new PlayListPage(driver);
-        plp.PlayListSubMenu().click();
-        Thread.sleep(7000);
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.PlayListSubMenu())).click();
+        u.shortDelay();
         
-        plp.createPlayList().click();
-        Thread.sleep(3000);
+        ewait.until(ExpectedConditions.elementToBeClickable(plp.createPlayList())).click();
         String autotext = getSaltString();
 		System.out.println(autotext);
-        plp.PlayListTitleTextbox().sendKeys("Autolist-" + autotext);
-        plp.DescriptionTextbox().sendKeys("This is an Automated QA Description");
-        plp.UploadImageButton().click();
-        Thread.sleep(5000);
+		
+		u.shortDelay();
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.PlayListTitleTextbox())).sendKeys("Autolist-" + autotext);
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.DescriptionTextbox())).sendKeys("This is an Automated QA Description");
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.UploadImageButton())).click();
+        u.shortDelay();
         
         File fl = new File(System.getProperty("user.dir") + "/src/Pic22.jpg");
         StringSelection str = new StringSelection(fl.getAbsolutePath());
         //StringSelection str = new StringSelection("C:\\Users\\QA\\Desktop\\MusicFile.jpg");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
-        Thread.sleep(1000);
+        u.shortDelay();
         
         Robot rb = new Robot();
         //This required as in Automation, Focus loose from open file upload window
@@ -93,43 +92,41 @@ public class wPlaylistEditTest extends WBase {
         rb.keyPress(KeyEvent.VK_ENTER);
         rb.keyRelease(KeyEvent.VK_ENTER);
         rb.delay(500);
+        rb.delay(500);
         rb.keyPress(KeyEvent.VK_ENTER);
         rb.keyRelease(KeyEvent.VK_ENTER);
-        Thread.sleep(6000);
-        plp.PlayListSaveButton().click();
-        Thread.sleep(10000);
+        ewait.until(ExpectedConditions.elementToBeClickable(plp.PlayListSaveButton())).click();
+        u.apiDelay();
+        u.loadDelay();
         
-        WebDriverWait w = new WebDriverWait(driver,120);
-        w.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
-        String text= driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
+        String text= ewait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='rnc__notification-content']")))).getText();
 		System.out.println(text);
-		Thread.sleep(2000);
-		Assert.assertEquals(text,"Operation succesfully completed.");
+		Assert.assertEquals(text,"Success!\n" + "Operation succesfully completed.");
 		System.out.println("PlayList Created with Name as :- " + "Autolist-" + autotext);
-		Thread.sleep(2000);
+		u.loadDelay();
 		
-		driver.manage().timeouts().implicitlyWait(35000, TimeUnit.SECONDS);
-    	Thread.sleep(10000);
-        plp.playListViewButton().click();
-        Thread.sleep(7000);
+		driver.navigate().refresh();
+		u.loadDelay();
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.playListViewButton())).click();
+		u.loadDelay();
         
-        plp.PlaylistEditButton().click();
-        Thread.sleep(7000);
-        
-        plp.EditDescriptionTextbox().clear();
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.PlaylistEditButton())).click();
+		u.shortDelay();
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.EditDescriptionTextbox())).clear();
 		String autotext1=getSaltString();
 		System.out.println(autotext);
-		plp.DescriptionTextbox().sendKeys("This is a QA autogenerated Description-" + autotext1);
-		Thread.sleep(3000);
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.DescriptionTextbox())).sendKeys("This is a QA autogenerated Description-" + autotext1);
 		
-		plp.EditSaveButton2().click();
-		Thread.sleep(5000);
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.EditSaveButton2())).click();
+		u.shortDelay();
 		
-		Thread.sleep(20000);
-        plp.playListDeleteButton().click();
-		Thread.sleep(8000);
-		plp.deleteConfirmButton().click();
-		Thread.sleep(5000);
+		String text2= ewait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='rnc__notification-content']")))).getText();
+		System.out.println(text2);
+		Assert.assertEquals(text2,"Success!\n" + "Operation succesfully completed.");
+		
+		u.loadDelay();
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.playListDeleteButton())).click();
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.deleteConfirmButton())).click();	
 		System.out.println("Completed -> Test");
 	}
 	

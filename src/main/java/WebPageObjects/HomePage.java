@@ -115,7 +115,7 @@ public class HomePage {
 		return CreatorMenu;
 	}
 	
-	@FindBy(xpath="/html/body/div[1]/div[3]/div/div[3]/main/div/div[3]/div[2]/div/div/div[1]/div/div[1]/div/div[2]/div/div/p[1]/a")
+	@FindBy(xpath="//p[@class=' text-sm font-semibold line-clamp-1'] //a")
     private WebElement ClickOnCreator;
     
     public WebElement ClickOnCreator() {

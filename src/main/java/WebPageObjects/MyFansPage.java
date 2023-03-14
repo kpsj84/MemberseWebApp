@@ -14,7 +14,7 @@ public class MyFansPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[1]/div/div[5]/div[2]/div/p[1]")
+	@FindBy(xpath="//p[text()='My Fans']")
 	private WebElement MyFansSubMenu ;
 	
 	public WebElement MyFansSubMenu() {
