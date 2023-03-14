@@ -6,6 +6,60 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="Memberse.WebAppAutomation.wSearchCreatorTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="wSearchCreatorTestCase"/>
+          <include name="endSuite"/>
+          <include name="startDriver"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wSearchCreatorTest -->
+      <class name="Memberse.WebAppAutomation.wCreateVideoPostTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="endSuite"/>
+          <include name="wCreatVideoPostTestCase"/>
+          <include name="startDriver"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wCreateVideoPostTest -->
+      <class name="Memberse.WebAppAutomation.wFeedsFilterTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="endSuite"/>
+          <include name="wFeedsFilterTestCase"/>
+          <include name="startDriver"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wFeedsFilterTest -->
+      <class name="Memberse.WebAppAutomation.wLoginFormValidationTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="endSuite"/>
+          <include name="wLoginFormValidationTestCase"/>
+          <include name="startDriver"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wLoginFormValidationTest -->
+      <class name="Memberse.WebAppAutomation.wPlaylistEditTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="endSuite"/>
+          <include name="wPlaylistEditTestCase"/>
+          <include name="startDriver"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wPlaylistEditTest -->
+      <class name="Memberse.WebAppAutomation.wPostHistoryPlayTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="endSuite"/>
+          <include name="wPostHistoryPlayTestCase"/>
+          <include name="startDriver"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wPostHistoryPlayTest -->
       <class name="Memberse.WebAppAutomation.wCreateAudioPostTest">
         <methods>
           <include name="quitDriver"/>
@@ -15,6 +69,24 @@
           <include name="InvokeCapabilities"/>
         </methods>
       </class> <!-- Memberse.WebAppAutomation.wCreateAudioPostTest -->
+      <class name="Memberse.WebAppAutomation.wSignupFormValidationTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="endSuite"/>
+          <include name="wSignupFormValidationTestCase"/>
+          <include name="startDriver"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wSignupFormValidationTest -->
+      <class name="Memberse.WebAppAutomation.wAddMediaAndPlayPlaylistTest">
+        <methods>
+          <include name="wAddMediaAndPlayPlaylistTestCase"/>
+          <include name="quitDriver"/>
+          <include name="endSuite"/>
+          <include name="startDriver"/>
+          <include name="InvokeCapabilities"/>
+        </methods>
+      </class> <!-- Memberse.WebAppAutomation.wAddMediaAndPlayPlaylistTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

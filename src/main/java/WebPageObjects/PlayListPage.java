@@ -14,56 +14,56 @@ public class PlayListPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[1]/div/div[3]/div[2]/div/p[1]")
+	@FindBy(xpath="(//p[contains(text(),'Playlists')])[1]")
 	private WebElement PlayListSubMenu;
 	
 	public WebElement PlayListSubMenu() {
 		return  PlayListSubMenu;
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[1]/div/a")
+	@FindBy(xpath="(//span[contains(text(),'Create')])[1]")
 	private WebElement createPlayList;
 	
 	public WebElement createPlayList() {
 		return  createPlayList;
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/form/div[1]/div/textarea")
+	@FindBy(xpath="//textarea[@name='title']")
 	private WebElement PlayListTitleTextbox;
 	
 	public WebElement PlayListTitleTextbox() {
 		return  PlayListTitleTextbox;
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/form/div[2]/div/textarea")
+	@FindBy(xpath="//textarea[@name='content']")
     private WebElement DescriptionTextbox ;
     
     public WebElement DescriptionTextbox() {
     	return DescriptionTextbox;	
     }
     
-    @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/form/div[3]/div[2]/div/div/div/div/div/div/div/div/div/label/span")
+    @FindBy(xpath="//span[contains(text(),'Upload')]")
     private WebElement UploadImageButton ;
     
     public WebElement UploadImageButton() {
     	return UploadImageButton;
     }
     
-    @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/form/div[4]/button/span")
+    @FindBy(xpath="//span[contains(text(),'Create')]")
     private WebElement PlayListSaveButton ;
     
     public WebElement PlayListSaveButton() {
     	return PlayListSaveButton;
     }
     
-    @FindBy(css="#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div.pb-10 > div.flex-grow > div.space-y-2 > div:nth-child(1) > div.flex.text-white > div > div > button:nth-child(1) > svg")
+    @FindBy(xpath="(//div[@class='flex space-x-3 items-center justify-end'])[1]/button[1]")
     private WebElement playListViewButton ;
     
     public WebElement playListViewButton() {
     	return playListViewButton;
     }
     
-    @FindBy(css="#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div.pb-10 > div.flex-grow > div.space-y-2 > div:nth-child(7) > div.flex.text-white > div > div > button:nth-child(2) > svg > path")
+    @FindBy(xpath="(//div[@class='flex space-x-3 items-center justify-end'])[1]/button[2]")
     private WebElement playListDeleteButton ;
     
     public WebElement playListDeleteButton() {
@@ -77,28 +77,28 @@ public class PlayListPage {
     	return deleteConfirmButton;
     }
     
-    @FindBy(xpath="/html/body/div[1]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[2]/div[2]/div/div[1]/div[3]/div/div/button")
+    @FindBy(xpath="//button[@class=' text-neutral-9000 hover:text-gray-6000']")
     private WebElement PlaylistEditButton;
     
     public WebElement PlaylistEditButton() {
     	return PlaylistEditButton;
     }
 
-    @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/form/div[2]/div/textarea")
+    @FindBy(xpath="//textarea[@name='content']")
     private WebElement EditDescriptionTextbox ;
 
     public WebElement EditDescriptionTextbox() {
     	return EditDescriptionTextbox;
     }
 
-    @FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/form/div[4]/button")
+    @FindBy(xpath="//span[@class='text-base font-medium leading-4']")
     private WebElement EditSaveButton2 ;
 
     public WebElement EditSaveButton2() {
     	return EditSaveButton2;
     }
     
-    @FindBy(xpath="/html/body/div[2]/div[2]/div/div/div[2]/div/div/div[2]/div[2]/div/div/textarea")  
+    @FindBy(xpath="//textarea[@name='comment']")  
     private WebElement PlaylistMediaComment ;
     
     public WebElement PlaylistMediaComment() {

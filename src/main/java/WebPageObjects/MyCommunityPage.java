@@ -1,5 +1,6 @@
 package WebPageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,21 +15,21 @@ public class MyCommunityPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[1]/div/div[1]/div[2]/div/p[1]")
+	@FindBy(xpath="//p[contains(text(),'My Community')]")
 	private WebElement MyCommunitySubMenu;
 	
 	public WebElement MyCommunitySubMenu(){
 		return MyCommunitySubMenu;
 	}
 	
-	@FindBy(css="#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div.flex-grow > div > div.flex.justify-between > div > div > div.px-4.rounded-lg.text-sm.sm\\:text-base.font-medium.cursor-pointer.flex.items-center.justify-center.py-2.bg-neutral-3000.text-neutral-9000")
-	private WebElement EditInfoTab;
+	@FindBy(xpath="//*[contains(text(),'Edit info')]")
+	private By EditInfoTab;
 	
-	public WebElement EditInfoTab(){
+	public By EditInfoTab(){
 		return EditInfoTab;
 	}
 	
-	@FindBy(css="#__next > div.h-full.text-neutral-9000.dark\\:text-neutral-1000.custom-scroll > div > div.pl-64.flex.flex-col.flex-1 > main > div > div.space-y-6.h-full > div.flex.w-full > div > div > div.flex-grow > div > div.py-5 > div > form > div.space-y-6 > div:nth-child(3) > div > textarea")
+	@FindBy(name="description")
 	private WebElement EditInfoDescription;
 	
 	public WebElement EditInfoDescription(){

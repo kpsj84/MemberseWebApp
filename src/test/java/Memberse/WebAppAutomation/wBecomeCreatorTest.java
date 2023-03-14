@@ -4,6 +4,8 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -26,8 +28,7 @@ public class wBecomeCreatorTest extends WBase {
 		u.loadDelay();
 
 		WelcomePage wp = new WelcomePage(driver);
-		wp.SignupButtton().click();
-		Thread.sleep(1000);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.SignupButtton())).click();
 		
 		String autoText=getSaltString();
 		System.out.println(autoText);
@@ -37,36 +38,34 @@ public class wBecomeCreatorTest extends WBase {
 		String password="123456";
 		
 		SignupPage sp = new SignupPage(driver);
-		sp.Email().sendKeys(email);
-		sp.Password().sendKeys(password);
-		sp.confirmPassword().sendKeys(password);
-		sp.SignupButton().click();
-		Thread.sleep(5000);
+		ewait.until(ExpectedConditions.elementToBeClickable(sp.Email())).sendKeys(email);
+		ewait.until(ExpectedConditions.elementToBeClickable(sp.Password())).sendKeys(password);
+		ewait.until(ExpectedConditions.elementToBeClickable(sp.confirmPassword())).sendKeys(password);
+		ewait.until(ExpectedConditions.elementToBeClickable(sp.SignupButton())).click();
+		u.shortDelay();
 		    
-		wp.LoginButton().click();
-		Thread.sleep(1000);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys(email);
-		lp.Password().sendKeys(password);
-		lp.Login().click();
-		Thread.sleep(10000);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys(email);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys(password);
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
 		     
 		RoleSelectionPage rsp = new RoleSelectionPage(driver);
-	    rsp.AsaMember().click();
-	    Thread.sleep(10000);
+		ewait.until(ExpectedConditions.elementToBeClickable(rsp.AsaMember())).click();
+	    u.apiDelay();
 		    
 		HomePage hp = new HomePage(driver);
-		hp.CreatorMenu().click();
-		Thread.sleep(2000);
+		ewait.until(ExpectedConditions.elementToBeClickable(hp.CreatorMenu())).click();
 	    
 	    CreatorMenuPage cmp = new CreatorMenuPage(driver);
-		cmp.checkbox().click();
-		Thread.sleep(1000);
-		cmp.CheckboxSave().click();
-		Thread.sleep(7000);
+	    ewait.until(ExpectedConditions.elementToBeClickable(cmp.checkbox())).click();
+	    ewait.until(ExpectedConditions.elementToBeClickable(cmp.CheckboxSave())).click();
+		u.apiDelay();
 		
-		hp.CreatorMenu().click();
-		String Text = driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[1]/div/div[1]/div[2]/div/p[1]")).getText();
+		ewait.until(ExpectedConditions.elementToBeClickable(hp.CreatorMenu())).click();
+		WebElement ele = ewait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("(//*[text()='My Community'])[1]"))));
+		String Text = ele.getText();
 		System.out.println(Text);
 		Assert.assertEquals(Text,"My Community");
 	}

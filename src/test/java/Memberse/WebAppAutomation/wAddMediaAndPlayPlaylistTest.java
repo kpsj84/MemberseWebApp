@@ -6,10 +6,12 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -32,40 +34,37 @@ public class wAddMediaAndPlayPlaylistTest extends WBase {
 		u.loadDelay();
 		
 		WelcomePage wp = new WelcomePage(driver);
-		wp.LoginButton().click();
-		Thread.sleep(1000);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestc3@yopmail.com");
-		lp.Password().sendKeys("kqatestc3");
-		Thread.sleep(1000);
-	    lp.ShowPassword().click();
-		lp.Login().click();
-	    Thread.sleep(10000);  
-	    
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc3@yopmail.com");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("kqatestc3");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.ShowPassword())).click();
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
+		
 	    HomePage hp = new HomePage(driver);
-	    hp.CreatorMenu().click();
-		Thread.sleep(2000);
+	    ewait.until(ExpectedConditions.elementToBeClickable(hp.CreatorMenu())).click();
+	    u.shortDelay();
     	
 		PlayListPage plp = new PlayListPage(driver);
-        plp.PlayListSubMenu().click();
-        Thread.sleep(7000);
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.PlayListSubMenu())).click();
+        u.shortDelay();
         
-        plp.createPlayList().click();
-        Thread.sleep(3000);
+        ewait.until(ExpectedConditions.elementToBeClickable(plp.createPlayList())).click();
         String autotext = getSaltString();
 		System.out.println(autotext);
-		Thread.sleep(2000);
-        plp.PlayListTitleTextbox().sendKeys("Autolist-" + autotext);
-        plp.DescriptionTextbox().sendKeys("This is an Automated QA Description");
-        plp.UploadImageButton().click();
-        Thread.sleep(10000);
+		u.shortDelay();
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.PlayListTitleTextbox())).sendKeys("Autolist-" + autotext);
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.DescriptionTextbox())).sendKeys("This is an Automated QA Description");
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.UploadImageButton())).click();
+        u.shortDelay();
         
         File fl = new File(System.getProperty("user.dir") + "/src/Pic22.jpg");
         StringSelection str = new StringSelection(fl.getAbsolutePath());
         //StringSelection str = new StringSelection("C:\\Users\\QA\\Desktop\\MusicFile.jpg");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
-        Thread.sleep(2000);
+        u.shortDelay();
         
         Robot rb = new Robot();
         //This required as in Automation, Focus loose from open file upload window
@@ -95,49 +94,90 @@ public class wAddMediaAndPlayPlaylistTest extends WBase {
         rb.keyPress(KeyEvent.VK_ENTER);
         rb.keyRelease(KeyEvent.VK_ENTER);
         rb.delay(500);
+        rb.delay(500);
         rb.keyPress(KeyEvent.VK_ENTER);
         rb.keyRelease(KeyEvent.VK_ENTER);
-        Thread.sleep(6000);
-        plp.PlayListSaveButton().click();
-        Thread.sleep(10000);
+        ewait.until(ExpectedConditions.elementToBeClickable(plp.PlayListSaveButton())).click();
+        u.apiDelay();
+        u.loadDelay();
         
-        WebDriverWait w = new WebDriverWait(driver,120);
-        w.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
-        String text= driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
+        String text= ewait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='rnc__notification-content']")))).getText();
 		System.out.println(text);
-		Thread.sleep(2000);
-		Assert.assertEquals(text,"Operation succesfully completed.");
+		Assert.assertEquals(text,"Success!\n" + "Operation succesfully completed.");
 		System.out.println("PlayList Created with Name as :- " + "Autolist-" + autotext);
-		Thread.sleep(2000);
+		driver.navigate().refresh();
+		u.loadDelay();
 		
 		PostHistoryPage php = new PostHistoryPage(driver);
-		php.PostHistorySubMenu().click();
-        Thread.sleep(7000);
+		ewait.until(ExpectedConditions.elementToBeClickable(php.PostHistorySubMenu())).click();
+		u.loadDelay();
         
-        php.PlaylistIcon().click();
-    	Thread.sleep(5000);
-    	php.SavetoPlaylistCheckbox().click();
-    	Thread.sleep(10000);
-    	php.MediaAddToPlaylistSaveButton().click();
-        Thread.sleep(5000);
+		List<WebElement> buttonPosition = driver.findElements(By.xpath("(//div[@class='flex space-x-3 items-center justify-end'])[1]/button"));
+    	System.out.println(buttonPosition.size());
+    	int buttonNos = buttonPosition.size();
+    	if(buttonNos > 2)
+    	{
+    		ewait.until(ExpectedConditions.elementToBeClickable(php.PlaylistIcon())).click();
+    	}
+    	else
+    	{
+    		//driver.findElement(By.xpath("(//div[@class='flex space-x-3 items-center justify-end'])[1]/button[2]")).click();
+    		System.out.println("Playable Media is not available to add in the Playlist");
+    	}
+        u.loadDelay();
         
-    	plp.PlayListSubMenu().click();
-    	Thread.sleep(10000);
-        plp.playListViewButton().click();
-        Thread.sleep(10000);  
-        driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[2]/div[2]/div/div[2]/div[2]/div/div/div[2]/div[3]/div/div[1]/p")).click();
-        Thread.sleep(8000);
-        //String Text= driver.findElement(By.xpath("//*[@id=\"headlessui-dialog-panel-29\"]/div[2]/div[1]/div[2]/div/div[2]/div/div/p[1]/a")).getText();
-		//System.out.println(Text);
-		//Assert.assertEquals(Text,"kqatestc3's Channel");
+        List<WebElement> playlist = driver.findElements(By.xpath("//div[@class='space-y-4']/div"));
+        System.out.println(playlist.size());
+        int desiredPlaylistSize = playlist.size()-2;
+        ewait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@aria-describedby='playlist'][@type='checkbox'])[" + desiredPlaylistSize + "]"))).click();
+        
+        
+       /* 
+        for(WebElement readPlaylist: playlist)
+        {
+        	if(readPlaylist.getText().equals("Autolist-" + autotext))
+        	{
+        		System.out.println(readPlaylist.getText());
+        		WebElement sortedElement = readPlaylist;
+        		ewait.until(ExpectedConditions.presenceOfNestedElementLocatedBy(sortedElement, By.xpath("//input[@aria-describedby='playlist'][@type='checkbox']"))).click();
+        		Thread.sleep(999999);
+        		u.shortDelay();
+        		//readPlaylist.click();
+        		break;
+        	}
+        }*/
 		
-        hp.CreatorMenu().click();
-		plp.PlayListSubMenu().click();
-		Thread.sleep(4000);
-        plp.playListDeleteButton().click();
-		Thread.sleep(8000);
-		plp.deleteConfirmButton().click();
-		Thread.sleep(5000);
+        //ewait.until(ExpectedConditions.elementToBeClickable(php.SavetoPlaylistCheckbox())).click();
+        ewait.until(ExpectedConditions.elementToBeClickable(php.MediaAddToPlaylistSaveButton())).click();
+        u.apiDelay();
+        
+        ewait.until(ExpectedConditions.elementToBeClickable(plp.PlayListSubMenu())).click();
+        u.shortDelay();
+        
+        List<WebElement> mainPlaylist = driver.findElements(By.xpath("//div[@class='space-y-2']/div"));
+        System.out.println(mainPlaylist.size());
+        for(WebElement readMainPlaylist: mainPlaylist)
+        {
+        	if(readMainPlaylist.getText().equals("Autolist-" + autotext))
+        	{
+        		System.out.println(readMainPlaylist);
+        		//readMainPlaylist.click();
+        		ewait.until(ExpectedConditions.elementToBeClickable(plp.playListViewButton())).click();
+        		break;
+        	}
+        }
+    	//ewait.until(ExpectedConditions.elementToBeClickable(plp.playListViewButton())).click();
+    	u.loadDelay(); 
+        driver.findElement(By.xpath("//p[@class='text-base font-medium line-clamp-1 leading-4 cursor-pointer']")).click();
+        String Text= driver.findElement(By.xpath("//p[@class=' text-sm font-semibold line-clamp-1']")).getText();
+		System.out.println(Text);
+		Assert.assertEquals(Text,"kqatestc3's Community");
+		
+		ewait.until(ExpectedConditions.elementToBeClickable(hp.CreatorMenu())).click();
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.PlayListSubMenu())).click();
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.playListDeleteButton())).click();
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.deleteConfirmButton())).click();
+		u.shortDelay();
 		System.out.println("Completed -> Test");
 	}
 	

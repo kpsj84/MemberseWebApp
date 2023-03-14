@@ -54,6 +54,24 @@
 	      <class name="Memberse.WebAppAutomation.wSharePostTest"/>
 	      <class name="Memberse.WebAppAutomation.wLikePostTest"/>
 	      <class name="Memberse.WebAppAutomation.wCommentOnPostTest"/>
+	      <class name="Memberse.WebAppAutomation.wCommunityTabsTest"/>
+	  <!-- Creator Page Test Cases-->
+      	  <class name="Memberse.WebAppAutomation.wCommunityEditInfoTest"/>
+      	  <class name="Memberse.WebAppAutomation.wCommunityPriceTest"/>
+      	  <class name="Memberse.WebAppAutomation.wPostHistoryPlayTest"/>
+      	  <class name="Memberse.WebAppAutomation.wPostHistoryEditTest"/>
+      	  <class name="Memberse.WebAppAutomation.wPostHistoryDeleteTest"/>
+      	  <class name="Memberse.WebAppAutomation.wCreateAndDeletePlaylistTest"/>
+      	  <class name="Memberse.WebAppAutomation.wAddMediaAndPlayPlaylistTest"/>
+      	  <class name="Memberse.WebAppAutomation.wPlaylistEditTest"/>
+      	  <class name="Memberse.WebAppAutomation.wCommentOnPlaylistMediaTest"/>
+      	  <class name="Memberse.WebAppAutomation.wMyFansListTest"/>
+	 <!-- Account Page Test Cases-->
+      	  <class name="Memberse.WebAppAutomation.wMemberInfoTest"/>
+      	  <class name="Memberse.WebAppAutomation.wMembershipsTest"/>
+      	  <class name="Memberse.WebAppAutomation.wWatchedHistoryTest"/>
+      	  <class name="Memberse.WebAppAutomation.wChangePasswordTest"/>
+      	  <class name="Memberse.WebAppAutomation.wBecomeCreatorTest"/>
     </classes>
     
   </test> <!-- Test -->

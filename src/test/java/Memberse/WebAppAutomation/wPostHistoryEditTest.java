@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -26,26 +27,26 @@ public class wPostHistoryEditTest extends WBase {
 		u.loadDelay();
 		
 		WelcomePage wp = new WelcomePage(driver);
-		wp.LoginButton().click();
-		Thread.sleep(1000);
+		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
 		
 		LoginPage lp = new LoginPage(driver);
-		lp.Email().sendKeys("kqatestc3@yopmail.com");
-		lp.Password().sendKeys("kqatestc3");
-		Thread.sleep(1000);
-	    lp.ShowPassword().click();
-		lp.Login().click();
-	    Thread.sleep(10000);  
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc3@yopmail.com");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("kqatestc3");
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.ShowPassword())).click();
+		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
+		u.apiDelay();
+		
 	    
 	    HomePage hp = new HomePage(driver);
-	    hp.CreatorMenu().click();
-		Thread.sleep(2000);
+	    ewait.until(ExpectedConditions.elementToBeClickable(hp.CreatorMenu())).click();
+	    u.shortDelay();
     	
 		PostHistoryPage php = new PostHistoryPage(driver);
-        php.PostHistorySubMenu().click();
-    	Thread.sleep(10000);
+		ewait.until(ExpectedConditions.elementToBeClickable(php.PostHistorySubMenu())).click();
+		u.shortDelay();
     	
-    	List<WebElement> buttonPosition = driver.findElements(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[2]/div[2]/div/div[2]/div/div[1]/div[2]/div[3]/div/div/button"));
+    	List<WebElement> buttonPosition = driver.findElements(By.xpath("(//div[@class='flex space-x-3 items-center justify-end'])[1]/button"));
+    	System.out.println(buttonPosition.size());
     	int buttonNos = buttonPosition.size();
     	if(buttonNos > 2)
     	{
@@ -53,25 +54,25 @@ public class wPostHistoryEditTest extends WBase {
     	}
     	else
     	{
-    		driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[2]/div[2]/div/div[2]/div/div[1]/div[2]/div[3]/div/div/button[1]")).click();
+    		driver.findElement(By.xpath("(//div[@class='flex space-x-3 items-center justify-end'])[1]/button[1]")).click();
     	}
-        Thread.sleep(5000);
+        u.shortDelay();
         
-        String Text= driver.findElement(By.xpath("//*[@id=\"__next\"]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div[1]/h3")).getText();
+        String Text= driver.findElement(By.xpath("//h3[contains(text(),'Edit Post')]")).getText();
 	    System.out.println(Text);
 	    Assert.assertEquals(Text,"Edit Post"); 
 	    
-		php.PostDescription().clear();
+	    ewait.until(ExpectedConditions.elementToBeClickable(php.PostDescription())).clear();
 		String autotext=getSaltString();
 		System.out.println(autotext);
-		php.PostDescription().sendKeys("This is a QA Description-" + autotext);
-		php.SavePost().click();
-		Thread.sleep(7000);
+		ewait.until(ExpectedConditions.elementToBeClickable(php.PostDescription())).sendKeys("This is a QA Description-" + autotext);
+		ewait.until(ExpectedConditions.elementToBeClickable(php.SavePost())).click();
+		u.loadDelay();
 		
-		WebElement Text1 = driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message"));
+		WebElement Text1 = ewait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='rnc__notification-content']"))));
 		String text2 = Text1.getText();
 		System.out.println(text2);
-	    Assert.assertEquals(text2,"Operation succesfully completed.");     
+	    Assert.assertEquals(text2,"Success!\n" + "Operation succesfully completed.");     
 	}
 	
 	public String getSaltString() {
