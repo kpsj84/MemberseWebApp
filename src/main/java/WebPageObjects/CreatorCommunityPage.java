@@ -36,6 +36,13 @@ public class CreatorCommunityPage {
 		return followCreator;
 	}
 	
+	@FindBy(xpath="//span[contains(text(),'DM')]")
+	private WebElement DMButton;
+	
+	public WebElement DMButton() {
+		return DMButton;
+	}
+	
 	@FindBy(xpath="//*[@class='w-8 h-8 flex items-center justify-center']")
 	private WebElement threeDotsMenu;
 	

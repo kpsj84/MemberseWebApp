@@ -94,6 +94,13 @@ public class HomePage {
 		return HomeMenu;
 	}
 	
+	@FindBy(xpath="//a[text()='DM']")
+	private WebElement DMMenu;
+	
+	public WebElement DMMenu() {
+		return DMMenu;
+	}
+	
 	@FindBy(xpath="//a[text()='Account']")
 	private WebElement AccountMenu;
 	

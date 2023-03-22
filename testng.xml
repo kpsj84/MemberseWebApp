@@ -40,6 +40,8 @@
 	      <class name="Memberse.WebAppAutomation.wCreatorBothSideMenusTest"/>
 	  <!-- Explore Page Test Cases-->
       	  <class name="Memberse.WebAppAutomation.wSearchCreatorTest"/>
+      <!-- DM Page Test Cases-->
+      	  <class name="Memberse.WebAppAutomation.wFanSendDMTest"/>	  
       <!-- Community Page Test Cases-->
       	  <class name="Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest"/>	 
       	  <class name="Memberse.WebAppAutomation.wShareCommunityTest"/>
