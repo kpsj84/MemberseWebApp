@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wBecomeCreatorTest">
+      <class name="Memberse.WebAppAutomation.wFanSendDMTest">
         <methods>
+          <include name="wCreatorRepliedDMTestCase"/>
           <include name="quitDriver"/>
           <include name="endSuite"/>
-          <include name="wBecomeCreatorTestCase"/>
           <include name="startDriver"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wBecomeCreatorTest -->
+      </class> <!-- Memberse.WebAppAutomation.wFanSendDMTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
