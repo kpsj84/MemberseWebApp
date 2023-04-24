@@ -16,7 +16,8 @@ import org.testng.annotations.BeforeTest;
 public class WBase {
 	
 	//For Jenkin Server
-	public static boolean intelJenkinsServer = true;
+	public static boolean intelJenkinsServer = false;
+	public static boolean winJenkinsServer = true;
 	
 	//Initiate Variables
 	public static ChromeOptions   options;
@@ -31,6 +32,10 @@ public class WBase {
 		if(intelJenkinsServer == true)
 		{
 			driverLocation = (System.getProperty("user.dir")+"/src/intelChromeDriver/chromedriver");
+		}
+		else if(winJenkinsServer == true)
+		{
+			driverLocation = (System.getProperty("user.dir")+"/src/winChromeDriver/chromedriver.exe");
 		}
 		else
 		{
