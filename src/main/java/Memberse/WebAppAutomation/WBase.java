@@ -16,8 +16,8 @@ import org.testng.annotations.BeforeTest;
 public class WBase {
 	
 	//For Jenkin Server
-	public static boolean intelMacJenkinsServer = true;
-	public static boolean winJenkinsServer = false;
+	public static boolean intelMacJenkinsServer = false;
+	public static boolean winJenkinsServer = true;
 	
 	//Initiate Variables
 	public static ChromeOptions   options;
