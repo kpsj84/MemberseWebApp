@@ -27,6 +27,7 @@ public class wCreateTextPostTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc5@yopmail.com");
@@ -46,10 +47,10 @@ public class wCreateTextPostTest extends WBase {
   		ewait.until(ExpectedConditions.elementToBeClickable(cpp.descriptionBox())).sendKeys("This is an Auto-QA Text Post Description");
   		ewait.until(ExpectedConditions.elementToBeClickable(cpp.membersOnlyToggle())).click();
   		ewait.until(ExpectedConditions.elementToBeClickable(cpp.submitButton())).click();
-        u.apiDelay();
+        u.shortDelay();
         
-        ewait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")));
-        String Text = driver.findElement(By.cssSelector("#__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
+        ewait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='notistack-CollapseWrapper']")));
+        String Text = driver.findElement(By.xpath("//div[@class='notistack-CollapseWrapper']")).getText();
 		System.out.println(Text);
 		Assert.assertEquals(Text,"Operation succesfully completed.");
 	    
@@ -58,6 +59,9 @@ public class wCreateTextPostTest extends WBase {
 		String text2 = Text1.getText();
 		System.out.println(text2);
 		Assert.assertEquals(text2,"Auto Generated Text Post - " + autotext);
+		
+		//Test Status Flag
+				super.testStatus = 1;
     }
 	
 	    public String getSaltString() {

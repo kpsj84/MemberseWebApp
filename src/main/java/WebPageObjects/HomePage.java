@@ -17,14 +17,14 @@ public class HomePage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//span[@class='w-10 h-10 flex items-center justify-center']")  
+	@FindBy(xpath="//*[text()='Create Post']")  
 	private WebElement createPost;
 	
 	public WebElement createPost() {
 		return createPost;
 	}
 	
-	@FindBy(css="div[class='opacity-100 duration-1000 transition h-9 w-9 rounded-full bg-cover bg-center']")   
+	@FindBy(xpath="//div[@class='relative h-10 w-10']")   
 	private WebElement ProfilePic;
 	
 	public WebElement ProfilePic() {
@@ -45,7 +45,7 @@ public class HomePage {
 		return rightSideCreator;
 	}
 	
-	@FindBy(xpath="//p[contains(text(),'Log out')]")   
+	@FindBy(xpath="//button[text()='Sign out']")   
 	private WebElement rightSideLogout;
 	
 	public WebElement rightSideLogout() {

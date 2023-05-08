@@ -16,8 +16,8 @@ import org.testng.annotations.BeforeTest;
 public class WBase {
 	
 	//For Jenkin Server
-	public static boolean intelJenkinsServer = false;
-	public static boolean winJenkinsServer = true;
+	public static boolean intelMacJenkinsServer = true;
+	public static boolean winJenkinsServer = false;
 	
 	//Initiate Variables
 	public static ChromeOptions   options;
@@ -26,12 +26,13 @@ public class WBase {
 	public static Properties 	  prop;
 	public static WebDriver 	  driver;
 	public static String 	  	  driverLocation;
+	public 		  int 			  testStatus = 2;
 	
 	//Set Capabilities or Options for the Browser & provide driver location
 	public static void  Capabilities() throws IOException {
-		if(intelJenkinsServer == true)
+		if(intelMacJenkinsServer == true)
 		{
-			driverLocation = (System.getProperty("user.dir")+"/src/intelChromeDriver/chromedriver");
+			driverLocation = (System.getProperty("user.dir")+"/src/intelMacChromeDriver/chromedriver");
 		}
 		else if(winJenkinsServer == true)
 		{
@@ -52,6 +53,7 @@ public class WBase {
 		//options.addArguments("--disable-infobars");  	  	//This is to remove the line at top of browser window which inform that browser is controlled by automated software, may deprecated
 		//options.addArguments("--disable-extensions");	  	//This is to disable extensions installed to Chrome browser
 		
+		//Get property "env" from pom.xml file
 		environment = System.getProperty("env");
 		System.out.println("Value for environment get via pom file --> " + environment);
 		if(environment == null)
@@ -59,13 +61,15 @@ public class WBase {
 			environment = "QA";
 			System.out.println("Value Set for environment if not get from pom file --> " + environment);
 		}
+		
+		//Ref to file which is to read or taken some from it
 		fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/Memberse/WebAppAutomation/"+environment+".properties");
 		prop = new Properties();		 
-		prop.load(fis);
+		prop.load(fis); 									//Load reference of that file which is to read
 		System.out.println("Complete value taken from properties file --> " + prop.toString());
 	}
 	
-	//Annotation's for xml file
+	//Annotation's for testng.xml file
 	@BeforeTest
 	public void InvokeCapabilities() throws IOException {
 		//Execute Capabilities
@@ -75,13 +79,13 @@ public class WBase {
 	@AfterTest
 	public void endSuite() {
 		//Print Message
-		System.out.println("Test Suite Executed");
+		System.out.println("Test Suite Execution Done");
 		driver.quit();
 	}
 	
 	@BeforeClass
 	public void startDriver() throws IOException {
-		//Start new driver & Window before to every Test Class
+		//Start new driver & open new Window before to every Test Class
 		driver = new ChromeDriver(options);
 		driver.get((String)prop.get("Url"));
 	}
@@ -89,9 +93,17 @@ public class WBase {
 	@AfterClass
 	public void quitDriver() {
 		//Quit Driver after each Test Case Executed
-		//driver.close();		//This just close current active window
+		//driver.close();									//This just close current active window
 		driver.quit();
-		System.out.println("Test case execution complete");
+		
+		if(testStatus == 2)
+		{
+			System.out.println("Test case is Fail");
+		}
+		else
+		{
+			System.out.println("Test case is QA Pass");	
+		}
 	}
 
 }

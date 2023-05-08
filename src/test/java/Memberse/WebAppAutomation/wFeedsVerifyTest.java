@@ -24,6 +24,7 @@ public class wFeedsVerifyTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc7@yopmail.com");
@@ -70,6 +71,9 @@ public class wFeedsVerifyTest extends WBase {
         {
         	Assert.fail();	
         }
+        
+      //Test Status Flag
+      		super.testStatus = 1;
        }
 
 }

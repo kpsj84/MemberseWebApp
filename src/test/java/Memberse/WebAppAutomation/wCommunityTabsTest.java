@@ -26,7 +26,8 @@ public class wCommunityTabsTest extends WBase {
 		u.loadDelay();
 		
 	    WelcomePage wp = new WelcomePage(driver);
-ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+	    ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+	    u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc5@yopmail.com");
@@ -87,6 +88,9 @@ ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
         {
         	Assert.fail();
         }
+        
+      //Test Status Flag
+      		super.testStatus = 1;
   }
 	
 }

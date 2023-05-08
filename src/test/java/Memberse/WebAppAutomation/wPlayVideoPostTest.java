@@ -25,6 +25,7 @@ public class wPlayVideoPostTest extends WBase {
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+	    u.shortDelay();
         
         LoginPage lp = new LoginPage(driver);
         ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestcvp@yopmail.com");
@@ -46,6 +47,9 @@ public class wPlayVideoPostTest extends WBase {
         String Text = driver.findElement(By.xpath("//p[text()='Auto Test - View Video Post']")).getText();
 	    System.out.println(Text);
 	    Assert.assertEquals(Text,"Auto Test - View Video Post");
+	    
+	  //Test Status Flag
+  		super.testStatus = 1;
 	}      
 
 }

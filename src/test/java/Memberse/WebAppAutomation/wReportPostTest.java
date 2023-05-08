@@ -25,6 +25,7 @@ public class wReportPostTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc5@yopmail.com");
@@ -35,17 +36,20 @@ public class wReportPostTest extends WBase {
 	    
 	    HomePage hp= new HomePage(driver);
 	    ewait.until(ExpectedConditions.elementToBeClickable(hp.HomeMenu())).click();
-	    u.loadDelay();
-	    List<WebElement> dotsMenus = ewait.until(ExpectedConditions.visibilityOfAllElements(hp.ThreeDotIcon()));
-	    //List<WebElement> dotsMenus = driver.findElements(By.xpath("//span[@class='w-8 h-8 flex items-center justify-center']"));
-	    System.out.println(dotsMenus.size());
-	    dotsMenus.get(1).click();
+	    u.apiDelay();
+	    //List<WebElement> dotsMenus = ewait.until(ExpectedConditions.visibilityOfAllElements(hp.ThreeDotIcon()));
+	    //System.out.println(dotsMenus.size());
+	    //dotsMenus.get(1).click();
+	    ewait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[@class='w-8 h-8 flex items-center justify-center'])[1]"))).click();
 	    ewait.until(ExpectedConditions.elementToBeClickable(hp.ReportButton())).click();
 	    u.shortDelay();
 	    String Text = driver.findElement(By.xpath("//*[text()='Confirm']")).getText();
 		System.out.println(Text);
 		ewait.until(ExpectedConditions.elementToBeClickable(hp.CancelButton())).click();
 		u.shortDelay();
+		
+		//Test Status Flag
+				super.testStatus = 1;
    }
 
 }

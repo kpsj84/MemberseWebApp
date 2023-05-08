@@ -42,18 +42,16 @@ public class wBecomeCreatorTest extends WBase {
 		ewait.until(ExpectedConditions.elementToBeClickable(sp.Password())).sendKeys(password);
 		ewait.until(ExpectedConditions.elementToBeClickable(sp.confirmPassword())).sendKeys(password);
 		ewait.until(ExpectedConditions.elementToBeClickable(sp.SignupButton())).click();
-		u.shortDelay();
-		    
-		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
-		LoginPage lp = new LoginPage(driver);
-		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys(email);
-		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys(password);
-		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
 		u.apiDelay();
-		     
-		RoleSelectionPage rsp = new RoleSelectionPage(driver);
-		ewait.until(ExpectedConditions.elementToBeClickable(rsp.AsaMember())).click();
-	    u.apiDelay();
+		    
+		String fan = ewait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(), 'Fan')]"))).getText();
+		Assert.assertEquals(fan, "Fan");
+		String creator = ewait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(), 'Creator')]"))).getText();
+		Assert.assertEquals(creator, "Creator");
+		ewait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(), 'Fan')]"))).click();
+		u.shortDelay();
+		ewait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//button[@type='button']//span[text()=\"Let's go\"])[2]"))).click();
+		u.loadDelay();
 		    
 		HomePage hp = new HomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(hp.CreatorMenu())).click();
@@ -61,13 +59,16 @@ public class wBecomeCreatorTest extends WBase {
 	    CreatorMenuPage cmp = new CreatorMenuPage(driver);
 	    ewait.until(ExpectedConditions.elementToBeClickable(cmp.checkbox())).click();
 	    ewait.until(ExpectedConditions.elementToBeClickable(cmp.CheckboxSave())).click();
+	    ewait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()='Confirm']"))).click();
 		u.apiDelay();
 		
-		ewait.until(ExpectedConditions.elementToBeClickable(hp.CreatorMenu())).click();
-		WebElement ele = ewait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("(//*[text()='My Community'])[1]"))));
+		WebElement ele = ewait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//h1[text()='1. Setup your Account']"))));
 		String Text = ele.getText();
 		System.out.println(Text);
-		Assert.assertEquals(Text,"My Community");
+		Assert.assertEquals(Text,"1. Setup your Account");
+		
+		//Test Status Flag
+				super.testStatus = 1;
 	}
 		 
 	public String getSaltString() {

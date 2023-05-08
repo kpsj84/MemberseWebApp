@@ -32,6 +32,7 @@ public class wCreateAndDeletePlaylistTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc3@yopmail.com");
@@ -52,7 +53,7 @@ public class wCreateAndDeletePlaylistTest extends WBase {
         String autotext = getSaltString();
 		System.out.println(autotext);
 		u.shortDelay();
-		ewait.until(ExpectedConditions.elementToBeClickable(plp.PlayListTitleTextbox())).sendKeys("Autolist-" + autotext);
+		ewait.until(ExpectedConditions.elementToBeClickable(plp.PlayListTitleTextbox())).sendKeys("Autolist - " + autotext);
 		ewait.until(ExpectedConditions.elementToBeClickable(plp.DescriptionTextbox())).sendKeys("This is an Automated QA Description");
 		ewait.until(ExpectedConditions.elementToBeClickable(plp.UploadImageButton())).click();
         u.shortDelay();
@@ -96,16 +97,19 @@ public class wCreateAndDeletePlaylistTest extends WBase {
         ewait.until(ExpectedConditions.elementToBeClickable(plp.PlayListSaveButton())).click();
         u.loadDelay();
         
-        String text= ewait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='rnc__notification-content']")))).getText();
+        String text= ewait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='notistack-CollapseWrapper']")))).getText();
 		System.out.println(text);
-		Assert.assertEquals(text,"Success!\n" + "Operation succesfully completed.");
-		System.out.println("PlayList Created with Name as :- " + "Autolist-" + autotext);
+		Assert.assertEquals(text,"Operation succesfully completed.");
+		System.out.println("PlayList Created with Name as :- " + "Autolist - " + autotext);
 		
 		u.shortDelay();
 		ewait.until(ExpectedConditions.elementToBeClickable(plp.playListDeleteButton())).click();
 		ewait.until(ExpectedConditions.elementToBeClickable(plp.deleteConfirmButton())).click();
 		u.shortDelay();
-		System.out.println("PlayList with Name as :- " + "Autolist-" + autotext + "deleted too.");
+		System.out.println("PlayList with Name as :- " + "Autolist - " + autotext + "deleted too.");
+		
+		//Test Status Flag
+				super.testStatus = 1;
        }
 
     	public String getSaltString() {

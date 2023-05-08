@@ -27,6 +27,7 @@ public class wCommunityEditInfoTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc3@yopmail.com");
@@ -55,9 +56,12 @@ public class wCommunityEditInfoTest extends WBase {
 		ewait.until(ExpectedConditions.elementToBeClickable(mcp.EditInfoTabSave())).click();
 		u.shortDelay();
 	    
-	    String Text1 = ewait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='rnc__notification-content']")))).getText();
+	    String Text1 = ewait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='notistack-CollapseWrapper']")))).getText();
 	    System.out.println(Text1);
-        Assert.assertEquals(Text1,"Success!\n" + "Operation succesfully completed.");
+        Assert.assertEquals(Text1,"Operation succesfully completed.");
+        
+      //Test Status Flag
+      		super.testStatus = 1;
 	 }
 	
 	 public String getSaltString() {

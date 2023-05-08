@@ -23,13 +23,13 @@ public class WUtilities {
 	}
 	
 	public void apiDelay() throws InterruptedException {
-		System.out.println("From api call delay method, please wait...");
+		System.out.println("From api call delay method, response awaiting...");
 		Thread.sleep(10000);
 		System.out.println("api delay over");
 	}
 	
 	public void shortDelay() throws InterruptedException {
-		System.out.println("From short delay method, response awaiting...");
+		System.out.println("From short delay method, please wait...");
 		Thread.sleep(4000);
 		System.out.println("short delay over");
 	}
@@ -42,7 +42,7 @@ public class WUtilities {
 	}
 	
 	public WebDriver callImplicitWait() {
-		WebDriver iWait = (WebDriver) localDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		WebDriver iWait = (WebDriver)localDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		return iWait;
 	}
 	

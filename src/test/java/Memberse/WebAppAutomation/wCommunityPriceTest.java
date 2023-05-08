@@ -26,6 +26,7 @@ public class wCommunityPriceTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc3@yopmail.com");
@@ -53,6 +54,9 @@ public class wCommunityPriceTest extends WBase {
 		String text2 = Text1.getText();
 		System.out.println(text2);
 		Assert.assertEquals(text2,"Stripe Connected");
+		
+		//Test Status Flag
+				super.testStatus = 1;
 	}
 
 }

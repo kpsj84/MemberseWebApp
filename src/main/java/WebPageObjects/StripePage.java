@@ -70,5 +70,47 @@ public class StripePage {
 	    public WebElement PayDonationButton() {
 	    	return PayDonationButton;
 	    }
+	    
+	    @FindBy(xpath="//span[contains(text(), 'the test phone number')]")
+	    private WebElement testPhoneNumber;
+
+	    public WebElement testPhoneNumber() {
+	    	return testPhoneNumber;
+	    }
+	    
+	    @FindBy(xpath="//span[contains(text(), 'Use test code')]")
+	    private WebElement testPhoneCode;
+
+	    public WebElement testPhoneCode() {
+	    	return testPhoneCode;
+	    }
+	    
+	    @FindBy(id="first_name")
+	    private WebElement firstName;
+
+	    public WebElement firstName() {
+	    	return firstName;
+	    }
+	    
+	    @FindBy(id="last_name")
+	    private WebElement lastName;
+
+	    public WebElement lastName() {
+	    	return lastName;
+	    }
+	    
+	    @FindBy(id="business_profile[url]")
+	    private WebElement bussinessUrl;
+
+	    public WebElement bussinessUrl() {
+	    	return bussinessUrl;
+	    }
+	    
+	    @FindBy(xpath="//span[contains(text(), 'Use test account')]")
+	    private WebElement testAccount;
+
+	    public WebElement testAccount() {
+	    	return testAccount;
+	    }
 
 }

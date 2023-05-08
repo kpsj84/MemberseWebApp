@@ -15,7 +15,7 @@ import WebPageObjects.WelcomePage;
 
 public class wLogintTest extends WBase{
 	
-	@Test
+	@Test(groups = {"Regression"})
 	public void wLogintTestCase() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);
@@ -27,12 +27,13 @@ public class wLogintTest extends WBase{
 		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		util.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc7@yopmail.com");
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys("kqatestc7");
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
-		Thread.sleep(10000);
+		util.apiDelay();
 		
 		HomePage hp = new HomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(hp.AccountMenu())).click();
@@ -46,6 +47,9 @@ public class wLogintTest extends WBase{
 		Assert.assertEquals(chkText, "kqatestc7@yopmail.com");
 		
 		System.out.println("Web Login Functionality Verification Completed");
+		
+		//Test Status Flag
+		super.testStatus = 1;
 	}
 
 }
