@@ -26,6 +26,7 @@ public class wCommentOnPlaylistMediaTest extends WBase {
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+	    u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc7@yopmail.com");
@@ -57,6 +58,9 @@ public class wCommentOnPlaylistMediaTest extends WBase {
 	    String Text = driver.findElement(By.xpath("//*[@class='text-base font-normal leading-5']")).getText();
 		System.out.println(Text);
 	    u.shortDelay();
+	    
+	  //Test Status Flag
+	  		super.testStatus = 1;
 	}
 	    
 	    public String getSaltString() {

@@ -25,6 +25,7 @@ public class wViewPhotoPostTest extends WBase {
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+	    u.shortDelay();
         
         LoginPage lp = new LoginPage(driver);
         ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestcpp@yopmail.com");
@@ -46,6 +47,9 @@ public class wViewPhotoPostTest extends WBase {
         String Text = driver.findElement(By.xpath("//p[text()='Auto Test - View Photo Post']")).getText();
 	    System.out.println(Text);
 	    Assert.assertEquals(Text,"Auto Test - View Photo Post");
+	    
+	  //Test Status Flag
+  		super.testStatus = 1;
 	}      
 
 }

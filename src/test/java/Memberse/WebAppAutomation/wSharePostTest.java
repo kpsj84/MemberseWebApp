@@ -26,6 +26,7 @@ public class wSharePostTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc5@yopmail.com");
@@ -38,14 +39,18 @@ public class wSharePostTest extends WBase {
 	    ewait.until(ExpectedConditions.elementToBeClickable(hp.HomeMenu())).click();
 	    u.loadDelay();
 	    
-	    List<WebElement> shareButtons = ewait.until(ExpectedConditions.visibilityOfAllElements(hp.ShareButton()));
-	    System.out.println(shareButtons.size());
-	    shareButtons.get(1).click();
+	    //List<WebElement> shareButtons = ewait.until(ExpectedConditions.visibilityOfAllElements(hp.ShareButton()));
+	    //System.out.println(shareButtons.size());
+	    //shareButtons.get(1).click();
+	    ewait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()='Share']"))).click();
 	    String Text = driver.findElement(By.xpath("//*[text()='Link copied to clipboard.']")).getText();
 		System.out.println(Text);
 	    Thread.sleep(1000);
 	    Assert.assertEquals(Text, "Link copied to clipboard.");
 		Thread.sleep(1000); 
+		
+		//Test Status Flag
+				super.testStatus = 1;
 	}
 
 }

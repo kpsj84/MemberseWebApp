@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import WebPageObjects.LoginPage;
 import WebPageObjects.SignupPage;
 import WebPageObjects.WelcomePage;
 
@@ -35,28 +34,32 @@ public class wDeleteAccountTest extends WBase {
 		ewait.until(ExpectedConditions.elementToBeClickable(sp.Password())).sendKeys(password);
 		ewait.until(ExpectedConditions.elementToBeClickable(sp.confirmPassword())).sendKeys(password);
 		ewait.until(ExpectedConditions.elementToBeClickable(sp.SignupButton())).click();
-		u.shortDelay();
-		
-		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
-		
-		LoginPage lp = new LoginPage(driver);
-		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys(email);
-		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys(password);
-		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
 		u.apiDelay();
 		
-		driver.findElement(By.xpath("//*[text()='As a Creator']")).click();
+		String fan = ewait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(), 'Fan')]"))).getText();
+		Assert.assertEquals(fan, "Fan");
+		String creator = ewait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(), 'Creator')]"))).getText();
+		Assert.assertEquals(creator, "Creator");
+		ewait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(), 'Fan')]"))).click();
+		
+		ewait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//button[@type='button']//span[text()=\"Let's go\"])[2]"))).click();
+		u.loadDelay();
+		
 		driver.findElement(By.xpath("//a[text()='Account']")).click();
 		driver.findElement(By.xpath("//p[text()='Delete Account']")).click();
 		u.shortDelay();
 		driver.findElement(By.xpath("//*[@class='text-base font-medium leading-4']")).click();
 		driver.findElement(By.xpath("//span[text()='Confirm']")).click();
-		u.shortDelay();
+		u.apiDelay();
+		u.loadDelay();
 		
 		String verifyUrl = driver.getCurrentUrl();
 		System.out.println(verifyUrl);
 		Assert.assertEquals(verifyUrl, "https://app-qa.so.fa.dog/auth/signup");
 		System.out.println("Test Case Completed");
+		
+		//Test Status Flag
+		super.testStatus = 1;
 	}
 	
 	public String getSaltString() {

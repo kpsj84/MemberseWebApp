@@ -27,6 +27,7 @@ public class wMyFansListTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc3@yopmail.com");
@@ -50,6 +51,9 @@ public class wMyFansListTest extends WBase {
 		List<WebElement> verifyResult2 = driver.findElements(By.xpath("//*[@class='space-y-2']/div"));
 	    int testresult3 = verifyResult2.size()-1;
         System.out.println(testresult3);
+        
+      //Test Status Flag
+      		super.testStatus = 1;
 		}
 
 }

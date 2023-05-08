@@ -27,6 +27,7 @@ public class wMemberInfoTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc3@yopmail.com");
@@ -66,9 +67,12 @@ public class wMemberInfoTest extends WBase {
 		driver.findElement(By.xpath("//input[@name='phone']")).sendKeys(randomNumber);
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//span[text()='Save']")).click();
-		u.shortDelay();
-		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='rnc__notification-content']")).getText(), "Success!\n" + "Operation succesfully completed.");
+		u.loadDelay();
+		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='notistack-CollapseWrapper']")).getText(), "Operation succesfully completed.");
 		System.out.println("Edit functionality at User Info Page is working fine");
+		
+		//Test Status Flag
+		super.testStatus = 1;
 	}
 	
 	public String getSaltString() {

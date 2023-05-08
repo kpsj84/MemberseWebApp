@@ -29,6 +29,7 @@ public class wShareCommunityTest extends WBase{
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+	    u.shortDelay();
         
         LoginPage lp = new LoginPage(driver);
         ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc4@yopmail.com");
@@ -38,19 +39,20 @@ public class wShareCommunityTest extends WBase{
 		
 		HomePage hp = new HomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(hp.ExploreMenu())).click();
+		u.loadDelay();
 		
 	    ExplorePage ep = new ExplorePage(driver);
 	    ewait.until(ExpectedConditions.elementToBeClickable(ep.SearchField())).sendKeys("kqatestc3");
         u.apiDelay();
         ewait.until(ExpectedConditions.elementToBeClickable(ep.ClickCreator())).click();
-        u.loadDelay();
+        u.apiDelay();
         
         CreatorCommunityPage cp = new CreatorCommunityPage(driver);
-        ewait.until(ExpectedConditions.elementToBeClickable(cp.threeDotsMenu())).click();
+        ewait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@class='w-8 h-8 flex items-center justify-center'])[3]"))).click();
         ewait.until(ExpectedConditions.elementToBeClickable(cp.shareCommunitylink())).click();
         u.shortDelay();
         
-        String text= driver.findElement(By.cssSelector(" #__next > div.rnc__base > div.rnc__notification-container--bottom-right > div > div > div > div.rnc__notification-message")).getText();
+        String text= driver.findElement(By.xpath("//div[@class='notistack-CollapseWrapper']")).getText();
  		System.out.println(text);
  		Assert.assertEquals(text,"Link copied to clipboard.");
  		
@@ -66,6 +68,9 @@ public class wShareCommunityTest extends WBase{
   		WebElement verifysharelink = ewait.until(ExpectedConditions.elementToBeClickable(cpp.titleBox()));
 		String chk = verifysharelink.getAttribute("value");
 		System.out.println(chk);
+		
+		//Test Status Flag
+  		super.testStatus = 1;
      }
 	
 }

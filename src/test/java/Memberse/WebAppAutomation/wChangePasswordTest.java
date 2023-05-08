@@ -26,6 +26,7 @@ public class wChangePasswordTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("autouser1@yopmail.com");
@@ -46,7 +47,10 @@ public class wChangePasswordTest extends WBase {
 		ewait.until(ExpectedConditions.elementToBeClickable(cpp.SaveButton())).click();
 		u.shortDelay();
 		
-		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='rnc__notification-content']")).getText(), "Success!\n" + "Operation succesfully completed.");
+		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='notistack-CollapseWrapper']")).getText(), "Operation succesfully completed.");
+		
+		//Test Status Flag
+				super.testStatus = 1;
     }
 
 }

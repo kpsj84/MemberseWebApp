@@ -1,37 +1,1022 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="6" ignored="84" total="128" passed="38">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="197806" started-at="2023-03-22T11:59:36 IST" finished-at="2023-03-22T12:02:53 IST">
+  <suite name="Memberse Suite" duration-ms="3061985" started-at="2023-05-08T10:58:19 IST" finished-at="2023-05-08T11:49:21 IST">
     <groups>
+      <group name="Regression">
+        <method signature="wLoginFormValidationTest.wLoginFormValidationTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@2a742aa2]" name="wLoginFormValidationTestCase" class="Memberse.WebAppAutomation.wLoginFormValidationTest"/>
+        <method signature="wLogintTest.wLogintTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@3dfc5fb8]" name="wLogintTestCase" class="Memberse.WebAppAutomation.wLogintTest"/>
+        <method signature="wSignupFormValidationTest.wSignupFormValidationTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@7d70d1b1]" name="wSignupFormValidationTestCase" class="Memberse.WebAppAutomation.wSignupFormValidationTest"/>
+        <method signature="wSignupTest.wSignupTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@3cb1ffe6]" name="wSignupTestCase" class="Memberse.WebAppAutomation.wSignupTest"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="wSmokeTest.wSmokeTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@2a556333]" name="wSmokeTestCase" class="Memberse.WebAppAutomation.wSmokeTest"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test name="Default test" duration-ms="197806" started-at="2023-03-22T11:59:36 IST" finished-at="2023-03-22T12:02:53 IST">
-      <class name="Memberse.WebAppAutomation.wFanSendDMTest">
-        <test-method status="PASS" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wFanSendDMTest@74650e52]" name="InvokeCapabilities" is-config="true" duration-ms="16" started-at="2023-03-22T11:59:36 IST" finished-at="2023-03-22T11:59:36 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InvokeCapabilities -->
-        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wFanSendDMTest@74650e52]" name="startDriver" is-config="true" duration-ms="9070" started-at="2023-03-22T11:59:36 IST" finished-at="2023-03-22T11:59:45 IST">
+    <test name="Web App Test" duration-ms="3061985" started-at="2023-05-08T10:58:19 IST" finished-at="2023-05-08T11:49:21 IST">
+      <class name="Memberse.WebAppAutomation.wChangePasswordTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wChangePasswordTest@4abdb505]" name="startDriver" is-config="true" duration-ms="8189" started-at="2023-05-08T10:59:20 IST" finished-at="2023-05-08T10:59:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="wFanSendDMTestCase()[pri:1, instance:Memberse.WebAppAutomation.wFanSendDMTest@74650e52]" name="wFanSendDMTestCase" duration-ms="142278" started-at="2023-03-22T11:59:45 IST" finished-at="2023-03-22T12:02:07 IST">
+        <test-method status="PASS" signature="wChangePasswordTestCase()[pri:0, instance:Memberse.WebAppAutomation.wChangePasswordTest@4abdb505]" name="wChangePasswordTestCase" duration-ms="33950" started-at="2023-05-08T10:59:28 IST" finished-at="2023-05-08T11:00:02 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- wFanSendDMTestCase -->
-        <test-method status="PASS" signature="wCreatorRepliedDMTestCase()[pri:2, instance:Memberse.WebAppAutomation.wFanSendDMTest@74650e52]" name="wCreatorRepliedDMTestCase" duration-ms="46265" started-at="2023-03-22T12:02:07 IST" finished-at="2023-03-22T12:02:53 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wCreatorRepliedDMTestCase -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wFanSendDMTest@74650e52]" name="quitDriver" is-config="true" duration-ms="103" started-at="2023-03-22T12:02:53 IST" finished-at="2023-03-22T12:02:53 IST">
+        </test-method> <!-- wChangePasswordTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wChangePasswordTest@4abdb505]" name="quitDriver" is-config="true" duration-ms="79" started-at="2023-05-08T11:00:02 IST" finished-at="2023-05-08T11:00:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method status="PASS" signature="endSuite()[pri:0, instance:Memberse.WebAppAutomation.wFanSendDMTest@74650e52]" name="endSuite" is-config="true" duration-ms="1" started-at="2023-03-22T12:02:53 IST" finished-at="2023-03-22T12:02:53 IST">
+      </class> <!-- Memberse.WebAppAutomation.wChangePasswordTest -->
+      <class name="Memberse.WebAppAutomation.wCreatorBothSideMenusTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreatorBothSideMenusTest@42f93a98]" name="startDriver" is-config="true" duration-ms="14800" started-at="2023-05-08T11:13:16 IST" finished-at="2023-05-08T11:13:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wCreatorBothSideMenusTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCreatorBothSideMenusTest@42f93a98]" name="wCreatorBothSideMenusTestCase" duration-ms="34106" started-at="2023-05-08T11:13:31 IST" finished-at="2023-05-08T11:14:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wCreatorBothSideMenusTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreatorBothSideMenusTest@42f93a98]" name="quitDriver" is-config="true" duration-ms="79" started-at="2023-05-08T11:14:05 IST" finished-at="2023-05-08T11:14:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wCreatorBothSideMenusTest -->
+      <class name="Memberse.WebAppAutomation.wLogoutTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@467aecef]" name="startDriver" is-config="true" duration-ms="9435" started-at="2023-05-08T11:20:37 IST" finished-at="2023-05-08T11:20:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wLogoutTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@467aecef]" name="wLogoutTestCase" duration-ms="41335" started-at="2023-05-08T11:20:46 IST" finished-at="2023-05-08T11:21:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLogoutTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wLogoutTest@467aecef]" name="quitDriver" is-config="true" duration-ms="83" started-at="2023-05-08T11:21:28 IST" finished-at="2023-05-08T11:21:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wLogoutTest -->
+      <class name="Memberse.WebAppAutomation.wCommunityPriceTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCommunityPriceTest@58c1670b]" name="startDriver" is-config="true" duration-ms="7962" started-at="2023-05-08T11:05:05 IST" finished-at="2023-05-08T11:05:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wCommunityPriceTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCommunityPriceTest@58c1670b]" name="wCommunityPriceTestCase" duration-ms="37516" started-at="2023-05-08T11:05:13 IST" finished-at="2023-05-08T11:05:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wCommunityPriceTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wCommunityPriceTest@58c1670b]" name="quitDriver" is-config="true" duration-ms="81" started-at="2023-05-08T11:05:51 IST" finished-at="2023-05-08T11:05:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wCommunityPriceTest -->
+      <class name="Memberse.WebAppAutomation.wSearchCreatorTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wSearchCreatorTest@c46bcd4]" name="startDriver" is-config="true" duration-ms="12475" started-at="2023-05-08T11:34:18 IST" finished-at="2023-05-08T11:34:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wSearchCreatorTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSearchCreatorTest@c46bcd4]" name="wSearchCreatorTestCase" duration-ms="34273" started-at="2023-05-08T11:34:31 IST" finished-at="2023-05-08T11:35:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wSearchCreatorTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wSearchCreatorTest@c46bcd4]" name="quitDriver" is-config="true" duration-ms="79" started-at="2023-05-08T11:35:05 IST" finished-at="2023-05-08T11:35:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wSearchCreatorTest -->
+      <class name="Memberse.WebAppAutomation.wCreateTextPostTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreateTextPostTest@51e2adc7]" name="startDriver" is-config="true" duration-ms="16070" started-at="2023-05-08T11:12:20 IST" finished-at="2023-05-08T11:12:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wCreateTextPostTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCreateTextPostTest@51e2adc7]" name="wCreateTextPostTestCase" duration-ms="40544" started-at="2023-05-08T11:12:36 IST" finished-at="2023-05-08T11:13:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wCreateTextPostTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreateTextPostTest@51e2adc7]" name="quitDriver" is-config="true" duration-ms="79" started-at="2023-05-08T11:13:16 IST" finished-at="2023-05-08T11:13:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wCreateTextPostTest -->
+      <class name="Memberse.WebAppAutomation.wCommunityTabsTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCommunityTabsTest@2c039ac6]" name="startDriver" is-config="true" duration-ms="8741" started-at="2023-05-08T11:05:51 IST" finished-at="2023-05-08T11:06:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wCommunityTabsTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCommunityTabsTest@2c039ac6]" name="wCommunityTabsTestCase" duration-ms="104012" started-at="2023-05-08T11:06:00 IST" finished-at="2023-05-08T11:07:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wCommunityTabsTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wCommunityTabsTest@2c039ac6]" name="quitDriver" is-config="true" duration-ms="108" started-at="2023-05-08T11:07:44 IST" finished-at="2023-05-08T11:07:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wCommunityTabsTest -->
+      <class name="Memberse.WebAppAutomation.wTermsAndConditionsTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wTermsAndConditionsTest@7e2d773b]" name="startDriver" is-config="true" duration-ms="9161" started-at="2023-05-08T11:43:41 IST" finished-at="2023-05-08T11:43:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wTermsAndConditionsTestCase()[pri:0, instance:Memberse.WebAppAutomation.wTermsAndConditionsTest@7e2d773b]" name="wTermsAndConditionsTestCase" duration-ms="95445" started-at="2023-05-08T11:43:51 IST" finished-at="2023-05-08T11:45:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wTermsAndConditionsTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wTermsAndConditionsTest@7e2d773b]" name="quitDriver" is-config="true" duration-ms="105" started-at="2023-05-08T11:45:26 IST" finished-at="2023-05-08T11:45:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wTermsAndConditionsTest -->
+      <class name="Memberse.WebAppAutomation.wSignupTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@3cb1ffe6]" name="startDriver" is-config="true" duration-ms="13029" started-at="2023-05-08T11:40:10 IST" finished-at="2023-05-08T11:40:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="FAIL" signature="wSignupTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@3cb1ffe6]" name="wSignupTestCase" duration-ms="198327" depends-on-groups="Smoke" started-at="2023-05-08T11:40:23 IST" finished-at="2023-05-08T11:43:41 IST">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: (//span[contains(text(), 'Next')])[3] (tried for 60 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//span[contains(text(), 'Next')])[3] (tried for 60 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at Memberse.WebAppAutomation.wSignupTest.wSignupTestCase(wSignupTest.java:91)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[contains(text(), 'Next')])[3]"}
+  (Session info: chrome=112.0.5615.137)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:598c:5681:8d9b:47fa:1340:3e41%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3', java.version: '1.8.0_351'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:64669}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 86baa94f65ceddea3952cabc9a30df26
+*** Element info: {Using=xpath, value=(//span[contains(text(), 'Next')])[3]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wSignupTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wSignupTest@3cb1ffe6]" name="quitDriver" is-config="true" duration-ms="106" started-at="2023-05-08T11:43:41 IST" finished-at="2023-05-08T11:43:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wSignupTest -->
+      <class name="Memberse.WebAppAutomation.wPlayVideoPostTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wPlayVideoPostTest@27808f31]" name="startDriver" is-config="true" duration-ms="10017" started-at="2023-05-08T11:24:38 IST" finished-at="2023-05-08T11:24:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wPlayVideoPostTestCase()[pri:0, instance:Memberse.WebAppAutomation.wPlayVideoPostTest@27808f31]" name="wPlayVideoPostTestCase" duration-ms="39307" started-at="2023-05-08T11:24:48 IST" finished-at="2023-05-08T11:25:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wPlayVideoPostTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wPlayVideoPostTest@27808f31]" name="quitDriver" is-config="true" duration-ms="83" started-at="2023-05-08T11:25:28 IST" finished-at="2023-05-08T11:25:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wPlayVideoPostTest -->
+      <class name="Memberse.WebAppAutomation.wMyFansListTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wMyFansListTest@23d2a7e8]" name="startDriver" is-config="true" duration-ms="9424" started-at="2023-05-08T11:23:02 IST" finished-at="2023-05-08T11:23:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wMyFansListTestCase()[pri:0, instance:Memberse.WebAppAutomation.wMyFansListTest@23d2a7e8]" name="wMyFansListTestCase" duration-ms="36297" started-at="2023-05-08T11:23:12 IST" finished-at="2023-05-08T11:23:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wMyFansListTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wMyFansListTest@23d2a7e8]" name="quitDriver" is-config="true" duration-ms="79" started-at="2023-05-08T11:23:48 IST" finished-at="2023-05-08T11:23:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wMyFansListTest -->
+      <class name="Memberse.WebAppAutomation.wReportCommunityTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wReportCommunityTest@36b4cef0]" name="startDriver" is-config="true" duration-ms="11268" started-at="2023-05-08T11:32:05 IST" finished-at="2023-05-08T11:32:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wReportCommunityTestCase()[pri:0, instance:Memberse.WebAppAutomation.wReportCommunityTest@36b4cef0]" name="wReportCommunityTestCase" duration-ms="68176" started-at="2023-05-08T11:32:16 IST" finished-at="2023-05-08T11:33:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wReportCommunityTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wReportCommunityTest@36b4cef0]" name="quitDriver" is-config="true" duration-ms="191" started-at="2023-05-08T11:33:24 IST" finished-at="2023-05-08T11:33:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wReportCommunityTest -->
+      <class name="Memberse.WebAppAutomation.wLoginFormValidationTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@2a742aa2]" name="startDriver" is-config="true" duration-ms="10937" started-at="2023-05-08T11:38:41 IST" finished-at="2023-05-08T11:38:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wLoginFormValidationTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@2a742aa2]" name="wLoginFormValidationTestCase" duration-ms="16308" depends-on-groups="Smoke" started-at="2023-05-08T11:38:52 IST" finished-at="2023-05-08T11:39:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLoginFormValidationTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wLoginFormValidationTest@2a742aa2]" name="quitDriver" is-config="true" duration-ms="80" started-at="2023-05-08T11:39:08 IST" finished-at="2023-05-08T11:39:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wLoginFormValidationTest -->
+      <class name="Memberse.WebAppAutomation.wCommentOnPlaylistMediaTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCommentOnPlaylistMediaTest@687080dc]" name="startDriver" is-config="true" duration-ms="10362" started-at="2023-05-08T11:01:05 IST" finished-at="2023-05-08T11:01:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wCommentonPlaylistMediaTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCommentOnPlaylistMediaTest@687080dc]" name="wCommentonPlaylistMediaTestCase" duration-ms="86050" started-at="2023-05-08T11:01:15 IST" finished-at="2023-05-08T11:02:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wCommentonPlaylistMediaTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wCommentOnPlaylistMediaTest@687080dc]" name="quitDriver" is-config="true" duration-ms="99" started-at="2023-05-08T11:02:41 IST" finished-at="2023-05-08T11:02:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wCommentOnPlaylistMediaTest -->
+      <class name="Memberse.WebAppAutomation.wViewTextPostTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wViewTextPostTest@1a1d6a08]" name="startDriver" is-config="true" duration-ms="9672" started-at="2023-05-08T11:46:19 IST" finished-at="2023-05-08T11:46:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wViewTextPostTestCase()[pri:0, instance:Memberse.WebAppAutomation.wViewTextPostTest@1a1d6a08]" name="wViewTextPostTestCase" duration-ms="39416" started-at="2023-05-08T11:46:29 IST" finished-at="2023-05-08T11:47:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wViewTextPostTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wViewTextPostTest@1a1d6a08]" name="quitDriver" is-config="true" duration-ms="89" started-at="2023-05-08T11:47:08 IST" finished-at="2023-05-08T11:47:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wViewTextPostTest -->
+      <class name="Memberse.WebAppAutomation.wReportPostTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wReportPostTest@32d2fa64]" name="startDriver" is-config="true" duration-ms="10436" started-at="2023-05-08T11:33:24 IST" finished-at="2023-05-08T11:33:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wReportPostTestCase()[pri:0, instance:Memberse.WebAppAutomation.wReportPostTest@32d2fa64]" name="wReportPostTestCase" duration-ms="43293" started-at="2023-05-08T11:33:35 IST" finished-at="2023-05-08T11:34:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wReportPostTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wReportPostTest@32d2fa64]" name="quitDriver" is-config="true" duration-ms="81" started-at="2023-05-08T11:34:18 IST" finished-at="2023-05-08T11:34:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wReportPostTest -->
+      <class name="Memberse.WebAppAutomation.wMembershipsTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wMembershipsTest@26a7b76d]" name="startDriver" is-config="true" duration-ms="10632" started-at="2023-05-08T11:22:18 IST" finished-at="2023-05-08T11:22:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wMembershipsTestCase()[pri:0, instance:Memberse.WebAppAutomation.wMembershipsTest@26a7b76d]" name="wMembershipsTestCase" duration-ms="33230" started-at="2023-05-08T11:22:29 IST" finished-at="2023-05-08T11:23:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wMembershipsTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wMembershipsTest@26a7b76d]" name="quitDriver" is-config="true" duration-ms="85" started-at="2023-05-08T11:23:02 IST" finished-at="2023-05-08T11:23:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wMembershipsTest -->
+      <class name="Memberse.WebAppAutomation.wPlayAudioPostTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wPlayAudioPostTest@436e852b]" name="startDriver" is-config="true" duration-ms="10861" started-at="2023-05-08T11:23:48 IST" finished-at="2023-05-08T11:23:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wPlayAudioPostTestCase()[pri:0, instance:Memberse.WebAppAutomation.wPlayAudioPostTest@436e852b]" name="wPlayAudioPostTestCase" duration-ms="39221" started-at="2023-05-08T11:23:59 IST" finished-at="2023-05-08T11:24:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wPlayAudioPostTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wPlayAudioPostTest@436e852b]" name="quitDriver" is-config="true" duration-ms="142" started-at="2023-05-08T11:24:38 IST" finished-at="2023-05-08T11:24:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wPlayAudioPostTest -->
+      <class name="Memberse.WebAppAutomation.wCommentOnPostTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCommentOnPostTest@9a7504c]" name="startDriver" is-config="true" duration-ms="7979" started-at="2023-05-08T11:00:02 IST" finished-at="2023-05-08T11:00:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wCommentOnPostTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCommentOnPostTest@9a7504c]" name="wCommentOnPostTestCase" duration-ms="54441" started-at="2023-05-08T11:00:10 IST" finished-at="2023-05-08T11:01:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wCommentOnPostTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wCommentOnPostTest@9a7504c]" name="quitDriver" is-config="true" duration-ms="83" started-at="2023-05-08T11:01:05 IST" finished-at="2023-05-08T11:01:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wCommentOnPostTest -->
+      <class name="Memberse.WebAppAutomation.wPostHistoryDeleteTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wPostHistoryDeleteTest@6b9651f3]" name="startDriver" is-config="true" duration-ms="11657" started-at="2023-05-08T11:25:28 IST" finished-at="2023-05-08T11:25:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wPostHistoryDeleteTestCase()[pri:0, instance:Memberse.WebAppAutomation.wPostHistoryDeleteTest@6b9651f3]" name="wPostHistoryDeleteTestCase" duration-ms="43974" started-at="2023-05-08T11:25:40 IST" finished-at="2023-05-08T11:26:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wPostHistoryDeleteTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wPostHistoryDeleteTest@6b9651f3]" name="quitDriver" is-config="true" duration-ms="81" started-at="2023-05-08T11:26:24 IST" finished-at="2023-05-08T11:26:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wPostHistoryDeleteTest -->
+      <class name="Memberse.WebAppAutomation.wLogintTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@3dfc5fb8]" name="startDriver" is-config="true" duration-ms="9765" started-at="2023-05-08T11:39:08 IST" finished-at="2023-05-08T11:39:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="FAIL" signature="wLogintTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@3dfc5fb8]" name="wLogintTestCase" duration-ms="24902" depends-on-groups="Smoke" started-at="2023-05-08T11:39:18 IST" finished-at="2023-05-08T11:39:43 IST">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a class="disabled opacity-50 cursor-not-allowed text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-base font-medium rounded-md" href="/profile">...</a> is not clickable at point (128, 224). Other element would receive the click: <nav class="mt-5 space-y-1 px-2">...</nav>
+  (Session info: chrome=112.0.5615.137)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:598c:5681:8d9b:47fa:1340:3e41%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3', java.version: '1.8.0_351'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:64316}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 87e895ec1714df44e5df370365542771]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="disabled opacity-50 cursor-not-allowed text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-base font-medium rounded-md" href="/profile">...</a> is not clickable at point (128, 224). Other element would receive the click: <nav class="mt-5 space-y-1 px-2">...</nav>
+  (Session info: chrome=112.0.5615.137)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:598c:5681:8d9b:47fa:1340:3e41%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3', java.version: '1.8.0_351'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:64316}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 87e895ec1714df44e5df370365542771
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy11.click(Unknown Source)
+at Memberse.WebAppAutomation.wLogintTest.wLogintTestCase(wLogintTest.java:39)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLogintTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wLogintTest@3dfc5fb8]" name="quitDriver" is-config="true" duration-ms="82" started-at="2023-05-08T11:39:43 IST" finished-at="2023-05-08T11:39:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wLogintTest -->
+      <class name="Memberse.WebAppAutomation.wPostHistoryPlayTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wPostHistoryPlayTest@6b57696f]" name="startDriver" is-config="true" duration-ms="10616" started-at="2023-05-08T11:29:02 IST" finished-at="2023-05-08T11:29:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wPostHistoryPlayTestCase()[pri:0, instance:Memberse.WebAppAutomation.wPostHistoryPlayTest@6b57696f]" name="wPostHistoryPlayTestCase" duration-ms="56561" started-at="2023-05-08T11:29:13 IST" finished-at="2023-05-08T11:30:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wPostHistoryPlayTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wPostHistoryPlayTest@6b57696f]" name="quitDriver" is-config="true" duration-ms="84" started-at="2023-05-08T11:30:09 IST" finished-at="2023-05-08T11:30:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wPostHistoryPlayTest -->
+      <class name="Memberse.WebAppAutomation.wSmokeTest">
+        <test-method status="PASS" signature="InvokeCapabilities()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@2a556333]" name="InvokeCapabilities" is-config="true" duration-ms="15" started-at="2023-05-08T10:58:19 IST" finished-at="2023-05-08T10:58:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvokeCapabilities -->
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@2a556333]" name="startDriver" is-config="true" duration-ms="12931" started-at="2023-05-08T11:37:16 IST" finished-at="2023-05-08T11:37:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wSmokeTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@2a556333]" name="wSmokeTestCase" duration-ms="72451" started-at="2023-05-08T11:37:28 IST" finished-at="2023-05-08T11:38:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wSmokeTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@2a556333]" name="quitDriver" is-config="true" duration-ms="84" started-at="2023-05-08T11:38:41 IST" finished-at="2023-05-08T11:38:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="PASS" signature="endSuite()[pri:0, instance:Memberse.WebAppAutomation.wSmokeTest@2a556333]" name="endSuite" is-config="true" duration-ms="1" started-at="2023-05-08T11:49:21 IST" finished-at="2023-05-08T11:49:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSuite -->
-      </class> <!-- Memberse.WebAppAutomation.wFanSendDMTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Memberse.WebAppAutomation.wSmokeTest -->
+      <class name="Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest@3234e239]" name="startDriver" is-config="true" duration-ms="7919" started-at="2023-05-08T11:47:08 IST" finished-at="2023-05-08T11:47:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wFollowCommunityTestCase()[pri:1, instance:Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest@3234e239]" name="wFollowCommunityTestCase" duration-ms="80528" started-at="2023-05-08T11:47:16 IST" finished-at="2023-05-08T11:48:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wFollowCommunityTestCase -->
+        <test-method status="PASS" signature="wUnfollowCommunityTestCase()[pri:0, instance:Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest@3234e239]" name="wUnfollowCommunityTestCase" duration-ms="44791" started-at="2023-05-08T11:48:37 IST" depends-on-methods="Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest.wFollowCommunityTestCase" finished-at="2023-05-08T11:49:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wUnfollowCommunityTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest@3234e239]" name="quitDriver" is-config="true" duration-ms="108" started-at="2023-05-08T11:49:21 IST" finished-at="2023-05-08T11:49:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest -->
+      <class name="Memberse.WebAppAutomation.wFeedsFilterTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wFeedsFilterTest@6f195bc3]" name="startDriver" is-config="true" duration-ms="8716" started-at="2023-05-08T11:15:11 IST" finished-at="2023-05-08T11:15:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="FAIL" signature="wFeedsFilterTestCase()[pri:0, instance:Memberse.WebAppAutomation.wFeedsFilterTest@6f195bc3]" name="wFeedsFilterTestCase" duration-ms="41759" started-at="2023-05-08T11:15:20 IST" finished-at="2023-05-08T11:16:02 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [kqatestc3's Community] but found [kqatestc5's Community]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [kqatestc3's Community] but found [kqatestc5's Community]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at Memberse.WebAppAutomation.wFeedsFilterTest.wFeedsFilterTestCase(wFeedsFilterTest.java:51)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wFeedsFilterTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wFeedsFilterTest@6f195bc3]" name="quitDriver" is-config="true" duration-ms="81" started-at="2023-05-08T11:16:02 IST" finished-at="2023-05-08T11:16:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wFeedsFilterTest -->
+      <class name="Memberse.WebAppAutomation.wPrivacyPolicyTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wPrivacyPolicyTest@307f6b8c]" name="startDriver" is-config="true" duration-ms="26106" started-at="2023-05-08T11:30:09 IST" finished-at="2023-05-08T11:30:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wPrivacyPolicyTestCase()[pri:0, instance:Memberse.WebAppAutomation.wPrivacyPolicyTest@307f6b8c]" name="wPrivacyPolicyTestCase" duration-ms="89180" started-at="2023-05-08T11:30:35 IST" finished-at="2023-05-08T11:32:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wPrivacyPolicyTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wPrivacyPolicyTest@307f6b8c]" name="quitDriver" is-config="true" duration-ms="143" started-at="2023-05-08T11:32:05 IST" finished-at="2023-05-08T11:32:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wPrivacyPolicyTest -->
+      <class name="Memberse.WebAppAutomation.wSharePostTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wSharePostTest@1d8d30f7]" name="startDriver" is-config="true" duration-ms="16540" started-at="2023-05-08T11:36:25 IST" finished-at="2023-05-08T11:36:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wSharePostTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSharePostTest@1d8d30f7]" name="wSharePostTestCase" duration-ms="34036" started-at="2023-05-08T11:36:41 IST" finished-at="2023-05-08T11:37:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wSharePostTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wSharePostTest@1d8d30f7]" name="quitDriver" is-config="true" duration-ms="81" started-at="2023-05-08T11:37:15 IST" finished-at="2023-05-08T11:37:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wSharePostTest -->
+      <class name="Memberse.WebAppAutomation.wCreateAndDeletePlaylistTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreateAndDeletePlaylistTest@38bc8ab5]" name="startDriver" is-config="true" duration-ms="13236" started-at="2023-05-08T11:10:04 IST" finished-at="2023-05-08T11:10:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wCreateAndDeletePlaylistTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCreateAndDeletePlaylistTest@38bc8ab5]" name="wCreateAndDeletePlaylistTestCase" duration-ms="65264" started-at="2023-05-08T11:10:18 IST" finished-at="2023-05-08T11:11:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wCreateAndDeletePlaylistTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreateAndDeletePlaylistTest@38bc8ab5]" name="quitDriver" is-config="true" duration-ms="86" started-at="2023-05-08T11:11:23 IST" finished-at="2023-05-08T11:11:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wCreateAndDeletePlaylistTest -->
+      <class name="Memberse.WebAppAutomation.wBecomeCreatorTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wBecomeCreatorTest@7ce6a65d]" name="startDriver" is-config="true" duration-ms="9058" started-at="2023-05-08T10:58:19 IST" finished-at="2023-05-08T10:58:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wBecomeCreatorTestCase()[pri:0, instance:Memberse.WebAppAutomation.wBecomeCreatorTest@7ce6a65d]" name="wBecomeCreatorTestCase" duration-ms="51180" started-at="2023-05-08T10:58:29 IST" finished-at="2023-05-08T10:59:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wBecomeCreatorTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wBecomeCreatorTest@7ce6a65d]" name="quitDriver" is-config="true" duration-ms="84" started-at="2023-05-08T10:59:20 IST" finished-at="2023-05-08T10:59:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wBecomeCreatorTest -->
+      <class name="Memberse.WebAppAutomation.wViewPhotoPostTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wViewPhotoPostTest@37d31475]" name="startDriver" is-config="true" duration-ms="12933" started-at="2023-05-08T11:45:26 IST" finished-at="2023-05-08T11:45:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wViewPhotoPostTestCase()[pri:0, instance:Memberse.WebAppAutomation.wViewPhotoPostTest@37d31475]" name="wViewPhotoPostTestCase" duration-ms="39789" started-at="2023-05-08T11:45:39 IST" finished-at="2023-05-08T11:46:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wViewPhotoPostTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wViewPhotoPostTest@37d31475]" name="quitDriver" is-config="true" duration-ms="84" started-at="2023-05-08T11:46:19 IST" finished-at="2023-05-08T11:46:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wViewPhotoPostTest -->
+      <class name="Memberse.WebAppAutomation.wCreateVideoPostTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreateVideoPostTest@2353b3e6]" name="startDriver" is-config="true" duration-ms="9514" started-at="2023-05-08T11:08:37 IST" finished-at="2023-05-08T11:08:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wCreatVideoPostTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCreateVideoPostTest@2353b3e6]" name="wCreatVideoPostTestCase" duration-ms="77878" started-at="2023-05-08T11:08:46 IST" finished-at="2023-05-08T11:10:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wCreatVideoPostTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreateVideoPostTest@2353b3e6]" name="quitDriver" is-config="true" duration-ms="99" started-at="2023-05-08T11:10:04 IST" finished-at="2023-05-08T11:10:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wCreateVideoPostTest -->
+      <class name="Memberse.WebAppAutomation.wLikePostTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wLikePostTest@3e57cd70]" name="startDriver" is-config="true" duration-ms="11142" started-at="2023-05-08T11:19:39 IST" finished-at="2023-05-08T11:19:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wLikePostTestCase()[pri:0, instance:Memberse.WebAppAutomation.wLikePostTest@3e57cd70]" name="wLikePostTestCase" duration-ms="47017" started-at="2023-05-08T11:19:50 IST" finished-at="2023-05-08T11:20:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wLikePostTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wLikePostTest@3e57cd70]" name="quitDriver" is-config="true" duration-ms="87" started-at="2023-05-08T11:20:37 IST" finished-at="2023-05-08T11:20:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wLikePostTest -->
+      <class name="Memberse.WebAppAutomation.wJoinCommunityTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wJoinCommunityTest@fad74ee]" name="startDriver" is-config="true" duration-ms="9677" started-at="2023-05-08T11:17:39 IST" finished-at="2023-05-08T11:17:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wJoinCommunityTestCase()[pri:0, instance:Memberse.WebAppAutomation.wJoinCommunityTest@fad74ee]" name="wJoinCommunityTestCase" duration-ms="109829" started-at="2023-05-08T11:17:49 IST" finished-at="2023-05-08T11:19:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wJoinCommunityTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wJoinCommunityTest@fad74ee]" name="quitDriver" is-config="true" duration-ms="87" started-at="2023-05-08T11:19:39 IST" finished-at="2023-05-08T11:19:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wJoinCommunityTest -->
+      <class name="Memberse.WebAppAutomation.wShareCommunityTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wShareCommunityTest@3d921e20]" name="startDriver" is-config="true" duration-ms="11634" started-at="2023-05-08T11:35:05 IST" finished-at="2023-05-08T11:35:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wShareCommunityTestCase()[pri:0, instance:Memberse.WebAppAutomation.wShareCommunityTest@3d921e20]" name="wShareCommunityTestCase" duration-ms="68124" started-at="2023-05-08T11:35:17 IST" finished-at="2023-05-08T11:36:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wShareCommunityTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wShareCommunityTest@3d921e20]" name="quitDriver" is-config="true" duration-ms="84" started-at="2023-05-08T11:36:25 IST" finished-at="2023-05-08T11:36:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wShareCommunityTest -->
+      <class name="Memberse.WebAppAutomation.wCommunityEditInfoTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCommunityEditInfoTest@587d1d39]" name="startDriver" is-config="true" duration-ms="8126" started-at="2023-05-08T11:02:41 IST" finished-at="2023-05-08T11:02:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wCommunityEditInfoTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCommunityEditInfoTest@587d1d39]" name="wCommunityEditInfoTestCase" duration-ms="39512" started-at="2023-05-08T11:02:49 IST" finished-at="2023-05-08T11:03:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wCommunityEditInfoTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wCommunityEditInfoTest@587d1d39]" name="quitDriver" is-config="true" duration-ms="90" started-at="2023-05-08T11:03:29 IST" finished-at="2023-05-08T11:03:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wCommunityEditInfoTest -->
+      <class name="Memberse.WebAppAutomation.wPostHistoryEditTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wPostHistoryEditTest@5bb21b69]" name="startDriver" is-config="true" duration-ms="10336" started-at="2023-05-08T11:26:24 IST" finished-at="2023-05-08T11:26:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="FAIL" signature="wPostHistoryEditTestCase()[pri:0, instance:Memberse.WebAppAutomation.wPostHistoryEditTest@5bb21b69]" name="wPostHistoryEditTestCase" duration-ms="147986" started-at="2023-05-08T11:26:34 IST" finished-at="2023-05-08T11:29:02 IST">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //p[contains(text(),'Post History')]' (tried for 60 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //p[contains(text(),'Post History')]' (tried for 60 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at Memberse.WebAppAutomation.wPostHistoryEditTest.wPostHistoryEditTestCase(wPostHistoryEditTest.java:46)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Post History')]"}
+  (Session info: chrome=112.0.5615.137)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:598c:5681:8d9b:47fa:1340:3e41%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3', java.version: '1.8.0_351'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:60557}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a16dfad5e43f9c050ec067f66cd88262
+*** Element info: {Using=xpath, value=//p[contains(text(),'Post History')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wPostHistoryEditTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wPostHistoryEditTest@5bb21b69]" name="quitDriver" is-config="true" duration-ms="92" started-at="2023-05-08T11:29:02 IST" finished-at="2023-05-08T11:29:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wPostHistoryEditTest -->
+      <class name="Memberse.WebAppAutomation.wDeleteAccountTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wDeleteAccountTest@4d50efb8]" name="startDriver" is-config="true" duration-ms="9736" started-at="2023-05-08T11:14:05 IST" finished-at="2023-05-08T11:14:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wDeleteAccountTestCase()[pri:0, instance:Memberse.WebAppAutomation.wDeleteAccountTest@4d50efb8]" name="wDeleteAccountTestCase" duration-ms="56172" started-at="2023-05-08T11:14:15 IST" finished-at="2023-05-08T11:15:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wDeleteAccountTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wDeleteAccountTest@4d50efb8]" name="quitDriver" is-config="true" duration-ms="85" started-at="2023-05-08T11:15:11 IST" finished-at="2023-05-08T11:15:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wDeleteAccountTest -->
+      <class name="Memberse.WebAppAutomation.wSignupFormValidationTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@7d70d1b1]" name="startDriver" is-config="true" duration-ms="12864" started-at="2023-05-08T11:39:43 IST" finished-at="2023-05-08T11:39:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wSignupFormValidationTestCase()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@7d70d1b1]" name="wSignupFormValidationTestCase" duration-ms="13802" depends-on-groups="Smoke" started-at="2023-05-08T11:39:56 IST" finished-at="2023-05-08T11:40:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wSignupFormValidationTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wSignupFormValidationTest@7d70d1b1]" name="quitDriver" is-config="true" duration-ms="78" started-at="2023-05-08T11:40:10 IST" finished-at="2023-05-08T11:40:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wSignupFormValidationTest -->
+      <class name="Memberse.WebAppAutomation.wCreateAudioPostTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreateAudioPostTest@631330c]" name="startDriver" is-config="true" duration-ms="8882" started-at="2023-05-08T11:07:44 IST" finished-at="2023-05-08T11:07:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="FAIL" signature="wCreatAudioPostTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCreateAudioPostTest@631330c]" name="wCreatAudioPostTestCase" duration-ms="44146" started-at="2023-05-08T11:07:53 IST" finished-at="2023-05-08T11:08:37 IST">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span class="text-base font-medium leading-4">...</span> is not clickable at point (1086, 527). Other element would receive the click: <div class="flex justify-center">...</div>
+  (Session info: chrome=112.0.5615.137)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:598c:5681:8d9b:47fa:1340:3e41%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3', java.version: '1.8.0_351'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:54684}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d967e1f14feb576969c7f9af2b0b3484]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="text-base font-medium leading-4">...</span> is not clickable at point (1086, 527). Other element would receive the click: <div class="flex justify-center">...</div>
+  (Session info: chrome=112.0.5615.137)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:598c:5681:8d9b:47fa:1340:3e41%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3', java.version: '1.8.0_351'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:54684}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d967e1f14feb576969c7f9af2b0b3484
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy11.click(Unknown Source)
+at Memberse.WebAppAutomation.wCreateAudioPostTest.wCreatAudioPostTestCase(wCreateAudioPostTest.java:98)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wCreatAudioPostTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreateAudioPostTest@631330c]" name="quitDriver" is-config="true" duration-ms="90" started-at="2023-05-08T11:08:37 IST" finished-at="2023-05-08T11:08:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wCreateAudioPostTest -->
+      <class name="Memberse.WebAppAutomation.wCreatePhotoPostTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreatePhotoPostTest@1a8a8f7c]" name="startDriver" is-config="true" duration-ms="15822" started-at="2023-05-08T11:11:23 IST" finished-at="2023-05-08T11:11:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="FAIL" signature="wCreatePhotoPostTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCreatePhotoPostTest@1a8a8f7c]" name="wCreatePhotoPostTestCase" duration-ms="40709" started-at="2023-05-08T11:11:39 IST" finished-at="2023-05-08T11:12:20 IST">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span class="text-base font-medium leading-4">...</span> is not clickable at point (1086, 527). Other element would receive the click: <div class="flex justify-center">...</div>
+  (Session info: chrome=112.0.5615.137)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:598c:5681:8d9b:47fa:1340:3e41%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3', java.version: '1.8.0_351'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:55837}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ff5883e4d6e987ea0aec3a9dbd5533c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="text-base font-medium leading-4">...</span> is not clickable at point (1086, 527). Other element would receive the click: <div class="flex justify-center">...</div>
+  (Session info: chrome=112.0.5615.137)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Kamals-MacBook-Pro.local', ip: '2401:4900:598c:5681:8d9b:47fa:1340:3e41%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3', java.version: '1.8.0_351'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/5t/qx22w3p15y9...}, goog:chromeOptions: {debuggerAddress: localhost:55837}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ff5883e4d6e987ea0aec3a9dbd5533c
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy11.click(Unknown Source)
+at Memberse.WebAppAutomation.wCreatePhotoPostTest.wCreatePhotoPostTestCase(wCreatePhotoPostTest.java:96)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wCreatePhotoPostTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wCreatePhotoPostTest@1a8a8f7c]" name="quitDriver" is-config="true" duration-ms="77" started-at="2023-05-08T11:12:20 IST" finished-at="2023-05-08T11:12:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wCreatePhotoPostTest -->
+      <class name="Memberse.WebAppAutomation.wMemberInfoTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wMemberInfoTest@7a9273a8]" name="startDriver" is-config="true" duration-ms="8993" started-at="2023-05-08T11:21:28 IST" finished-at="2023-05-08T11:21:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wMemberInfoTestCase()[pri:0, instance:Memberse.WebAppAutomation.wMemberInfoTest@7a9273a8]" name="wMemberInfoTestCase" duration-ms="41547" started-at="2023-05-08T11:21:37 IST" finished-at="2023-05-08T11:22:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wMemberInfoTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wMemberInfoTest@7a9273a8]" name="quitDriver" is-config="true" duration-ms="92" started-at="2023-05-08T11:22:18 IST" finished-at="2023-05-08T11:22:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wMemberInfoTest -->
+      <class name="Memberse.WebAppAutomation.wCommunityGuidelinesTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wCommunityGuidelinesTest@2173f6d9]" name="startDriver" is-config="true" duration-ms="8491" started-at="2023-05-08T11:03:29 IST" finished-at="2023-05-08T11:03:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wCommunityGuidelinesTestCase()[pri:0, instance:Memberse.WebAppAutomation.wCommunityGuidelinesTest@2173f6d9]" name="wCommunityGuidelinesTestCase" duration-ms="87890" started-at="2023-05-08T11:03:37 IST" finished-at="2023-05-08T11:05:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wCommunityGuidelinesTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wCommunityGuidelinesTest@2173f6d9]" name="quitDriver" is-config="true" duration-ms="111" started-at="2023-05-08T11:05:05 IST" finished-at="2023-05-08T11:05:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wCommunityGuidelinesTest -->
+      <class name="Memberse.WebAppAutomation.wFeedsVerifyTest">
+        <test-method status="PASS" signature="startDriver()[pri:0, instance:Memberse.WebAppAutomation.wFeedsVerifyTest@7a187f14]" name="startDriver" is-config="true" duration-ms="9046" started-at="2023-05-08T11:16:02 IST" finished-at="2023-05-08T11:16:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method status="PASS" signature="wFeedsVerifyTestCase()[pri:0, instance:Memberse.WebAppAutomation.wFeedsVerifyTest@7a187f14]" name="wFeedsVerifyTestCase" duration-ms="88050" started-at="2023-05-08T11:16:11 IST" finished-at="2023-05-08T11:17:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wFeedsVerifyTestCase -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Memberse.WebAppAutomation.wFeedsVerifyTest@7a187f14]" name="quitDriver" is-config="true" duration-ms="84" started-at="2023-05-08T11:17:39 IST" finished-at="2023-05-08T11:17:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Memberse.WebAppAutomation.wFeedsVerifyTest -->
+    </test> <!-- Web App Test -->
+  </suite> <!-- Memberse Suite -->
 </testng-results>

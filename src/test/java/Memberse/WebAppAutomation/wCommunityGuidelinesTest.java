@@ -40,6 +40,9 @@ public class wCommunityGuidelinesTest extends WBase {
          }
 	     driver.close();
 	     driver.switchTo().window(mainWindowHandle);
+	     
+	   //Test Status Flag
+			super.testStatus = 1;
      }    
 
 }

@@ -27,6 +27,7 @@ public class wCommentOnPostTest extends WBase {
 		
 	    WelcomePage wp = new WelcomePage(driver);
 	    ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+	    u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc7@yopmail.com");
@@ -43,7 +44,7 @@ public class wCommentOnPostTest extends WBase {
 	    String autoText=getSaltString();
 	    System.out.println(autoText);
 	    
-	    ewait.until(ExpectedConditions.elementToBeClickable(hp.writeComment())).sendKeys("Auto generated-" + autoText);
+	    ewait.until(ExpectedConditions.elementToBeClickable(hp.writeComment())).sendKeys("Auto Comment - " + autoText);
 	    u.shortDelay();
 	    hp.writeComment().sendKeys(Keys.ENTER);
         u.apiDelay();
@@ -51,7 +52,10 @@ public class wCommentOnPostTest extends WBase {
         
         String text = driver.findElement(By.xpath("//p[@class='text-base font-normal leading-5']")).getText();
         System.out.println(text);
-        Assert.assertEquals(text, "Auto generated-" + autoText);
+        Assert.assertEquals(text, "Auto Comment - " + autoText);
+        
+      //Test Status Flag
+      		super.testStatus = 1;
 	}
 	
 	

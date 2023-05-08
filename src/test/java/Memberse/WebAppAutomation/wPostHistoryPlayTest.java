@@ -27,6 +27,7 @@ public class wPostHistoryPlayTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc3@yopmail.com");
@@ -55,13 +56,13 @@ public class wPostHistoryPlayTest extends WBase {
     	}
     	finally 
     	{
-    		 List<WebElement> verifyResult2 = driver.findElements(By.xpath("//*[@class='space-y-2']/div"));
+    		 List<WebElement> verifyResult2 = driver.findElements(By.xpath("//*[@class='flex-grow']/div/div[2]/div/div"));
              int testresult2 = verifyResult2.size();
              System.out.println(verifyResult2.size());
           
              if(testresult2 == 0)
              {
-            	 String noResult = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[3]/main/div/div[2]/div[1]/div/div/div[2]/div[2]/div/div[1]")).getText();
+            	 String noResult = driver.findElement(By.xpath("//*[text()='No results available.']")).getText();
             	 System.out.println(noResult);
             	 Assert.assertEquals(noResult, "No results available.");
              }
@@ -76,6 +77,9 @@ public class wPostHistoryPlayTest extends WBase {
         String Text = driver.findElement(By.cssSelector("p[class=' text-sm font-semibold line-clamp-1']")).getText();
 	    System.out.println(Text);
 	    Assert.assertEquals(Text,"kqatestc3's Community");
+	    
+	  //Test Status Flag
+	  		super.testStatus = 1;
 	}
 
 }

@@ -66,6 +66,9 @@ public class wLoginWithGoogleTest extends WBase{
 			//driver.close();
 			System.out.println("Google Login Test Case is Working fine as Buttons are clickable and GUI is responsive");
 		}
+		//Test Status Flag
+				super.testStatus = 1;
+				
 		driver.quit();
 		//driver.switchTo().window(originalWindow);
 	}

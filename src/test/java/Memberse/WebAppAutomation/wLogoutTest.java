@@ -21,8 +21,11 @@ public class wLogoutTest extends WBase {
 		WUtilities u = new  WUtilities(driver);
 		u.loadDelay();
 		
+		ewait.until(ExpectedConditions.titleIs("Memberse"));
+		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc7@yopmail.com");
@@ -31,14 +34,19 @@ public class wLogoutTest extends WBase {
 		u.apiDelay();
 		
 		driver.findElement(By.xpath("//a[text()='Creator']")).click();
-		driver.findElement(By.xpath("//span[@class='shadow-thick cursor-pointer inline-flex items-center p-0.5 rounded-full text-sm bg-pink-2000 text-neutral-1000']")).click();
-		driver.findElement(By.xpath("//p[text()='Log out']")).click();
+		u.loadDelay();
+		driver.findElement(By.xpath("//div[@class='relative h-10 w-10']")).click();
+		driver.findElement(By.xpath("//button[text()='Sign out']")).click();
 		driver.findElement(By.xpath("//span[text()='Confirm']")).click();
+		u.apiDelay();
 		
 		String verifyUrl = driver.getCurrentUrl();
 		System.out.println(verifyUrl);
 		Assert.assertEquals(verifyUrl, "https://app-qa.so.fa.dog/auth/signup");
 		System.out.println("Test Case Completed");
+		
+		//Test Status Flag
+		super.testStatus = 1;
 	}
 
 }

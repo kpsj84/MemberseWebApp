@@ -28,6 +28,7 @@ public class wPostHistoryEditTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc3@yopmail.com");
@@ -69,10 +70,13 @@ public class wPostHistoryEditTest extends WBase {
 		ewait.until(ExpectedConditions.elementToBeClickable(php.SavePost())).click();
 		u.loadDelay();
 		
-		WebElement Text1 = ewait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='rnc__notification-content']"))));
+		WebElement Text1 = ewait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='notistack-CollapseWrapper']"))));
 		String text2 = Text1.getText();
 		System.out.println(text2);
-	    Assert.assertEquals(text2,"Success!\n" + "Operation succesfully completed.");     
+	    Assert.assertEquals(text2,"Operation succesfully completed.");  
+	    
+	  //Test Status Flag
+	  		super.testStatus = 1;
 	}
 	
 	public String getSaltString() {

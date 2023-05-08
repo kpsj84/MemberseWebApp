@@ -32,6 +32,7 @@ public class wPlaylistEditTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc3@yopmail.com");
@@ -120,9 +121,9 @@ public class wPlaylistEditTest extends WBase {
 		ewait.until(ExpectedConditions.elementToBeClickable(plp.EditSaveButton2())).click();
 		u.shortDelay();
 		
-		String text2= ewait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='rnc__notification-content']")))).getText();
+		String text2= ewait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='notistack-CollapseWrapper']")))).getText();
 		System.out.println(text2);
-		Assert.assertEquals(text2,"Success!\n" + "Operation succesfully completed.");
+		Assert.assertEquals(text2,"Operation succesfully completed.");
 		
 		u.loadDelay();
 		ewait.until(ExpectedConditions.elementToBeClickable(plp.playListDeleteButton())).click();

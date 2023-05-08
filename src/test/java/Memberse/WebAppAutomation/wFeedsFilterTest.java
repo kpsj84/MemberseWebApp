@@ -26,6 +26,7 @@ public class wFeedsFilterTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc4@yopmail.com");
@@ -48,6 +49,9 @@ public class wFeedsFilterTest extends WBase {
 	    String Kqatestc3 = ele3.get(0).getText();
 	    System.out.println(Kqatestc3);
 		Assert.assertEquals(Kqatestc3,"kqatestc3's Community");
+		
+		//Test Status Flag
+				super.testStatus = 1;
     }
 
 }

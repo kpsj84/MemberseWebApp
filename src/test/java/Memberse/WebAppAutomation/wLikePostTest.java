@@ -26,6 +26,7 @@ public class wLikePostTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc5@yopmail.com");
@@ -53,6 +54,9 @@ public class wLikePostTest extends WBase {
 		System.out.println(newLikeCount);
 		u.shortDelay();
 		Assert.assertNotEquals(likeCount, newLikeCount);
+		
+		//Test Status Flag
+				super.testStatus = 1;
 	}
 
 }

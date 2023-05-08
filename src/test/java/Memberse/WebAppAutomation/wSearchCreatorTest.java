@@ -27,6 +27,7 @@ public class wSearchCreatorTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc7@yopmail.com");
@@ -50,10 +51,10 @@ public class wSearchCreatorTest extends WBase {
 	    System.out.println(Text1);
 	    Assert.assertEquals(Text1,"@kqatestc4");
 	     
-	    int verifyResult = driver.findElements(By.xpath("//*[@class='space-y-2']/div")).size();
+	    int verifyResult = driver.findElements(By.xpath("//*[@class='space-y-1']/div/div/div")).size();
         System.out.println(verifyResult);
      
-        List<WebElement> verifyResult2 = driver.findElements(By.xpath("//*[@class='space-y-2']/div"));
+        List<WebElement> verifyResult2 = driver.findElements(By.xpath("//*[@class='space-y-1']/div/div/div"));
         int testresult2 = verifyResult2.size();
         System.out.println(verifyResult2.size());
      
@@ -67,6 +68,9 @@ public class wSearchCreatorTest extends WBase {
         {
         	System.out.println("Got Results from the Search field");
         }
+        
+      //Test Status Flag
+      		super.testStatus = 1;
 	}
 
 }

@@ -45,21 +45,20 @@ public class wJoinCommunityTest extends WBase {
 		u.elementToBeClickable(ewait, sp.Password()).sendKeys(password);
 		u.elementToBeClickable(ewait, sp.confirmPassword()).sendKeys(password);
 		u.elementToBeClickable(ewait, sp.SignupButton()).click();
-		u.shortDelay();
-		
-		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
-		LoginPage lp = new LoginPage(driver);
-		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys(email);
-		ewait.until(ExpectedConditions.elementToBeClickable(lp.Password())).sendKeys(password);
-		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
 		u.apiDelay();
-			
-		RoleSelectionPage rsp = new RoleSelectionPage(driver);
-	    rsp.AsaMember().click();
-	    Thread.sleep(10000);
+		
+		String fan = ewait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(), 'Fan')]"))).getText();
+		Assert.assertEquals(fan, "Fan");
+		String creator = ewait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(), 'Creator')]"))).getText();
+		Assert.assertEquals(creator, "Creator");
+		ewait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(), 'Fan')]"))).click();
+		
+		ewait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//button[@type='button']//span[text()=\"Let's go\"])[2]"))).click();
+		u.loadDelay();
 		
 	    HomePage hp = new HomePage(driver);
 	    ewait.until(ExpectedConditions.elementToBeClickable(hp.ExploreMenu())).click();
+	    u.loadDelay();
 	    
 	    ExplorePage ep = new ExplorePage(driver);
 	    ewait.until(ExpectedConditions.elementToBeClickable(ep.SearchField())).sendKeys("kqatestc3");
@@ -87,6 +86,9 @@ public class wJoinCommunityTest extends WBase {
 	    String Text = ewait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[contains(text(),'Thanks for your payment')]"))).getText();
 		System.out.println(Text);
 		Assert.assertEquals(Text,"Thanks for your payment");
+		
+		//Test Status Flag
+  		super.testStatus = 1;
 	}
 	
 		public String getSaltString() {

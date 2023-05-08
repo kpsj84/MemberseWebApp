@@ -85,7 +85,7 @@ public class ExplorePage {
 	        return SearchField;
 	    }
 	    
-	    @FindBy(css="div[class='space-y-2'] >div")
+	    @FindBy(xpath="//*[@class='space-y-1']/div/div/div/a")
 	    private WebElement ClickCreator ;
 	    
 	    public WebElement ClickCreator() {

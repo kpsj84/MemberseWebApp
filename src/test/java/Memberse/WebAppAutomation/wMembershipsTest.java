@@ -27,6 +27,7 @@ public class wMembershipsTest extends WBase {
 		
 		WelcomePage wp = new WelcomePage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(wp.LoginButton())).click();
+		u.shortDelay();
 		
 		LoginPage lp = new LoginPage(driver);
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Email())).sendKeys("kqatestc3@yopmail.com");
@@ -100,6 +101,9 @@ public class wMembershipsTest extends WBase {
 		{
 				System.out.println("finally block executed, testing complete");
 		}
+		
+		//Test Status Flag
+				super.testStatus = 1;
 	}
 
 }

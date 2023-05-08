@@ -15,7 +15,7 @@ public class CreatorCommunityPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//span[contains(text(),'Join')]")
+	@FindBy(xpath="//span[contains(text(),'join')]")
     private WebElement JoinButton ;
 
     public WebElement  JoinButton () {
@@ -43,7 +43,7 @@ public class CreatorCommunityPage {
 		return DMButton;
 	}
 	
-	@FindBy(xpath="//*[@class='w-8 h-8 flex items-center justify-center']")
+	@FindBy(xpath="(//*[@class='w-8 h-8 flex items-center justify-center'])[2]") 
 	private WebElement threeDotsMenu;
 	
 	public WebElement threeDotsMenu() {
