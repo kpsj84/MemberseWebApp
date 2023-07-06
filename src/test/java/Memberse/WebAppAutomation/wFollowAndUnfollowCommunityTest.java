@@ -24,7 +24,7 @@ public class wFollowAndUnfollowCommunityTest extends WBase {
 	public String email;
 	public String password;
 	
-	@Test(priority=1)
+	@Test(groups = {"Regression"}, priority=28)
 	public void wFollowCommunityTestCase()throws InterruptedException{
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);
@@ -117,7 +117,7 @@ public class wFollowAndUnfollowCommunityTest extends WBase {
         
         
     //2nd Test case started from here
-        @Test(dependsOnMethods="wFollowCommunityTestCase")
+        @Test(dependsOnMethods="wFollowCommunityTestCase", priority=29)
         public void wUnfollowCommunityTestCase() throws InterruptedException { 
         	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     		WebDriverWait ewait =  new WebDriverWait(driver, 60);
@@ -139,6 +139,7 @@ public class wFollowAndUnfollowCommunityTest extends WBase {
 			ewait.until(ExpectedConditions.elementToBeClickable(hp.ExploreMenu())).click();
 			
 	        ExplorePage ep = new ExplorePage(driver);
+	        u.loadDelay();
 	        ewait.until(ExpectedConditions.elementToBeClickable(ep.SearchField())).sendKeys("kqatestc3");
 	        u.apiDelay();
 	        ewait.until(ExpectedConditions.elementToBeClickable(ep.ClickCreator())).click();

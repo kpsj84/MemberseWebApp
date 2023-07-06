@@ -17,7 +17,7 @@ import WebPageObjects.WelcomePage;
 
 public class wPostHistoryDeleteTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=50)
 	public void wPostHistoryDeleteTestCase()throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);

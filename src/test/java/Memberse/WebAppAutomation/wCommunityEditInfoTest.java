@@ -17,7 +17,7 @@ import WebPageObjects.WelcomePage;
 
 public class wCommunityEditInfoTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=44)
 	public void wCommunityEditInfoTestCase() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);
@@ -35,6 +35,7 @@ public class wCommunityEditInfoTest extends WBase {
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.ShowPassword())).click();
 		ewait.until(ExpectedConditions.elementToBeClickable(lp.Login())).click();
 		u.apiDelay();
+		u.shortDelay();
 		
 	    HomePage hp = new HomePage(driver);
 	    ewait.until(ExpectedConditions.elementToBeClickable(hp.CreatorMenu())).click();

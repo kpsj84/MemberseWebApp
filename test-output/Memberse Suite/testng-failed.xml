@@ -6,69 +6,39 @@
   </listeners>
   <test thread-count="5" name="Web App Test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wFeedsFilterTest">
+      <class name="Memberse.WebDMonly.CreatorReplyDMTest">
         <methods>
+          <include name="CreatorReplyDMTestCase"/>
           <include name="quitDriver"/>
-          <include name="endSuite"/>
-          <include name="wFeedsFilterTestCase"/>
-          <include name="startDriver"/>
-          <include name="InvokeCapabilities"/>
-        </methods>
-      </class> <!-- Memberse.WebAppAutomation.wFeedsFilterTest -->
-      <class name="Memberse.WebAppAutomation.wSignupTest">
-        <methods>
-          <include name="wSignupTestCase"/>
-          <include name="quitDriver"/>
+          <include name="methodName"/>
           <include name="endSuite"/>
           <include name="startDriver"/>
+          <include name="methodRun"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wSignupTest -->
-      <class name="Memberse.WebAppAutomation.wSmokeTest">
+      </class> <!-- Memberse.WebDMonly.CreatorReplyDMTest -->
+      <class name="Memberse.WebDMonly.FanBioLinkLoginTest">
         <methods>
           <include name="quitDriver"/>
+          <include name="methodName"/>
           <include name="endSuite"/>
           <include name="startDriver"/>
-          <include name="wSmokeTestCase"/>
+          <include name="FanBioLinkLoginTestCase"/>
+          <include name="methodRun"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wSmokeTest -->
-      <class name="Memberse.WebAppAutomation.wLogintTest">
+      </class> <!-- Memberse.WebDMonly.FanBioLinkLoginTest -->
+      <class name="Memberse.WebDMonly.FanSendDMTest">
         <methods>
           <include name="quitDriver"/>
+          <include name="methodName"/>
           <include name="endSuite"/>
-          <include name="wLogintTestCase"/>
+          <include name="FanSendDMTestCase"/>
           <include name="startDriver"/>
+          <include name="methodRun"/>
           <include name="InvokeCapabilities"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wLogintTest -->
-      <class name="Memberse.WebAppAutomation.wCreateAudioPostTest">
-        <methods>
-          <include name="quitDriver"/>
-          <include name="endSuite"/>
-          <include name="wCreatAudioPostTestCase"/>
-          <include name="startDriver"/>
-          <include name="InvokeCapabilities"/>
-        </methods>
-      </class> <!-- Memberse.WebAppAutomation.wCreateAudioPostTest -->
-      <class name="Memberse.WebAppAutomation.wCreatePhotoPostTest">
-        <methods>
-          <include name="quitDriver"/>
-          <include name="endSuite"/>
-          <include name="wCreatePhotoPostTestCase"/>
-          <include name="startDriver"/>
-          <include name="InvokeCapabilities"/>
-        </methods>
-      </class> <!-- Memberse.WebAppAutomation.wCreatePhotoPostTest -->
-      <class name="Memberse.WebAppAutomation.wPostHistoryEditTest">
-        <methods>
-          <include name="quitDriver"/>
-          <include name="endSuite"/>
-          <include name="wPostHistoryEditTestCase"/>
-          <include name="startDriver"/>
-          <include name="InvokeCapabilities"/>
-        </methods>
-      </class> <!-- Memberse.WebAppAutomation.wPostHistoryEditTest -->
+      </class> <!-- Memberse.WebDMonly.FanSendDMTest -->
     </classes>
   </test> <!-- Web App Test(failed) -->
 </suite> <!-- Failed suite [Memberse Suite] -->

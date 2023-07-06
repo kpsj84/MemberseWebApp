@@ -16,7 +16,7 @@ import WebPageObjects.WelcomePage;
 
 public class wReportCommunityTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=31)
 	public void wReportCommunityTestCase()throws InterruptedException{
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);
@@ -39,6 +39,7 @@ public class wReportCommunityTest extends WBase {
 		u.loadDelay();
 		
 	    ExplorePage ep = new ExplorePage(driver);
+	    u.loadDelay();
 	    ewait.until(ExpectedConditions.elementToBeClickable(ep.SearchField())).sendKeys("kqatestc3");
         u.apiDelay();
         ewait.until(ExpectedConditions.elementToBeClickable(ep.ClickCreator())).click();

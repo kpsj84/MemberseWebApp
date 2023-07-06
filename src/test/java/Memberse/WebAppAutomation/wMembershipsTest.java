@@ -17,7 +17,7 @@ import WebPageObjects.WelcomePage;
 
 public class wMembershipsTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=59)
 	public void wMembershipsTestCase() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 30);

@@ -22,7 +22,7 @@ import WebPageObjects.WelcomePage;
 
 public class wCreateAndDeletePlaylistTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=51)
 	public void wCreateAndDeletePlaylistTestCase()throws InterruptedException, AWTException {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);
@@ -80,12 +80,14 @@ public class wCreateAndDeletePlaylistTest extends WBase {
         rb.keyRelease(KeyEvent.VK_SHIFT);
         rb.keyRelease(KeyEvent.VK_G);
         rb.delay(500);
+        rb.delay(500);
         
         //Paste the clipboard value
         rb.keyPress(KeyEvent.VK_META);
         rb.keyPress(KeyEvent.VK_V);
         rb.keyRelease(KeyEvent.VK_META);
         rb.keyRelease(KeyEvent.VK_V);
+        rb.delay(500);
         
         //Close both the Windows
         rb.keyPress(KeyEvent.VK_ENTER);
@@ -95,7 +97,7 @@ public class wCreateAndDeletePlaylistTest extends WBase {
         rb.keyPress(KeyEvent.VK_ENTER);
         rb.keyRelease(KeyEvent.VK_ENTER);
         ewait.until(ExpectedConditions.elementToBeClickable(plp.PlayListSaveButton())).click();
-        u.loadDelay();
+        u.shortDelay();
         
         String text= ewait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='notistack-CollapseWrapper']")))).getText();
 		System.out.println(text);

@@ -12,7 +12,7 @@ import WebPageObjects.WelcomePage;
 
 public class wLaunchAppStoreTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"})
 	public void wLaunchAppStoreTestCase() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);

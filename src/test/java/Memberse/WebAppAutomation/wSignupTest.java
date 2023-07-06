@@ -16,7 +16,7 @@ import WebPageObjects.WelcomePage;
 
 public class wSignupTest extends WBase {
 	
-	@Test(groups = {"Regression"})
+	@Test(groups = {"Regression"}, priority=3)
 	public void wSignupTestCase() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);
@@ -83,7 +83,12 @@ public class wSignupTest extends WBase {
 		u.elementToBeClickable(ewait, stp.lastName()).sendKeys("Ln");
 		u.elementToBeClickable(ewait, stp.bussinessUrl()).sendKeys("www." + uname + ".com");
 		ewait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(), 'Continue')]"))).click();
+		ewait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@data-test='manualEntryLink']"))).click();
 		u.elementToBeClickable(ewait, stp.testAccount()).click();
+		u.apiDelay();
+		u.loadDelay();
+		u.shortDelay();
+		ewait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(), 'Continue')]"))).click();
 		ewait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[contains(text(), 'Agree & submit')])[2]"))).click();
 		u.apiDelay();
 		String stripeConnected = ewait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(), 'Stripe Connected')]"))).getText();

@@ -13,7 +13,7 @@ import WebPageObjects.WelcomePage;
 
 public class wLoginFormValidationTest extends WBase{
 	
-	@Test(groups = {"Regression"})
+	@Test(groups = {"Regression"}, priority=2)
 	public void wLoginFormValidationTestCase() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 30);

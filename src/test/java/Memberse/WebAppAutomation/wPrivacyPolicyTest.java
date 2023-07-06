@@ -14,7 +14,7 @@ import WebPageObjects.ExplorePage;
 
 public class wPrivacyPolicyTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=19)
 	public void wPrivacyPolicyTestCase()throws InterruptedException{
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);
