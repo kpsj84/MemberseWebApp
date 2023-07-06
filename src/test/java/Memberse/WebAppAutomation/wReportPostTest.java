@@ -15,7 +15,7 @@ import WebPageObjects.WelcomePage;
 
 public class wReportPostTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=39)
 	public void wReportPostTestCase()throws InterruptedException{
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);

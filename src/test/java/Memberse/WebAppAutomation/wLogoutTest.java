@@ -13,7 +13,7 @@ import WebPageObjects.WelcomePage;
 
 public class wLogoutTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=8)
 	public void wLogoutTestCase() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);
@@ -42,7 +42,7 @@ public class wLogoutTest extends WBase {
 		
 		String verifyUrl = driver.getCurrentUrl();
 		System.out.println(verifyUrl);
-		Assert.assertEquals(verifyUrl, "https://app-qa.so.fa.dog/auth/signup");
+		Assert.assertEquals(verifyUrl, "https://app-qa.memberse.com/auth/signup");
 		System.out.println("Test Case Completed");
 		
 		//Test Status Flag

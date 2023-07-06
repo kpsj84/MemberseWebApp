@@ -17,7 +17,7 @@ import WebPageObjects.WelcomePage;
 
 public class wSearchCreatorTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=27)
 	public void wSearchCreatorTestCase()throws InterruptedException{
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);
@@ -40,6 +40,7 @@ public class wSearchCreatorTest extends WBase {
 		ewait.until(ExpectedConditions.elementToBeClickable(hp.ExploreMenu())).click();
 		
 		ExplorePage ep = new ExplorePage(driver);
+		u.loadDelay();
 		ewait.until(ExpectedConditions.elementToBeClickable(ep.SearchField())).sendKeys("kqatestc4");
 		u.apiDelay();      
 		

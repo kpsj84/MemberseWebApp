@@ -17,7 +17,7 @@ import WebPageObjects.WelcomePage;
 
  public class wWatchedHistoryTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"})
 	public void wWatchedHistoryTestCase()throws InterruptedException{
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 30);

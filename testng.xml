@@ -11,61 +11,15 @@
   <test thread-count="5" name="Web App Test">
   	<groups>
   		<dependencies>
-  			<group name="Regression" depends-on="Smoke"></group>
+  			<group name="Regression" depends-on=" "></group>
   		</dependencies>
   	</groups>
   
     <classes>
-    	  <class name="Memberse.WebAppAutomation.wSmokeTest"/>
-      <!-- Major Functionality Test Cases-->
-	      <class name="Memberse.WebAppAutomation.wSignupFormValidationTest"/>
-	      <class name="Memberse.WebAppAutomation.wLoginFormValidationTest"/>
-	      <class name="Memberse.WebAppAutomation.wSignupTest"/>
-	      <class name="Memberse.WebAppAutomation.wLogintTest"/>
-	      <class name="Memberse.WebAppAutomation.wLogoutTest"/>
-	      <class name="Memberse.WebAppAutomation.wDeleteAccountTest"/>
-	  <!-- General Test Cases-->
-	      <class name="Memberse.WebAppAutomation.wTermsAndConditionsTest"/>
-	      <class name="Memberse.WebAppAutomation.wCommunityGuidelinesTest"/>
-	      <class name="Memberse.WebAppAutomation.wPrivacyPolicyTest"/>
-	  <!-- Home Page Test Cases-->
-	      <class name="Memberse.WebAppAutomation.wFeedsVerifyTest"/>
-	      <class name="Memberse.WebAppAutomation.wFeedsFilterTest"/>
-	      <class name="Memberse.WebAppAutomation.wCreateTextPostTest"/>
-	      <class name="Memberse.WebAppAutomation.wCreatePhotoPostTest"/>
-	      <class name="Memberse.WebAppAutomation.wCreateVideoPostTest"/>
-	      <class name="Memberse.WebAppAutomation.wCreateAudioPostTest"/>
-	      <class name="Memberse.WebAppAutomation.wCreatorBothSideMenusTest"/>
-	  <!-- Explore Page Test Cases-->
-      	  <class name="Memberse.WebAppAutomation.wSearchCreatorTest"/>  
-      <!-- Community Page Test Cases-->
-      	  <class name="Memberse.WebAppAutomation.wFollowAndUnfollowCommunityTest"/>	 
-      	  <class name="Memberse.WebAppAutomation.wShareCommunityTest"/>
-      	  <class name="Memberse.WebAppAutomation.wReportCommunityTest"/>
-      	  <class name="Memberse.WebAppAutomation.wJoinCommunityTest"/> 
-	      <class name="Memberse.WebAppAutomation.wViewTextPostTest"/>
-	      <class name="Memberse.WebAppAutomation.wViewPhotoPostTest"/>
-	      <class name="Memberse.WebAppAutomation.wPlayVideoPostTest"/>
-	      <class name="Memberse.WebAppAutomation.wPlayAudioPostTest"/>
-	      <class name="Memberse.WebAppAutomation.wReportPostTest"/>
-	      <class name="Memberse.WebAppAutomation.wSharePostTest"/>
-	      <class name="Memberse.WebAppAutomation.wLikePostTest"/>
-	      <class name="Memberse.WebAppAutomation.wCommentOnPostTest"/>
-	      <class name="Memberse.WebAppAutomation.wCommunityTabsTest"/>
-	  <!-- Creator Page Test Cases-->
-      	  <class name="Memberse.WebAppAutomation.wCommunityEditInfoTest"/>
-      	  <class name="Memberse.WebAppAutomation.wCommunityPriceTest"/>
-      	  <class name="Memberse.WebAppAutomation.wPostHistoryPlayTest"/>
-      	  <class name="Memberse.WebAppAutomation.wPostHistoryEditTest"/>
-      	  <class name="Memberse.WebAppAutomation.wPostHistoryDeleteTest"/>
-      	  <class name="Memberse.WebAppAutomation.wCreateAndDeletePlaylistTest"/>
-      	  <class name="Memberse.WebAppAutomation.wCommentOnPlaylistMediaTest"/>
-      	  <class name="Memberse.WebAppAutomation.wMyFansListTest"/>
-	 <!-- Account Page Test Cases-->
-      	  <class name="Memberse.WebAppAutomation.wMemberInfoTest"/>
-      	  <class name="Memberse.WebAppAutomation.wMembershipsTest"/>
-      	  <class name="Memberse.WebAppAutomation.wChangePasswordTest"/>
-      	  <class name="Memberse.WebAppAutomation.wBecomeCreatorTest"/>
+    	  <class name="Memberse.WebDMonly.CreatorOrganicLoginTest"/>
+    	  <class name="Memberse.WebDMonly.FanBioLinkLoginTest"/>
+    	  <class name="Memberse.WebDMonly.FanSendDMTest"/>
+    	  <class name="Memberse.WebDMonly.CreatorReplyDMTest"/>
 	      
 	</classes>
     

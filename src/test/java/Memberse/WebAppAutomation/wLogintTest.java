@@ -15,7 +15,7 @@ import WebPageObjects.WelcomePage;
 
 public class wLogintTest extends WBase{
 	
-	@Test(groups = {"Regression"})
+	@Test(groups = {"Regression"}, priority=4)
 	public void wLogintTestCase() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);

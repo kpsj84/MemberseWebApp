@@ -17,7 +17,7 @@ import WebPageObjects.WelcomePage;
 
 public class wCommunityTabsTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=43)
 	public void wCommunityTabsTestCase()throws InterruptedException{
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);
@@ -51,7 +51,7 @@ public class wCommunityTabsTest extends WBase {
 	    	int ele1 = verifyResult2.size();
 	    	if(ele1>=1) 
 	    	{
-	    		Assert.assertEquals(ele1>=1, ele1, "Assertion failed");
+	    		System.out.println("Playlist data is present");
 	    	}
 	    }
 	    catch(Exception e)

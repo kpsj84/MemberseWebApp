@@ -42,5 +42,12 @@ public class WelcomePage {
 	public WebElement GooglePlayButton() {
 		return GooglePlayButton;
 	}
+	
+	@FindBy(xpath="//span[text()='Forgot password?']")
+	private WebElement forgotPassword;
+	
+	public WebElement forgotPassword() {
+		return forgotPassword;
+	}
 
 }

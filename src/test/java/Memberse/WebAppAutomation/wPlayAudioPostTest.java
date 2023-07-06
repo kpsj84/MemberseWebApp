@@ -15,7 +15,7 @@ import WebPageObjects.WelcomePage;
 
 public class wPlayAudioPostTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=38)
 	public void wPlayAudioPostTestCase()throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);

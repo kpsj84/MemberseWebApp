@@ -25,7 +25,7 @@ import WebPageObjects.WelcomePage;
 
 public class wAddMediaAndPlayPlaylistTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=52)
 	public void wAddMediaAndPlayPlaylistTestCase()throws InterruptedException, AWTException{
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);

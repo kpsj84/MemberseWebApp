@@ -18,7 +18,7 @@ import WebPageObjects.WelcomePage;
 
 public class wPostHistoryEditTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=49)
 	public void wPostHistoryEditTestCase()throws InterruptedException{
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);
@@ -68,7 +68,7 @@ public class wPostHistoryEditTest extends WBase {
 		System.out.println(autotext);
 		ewait.until(ExpectedConditions.elementToBeClickable(php.PostDescription())).sendKeys("This is a QA Description-" + autotext);
 		ewait.until(ExpectedConditions.elementToBeClickable(php.SavePost())).click();
-		u.loadDelay();
+		u.shortDelay();
 		
 		WebElement Text1 = ewait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='notistack-CollapseWrapper']"))));
 		String text2 = Text1.getText();

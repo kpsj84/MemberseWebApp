@@ -17,7 +17,7 @@ import WebPageObjects.WelcomePage;
 
 public class wPostHistoryPlayTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=48)
 	public void wPostHistoryPlayTestCase() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);

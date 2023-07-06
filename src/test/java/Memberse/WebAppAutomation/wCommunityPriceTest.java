@@ -16,7 +16,7 @@ import WebPageObjects.WelcomePage;
 
 public class wCommunityPriceTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=46)
 	public void wCommunityPriceTestCase() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);

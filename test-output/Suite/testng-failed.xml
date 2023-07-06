@@ -10,47 +10,24 @@
         <methods>
           <include name="wSignupTestCase"/>
           <include name="quitDriver"/>
+          <include name="methodName"/>
           <include name="endSuite"/>
           <include name="startDriver"/>
           <include name="InvokeCapabilities"/>
+          <include name="methodRun"/>
         </methods>
       </class> <!-- Memberse.WebAppAutomation.wSignupTest -->
       <class name="Memberse.WebAppAutomation.wSmokeTest">
         <methods>
           <include name="quitDriver"/>
+          <include name="methodName"/>
           <include name="endSuite"/>
           <include name="startDriver"/>
           <include name="wSmokeTestCase"/>
           <include name="InvokeCapabilities"/>
+          <include name="methodRun"/>
         </methods>
       </class> <!-- Memberse.WebAppAutomation.wSmokeTest -->
-      <class name="Memberse.WebAppAutomation.wLoginFormValidationTest">
-        <methods>
-          <include name="quitDriver"/>
-          <include name="endSuite"/>
-          <include name="wLoginFormValidationTestCase"/>
-          <include name="startDriver"/>
-          <include name="InvokeCapabilities"/>
-        </methods>
-      </class> <!-- Memberse.WebAppAutomation.wLoginFormValidationTest -->
-      <class name="Memberse.WebAppAutomation.wSignupFormValidationTest">
-        <methods>
-          <include name="quitDriver"/>
-          <include name="endSuite"/>
-          <include name="wSignupFormValidationTestCase"/>
-          <include name="startDriver"/>
-          <include name="InvokeCapabilities"/>
-        </methods>
-      </class> <!-- Memberse.WebAppAutomation.wSignupFormValidationTest -->
-      <class name="Memberse.WebAppAutomation.wLogintTest">
-        <methods>
-          <include name="quitDriver"/>
-          <include name="endSuite"/>
-          <include name="wLogintTestCase"/>
-          <include name="startDriver"/>
-          <include name="InvokeCapabilities"/>
-        </methods>
-      </class> <!-- Memberse.WebAppAutomation.wLogintTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

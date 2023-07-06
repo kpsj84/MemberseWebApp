@@ -16,7 +16,7 @@ import WebPageObjects.WelcomePage;
 
 public class wCreatorBothSideMenusTest extends WBase {
 
-	@Test
+	@Test(groups = {"Regression"}, priority=26)
 	public void wCreatorBothSideMenusTestCase() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);

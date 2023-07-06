@@ -14,7 +14,7 @@ import WebPageObjects.WelcomePage;
 
 public class wDeleteAccountTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=10)
 	public void wDeleteAccountTestCase() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);
@@ -55,7 +55,7 @@ public class wDeleteAccountTest extends WBase {
 		
 		String verifyUrl = driver.getCurrentUrl();
 		System.out.println(verifyUrl);
-		Assert.assertEquals(verifyUrl, "https://app-qa.so.fa.dog/auth/signup");
+		Assert.assertEquals(verifyUrl, "https://app-qa.memberse.com/auth/signup");
 		System.out.println("Test Case Completed");
 		
 		//Test Status Flag

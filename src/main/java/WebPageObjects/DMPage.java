@@ -42,5 +42,12 @@ public class DMPage {
 	public WebElement sendDM() {
 		return sendDM;
 	}
+	
+	@FindBy(xpath="(//span[text()='kqacreator LN'])")   
+	private WebElement creatorName;
+	
+	public WebElement creatorName() {
+		return creatorName;
+	}
 
 }

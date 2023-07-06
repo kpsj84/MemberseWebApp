@@ -23,7 +23,7 @@ import WebPageObjects.WelcomePage;
 
 public class wCreatePhotoPostTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=23)
 	public void wCreatePhotoPostTestCase()throws InterruptedException, AWTException{
 		driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 90);

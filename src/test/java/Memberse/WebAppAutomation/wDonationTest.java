@@ -19,7 +19,7 @@ import WebPageObjects.WelcomePage;
 
 public class wDonationTest extends WBase {
 
-	@Test
+	@Test(groups = {"Regression"})
 	public void wDonationTestCase()throws InterruptedException{
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);

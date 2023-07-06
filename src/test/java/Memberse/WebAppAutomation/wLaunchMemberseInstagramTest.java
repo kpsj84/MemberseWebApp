@@ -14,7 +14,7 @@ import WebPageObjects.ExplorePage;
 
 public class wLaunchMemberseInstagramTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"})
 	public void wLaunchMemberseInstagramTestCase()throws InterruptedException{
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);

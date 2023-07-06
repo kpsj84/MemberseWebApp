@@ -16,7 +16,7 @@ import WebPageObjects.WelcomePage;
 
 public class wCommentOnPlaylistMediaTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=54)
 	public void wCommentonPlaylistMediaTestCase()throws InterruptedException{
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);

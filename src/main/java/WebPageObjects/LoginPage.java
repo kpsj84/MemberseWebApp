@@ -36,7 +36,7 @@ public class LoginPage {
 		return ShowPassword;
 	}
 	
-	@FindBy(xpath="(//span[text()='Login'])[2]")
+	@FindBy(xpath="(//span[text()='Login'])[1]")
 	private WebElement Login;
 	
 	public WebElement Login() {
@@ -50,7 +50,7 @@ public class LoginPage {
 		return GoogleLogin;
 	}
 	
-	@FindBy(css="svg[data-icon='facebook-f']")
+	@FindBy(css="svg[data-icon='facebook']")
 	private WebElement FacebookLogin; 
 	
 	public WebElement FacebookLogin() {

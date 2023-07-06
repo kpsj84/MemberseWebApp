@@ -13,7 +13,7 @@ import WebPageObjects.WelcomePage;
 
 public class wLoginWithGoogleTest extends WBase{
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=5)
 	public void wLoginWithGoogleTestCase() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);

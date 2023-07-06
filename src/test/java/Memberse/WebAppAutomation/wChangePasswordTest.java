@@ -16,7 +16,7 @@ import WebPageObjects.WelcomePage;
 
 public class wChangePasswordTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=60)
 	public void wChangePasswordTestCase()throws InterruptedException{
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);

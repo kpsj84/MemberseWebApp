@@ -17,7 +17,7 @@ import WebPageObjects.WelcomePage;
 
 public class wMyFansListTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=56)
 	public void wMyFansListTestCase()throws InterruptedException{
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);

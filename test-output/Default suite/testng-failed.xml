@@ -3,15 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Memberse.WebAppAutomation.wAddMediaAndPlayPlaylistTest">
+      <class name="Memberse.WebDMonly.FanSendDMTest">
         <methods>
-          <include name="wAddMediaAndPlayPlaylistTestCase"/>
           <include name="quitDriver"/>
+          <include name="methodName"/>
           <include name="endSuite"/>
+          <include name="FanSendDMTestCase"/>
           <include name="startDriver"/>
           <include name="InvokeCapabilities"/>
+          <include name="methodRun"/>
         </methods>
-      </class> <!-- Memberse.WebAppAutomation.wAddMediaAndPlayPlaylistTest -->
+      </class> <!-- Memberse.WebDMonly.FanSendDMTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -21,7 +21,7 @@ import WebPageObjects.WelcomePage;
 
 public class wJoinCommunityTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=32)
 	public void wJoinCommunityTestCase()throws InterruptedException{
 		driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 90);

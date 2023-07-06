@@ -16,7 +16,7 @@ import WebPageObjects.WelcomePage;
 
 public class wLikePostTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=41)
 	public void wLikePostTestCase()throws InterruptedException{
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 60);

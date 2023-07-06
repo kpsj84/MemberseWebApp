@@ -23,7 +23,7 @@ import WebPageObjects.WelcomePage;
 
 public class wCreateVideoPostTest extends WBase {
 	
-	@Test
+	@Test(groups = {"Regression"}, priority=24)
 	public void wCreatVideoPostTestCase()throws InterruptedException, AWTException{
 		driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
 		WebDriverWait ewait =  new WebDriverWait(driver, 90);
